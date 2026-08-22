@@ -1,6 +1,6 @@
 {
   "cybersecurity 000_all_10000": {
-    "timestamp": 1787383141775,
+    "timestamp": 1787384249909,
     "results": [
       {
         "id": "aicte-cyber-defense",
@@ -36,8 +36,8 @@
           "cybersecurity"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:18:57.770Z",
-        "matchScore": 81,
+        "discoveredAt": "2026-08-22T07:37:28.680Z",
+        "matchScore": 85,
         "matchReasons": [
           "✓ Ethical Hacking matches profile",
           "✓ Aligns with target career domain",
@@ -45,99 +45,8 @@
           "✓ Stipend meets preference",
           "✓ Student eligible",
           "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: High affinity for Linux",
           "🧠 AI Learned: Favored remote setup"
-        ]
-      },
-      {
-        "id": "lever-spotify-data",
-        "title": "Security & Trust Engineering Intern",
-        "company": "Postman API Platform (via Lever)",
-        "description": "Build automated security linters, monitor API vulnerability signatures, and contribute to internal security libraries.",
-        "location": "Bengaluru / Remote",
-        "mode": "remote",
-        "stipend": {
-          "min": 30000,
-          "max": 30000,
-          "currency": "INR",
-          "display": "₹30,000/month"
-        },
-        "duration": "6 Months",
-        "skills": [
-          "Node.js",
-          "Python",
-          "Cybersecurity",
-          "Linux",
-          "Docker"
-        ],
-        "experience": "Students",
-        "eligibility": "Engineering students with API & backend development experience",
-        "deadline": "2026-10-15",
-        "postedDate": "Recent",
-        "source": "Lever ATS",
-        "sourceUrl": "https://jobs.lever.co/postman",
-        "applicationUrl": "https://jobs.lever.co/postman/security-intern",
-        "organizationUrl": "https://postman.com",
-        "tags": [
-          "lever",
-          "api",
-          "security"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T07:18:57.771Z",
-        "matchScore": 77,
-        "matchReasons": [
-          "✓ Node.js matches profile",
-          "✓ Python matches profile",
-          "✓ Remote opportunity",
-          "✓ Stipend meets preference",
-          "✓ Student eligible",
-          "🧠 AI Learned: High affinity for Python",
-          "🧠 AI Learned: High affinity for Cybersecurity",
-          "🧠 AI Learned: Favored remote setup"
-        ]
-      },
-      {
-        "id": "foundit-net-sec",
-        "title": "Network Security Trainee",
-        "company": "Spectra Net Technologies",
-        "description": "Assisting senior engineers with firewall audits, secure routing, and endpoint protection testing.",
-        "location": "Pune, Maharashtra",
-        "mode": "hybrid",
-        "stipend": {
-          "min": 14000,
-          "max": 14000,
-          "currency": "INR",
-          "display": "₹14,000/month"
-        },
-        "duration": "3-6 Months",
-        "skills": [
-          "Network Security",
-          "Linux",
-          "Python",
-          "IAM"
-        ],
-        "experience": "Students / Freshers",
-        "eligibility": "Engineering students",
-        "deadline": "2026-10-12",
-        "postedDate": "3 days ago",
-        "source": "Foundit",
-        "sourceUrl": "https://www.foundit.in/srp/results?query=cybersecurity%20000%20intern",
-        "applicationUrl": "https://www.foundit.in/job/network-security-trainee",
-        "organizationUrl": null,
-        "tags": [
-          "foundit",
-          "network-security"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T07:18:57.770Z",
-        "matchScore": 70,
-        "matchReasons": [
-          "✓ Python matches profile",
-          "✓ IAM matches profile",
-          "✓ hybrid mode preference",
-          "✓ Stipend meets preference",
-          "✓ Student eligible",
-          "🧠 AI Learned: High affinity for Python"
         ]
       },
       {
@@ -175,61 +84,114 @@
           "cloud"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:18:57.770Z",
-        "matchScore": 64,
+        "discoveredAt": "2026-08-22T07:37:28.680Z",
+        "matchScore": 81,
         "matchReasons": [
           "✓ Python matches profile",
           "✓ React matches profile",
           "✓ hybrid mode preference",
           "✓ Stipend meets preference",
           "🧠 AI Learned: High affinity for Cybersecurity",
-          "🧠 AI Learned: High affinity for Python"
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: High affinity for Linux",
+          "🧠 AI Learned: High affinity for Penetration Testing",
+          "🧠 AI Learned: Favored hybrid setup"
         ]
       },
       {
-        "id": "wellfound-2091104",
-        "title": "Vice President, Technology & Digital Strategy",
-        "company": "Shatterproof",
-        "description": "About ShatterproofShatterproof is a national nonprofit working toward a world where addiction never defines or ends a life. Through evidence-based programs, advocacy, and public education, Shatterproof works to transform systems for tomorrow, support families today, and end stigma forever. Learn more at shatterproof.org. Who Succeeds at Shatterproof Shatterproof is in a period of transformative and rapid growth. We are building new systems, reimagining how work gets done, and creating more cross-functional alignment to accelerate our mission. To thrive here, you should be energized by building, not just maintaining, and excited to bring structure, clarity, and innovation to evolving spaces. We're looking for team members who: Build systems and processes from the ground up and improve them continuously as we scale. Take ownership and act with a builder's mindset, bringing forward solutions rather than waiting for direction. Influence and collaborate across teams, shaping work through strong communication and relationship-building. Move quickly, learn fast, and adapt with resilience, especially in a high-growth, high-impact environment. Are mission-driven and motivated to leave their mark on an organization working to reverse the addiction crisis. The RoleReporting to the Chief Financial & Administrative Officer, the Vice President, Technology & Digital Strategy serves as Shatterproof's senior technology executive and leads the organization's technology, digital operations, cybersecurity, data, artificial intelligence, enterprise applications, digital platforms, and technology-enabled products. This leader will create and execute a comprehensive technology vision that advances organizational strategy, enables operational excellence, strengthens security and resilience, improves the employee experience, supports fundraising and advocacy, and drives innovation across mission-focused platforms. This role is ideal for a builder who wants the rare opportunity to shape not only an organization's technology strategy, but also how technology, data, AI, and digital platforms accelerate mission impact at scale. The Team The Vice President leads a multidisciplinary team spanning enterprise technology, digital operations, data, and product management. Current direct reports and functional oversight areas include IT Operations, Digital Operations, enterprise CRM and database capabilities, Treatment Atlas Product Management, and Treatment Atlas Data Management. The role is responsible for developing these capabilities into a cohesive, high-performing technology function that provides exceptional organizational support while advancing Shatterproof's digital, data, and platform strategy. The team supports and manages a broad portfolio that includes enterprise technology and workplace operations, cybersecurity and privacy, Salesforce and enterprise applications, website and fundraising technology, business intelligence and reporting, artificial intelligence initiatives, and the current and future technology architecture supporting Treatment Atlas. In addition to leading the internal team, the Vice President oversees a network of managed service providers, software vendors, implementation partners, and technology consultants, ensuring that internal and external resources are aligned to organizational priorities and positioned to scale with Shatterproof's evolving needs. This includes stewardship of strategic technology platforms and vendor relationships that support operations, fundraising, advocacy, data management, and mission delivery. Key ResponsibilitiesEnterprise Technology Leadership & Strategy Develop and execute a multi-year enterprise technology strategy aligned with organizational priorities. Serve as a trusted advisor to executive leadership on technology investments, risks, innovation opportunities, and emerging trends. Establish technology governance, architecture standards, prioritization practices, and a transparent enterprise roadmap. Evaluate and guide major technology investments, platform strategies, sourcing decisions, and vendor partnerships. Ensure technology decisions support mission impact, operational effectiveness, sustainability, and growth. AI Strategy & Digital Innovation Lead Shatterproof's enterprise AI strategy and roadmap. Establish governance frameworks, risk controls, and responsible-use standards for AI technologies. Identify and prioritize AI use cases across fundraising, operations, impact programs, and administration. Lead tool evaluation, pilots, implementation planning, adoption, training, and change management. Monitor emerging technologies and assess opportunities to create measurable organizational value. IT Operations & Workplace Technology Lead IT and workplace technology operations for a distributed workforce. Oversee managed service providers, help desk operations, devices, Microsoft 365, identity and access, collaboration tools, and general application administration. Ensure timely and secure onboarding, offboarding, access management, and technology provisioning. Maintain service standards, knowledge management, policies, procedures, and documentation. Continuously improve reliability, support quality, and the employee technology experience. Cybersecurity, Privacy & Organizational Resilience Lead enterprise cybersecurity strategy, policies, governance, and training. Oversee risk assessments, incident response, cyber insurance requirements, Keeper governance, backups, disaster recovery, and business continuity planning. Partner with leaders to protect organizational, employee, donor, constituent, and program data. Monitor emerging risks and drive practical, prioritized mitigation plans. Digital Platforms, Website & Fundraising Technology Lead the strategy, governance, performance, accessibility, analytics, and integrations for Shatterproof's website and digital engagement ecosystem. Oversee fundraising and advocacy technologies, including DonorDrive and New Mode, and related digital vendors. Partner with Development, Marketing & Communications, and Public Affairs to strengthen constituent experience, engagement, and platform value. Oversee Google Analytics and related reporting and optimization capabilities. Salesforce & Enterprise Applications Own the enterprise Salesforce roadmap and governance framework. Oversee administration, security, permissions, data quality, integrations, reporting, releases, user support, and adoption. Partner with department leaders to prioritize enhancements, automation, workflow improvements, and reporting needs. Ensure enterprise applications remain aligned with operational and strategic priorities. Data, Analytics & Business Intelligence Establish organization-wide data governance, reporting standards, and stewardship practices. Oversee dashboards, data models, access, refreshes, data quality, and Power BI capabilities. Partner with leaders to improve data-informed decision-making and performance visibility. Build scalable, well-governed analytics and reporting capabilities. Treatment Atlas Platform & Product Leadership Serve as technology executive sponsor for Treatment Atlas in close partnership with Impact leadership. Oversee current processing infrastructure, operational monitoring, troubleshooting, releases, integrations, data flows, and vendor coordination. Lead the reimagined platform product and technical roadmap, delivery oversight, architecture, cloud strategy, security, and implementation partners. Ensure platform reliability, scalability, security, usability, and long-term sustainability. Technology Financial Management & Vendor Strategy Develop and manage the annual technology budget, forecasts, and multi-year investment plans. Oversee invoices, purchasing, contracts, renewals, licensing, and license optimization. Lead major vendor decisions, negotiations, performance management, and strategic relationships. Develop clear business cases and recommendations for significant technology investments. Oversee the purpose, vendor relationship, users, integrations, renewals, support, and roadmap for Just5, and manage the LegitScript relationship, certifications, submissions, renewals, and organizational obligations. Team Leadership & Cross-Functional Partnership Lead, coach, and develop a high-performing, multidisciplinary technology and digital operations team. Create clarity around roles, decision rights, service ownership, priorities, and cross-functional ways of working. Assess future capability, capacity, structure, and sourcing needs. Build a culture grounded in accountability, service, collaboration, innovation, documentation, and continuous improvement. Communicate complex technology issues in accessible, business-oriented language and lead change with transparency. Ideal Experience & Qualifications 12+ years of progressive leadership experience spanning technology, digital operations, enterprise systems, product management, data, cybersecurity, or related disciplines. Experience serving as the senior technology leader for a complex organization and developing enterprise technology strategies and roadmaps. Demonstrated experience leading multidisciplinary teams and building organizational capability. Strong experience with cybersecurity, technology governance, privacy-supporting controls, risk management, and organizational resilience. Experience leading CRM, data, analytics, digital platforms, enterprise applications, and major technology implementations. Experience overseeing technology budgets, contracts, licensing, vendor relationships, and implementation partners. Experience introducing and scaling AI-enabled solutions, governance, adoption, and training. Ability to translate organizational needs into practical technology priorities, investments, and execution plans. Executive presence and strong written and verbal communication, with the ability to engage technical and nontechnical stakeholders. Ability to operate effectively in a mission-driven, distributed, and evolving environment. Bachelor's degree or equivalent relevant experience required; advanced degree or relevant certifications preferred. Deep alignment with Shatterproof's mission and values. CompensationThe salary range for this position is $175,000 to $190,000. Placement within the range is determined by experience, internal equity, and organizational budget. Additional Information Ability and authorization to work in the United States required. Ability to work Eastern Time Zone hours required. Domestic travel may be required based on organizational needs. Shatterproof is an equal opportunity employer and is committed to fostering an inclusive workplace.",
-        "location": "USA",
-        "mode": "unknown",
+        "id": "lever-spotify-data",
+        "title": "Security & Trust Engineering Intern",
+        "company": "Postman API Platform (via Lever)",
+        "description": "Build automated security linters, monitor API vulnerability signatures, and contribute to internal security libraries.",
+        "location": "Bengaluru / Remote",
+        "mode": "remote",
         "stipend": {
-          "min": 175000,
-          "max": 190000,
+          "min": 30000,
+          "max": 30000,
           "currency": "INR",
-          "display": "₹1,75,000 - ₹1,90,000/month"
+          "display": "₹30,000/month"
+        },
+        "duration": "6 Months",
+        "skills": [
+          "Node.js",
+          "Python",
+          "Cybersecurity",
+          "Linux",
+          "Docker"
+        ],
+        "experience": "Students",
+        "eligibility": "Engineering students with API & backend development experience",
+        "deadline": "2026-10-15",
+        "postedDate": "Recent",
+        "source": "Lever ATS",
+        "sourceUrl": "https://jobs.lever.co/postman",
+        "applicationUrl": "https://jobs.lever.co/postman/security-intern",
+        "organizationUrl": "https://postman.com",
+        "tags": [
+          "lever",
+          "api",
+          "security"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T07:37:28.681Z",
+        "matchScore": 81,
+        "matchReasons": [
+          "✓ Node.js matches profile",
+          "✓ Python matches profile",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: High affinity for Linux",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "foundit-net-sec",
+        "title": "Network Security Trainee",
+        "company": "Spectra Net Technologies",
+        "description": "Assisting senior engineers with firewall audits, secure routing, and endpoint protection testing.",
+        "location": "Pune, Maharashtra",
+        "mode": "hybrid",
+        "stipend": {
+          "min": 14000,
+          "max": 14000,
+          "currency": "INR",
+          "display": "₹14,000/month"
         },
         "duration": "3-6 Months",
         "skills": [
-          "business intelligence",
-          "cloud",
-          "salesforce",
-          "security",
-          "AI/ML",
-          "automation",
-          "product management",
-          "documentation"
+          "Network Security",
+          "Linux",
+          "Python",
+          "IAM"
         ],
-        "experience": "Students / Early Career",
-        "eligibility": "Open to software & security enthusiasts",
-        "deadline": "2026-10-30",
-        "postedDate": "Live Startup Feed",
-        "source": "Wellfound & Tech Startups",
-        "sourceUrl": "https://wellfound.com/location/India",
-        "applicationUrl": "https://remotive.com/remote-jobs/all-others/vice-president-technology-digital-strategy-2091104",
-        "organizationUrl": "https://remotive.com/remote-jobs/all-others/vice-president-technology-digital-strategy-2091104",
+        "experience": "Students / Freshers",
+        "eligibility": "Engineering students",
+        "deadline": "2026-10-12",
+        "postedDate": "3 days ago",
+        "source": "Foundit",
+        "sourceUrl": "https://www.foundit.in/srp/results?query=cybersecurity%20000%20intern",
+        "applicationUrl": "https://www.foundit.in/job/network-security-trainee",
+        "organizationUrl": null,
         "tags": [
-          "wellfound",
-          "startup",
-          "live-feed"
+          "foundit",
+          "network-security"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:00.478Z",
-        "matchScore": 45,
+        "discoveredAt": "2026-08-22T07:37:28.680Z",
+        "matchScore": 79,
         "matchReasons": [
-          "✓ Aligns with target career domain",
+          "✓ Python matches profile",
+          "✓ IAM matches profile",
+          "✓ hybrid mode preference",
           "✓ Stipend meets preference",
-          "✓ Student eligible"
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Linux",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: Favored hybrid setup"
         ]
       },
       {
@@ -266,12 +228,13 @@
           "analyst"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:18:57.770Z",
-        "matchScore": 45,
+        "discoveredAt": "2026-08-22T07:37:28.680Z",
+        "matchScore": 49,
         "matchReasons": [
           "✓ Network Traffic Analysis matches profile",
           "✓ Stipend meets preference",
           "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: High affinity for Linux",
           "🧠 AI Learned: High affinity for Network Traffic Analysis"
         ]
       },
@@ -313,12 +276,13 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:01.771Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:37:28.942Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -359,12 +323,13 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:01.771Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:37:28.943Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -405,12 +370,13 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:01.771Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:37:28.943Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -451,12 +417,13 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:01.771Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:37:28.943Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -497,12 +464,13 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:01.771Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:37:28.944Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -543,12 +511,13 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:01.772Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:37:28.944Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -589,13 +558,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:00.546Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:37:29.275Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -636,13 +606,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:00.546Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:37:29.275Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -683,13 +654,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:00.546Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:37:29.275Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -730,13 +702,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:00.546Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:37:29.275Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -777,13 +750,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:00.546Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:37:29.275Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -824,13 +798,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:00.546Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:37:29.276Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -871,13 +846,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:00.546Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:37:29.276Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -918,13 +894,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:00.546Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:37:29.276Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -965,13 +942,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:00.547Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:37:29.276Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -1012,13 +990,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:00.547Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:37:29.276Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -1059,13 +1038,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:00.547Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:37:29.276Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -1106,13 +1086,60 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:00.547Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:37:29.276Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
+        ]
+      },
+      {
+        "id": "wellfound-2091104",
+        "title": "Vice President, Technology & Digital Strategy",
+        "company": "Shatterproof",
+        "description": "About ShatterproofShatterproof is a national nonprofit working toward a world where addiction never defines or ends a life. Through evidence-based programs, advocacy, and public education, Shatterproof works to transform systems for tomorrow, support families today, and end stigma forever. Learn more at shatterproof.org. Who Succeeds at Shatterproof Shatterproof is in a period of transformative and rapid growth. We are building new systems, reimagining how work gets done, and creating more cross-functional alignment to accelerate our mission. To thrive here, you should be energized by building, not just maintaining, and excited to bring structure, clarity, and innovation to evolving spaces. We're looking for team members who: Build systems and processes from the ground up and improve them continuously as we scale. Take ownership and act with a builder's mindset, bringing forward solutions rather than waiting for direction. Influence and collaborate across teams, shaping work through strong communication and relationship-building. Move quickly, learn fast, and adapt with resilience, especially in a high-growth, high-impact environment. Are mission-driven and motivated to leave their mark on an organization working to reverse the addiction crisis. The RoleReporting to the Chief Financial & Administrative Officer, the Vice President, Technology & Digital Strategy serves as Shatterproof's senior technology executive and leads the organization's technology, digital operations, cybersecurity, data, artificial intelligence, enterprise applications, digital platforms, and technology-enabled products. This leader will create and execute a comprehensive technology vision that advances organizational strategy, enables operational excellence, strengthens security and resilience, improves the employee experience, supports fundraising and advocacy, and drives innovation across mission-focused platforms. This role is ideal for a builder who wants the rare opportunity to shape not only an organization's technology strategy, but also how technology, data, AI, and digital platforms accelerate mission impact at scale. The Team The Vice President leads a multidisciplinary team spanning enterprise technology, digital operations, data, and product management. Current direct reports and functional oversight areas include IT Operations, Digital Operations, enterprise CRM and database capabilities, Treatment Atlas Product Management, and Treatment Atlas Data Management. The role is responsible for developing these capabilities into a cohesive, high-performing technology function that provides exceptional organizational support while advancing Shatterproof's digital, data, and platform strategy. The team supports and manages a broad portfolio that includes enterprise technology and workplace operations, cybersecurity and privacy, Salesforce and enterprise applications, website and fundraising technology, business intelligence and reporting, artificial intelligence initiatives, and the current and future technology architecture supporting Treatment Atlas. In addition to leading the internal team, the Vice President oversees a network of managed service providers, software vendors, implementation partners, and technology consultants, ensuring that internal and external resources are aligned to organizational priorities and positioned to scale with Shatterproof's evolving needs. This includes stewardship of strategic technology platforms and vendor relationships that support operations, fundraising, advocacy, data management, and mission delivery. Key ResponsibilitiesEnterprise Technology Leadership & Strategy Develop and execute a multi-year enterprise technology strategy aligned with organizational priorities. Serve as a trusted advisor to executive leadership on technology investments, risks, innovation opportunities, and emerging trends. Establish technology governance, architecture standards, prioritization practices, and a transparent enterprise roadmap. Evaluate and guide major technology investments, platform strategies, sourcing decisions, and vendor partnerships. Ensure technology decisions support mission impact, operational effectiveness, sustainability, and growth. AI Strategy & Digital Innovation Lead Shatterproof's enterprise AI strategy and roadmap. Establish governance frameworks, risk controls, and responsible-use standards for AI technologies. Identify and prioritize AI use cases across fundraising, operations, impact programs, and administration. Lead tool evaluation, pilots, implementation planning, adoption, training, and change management. Monitor emerging technologies and assess opportunities to create measurable organizational value. IT Operations & Workplace Technology Lead IT and workplace technology operations for a distributed workforce. Oversee managed service providers, help desk operations, devices, Microsoft 365, identity and access, collaboration tools, and general application administration. Ensure timely and secure onboarding, offboarding, access management, and technology provisioning. Maintain service standards, knowledge management, policies, procedures, and documentation. Continuously improve reliability, support quality, and the employee technology experience. Cybersecurity, Privacy & Organizational Resilience Lead enterprise cybersecurity strategy, policies, governance, and training. Oversee risk assessments, incident response, cyber insurance requirements, Keeper governance, backups, disaster recovery, and business continuity planning. Partner with leaders to protect organizational, employee, donor, constituent, and program data. Monitor emerging risks and drive practical, prioritized mitigation plans. Digital Platforms, Website & Fundraising Technology Lead the strategy, governance, performance, accessibility, analytics, and integrations for Shatterproof's website and digital engagement ecosystem. Oversee fundraising and advocacy technologies, including DonorDrive and New Mode, and related digital vendors. Partner with Development, Marketing & Communications, and Public Affairs to strengthen constituent experience, engagement, and platform value. Oversee Google Analytics and related reporting and optimization capabilities. Salesforce & Enterprise Applications Own the enterprise Salesforce roadmap and governance framework. Oversee administration, security, permissions, data quality, integrations, reporting, releases, user support, and adoption. Partner with department leaders to prioritize enhancements, automation, workflow improvements, and reporting needs. Ensure enterprise applications remain aligned with operational and strategic priorities. Data, Analytics & Business Intelligence Establish organization-wide data governance, reporting standards, and stewardship practices. Oversee dashboards, data models, access, refreshes, data quality, and Power BI capabilities. Partner with leaders to improve data-informed decision-making and performance visibility. Build scalable, well-governed analytics and reporting capabilities. Treatment Atlas Platform & Product Leadership Serve as technology executive sponsor for Treatment Atlas in close partnership with Impact leadership. Oversee current processing infrastructure, operational monitoring, troubleshooting, releases, integrations, data flows, and vendor coordination. Lead the reimagined platform product and technical roadmap, delivery oversight, architecture, cloud strategy, security, and implementation partners. Ensure platform reliability, scalability, security, usability, and long-term sustainability. Technology Financial Management & Vendor Strategy Develop and manage the annual technology budget, forecasts, and multi-year investment plans. Oversee invoices, purchasing, contracts, renewals, licensing, and license optimization. Lead major vendor decisions, negotiations, performance management, and strategic relationships. Develop clear business cases and recommendations for significant technology investments. Oversee the purpose, vendor relationship, users, integrations, renewals, support, and roadmap for Just5, and manage the LegitScript relationship, certifications, submissions, renewals, and organizational obligations. Team Leadership & Cross-Functional Partnership Lead, coach, and develop a high-performing, multidisciplinary technology and digital operations team. Create clarity around roles, decision rights, service ownership, priorities, and cross-functional ways of working. Assess future capability, capacity, structure, and sourcing needs. Build a culture grounded in accountability, service, collaboration, innovation, documentation, and continuous improvement. Communicate complex technology issues in accessible, business-oriented language and lead change with transparency. Ideal Experience & Qualifications 12+ years of progressive leadership experience spanning technology, digital operations, enterprise systems, product management, data, cybersecurity, or related disciplines. Experience serving as the senior technology leader for a complex organization and developing enterprise technology strategies and roadmaps. Demonstrated experience leading multidisciplinary teams and building organizational capability. Strong experience with cybersecurity, technology governance, privacy-supporting controls, risk management, and organizational resilience. Experience leading CRM, data, analytics, digital platforms, enterprise applications, and major technology implementations. Experience overseeing technology budgets, contracts, licensing, vendor relationships, and implementation partners. Experience introducing and scaling AI-enabled solutions, governance, adoption, and training. Ability to translate organizational needs into practical technology priorities, investments, and execution plans. Executive presence and strong written and verbal communication, with the ability to engage technical and nontechnical stakeholders. Ability to operate effectively in a mission-driven, distributed, and evolving environment. Bachelor's degree or equivalent relevant experience required; advanced degree or relevant certifications preferred. Deep alignment with Shatterproof's mission and values. CompensationThe salary range for this position is $175,000 to $190,000. Placement within the range is determined by experience, internal equity, and organizational budget. Additional Information Ability and authorization to work in the United States required. Ability to work Eastern Time Zone hours required. Domestic travel may be required based on organizational needs. Shatterproof is an equal opportunity employer and is committed to fostering an inclusive workplace.",
+        "location": "USA",
+        "mode": "unknown",
+        "stipend": {
+          "min": 175000,
+          "max": 190000,
+          "currency": "INR",
+          "display": "₹1,75,000 - ₹1,90,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "business intelligence",
+          "cloud",
+          "salesforce",
+          "security",
+          "AI/ML",
+          "automation",
+          "product management",
+          "documentation"
+        ],
+        "experience": "Students / Early Career",
+        "eligibility": "Open to software & security enthusiasts",
+        "deadline": "2026-10-30",
+        "postedDate": "Live Startup Feed",
+        "source": "Wellfound & Tech Startups",
+        "sourceUrl": "https://wellfound.com/location/India",
+        "applicationUrl": "https://remotive.com/remote-jobs/all-others/vice-president-technology-digital-strategy-2091104",
+        "organizationUrl": "https://remotive.com/remote-jobs/all-others/vice-president-technology-digital-strategy-2091104",
+        "tags": [
+          "wellfound",
+          "startup",
+          "live-feed"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T07:37:29.028Z",
+        "matchScore": 45,
+        "matchReasons": [
+          "✓ Aligns with target career domain",
+          "✓ Stipend meets preference",
+          "✓ Student eligible"
         ]
       },
       {
@@ -1153,7 +1180,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:00.480Z",
+        "discoveredAt": "2026-08-22T07:37:29.029Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Aligns with target career domain",
@@ -1198,7 +1225,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:00.483Z",
+        "discoveredAt": "2026-08-22T07:37:29.033Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Stipend meets preference"
@@ -1242,7 +1269,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:19:00.484Z",
+        "discoveredAt": "2026-08-22T07:37:29.034Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Aligns with target career domain",
@@ -1256,35 +1283,35 @@
         "name": "Internshala",
         "status": "no_results",
         "count": 0,
-        "durationMs": 3432
+        "durationMs": 1231
       },
       {
         "id": "company_careers",
         "name": "Direct Company Career Portals",
         "status": "success",
         "count": 10,
-        "durationMs": 4017
+        "durationMs": 268
       },
       {
         "id": "unstop",
         "name": "Unstop India",
         "status": "success",
         "count": 12,
-        "durationMs": 2791
+        "durationMs": 598
       },
       {
         "id": "wellfound",
         "name": "Wellfound & Tech Startups",
         "status": "success",
         "count": 6,
-        "durationMs": 2727
+        "durationMs": 355
       },
       {
         "id": "aicte",
         "name": "AICTE Internship Portal",
         "status": "success",
         "count": 1,
-        "durationMs": 13
+        "durationMs": 0
       },
       {
         "id": "indeed",
@@ -1332,7 +1359,7 @@
     ]
   },
   "cybersecurity and_all_0": {
-    "timestamp": 1787383551643,
+    "timestamp": 1787384200343,
     "results": [
       {
         "id": "gh-figma-sec",
@@ -1369,8 +1396,8 @@
           "design-tech"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:46.268Z",
-        "matchScore": 83,
+        "discoveredAt": "2026-08-22T07:36:38.930Z",
+        "matchScore": 87,
         "matchReasons": [
           "✓ Python matches profile",
           "✓ React matches profile",
@@ -1378,6 +1405,7 @@
           "✓ Remote opportunity",
           "✓ Student eligible",
           "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React",
           "🧠 AI Learned: High affinity for Cybersecurity",
           "🧠 AI Learned: Favored remote setup"
         ]
@@ -1416,8 +1444,8 @@
           "cybersecurity"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:46.267Z",
-        "matchScore": 81,
+        "discoveredAt": "2026-08-22T07:36:38.930Z",
+        "matchScore": 85,
         "matchReasons": [
           "✓ Ethical Hacking matches profile",
           "✓ Aligns with target career domain",
@@ -1425,99 +1453,8 @@
           "✓ Stipend meets preference",
           "✓ Student eligible",
           "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: High affinity for Linux",
           "🧠 AI Learned: Favored remote setup"
-        ]
-      },
-      {
-        "id": "lever-spotify-data",
-        "title": "Security & Trust Engineering Intern",
-        "company": "Postman API Platform (via Lever)",
-        "description": "Build automated security linters, monitor API vulnerability signatures, and contribute to internal security libraries.",
-        "location": "Bengaluru / Remote",
-        "mode": "remote",
-        "stipend": {
-          "min": 30000,
-          "max": 30000,
-          "currency": "INR",
-          "display": "₹30,000/month"
-        },
-        "duration": "6 Months",
-        "skills": [
-          "Node.js",
-          "Python",
-          "Cybersecurity",
-          "Linux",
-          "Docker"
-        ],
-        "experience": "Students",
-        "eligibility": "Engineering students with API & backend development experience",
-        "deadline": "2026-10-15",
-        "postedDate": "Recent",
-        "source": "Lever ATS",
-        "sourceUrl": "https://jobs.lever.co/postman",
-        "applicationUrl": "https://jobs.lever.co/postman/security-intern",
-        "organizationUrl": "https://postman.com",
-        "tags": [
-          "lever",
-          "api",
-          "security"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T07:25:46.268Z",
-        "matchScore": 77,
-        "matchReasons": [
-          "✓ Node.js matches profile",
-          "✓ Python matches profile",
-          "✓ Remote opportunity",
-          "✓ Stipend meets preference",
-          "✓ Student eligible",
-          "🧠 AI Learned: High affinity for Python",
-          "🧠 AI Learned: High affinity for Cybersecurity",
-          "🧠 AI Learned: Favored remote setup"
-        ]
-      },
-      {
-        "id": "foundit-net-sec",
-        "title": "Network Security Trainee",
-        "company": "Spectra Net Technologies",
-        "description": "Assisting senior engineers with firewall audits, secure routing, and endpoint protection testing.",
-        "location": "Pune, Maharashtra",
-        "mode": "hybrid",
-        "stipend": {
-          "min": 14000,
-          "max": 14000,
-          "currency": "INR",
-          "display": "₹14,000/month"
-        },
-        "duration": "3-6 Months",
-        "skills": [
-          "Network Security",
-          "Linux",
-          "Python",
-          "IAM"
-        ],
-        "experience": "Students / Freshers",
-        "eligibility": "Engineering students",
-        "deadline": "2026-10-12",
-        "postedDate": "3 days ago",
-        "source": "Foundit",
-        "sourceUrl": "https://www.foundit.in/srp/results?query=cybersecurity%20and%20intern",
-        "applicationUrl": "https://www.foundit.in/job/network-security-trainee",
-        "organizationUrl": null,
-        "tags": [
-          "foundit",
-          "network-security"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T07:25:46.268Z",
-        "matchScore": 70,
-        "matchReasons": [
-          "✓ Python matches profile",
-          "✓ IAM matches profile",
-          "✓ hybrid mode preference",
-          "✓ Stipend meets preference",
-          "✓ Student eligible",
-          "🧠 AI Learned: High affinity for Python"
         ]
       },
       {
@@ -1555,61 +1492,114 @@
           "cloud"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:46.268Z",
-        "matchScore": 64,
+        "discoveredAt": "2026-08-22T07:36:38.930Z",
+        "matchScore": 81,
         "matchReasons": [
           "✓ Python matches profile",
           "✓ React matches profile",
           "✓ hybrid mode preference",
           "✓ Stipend meets preference",
           "🧠 AI Learned: High affinity for Cybersecurity",
-          "🧠 AI Learned: High affinity for Python"
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: High affinity for Linux",
+          "🧠 AI Learned: High affinity for Penetration Testing",
+          "🧠 AI Learned: Favored hybrid setup"
         ]
       },
       {
-        "id": "wellfound-2091104",
-        "title": "Vice President, Technology & Digital Strategy",
-        "company": "Shatterproof",
-        "description": "About ShatterproofShatterproof is a national nonprofit working toward a world where addiction never defines or ends a life. Through evidence-based programs, advocacy, and public education, Shatterproof works to transform systems for tomorrow, support families today, and end stigma forever. Learn more at shatterproof.org. Who Succeeds at Shatterproof Shatterproof is in a period of transformative and rapid growth. We are building new systems, reimagining how work gets done, and creating more cross-functional alignment to accelerate our mission. To thrive here, you should be energized by building, not just maintaining, and excited to bring structure, clarity, and innovation to evolving spaces. We're looking for team members who: Build systems and processes from the ground up and improve them continuously as we scale. Take ownership and act with a builder's mindset, bringing forward solutions rather than waiting for direction. Influence and collaborate across teams, shaping work through strong communication and relationship-building. Move quickly, learn fast, and adapt with resilience, especially in a high-growth, high-impact environment. Are mission-driven and motivated to leave their mark on an organization working to reverse the addiction crisis. The RoleReporting to the Chief Financial & Administrative Officer, the Vice President, Technology & Digital Strategy serves as Shatterproof's senior technology executive and leads the organization's technology, digital operations, cybersecurity, data, artificial intelligence, enterprise applications, digital platforms, and technology-enabled products. This leader will create and execute a comprehensive technology vision that advances organizational strategy, enables operational excellence, strengthens security and resilience, improves the employee experience, supports fundraising and advocacy, and drives innovation across mission-focused platforms. This role is ideal for a builder who wants the rare opportunity to shape not only an organization's technology strategy, but also how technology, data, AI, and digital platforms accelerate mission impact at scale. The Team The Vice President leads a multidisciplinary team spanning enterprise technology, digital operations, data, and product management. Current direct reports and functional oversight areas include IT Operations, Digital Operations, enterprise CRM and database capabilities, Treatment Atlas Product Management, and Treatment Atlas Data Management. The role is responsible for developing these capabilities into a cohesive, high-performing technology function that provides exceptional organizational support while advancing Shatterproof's digital, data, and platform strategy. The team supports and manages a broad portfolio that includes enterprise technology and workplace operations, cybersecurity and privacy, Salesforce and enterprise applications, website and fundraising technology, business intelligence and reporting, artificial intelligence initiatives, and the current and future technology architecture supporting Treatment Atlas. In addition to leading the internal team, the Vice President oversees a network of managed service providers, software vendors, implementation partners, and technology consultants, ensuring that internal and external resources are aligned to organizational priorities and positioned to scale with Shatterproof's evolving needs. This includes stewardship of strategic technology platforms and vendor relationships that support operations, fundraising, advocacy, data management, and mission delivery. Key ResponsibilitiesEnterprise Technology Leadership & Strategy Develop and execute a multi-year enterprise technology strategy aligned with organizational priorities. Serve as a trusted advisor to executive leadership on technology investments, risks, innovation opportunities, and emerging trends. Establish technology governance, architecture standards, prioritization practices, and a transparent enterprise roadmap. Evaluate and guide major technology investments, platform strategies, sourcing decisions, and vendor partnerships. Ensure technology decisions support mission impact, operational effectiveness, sustainability, and growth. AI Strategy & Digital Innovation Lead Shatterproof's enterprise AI strategy and roadmap. Establish governance frameworks, risk controls, and responsible-use standards for AI technologies. Identify and prioritize AI use cases across fundraising, operations, impact programs, and administration. Lead tool evaluation, pilots, implementation planning, adoption, training, and change management. Monitor emerging technologies and assess opportunities to create measurable organizational value. IT Operations & Workplace Technology Lead IT and workplace technology operations for a distributed workforce. Oversee managed service providers, help desk operations, devices, Microsoft 365, identity and access, collaboration tools, and general application administration. Ensure timely and secure onboarding, offboarding, access management, and technology provisioning. Maintain service standards, knowledge management, policies, procedures, and documentation. Continuously improve reliability, support quality, and the employee technology experience. Cybersecurity, Privacy & Organizational Resilience Lead enterprise cybersecurity strategy, policies, governance, and training. Oversee risk assessments, incident response, cyber insurance requirements, Keeper governance, backups, disaster recovery, and business continuity planning. Partner with leaders to protect organizational, employee, donor, constituent, and program data. Monitor emerging risks and drive practical, prioritized mitigation plans. Digital Platforms, Website & Fundraising Technology Lead the strategy, governance, performance, accessibility, analytics, and integrations for Shatterproof's website and digital engagement ecosystem. Oversee fundraising and advocacy technologies, including DonorDrive and New Mode, and related digital vendors. Partner with Development, Marketing & Communications, and Public Affairs to strengthen constituent experience, engagement, and platform value. Oversee Google Analytics and related reporting and optimization capabilities. Salesforce & Enterprise Applications Own the enterprise Salesforce roadmap and governance framework. Oversee administration, security, permissions, data quality, integrations, reporting, releases, user support, and adoption. Partner with department leaders to prioritize enhancements, automation, workflow improvements, and reporting needs. Ensure enterprise applications remain aligned with operational and strategic priorities. Data, Analytics & Business Intelligence Establish organization-wide data governance, reporting standards, and stewardship practices. Oversee dashboards, data models, access, refreshes, data quality, and Power BI capabilities. Partner with leaders to improve data-informed decision-making and performance visibility. Build scalable, well-governed analytics and reporting capabilities. Treatment Atlas Platform & Product Leadership Serve as technology executive sponsor for Treatment Atlas in close partnership with Impact leadership. Oversee current processing infrastructure, operational monitoring, troubleshooting, releases, integrations, data flows, and vendor coordination. Lead the reimagined platform product and technical roadmap, delivery oversight, architecture, cloud strategy, security, and implementation partners. Ensure platform reliability, scalability, security, usability, and long-term sustainability. Technology Financial Management & Vendor Strategy Develop and manage the annual technology budget, forecasts, and multi-year investment plans. Oversee invoices, purchasing, contracts, renewals, licensing, and license optimization. Lead major vendor decisions, negotiations, performance management, and strategic relationships. Develop clear business cases and recommendations for significant technology investments. Oversee the purpose, vendor relationship, users, integrations, renewals, support, and roadmap for Just5, and manage the LegitScript relationship, certifications, submissions, renewals, and organizational obligations. Team Leadership & Cross-Functional Partnership Lead, coach, and develop a high-performing, multidisciplinary technology and digital operations team. Create clarity around roles, decision rights, service ownership, priorities, and cross-functional ways of working. Assess future capability, capacity, structure, and sourcing needs. Build a culture grounded in accountability, service, collaboration, innovation, documentation, and continuous improvement. Communicate complex technology issues in accessible, business-oriented language and lead change with transparency. Ideal Experience & Qualifications 12+ years of progressive leadership experience spanning technology, digital operations, enterprise systems, product management, data, cybersecurity, or related disciplines. Experience serving as the senior technology leader for a complex organization and developing enterprise technology strategies and roadmaps. Demonstrated experience leading multidisciplinary teams and building organizational capability. Strong experience with cybersecurity, technology governance, privacy-supporting controls, risk management, and organizational resilience. Experience leading CRM, data, analytics, digital platforms, enterprise applications, and major technology implementations. Experience overseeing technology budgets, contracts, licensing, vendor relationships, and implementation partners. Experience introducing and scaling AI-enabled solutions, governance, adoption, and training. Ability to translate organizational needs into practical technology priorities, investments, and execution plans. Executive presence and strong written and verbal communication, with the ability to engage technical and nontechnical stakeholders. Ability to operate effectively in a mission-driven, distributed, and evolving environment. Bachelor's degree or equivalent relevant experience required; advanced degree or relevant certifications preferred. Deep alignment with Shatterproof's mission and values. CompensationThe salary range for this position is $175,000 to $190,000. Placement within the range is determined by experience, internal equity, and organizational budget. Additional Information Ability and authorization to work in the United States required. Ability to work Eastern Time Zone hours required. Domestic travel may be required based on organizational needs. Shatterproof is an equal opportunity employer and is committed to fostering an inclusive workplace.",
-        "location": "USA",
-        "mode": "unknown",
+        "id": "lever-spotify-data",
+        "title": "Security & Trust Engineering Intern",
+        "company": "Postman API Platform (via Lever)",
+        "description": "Build automated security linters, monitor API vulnerability signatures, and contribute to internal security libraries.",
+        "location": "Bengaluru / Remote",
+        "mode": "remote",
         "stipend": {
-          "min": 175000,
-          "max": 190000,
+          "min": 30000,
+          "max": 30000,
           "currency": "INR",
-          "display": "₹1,75,000 - ₹1,90,000/month"
+          "display": "₹30,000/month"
+        },
+        "duration": "6 Months",
+        "skills": [
+          "Node.js",
+          "Python",
+          "Cybersecurity",
+          "Linux",
+          "Docker"
+        ],
+        "experience": "Students",
+        "eligibility": "Engineering students with API & backend development experience",
+        "deadline": "2026-10-15",
+        "postedDate": "Recent",
+        "source": "Lever ATS",
+        "sourceUrl": "https://jobs.lever.co/postman",
+        "applicationUrl": "https://jobs.lever.co/postman/security-intern",
+        "organizationUrl": "https://postman.com",
+        "tags": [
+          "lever",
+          "api",
+          "security"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T07:36:38.930Z",
+        "matchScore": 81,
+        "matchReasons": [
+          "✓ Node.js matches profile",
+          "✓ Python matches profile",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: High affinity for Linux",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "foundit-net-sec",
+        "title": "Network Security Trainee",
+        "company": "Spectra Net Technologies",
+        "description": "Assisting senior engineers with firewall audits, secure routing, and endpoint protection testing.",
+        "location": "Pune, Maharashtra",
+        "mode": "hybrid",
+        "stipend": {
+          "min": 14000,
+          "max": 14000,
+          "currency": "INR",
+          "display": "₹14,000/month"
         },
         "duration": "3-6 Months",
         "skills": [
-          "business intelligence",
-          "cloud",
-          "salesforce",
-          "security",
-          "AI/ML",
-          "automation",
-          "product management",
-          "documentation"
+          "Network Security",
+          "Linux",
+          "Python",
+          "IAM"
         ],
-        "experience": "Students / Early Career",
-        "eligibility": "Open to software & security enthusiasts",
-        "deadline": "2026-10-30",
-        "postedDate": "Live Startup Feed",
-        "source": "Wellfound & Tech Startups",
-        "sourceUrl": "https://wellfound.com/location/India",
-        "applicationUrl": "https://remotive.com/remote-jobs/all-others/vice-president-technology-digital-strategy-2091104",
-        "organizationUrl": "https://remotive.com/remote-jobs/all-others/vice-president-technology-digital-strategy-2091104",
+        "experience": "Students / Freshers",
+        "eligibility": "Engineering students",
+        "deadline": "2026-10-12",
+        "postedDate": "3 days ago",
+        "source": "Foundit",
+        "sourceUrl": "https://www.foundit.in/srp/results?query=cybersecurity%20and%20intern",
+        "applicationUrl": "https://www.foundit.in/job/network-security-trainee",
+        "organizationUrl": null,
         "tags": [
-          "wellfound",
-          "startup",
-          "live-feed"
+          "foundit",
+          "network-security"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:51.136Z",
-        "matchScore": 45,
+        "discoveredAt": "2026-08-22T07:36:38.930Z",
+        "matchScore": 79,
         "matchReasons": [
-          "✓ Aligns with target career domain",
+          "✓ Python matches profile",
+          "✓ IAM matches profile",
+          "✓ hybrid mode preference",
           "✓ Stipend meets preference",
-          "✓ Student eligible"
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Linux",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: Favored hybrid setup"
         ]
       },
       {
@@ -1646,12 +1636,13 @@
           "analyst"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:46.267Z",
-        "matchScore": 45,
+        "discoveredAt": "2026-08-22T07:36:38.930Z",
+        "matchScore": 49,
         "matchReasons": [
           "✓ Network Traffic Analysis matches profile",
           "✓ Stipend meets preference",
           "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: High affinity for Linux",
           "🧠 AI Learned: High affinity for Network Traffic Analysis"
         ]
       },
@@ -1693,12 +1684,13 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:49.258Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:36:39.534Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -1739,12 +1731,13 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:49.258Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:36:39.534Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -1785,12 +1778,13 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:49.259Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:36:39.535Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -1831,12 +1825,13 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:49.259Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:36:39.535Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -1877,12 +1872,13 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:49.259Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:36:39.535Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -1923,12 +1919,13 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:49.259Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:36:39.536Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -1969,13 +1966,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:51.111Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:36:39.736Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -2016,13 +2014,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:51.111Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:36:39.737Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -2063,13 +2062,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:51.111Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:36:39.737Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -2110,13 +2110,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:51.111Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:36:39.737Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -2157,13 +2158,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:51.112Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:36:39.737Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -2204,13 +2206,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:51.112Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:36:39.737Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -2251,13 +2254,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:51.112Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:36:39.737Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -2298,13 +2302,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:51.112Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:36:39.738Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -2345,13 +2350,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:51.112Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:36:39.738Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -2392,13 +2398,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:51.113Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:36:39.738Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -2439,13 +2446,14 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:51.113Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:36:39.738Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -2486,13 +2494,60 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:51.113Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T07:36:39.738Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity"
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
+        ]
+      },
+      {
+        "id": "wellfound-2091104",
+        "title": "Vice President, Technology & Digital Strategy",
+        "company": "Shatterproof",
+        "description": "About ShatterproofShatterproof is a national nonprofit working toward a world where addiction never defines or ends a life. Through evidence-based programs, advocacy, and public education, Shatterproof works to transform systems for tomorrow, support families today, and end stigma forever. Learn more at shatterproof.org. Who Succeeds at Shatterproof Shatterproof is in a period of transformative and rapid growth. We are building new systems, reimagining how work gets done, and creating more cross-functional alignment to accelerate our mission. To thrive here, you should be energized by building, not just maintaining, and excited to bring structure, clarity, and innovation to evolving spaces. We're looking for team members who: Build systems and processes from the ground up and improve them continuously as we scale. Take ownership and act with a builder's mindset, bringing forward solutions rather than waiting for direction. Influence and collaborate across teams, shaping work through strong communication and relationship-building. Move quickly, learn fast, and adapt with resilience, especially in a high-growth, high-impact environment. Are mission-driven and motivated to leave their mark on an organization working to reverse the addiction crisis. The RoleReporting to the Chief Financial & Administrative Officer, the Vice President, Technology & Digital Strategy serves as Shatterproof's senior technology executive and leads the organization's technology, digital operations, cybersecurity, data, artificial intelligence, enterprise applications, digital platforms, and technology-enabled products. This leader will create and execute a comprehensive technology vision that advances organizational strategy, enables operational excellence, strengthens security and resilience, improves the employee experience, supports fundraising and advocacy, and drives innovation across mission-focused platforms. This role is ideal for a builder who wants the rare opportunity to shape not only an organization's technology strategy, but also how technology, data, AI, and digital platforms accelerate mission impact at scale. The Team The Vice President leads a multidisciplinary team spanning enterprise technology, digital operations, data, and product management. Current direct reports and functional oversight areas include IT Operations, Digital Operations, enterprise CRM and database capabilities, Treatment Atlas Product Management, and Treatment Atlas Data Management. The role is responsible for developing these capabilities into a cohesive, high-performing technology function that provides exceptional organizational support while advancing Shatterproof's digital, data, and platform strategy. The team supports and manages a broad portfolio that includes enterprise technology and workplace operations, cybersecurity and privacy, Salesforce and enterprise applications, website and fundraising technology, business intelligence and reporting, artificial intelligence initiatives, and the current and future technology architecture supporting Treatment Atlas. In addition to leading the internal team, the Vice President oversees a network of managed service providers, software vendors, implementation partners, and technology consultants, ensuring that internal and external resources are aligned to organizational priorities and positioned to scale with Shatterproof's evolving needs. This includes stewardship of strategic technology platforms and vendor relationships that support operations, fundraising, advocacy, data management, and mission delivery. Key ResponsibilitiesEnterprise Technology Leadership & Strategy Develop and execute a multi-year enterprise technology strategy aligned with organizational priorities. Serve as a trusted advisor to executive leadership on technology investments, risks, innovation opportunities, and emerging trends. Establish technology governance, architecture standards, prioritization practices, and a transparent enterprise roadmap. Evaluate and guide major technology investments, platform strategies, sourcing decisions, and vendor partnerships. Ensure technology decisions support mission impact, operational effectiveness, sustainability, and growth. AI Strategy & Digital Innovation Lead Shatterproof's enterprise AI strategy and roadmap. Establish governance frameworks, risk controls, and responsible-use standards for AI technologies. Identify and prioritize AI use cases across fundraising, operations, impact programs, and administration. Lead tool evaluation, pilots, implementation planning, adoption, training, and change management. Monitor emerging technologies and assess opportunities to create measurable organizational value. IT Operations & Workplace Technology Lead IT and workplace technology operations for a distributed workforce. Oversee managed service providers, help desk operations, devices, Microsoft 365, identity and access, collaboration tools, and general application administration. Ensure timely and secure onboarding, offboarding, access management, and technology provisioning. Maintain service standards, knowledge management, policies, procedures, and documentation. Continuously improve reliability, support quality, and the employee technology experience. Cybersecurity, Privacy & Organizational Resilience Lead enterprise cybersecurity strategy, policies, governance, and training. Oversee risk assessments, incident response, cyber insurance requirements, Keeper governance, backups, disaster recovery, and business continuity planning. Partner with leaders to protect organizational, employee, donor, constituent, and program data. Monitor emerging risks and drive practical, prioritized mitigation plans. Digital Platforms, Website & Fundraising Technology Lead the strategy, governance, performance, accessibility, analytics, and integrations for Shatterproof's website and digital engagement ecosystem. Oversee fundraising and advocacy technologies, including DonorDrive and New Mode, and related digital vendors. Partner with Development, Marketing & Communications, and Public Affairs to strengthen constituent experience, engagement, and platform value. Oversee Google Analytics and related reporting and optimization capabilities. Salesforce & Enterprise Applications Own the enterprise Salesforce roadmap and governance framework. Oversee administration, security, permissions, data quality, integrations, reporting, releases, user support, and adoption. Partner with department leaders to prioritize enhancements, automation, workflow improvements, and reporting needs. Ensure enterprise applications remain aligned with operational and strategic priorities. Data, Analytics & Business Intelligence Establish organization-wide data governance, reporting standards, and stewardship practices. Oversee dashboards, data models, access, refreshes, data quality, and Power BI capabilities. Partner with leaders to improve data-informed decision-making and performance visibility. Build scalable, well-governed analytics and reporting capabilities. Treatment Atlas Platform & Product Leadership Serve as technology executive sponsor for Treatment Atlas in close partnership with Impact leadership. Oversee current processing infrastructure, operational monitoring, troubleshooting, releases, integrations, data flows, and vendor coordination. Lead the reimagined platform product and technical roadmap, delivery oversight, architecture, cloud strategy, security, and implementation partners. Ensure platform reliability, scalability, security, usability, and long-term sustainability. Technology Financial Management & Vendor Strategy Develop and manage the annual technology budget, forecasts, and multi-year investment plans. Oversee invoices, purchasing, contracts, renewals, licensing, and license optimization. Lead major vendor decisions, negotiations, performance management, and strategic relationships. Develop clear business cases and recommendations for significant technology investments. Oversee the purpose, vendor relationship, users, integrations, renewals, support, and roadmap for Just5, and manage the LegitScript relationship, certifications, submissions, renewals, and organizational obligations. Team Leadership & Cross-Functional Partnership Lead, coach, and develop a high-performing, multidisciplinary technology and digital operations team. Create clarity around roles, decision rights, service ownership, priorities, and cross-functional ways of working. Assess future capability, capacity, structure, and sourcing needs. Build a culture grounded in accountability, service, collaboration, innovation, documentation, and continuous improvement. Communicate complex technology issues in accessible, business-oriented language and lead change with transparency. Ideal Experience & Qualifications 12+ years of progressive leadership experience spanning technology, digital operations, enterprise systems, product management, data, cybersecurity, or related disciplines. Experience serving as the senior technology leader for a complex organization and developing enterprise technology strategies and roadmaps. Demonstrated experience leading multidisciplinary teams and building organizational capability. Strong experience with cybersecurity, technology governance, privacy-supporting controls, risk management, and organizational resilience. Experience leading CRM, data, analytics, digital platforms, enterprise applications, and major technology implementations. Experience overseeing technology budgets, contracts, licensing, vendor relationships, and implementation partners. Experience introducing and scaling AI-enabled solutions, governance, adoption, and training. Ability to translate organizational needs into practical technology priorities, investments, and execution plans. Executive presence and strong written and verbal communication, with the ability to engage technical and nontechnical stakeholders. Ability to operate effectively in a mission-driven, distributed, and evolving environment. Bachelor's degree or equivalent relevant experience required; advanced degree or relevant certifications preferred. Deep alignment with Shatterproof's mission and values. CompensationThe salary range for this position is $175,000 to $190,000. Placement within the range is determined by experience, internal equity, and organizational budget. Additional Information Ability and authorization to work in the United States required. Ability to work Eastern Time Zone hours required. Domestic travel may be required based on organizational needs. Shatterproof is an equal opportunity employer and is committed to fostering an inclusive workplace.",
+        "location": "USA",
+        "mode": "unknown",
+        "stipend": {
+          "min": 175000,
+          "max": 190000,
+          "currency": "INR",
+          "display": "₹1,75,000 - ₹1,90,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "business intelligence",
+          "cloud",
+          "salesforce",
+          "security",
+          "AI/ML",
+          "automation",
+          "product management",
+          "documentation"
+        ],
+        "experience": "Students / Early Career",
+        "eligibility": "Open to software & security enthusiasts",
+        "deadline": "2026-10-30",
+        "postedDate": "Live Startup Feed",
+        "source": "Wellfound & Tech Startups",
+        "sourceUrl": "https://wellfound.com/location/India",
+        "applicationUrl": "https://remotive.com/remote-jobs/all-others/vice-president-technology-digital-strategy-2091104",
+        "organizationUrl": "https://remotive.com/remote-jobs/all-others/vice-president-technology-digital-strategy-2091104",
+        "tags": [
+          "wellfound",
+          "startup",
+          "live-feed"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T07:36:39.385Z",
+        "matchScore": 45,
+        "matchReasons": [
+          "✓ Aligns with target career domain",
+          "✓ Stipend meets preference",
+          "✓ Student eligible"
         ]
       },
       {
@@ -2533,7 +2588,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:51.136Z",
+        "discoveredAt": "2026-08-22T07:36:39.385Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Aligns with target career domain",
@@ -2578,7 +2633,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:51.137Z",
+        "discoveredAt": "2026-08-22T07:36:39.386Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Matches student profile baseline"
@@ -2621,7 +2676,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:51.137Z",
+        "discoveredAt": "2026-08-22T07:36:39.386Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Matches student profile baseline"
@@ -2665,7 +2720,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:51.139Z",
+        "discoveredAt": "2026-08-22T07:36:39.387Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Stipend meets preference"
@@ -2709,7 +2764,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:25:51.139Z",
+        "discoveredAt": "2026-08-22T07:36:39.388Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Aligns with target career domain",
@@ -2723,28 +2778,28 @@
         "name": "Internshala",
         "status": "no_results",
         "count": 0,
-        "durationMs": 5378
+        "durationMs": 1413
       },
       {
         "id": "company_careers",
         "name": "Direct Company Career Portals",
         "status": "success",
         "count": 10,
-        "durationMs": 2997
+        "durationMs": 607
       },
       {
         "id": "unstop",
         "name": "Unstop India",
         "status": "success",
         "count": 12,
-        "durationMs": 4849
+        "durationMs": 809
       },
       {
         "id": "wellfound",
         "name": "Wellfound & Tech Startups",
         "status": "success",
         "count": 6,
-        "durationMs": 4873
+        "durationMs": 458
       },
       {
         "id": "aicte",
@@ -2765,7 +2820,7 @@
         "name": "Foundit (Monster India)",
         "status": "success",
         "count": 1,
-        "durationMs": 1
+        "durationMs": 0
       },
       {
         "id": "naukri",
