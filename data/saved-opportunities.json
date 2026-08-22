@@ -33,5 +33,46 @@
       ]
     },
     "matchScore": 88
+  },
+  {
+    "id": "naukri-appsec-intern",
+    "title": "Application Security Testing Intern",
+    "organization": "Zscaler Cloud Security",
+    "type": "internship",
+    "description": "Participate in DAST/SAST code reviews, API security vulnerability scanning, and vulnerability validation.",
+    "location": "Bengaluru (Hybrid)",
+    "mode": "hybrid",
+    "stipend": 24000,
+    "currency": "INR",
+    "skills": [
+      "Cybersecurity",
+      "Python",
+      "React",
+      "Linux",
+      "Penetration Testing"
+    ],
+    "eligibility": "B.Tech/M.Tech Computer Science / Cybersecurity",
+    "deadline": "2026-10-01",
+    "applicationUrl": "https://www.naukri.com/job-listings-appsec-intern",
+    "source": "Naukri",
+    "sourceUrl": "https://www.naukri.com/cybersecurity%20and-intern-jobs-in-india",
+    "extractedAt": "2026-08-22T07:25:46.268Z",
+    "tags": [
+      "naukri",
+      "appsec",
+      "cloud"
+    ],
+    "rawData": {
+      "matchReasons": [
+        "✓ Python matches profile",
+        "✓ React matches profile",
+        "✓ hybrid mode preference",
+        "✓ Stipend meets preference",
+        "🧠 AI Learned: High affinity for Cybersecurity",
+        "🧠 AI Learned: High affinity for Python"
+      ],
+      "stipendDisplay": "₹24,000/month"
+    },
+    "matchScore": 64
   }
 ]

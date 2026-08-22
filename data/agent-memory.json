@@ -1,0 +1,28 @@
+{
+  "skillWeights": {
+    "python": 5,
+    "cybersecurity": 6,
+    "linux": 4,
+    "react": 4,
+    "network traffic analysis": 3,
+    "penetration testing": 3
+  },
+  "preferredModes": {
+    "remote": 5,
+    "hybrid": 4
+  },
+  "preferredLocations": {
+    "india": 3,
+    "remote": 5
+  },
+  "averageTargetStipend": 21000,
+  "totalApplications": 1,
+  "totalSaved": 1,
+  "totalDismissed": 0,
+  "insights": [
+    "Learned Interest: Frequently scouts CYBERSECURITY, PYTHON, LINUX opportunities.",
+    "Preferred Setup: REMOTE roles receive an autonomous +15% match boost.",
+    "Calibrated Target Stipend: Approx ₹21,000/month based on your activity."
+  ],
+  "lastUpdated": "2026-08-22T07:25:54.465Z"
+}
