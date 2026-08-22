@@ -126,7 +126,7 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
     return this.getActivePage().title();
   }
 
-  async fillField(selector: string, value: string): Promise<BrowserActionResult> {
+    async fillField(selector: string, value: string): Promise<BrowserActionResult> {
     this.ensureReady();
     console.log(`[PlaywrightBrowser] Filling field ${selector} with "${value.slice(0, 35)}..."`);
 
@@ -134,6 +134,21 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
       const page = this.getActivePage();
       const el = page.locator(selector).first();
       await el.waitFor({ state: "attached", timeout: 4000 });
+
+      // Check if it's a checkbox or radio button
+      const inputType = await el.getAttribute("type").catch(() => "");
+      const tagName = await page.evaluate((sel) => {
+        const target = document.querySelector(sel);
+        return target ? target.tagName.toLowerCase() : "";
+      }, selector);
+
+      if (inputType === "checkbox" || inputType === "radio") {
+        await el.check({ timeout: 4000 }).catch(() => el.click());
+        return { success: true };
+      } else if (tagName === "select") {
+        await el.selectOption({ label: value }).catch(() => el.selectOption({ value }));
+        return { success: true };
+      }
 
       // Fast fill and dispatch change events for React/Angular/Vue
       await el.fill(value, { timeout: 4000 });
@@ -147,7 +162,11 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
         await this.getActivePage().evaluate(({ sel, val }) => {
           const target = document.querySelector(sel) as HTMLInputElement | HTMLTextAreaElement;
           if (target) {
-            target.value = val;
+            if (target.type === "checkbox" || target.type === "radio") {
+              (target as HTMLInputElement).checked = true;
+            } else {
+              target.value = val;
+            }
             target.dispatchEvent(new Event("input", { bubbles: true }));
             target.dispatchEvent(new Event("change", { bubbles: true }));
             target.dispatchEvent(new Event("blur", { bubbles: true }));

@@ -67,12 +67,13 @@ export const formDetectionScript = `
       // Skip submit, reset, button
       if (type === 'submit' || type === 'button' || type === 'reset') return;
 
-      // Filter out global navbar/header search bars
+            // Filter out global navbar/header search bars and page search filter checkboxes
       const placeholder = (el.getAttribute('placeholder') || '').toLowerCase();
       const name = (el.getAttribute('name') || '').toLowerCase();
       const id = (el.id || '').toLowerCase();
       const role = (el.getAttribute('role') || '').toLowerCase();
-      const inHeaderOrNav = !!el.closest('header, nav, .navbar, .global-header, .qsb, .search-bar, [role="search"]');
+      const rawText = (el.parentElement ? el.parentElement.innerText : '').toLowerCase();
+      const inHeaderOrNav = !!el.closest('header, nav, .navbar, .global-header, .qsb, .search-bar, [role="search"], .filters-bar, .search-filters');
 
       if (
         role === 'searchbox' ||
@@ -81,6 +82,11 @@ export const formDetectionScript = `
         placeholder.includes('search by skills') ||
         placeholder.includes('enter skills / designations') ||
         placeholder.includes('search candidate') ||
+        rawText.includes('hide jobs') ||
+        rawText.includes('job alert') ||
+        rawText.includes('email me jobs') ||
+        rawText.includes('save search') ||
+        rawText.includes('apply on the company') ||
         id.includes('search') ||
         id.includes('qsb') ||
         name.includes('search')
