@@ -242,6 +242,9 @@ export function App() {
           <button className={`nav-link ${page === "My Profile" ? "active" : ""}`} onClick={() => setPage("My Profile")}>
             <User size={18} /> My Profile
           </button>
+          <button className={`nav-link ${page === "Demo Mode" ? "active" : ""}`} onClick={() => setPage("Demo Mode")} style={{ background: page === "Demo Mode" ? "#1e3b2a" : "rgba(217, 249, 157, 0.08)", border: "1px dashed #4ade80", color: "#d9f99d", marginTop: 12 }}>
+            <Play size={18} color="#4ade80" /> 🎯 Demo Showcase
+          </button>
         </nav>
 
         <div className="privacy">
@@ -277,7 +280,14 @@ export function App() {
             <p className="eyebrow">{browserMode === "playwright" ? "PLAYWRIGHT REAL BROWSER" : "MOCK SIMULATOR"}</p>
             <h1>{page}</h1>
           </div>
-          <div className="top-actions">
+          <div className="top-actions" style={{ display: "flex", alignItems: "center", gap: 12 }}>
+            <button
+              className="primary-button"
+              onClick={() => setPage("Demo Mode")}
+              style={{ background: "#166534", color: "#dcfce7", display: "flex", alignItems: "center", gap: 6, padding: "8px 14px", fontSize: 13, border: "1px solid #22c55e" }}
+            >
+              <Sparkles size={14} /> 🎯 Judge Demo Mode
+            </button>
             <div className="avatar">{profile.name[0]}</div>
           </div>
         </header>
@@ -361,6 +371,14 @@ export function App() {
 
         {page === "My Profile" && (
           <ProfileView profile={profile} onSave={setProfile} />
+        )}
+
+        {page === "Demo Mode" && (
+          <DemoView
+            onLaunchDemo={(opp) => {
+              handleApply(opp, opp.applicationUrl);
+            }}
+          />
         )}
       </main>
     </div>
@@ -1127,3 +1145,186 @@ function Empty({ title, text }: { title: string; text: string }) {
 }
 
 export default App;
+
+
+const DEMO_INTERNSHIPS: Opportunity[] = [
+  {
+    id: "demo-cyber-analyst",
+    title: "Cybersecurity Analyst Intern",
+    organization: "SecureStack (Guaranteed Demo Portal)",
+    type: "internship",
+    description: "Support vulnerability assessments, monitor SIEM telemetry, investigate threat vectors, and execute ethical hacking drills.",
+    location: "India (Remote)",
+    mode: "remote",
+    stipend: 18000,
+    currency: "INR",
+    skills: ["Python", "Network Security", "Linux", "IAM", "Ethical Hacking"],
+    eligibility: "B.Tech Computer Science / Cybersecurity Students",
+    deadline: "2026-09-30",
+    applicationUrl: "http://localhost:3000/mock-application/cybersecurity-intern",
+    source: "🎯 Guaranteed Local Demo Portal",
+    sourceUrl: "http://localhost:3000/mock-application/cybersecurity-intern",
+    extractedAt: new Date().toISOString(),
+    tags: ["demo", "cybersecurity", "guaranteed-pass"],
+    matchScore: 98,
+    rawData: {
+      matchReasons: [
+        "✓ 100% Guaranteed Offline Demo",
+        "✓ Real Playwright Chromium Automation",
+        "✓ Real PDF Resume Attachment",
+        "✓ Verified Reference ID Confirmation"
+      ],
+      stipendDisplay: "₹18,000 /month"
+    }
+  },
+  {
+    id: "demo-ai-security",
+    title: "AI Security Research Intern",
+    organization: "ModelGuard Labs (Demo Role)",
+    type: "internship",
+    description: "Evaluate LLM prompt injection defenses, conduct red-teaming scans, and build automated security benchmarks.",
+    location: "Bengaluru (Hybrid)",
+    mode: "hybrid",
+    stipend: 22000,
+    currency: "INR",
+    skills: ["Python", "AI/ML", "LLM Security", "React", "Node.js"],
+    eligibility: "Engineering students with Python & AI knowledge",
+    deadline: "2026-10-15",
+    applicationUrl: "http://localhost:3000/mock-application/cybersecurity-intern",
+    source: "🎯 Guaranteed Local Demo Portal",
+    sourceUrl: "http://localhost:3000",
+    extractedAt: new Date().toISOString(),
+    tags: ["demo", "ai-security"],
+    matchScore: 94,
+    rawData: {
+      matchReasons: [
+        "✓ Tests AI Answer Generation",
+        "✓ Profile Matching Verified",
+        "✓ Real Browser DOM Filling"
+      ],
+      stipendDisplay: "₹22,000 /month"
+    }
+  },
+  {
+    id: "demo-soc-analyst",
+    title: "SOC Threat Intelligence Intern",
+    organization: "BlueTeam India (Demo Role)",
+    type: "internship",
+    description: "Analyze network traffic captures, investigate phishing incident alerts, and document defensive remediation SOPs.",
+    location: "Pune / Remote",
+    mode: "remote",
+    stipend: 16000,
+    currency: "INR",
+    skills: ["Network Traffic Analysis", "Linux", "Incident Response", "Python"],
+    eligibility: "Students interested in defensive cybersecurity",
+    deadline: "2026-10-20",
+    applicationUrl: "http://localhost:3000/mock-application/cybersecurity-intern",
+    source: "🎯 Guaranteed Local Demo Portal",
+    sourceUrl: "http://localhost:3000",
+    extractedAt: new Date().toISOString(),
+    tags: ["demo", "soc"],
+    matchScore: 91,
+    rawData: {
+      matchReasons: [
+        "✓ Network Analysis Match",
+        "✓ Instant Chromium Launch",
+        "✓ Human-in-the-Loop Cockpit"
+      ],
+      stipendDisplay: "₹16,000 /month"
+    }
+  },
+  {
+    id: "demo-fullstack-ai",
+    title: "Full Stack AI Developer Intern",
+    organization: "CampusFlow Labs (Demo Role)",
+    type: "internship",
+    description: "Build autonomous student workflow tools using React, TypeScript, Node.js, and browser automation SDKs.",
+    location: "India (Remote)",
+    mode: "remote",
+    stipend: 20000,
+    currency: "INR",
+    skills: ["React", "TypeScript", "Node.js", "Python"],
+    eligibility: "Students with hands-on web development projects",
+    deadline: "2026-11-01",
+    applicationUrl: "http://localhost:3000/mock-application/cybersecurity-intern",
+    source: "🎯 Guaranteed Local Demo Portal",
+    sourceUrl: "http://localhost:3000",
+    extractedAt: new Date().toISOString(),
+    tags: ["demo", "fullstack"],
+    matchScore: 89,
+    rawData: {
+      matchReasons: [
+        "✓ Web Stack Match",
+        "✓ Local Form Testing",
+        "✓ Verified Submission"
+      ],
+      stipendDisplay: "₹20,000 /month"
+    }
+  }
+];
+
+function DemoView({ onLaunchDemo }: { onLaunchDemo: (opp: Opportunity) => void }) {
+  return (
+    <section>
+      {/* Demo Top Banner */}
+      <div style={{ background: "linear-gradient(135deg, #142118 0%, #1e3b2a 100%)", color: "#f8fbf3", padding: "26px 30px", borderRadius: 16, marginBottom: 28, border: "1px solid #3d5a49" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
+          <span style={{ background: "#22c55e", color: "#142118", padding: "4px 10px", borderRadius: 20, fontSize: 12, fontWeight: 800, letterSpacing: "0.05em" }}>
+            🎯 100% GUARANTEED JUDGE DEMO MODE
+          </span>
+          <span style={{ fontSize: 13, color: "#a8baa9" }}>Isolated Safe Sandbox</span>
+        </div>
+        <h2 style={{ margin: "6px 0 10px", fontSize: 24, color: "#d9f99d" }}>
+          Live Browser Agent Demonstration
+        </h2>
+        <p style={{ margin: 0, fontSize: 14, color: "#c3d1c3", lineHeight: 1.6, maxWidth: 840 }}>
+          This dedicated showcase environment demonstrates Scoutly's end-to-end autonomous pipeline without depending on third-party site rate limits or CAPTCHAs.
+          Click <strong>"Launch Demo in Real Chromium"</strong> to watch Scoutly open real Chromium, detect all 9 form fields, attach Yash's resume PDF, fill the form, synthesize AI answers, and complete verified submission.
+        </p>
+      </div>
+
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))", gap: 20 }}>
+        {DEMO_INTERNSHIPS.map((o) => (
+          <article className="opportunity-card" key={o.id} style={{ background: "white", padding: 26, borderRadius: 14, border: "2px solid #c7e5bb", display: "flex", flexDirection: "column", gap: 12 }}>
+            <div className="card-top" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <span className="pill" style={{ background: "#dcfce7", color: "#166534", fontSize: 11, fontWeight: 700 }}>
+                {o.source}
+              </span>
+              <strong style={{ color: "#166534", fontSize: 17 }}>{o.matchScore}% Match</strong>
+            </div>
+
+            <h3 style={{ margin: 0, fontSize: 19 }}>{o.title}</h3>
+            <p className="organization" style={{ margin: 0, color: "#4b6352", fontWeight: 700 }}>{o.organization}</p>
+            <p style={{ margin: 0, fontSize: 13, color: "#4f5e53" }}>
+              📍 {o.location} · 💰 {(o.rawData as any)?.stipendDisplay}
+            </p>
+
+            <p style={{ margin: 0, fontSize: 13, color: "#68806d", lineHeight: 1.5 }}>
+              {o.description}
+            </p>
+
+            <div className="chips" style={{ justifyContent: "flex-start" }}>
+              {o.skills.map((s) => <span key={s} style={{ background: "#f0f6ee", color: "#24412e" }}>{s}</span>)}
+            </div>
+
+            <div style={{ background: "#f8faf7", padding: "10px 14px", borderRadius: 8, marginTop: 4 }}>
+              {o.rawData?.matchReasons?.map((r: string) => (
+                <div key={r} style={{ fontSize: 12, color: "#1e3b2a", fontWeight: 600, margin: "2px 0" }}>{r}</div>
+              ))}
+            </div>
+
+            <div style={{ marginTop: "auto", paddingTop: 16 }}>
+              <button
+                className="primary-button"
+                style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, padding: "13px 18px", fontSize: 14, background: "#15803d" }}
+                onClick={() => onLaunchDemo(o)}
+              >
+                <Play size={16} /> Launch Demo in Real Chromium
+              </button>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
