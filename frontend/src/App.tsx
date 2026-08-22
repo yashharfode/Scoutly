@@ -18,7 +18,7 @@ import {
   Loader2,
   AlertTriangle,
   Play,
-  SlidersHorizontal,
+  Clock, Building2, ShieldCheck, Calendar, MapPin, DollarSign, Folder, SlidersHorizontal,
   X
 } from "lucide-react";
 import type {
@@ -959,21 +959,322 @@ function SavedView({
   onRemove: (id: string) => Promise<void>;
   onApply: (o: Opportunity) => void;
 }) {
-  if (!saved.length) return <Empty title="No saved internships." text="Save opportunities from Matches to review and apply later." />;
+  if (!saved.length) {
+    return (
+      <section>
+        <div className="empty-state" style={{ background: "white", borderRadius: 16, padding: "60px 24px", border: "1px dashed #cbd5ca", textAlign: "center" }}>
+          <div style={{ width: 56, height: 56, background: "#f0fdf4", borderRadius: "50%", display: "grid", placeItems: "center", margin: "0 auto 16px", color: "#166534" }}>
+            <Bookmark size={28} />
+          </div>
+          <h2 style={{ fontSize: 24, margin: "0 0 8px", color: "#142118" }}>No saved opportunities yet</h2>
+          <p style={{ color: "#68806d", maxWidth: 420, margin: "0 auto 20px", fontSize: 14 }}>
+            Explore the Matches feed to bookmark promising internships and apply with Scoutly's autonomous browser agent.
+          </p>
+        </div>
+      </section>
+    );
+  }
+
+  // Calculate banner stats
+  const uniqueCompanies = new Set(saved.map((o) => o.organization)).size;
+  const avgMatch = Math.round(saved.reduce((acc, o) => acc + (o.matchScore || 90), 0) / saved.length);
 
   return (
     <section>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: 20 }}>
-        {saved.map((o) => (
-          <article className="opportunity-card" key={o.id} style={{ background: "white", padding: 24, borderRadius: 14, border: "1px solid #e3e6e0" }}>
-            <h3>{o.title}</h3>
-            <p style={{ color: "#68806d", fontWeight: 600 }}>{o.organization}</p>
-            <div style={{ display: "flex", gap: 10, marginTop: 16 }}>
-              <button className="secondary-button" onClick={() => onRemove(o.id)}>Remove</button>
-              <button className="primary-button" onClick={() => onApply(o)}>Apply with Scoutly</button>
+      {/* 1. Top Stats Banner matching reference UI */}
+      <div style={{ background: "white", border: "1px solid #e3e6e0", borderRadius: 16, padding: "26px 32px", marginBottom: 28, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr)) auto", gap: 24, alignItems: "center", boxShadow: "0 1px 3px rgba(0,0,0,0.02)" }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 14 }}>
+          <div style={{ background: "#f0fdf4", color: "#166534", padding: 10, borderRadius: 10 }}>
+            <Bookmark size={20} />
+          </div>
+          <div>
+            <div style={{ fontSize: 24, fontWeight: 800, color: "#142118", lineHeight: 1 }}>{saved.length}</div>
+            <strong style={{ fontSize: 13, color: "#1e3b2a", display: "block", marginTop: 4 }}>Saved Opportunities</strong>
+            <span style={{ fontSize: 12, color: "#7a8a7c" }}>Ready when you are</span>
+          </div>
+        </div>
+
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 14 }}>
+          <div style={{ background: "#f0fdf4", color: "#166534", padding: 10, borderRadius: 10 }}>
+            <Clock size={20} />
+          </div>
+          <div>
+            <div style={{ fontSize: 24, fontWeight: 800, color: "#142118", lineHeight: 1 }}>{saved.length}</div>
+            <strong style={{ fontSize: 13, color: "#1e3b2a", display: "block", marginTop: 4 }}>Ready to Apply</strong>
+            <span style={{ fontSize: 12, color: "#7a8a7c" }}>Easy apply with Scoutly</span>
+          </div>
+        </div>
+
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 14 }}>
+          <div style={{ background: "#f0fdf4", color: "#166534", padding: 10, borderRadius: 10 }}>
+            <Building2 size={20} />
+          </div>
+          <div>
+            <div style={{ fontSize: 24, fontWeight: 800, color: "#142118", lineHeight: 1 }}>{uniqueCompanies}</div>
+            <strong style={{ fontSize: 13, color: "#1e3b2a", display: "block", marginTop: 4 }}>Unique Companies</strong>
+            <span style={{ fontSize: 12, color: "#7a8a7c" }}>Across your selections</span>
+          </div>
+        </div>
+
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 14 }}>
+          <div style={{ background: "#f0fdf4", color: "#166534", padding: 10, borderRadius: 10 }}>
+            <Sparkles size={20} />
+          </div>
+          <div>
+            <div style={{ fontSize: 24, fontWeight: 800, color: "#142118", lineHeight: 1 }}>{avgMatch}%</div>
+            <strong style={{ fontSize: 13, color: "#1e3b2a", display: "block", marginTop: 4 }}>Match Quality Avg.</strong>
+            <span style={{ fontSize: 12, color: "#7a8a7c" }}>Perfectlyn aligned</span>
+          </div>
+        </div>
+
+        {/* Right side clean folder illustration icon */}
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", paddingLeft: 16, borderLeft: "1px solid #f0f2ee" }}>
+          <div style={{ width: 64, height: 48, border: "2px solid #cbd5e1", borderRadius: 8, background: "#f8fafc", position: "relative", display: "grid", placeItems: "center" }}>
+            <Folder size={22} color="#94a3b8" />
+            <div style={{ position: "absolute", top: -8, right: -8, background: "#166534", color: "#d9f99d", width: 20, height: 20, borderRadius: "50%", display: "grid", placeItems: "center", fontSize: 10, fontWeight: 800 }}>
+              ★
             </div>
-          </article>
-        ))}
+          </div>
+        </div>
+      </div>
+
+      {/* 2. Opportunities Grid matching reference UI */}
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(360px, 1fr))", gap: 24 }}>
+        {saved.map((o, idx) => {
+          // Dynamic initial and avatar palette
+          const orgInitials = o.organization.split(" ").map(w => w[0]).join("").slice(0, 3).toLowerCase();
+          const avatarColors = [
+            { bg: "#1e293b", text: "#93c5fd" },
+            { bg: "#14532d", text: "#86efac" },
+            { bg: "#0284c7", text: "#e0f2fe" },
+            { bg: "#4338ca", text: "#c7d2fe" }
+          ];
+          const colorTheme = avatarColors[idx % avatarColors.length];
+
+          return (
+            <article
+              key={o.id}
+              style={{
+                background: "white",
+                border: "1px solid #e3e6e0",
+                borderRadius: 16,
+                padding: "24px 26px",
+                display: "flex",
+                flexDirection: "column",
+                gap: 14,
+                boxShadow: "0 2px 8px rgba(0,0,0,0.02)",
+                position: "relative"
+              }}
+            >
+              {/* Card Top Row: Logo, Match Pill, Bookmark Icon */}
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                  <div
+                    style={{
+                      width: 44,
+                      height: 44,
+                      borderRadius: 12,
+                      background: colorTheme.bg,
+                      color: colorTheme.text,
+                      display: "grid",
+                      placeItems: "center",
+                      fontWeight: 800,
+                      fontSize: 14,
+                      letterSpacing: "-0.03em"
+                    }}
+                  >
+                    {orgInitials}
+                  </div>
+                  <span
+                    style={{
+                      background: "#e8f5e9",
+                      color: "#1b5e20",
+                      padding: "4px 10px",
+                      borderRadius: 20,
+                      fontSize: 12,
+                      fontWeight: 700
+                    }}
+                  >
+                    {o.matchScore || 95}% Match
+                  </span>
+                </div>
+
+                <div
+                  style={{
+                    background: "#dcfce7",
+                    color: "#15803d",
+                    width: 32,
+                    height: 32,
+                    borderRadius: 8,
+                    display: "grid",
+                    placeItems: "center"
+                  }}
+                >
+                  <Bookmark size={16} fill="currentColor" />
+                </div>
+              </div>
+
+              {/* Title & Verified Company */}
+              <div>
+                <h3 style={{ margin: "4px 0 4px", fontSize: 18, color: "#142118", fontWeight: 800, letterSpacing: "-0.02em" }}>
+                  {o.title}
+                </h3>
+                <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                  <span style={{ fontWeight: 700, fontSize: 14, color: "#2d3748" }}>{o.organization}</span>
+                  <div style={{ width: 15, height: 15, borderRadius: "50%", background: "#22c55e", color: "white", display: "grid", placeItems: "center", fontSize: 9, fontWeight: 900 }}>
+                    ✓
+                  </div>
+                </div>
+              </div>
+
+              {/* Skill / Tag Pills */}
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                {o.skills.slice(0, 4).map((s) => (
+                  <span
+                    key={s}
+                    style={{
+                      background: "#f1f5f9",
+                      color: "#334155",
+                      padding: "4px 10px",
+                      borderRadius: 6,
+                      fontSize: 12,
+                      fontWeight: 600
+                    }}
+                  >
+                    {s}
+                  </span>
+                ))}
+                {o.mode && (
+                  <span
+                    style={{
+                      background: "#f1f5f9",
+                      color: "#334155",
+                      padding: "4px 10px",
+                      borderRadius: 6,
+                      fontSize: 12,
+                      fontWeight: 600,
+                      textTransform: "capitalize"
+                    }}
+                  >
+                    {o.mode}
+                  </span>
+                )}
+              </div>
+
+              {/* Metadata rows with clean icons */}
+              <div style={{ display: "grid", gap: 6, fontSize: 13, color: "#475569", marginTop: 2 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <MapPin size={14} color="#64748b" />
+                  <span>{o.location || "Remote (India)"}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <DollarSign size={14} color="#64748b" />
+                  <span>{(o.rawData as any)?.stipendDisplay || (o.stipend ? `₹${o.stipend.toLocaleString()} / month` : "Competitive Stipend")}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <Calendar size={14} color="#64748b" />
+                  <span>Deadline: {o.deadline || "Open until filled"}</span>
+                </div>
+              </div>
+
+              {/* Action Buttons */}
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1.6fr", gap: 10, marginTop: 10, paddingTop: 14, borderTop: "1px solid #f1f5f9" }}>
+                <button
+                  type="button"
+                  onClick={() => onRemove(o.id)}
+                  style={{
+                    background: "white",
+                    border: "1px solid #cbd5e1",
+                    color: "#475569",
+                    padding: "9px 14px",
+                    borderRadius: 8,
+                    fontSize: 13,
+                    fontWeight: 600,
+                    cursor: "pointer"
+                  }}
+                >
+                  Remove
+                </button>
+                <button
+                  type="button"
+                  onClick={() => onApply(o)}
+                  style={{
+                    background: "#143a22",
+                    color: "#f8fbf3",
+                    border: "none",
+                    padding: "9px 14px",
+                    borderRadius: 8,
+                    fontSize: 13,
+                    fontWeight: 700,
+                    cursor: "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 6
+                  }}
+                >
+                  <Sparkles size={14} color="#d9f99d" /> Apply with Scoutly
+                </button>
+              </div>
+
+              {/* Timestamp Footer */}
+              <div style={{ fontSize: 11, color: "#94a3b8", marginTop: -4 }}>
+                Saved opportunity · Ready for Scoutly browser agent
+              </div>
+            </article>
+          );
+        })}
+      </div>
+
+      {/* 3. Bottom Safe. Smart. Student First. Banner matching screenshot */}
+      <div
+        style={{
+          marginTop: 32,
+          background: "#fcfdfc",
+          border: "1px solid #dcfce7",
+          borderRadius: 14,
+          padding: "18px 24px",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          flexWrap: "wrap",
+          gap: 16
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+          <div style={{ background: "#dcfce7", color: "#166534", width: 40, height: 40, borderRadius: 10, display: "grid", placeItems: "center" }}>
+            <ShieldCheck size={22} />
+          </div>
+          <div>
+            <strong style={{ fontSize: 14, color: "#166534", display: "block" }}>Safe. Smart. Student First.</strong>
+            <p style={{ margin: "2px 0 0", fontSize: 13, color: "#4b6352" }}>
+              Scoutly automates the repetitive work, but you stay in control. Review everything before final submission.
+            </p>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          onClick={() => {
+            const el = document.getElementById("learn-more-info");
+            if (el) el.scrollIntoView({ behavior: "smooth" });
+          }}
+          style={{
+            background: "white",
+            border: "1px solid #cbd5e1",
+            color: "#1e293b",
+            padding: "8px 16px",
+            borderRadius: 8,
+            fontSize: 13,
+            fontWeight: 700,
+            cursor: "pointer",
+            display: "inline-flex",
+            alignItems: "center",
+            gap: 6
+          }}
+        >
+          Learn More <ArrowRight size={14} />
+        </button>
       </div>
     </section>
   );
@@ -1427,15 +1728,7 @@ function ProfileView({ profile, onSave }: { profile: StudentProfile; onSave: (p:
   );
 }
 
-function Empty({ title, text }: { title: string; text: string }) {
-  return (
-    <section className="empty-state">
-      <BriefcaseBusiness size={38} />
-      <h2>{title}</h2>
-      <p>{text}</p>
-    </section>
-  );
-}
+
 
 export default App;
 
@@ -1779,6 +2072,146 @@ const DEMO_INTERNSHIPS: Opportunity[] = [
     }
   },
   {
+    id: "unstop-1735394-merzado",
+    title: "Software Development Internship (Full Stack / AI / Cloud)",
+    organization: "Merzado Market Technologies (Hyderabad)",
+    type: "internship",
+    description: "Work on full-stack architecture, backend APIs, relational databases, AI feature integrations, and automated cloud deployments.",
+    location: "Hyderabad / Hybrid",
+    mode: "hybrid",
+    stipend: 20000,
+    currency: "INR",
+    skills: ["Full Stack", "APIs", "Databases", "AI Integrations", "Git", "Cloud"],
+    eligibility: "Undergraduate / Engineering students · PPO & Certificate Included",
+    deadline: "2026-08-25",
+    applicationUrl: "https://unstop.com/internships/software-development-internship-full-stack-ai-cloud-merzado-market-technologies-pvt-ltd-1735394",
+    source: "Unstop India",
+    sourceUrl: "https://unstop.com/internships/software-development-internship-full-stack-ai-cloud-merzado-market-technologies-pvt-ltd-1735394",
+    extractedAt: new Date().toISOString(),
+    tags: ["unstop", "fullstack", "ai-cloud", "ppo"],
+    matchScore: 98,
+    rawData: {
+      matchReasons: [
+        "✓ Real Live Unstop Internship Listing",
+        "✓ Full Stack & AI Integrations",
+        "✓ PPO, Certificate & LOR Included"
+      ],
+      stipendDisplay: "₹20,000 /month (PPO Eligible)"
+    }
+  },
+  {
+    id: "unstop-1726282-apex-solutions",
+    title: "MERN Stack Developer Internship",
+    organization: "Apex Solutions Group (Remote)",
+    type: "internship",
+    description: "Develop responsive web applications, build Express microservices, optimize MongoDB schemas, and collaborate with engineering mentors.",
+    location: "Remote / Pan India",
+    mode: "remote",
+    stipend: 18000,
+    currency: "INR",
+    skills: ["MERN Stack", "React", "Node.js", "Express", "MongoDB", "JavaScript"],
+    eligibility: "Undergraduate / Postgraduate students · 3-6 months duration",
+    deadline: "2026-07-28",
+    applicationUrl: "https://unstop.com/internships/mern-stack-developer-internship-apex-solutions-group-1726282",
+    source: "Unstop India",
+    sourceUrl: "https://unstop.com/internships/mern-stack-developer-internship-apex-solutions-group-1726282",
+    extractedAt: new Date().toISOString(),
+    tags: ["unstop", "mern", "remote", "high-stipend"],
+    matchScore: 96,
+    rawData: {
+      matchReasons: [
+        "✓ Real Live Unstop Internship Listing",
+        "✓ ₹15,000–₹20,000 /month Stipend",
+        "✓ Mentorship & Certificate Included"
+      ],
+      stipendDisplay: "₹18,000 /month (₹15k-20k)"
+    }
+  },
+  {
+    id: "unstop-1712132-codemore-cyber",
+    title: "Cyber Security Internship",
+    organization: "CodeMore Technologies",
+    type: "internship",
+    description: "Conduct network penetration scans, analyze malware samples, audit web application firewalls, and document incident response procedures.",
+    location: "In-Office (India)",
+    mode: "onsite",
+    stipend: 15000,
+    currency: "INR",
+    skills: ["Network Security", "Web Security", "Ethical Hacking", "Malware Analysis", "Incident Response"],
+    eligibility: "Open to Engineering and Computer Science students · 2 months",
+    deadline: "2026-07-22",
+    applicationUrl: "https://unstop.com/internships/cyber-security-internship-codemore-1712132",
+    source: "Unstop India",
+    sourceUrl: "https://unstop.com/internships/cyber-security-internship-codemore-1712132",
+    extractedAt: new Date().toISOString(),
+    tags: ["unstop", "cybersecurity", "ethical-hacking"],
+    matchScore: 99,
+    rawData: {
+      matchReasons: [
+        "✓ Real Live Unstop Security Role",
+        "✓ Network Security & Ethical Hacking Match",
+        "✓ Learning Allowance & Certificate"
+      ],
+      stipendDisplay: "₹15,000 /month"
+    }
+  },
+  {
+    id: "unstop-1730323-pdftopractice",
+    title: "Web Development Internship (Frontend, Backend & UI/UX)",
+    organization: "PdftoPractice (Patna)",
+    type: "internship",
+    description: "Work directly on live product features using HTML5, CSS3, JavaScript, React, Node.js, Python, and SQL/NoSQL databases.",
+    location: "Patna / Hybrid",
+    mode: "hybrid",
+    stipend: 12000,
+    currency: "INR",
+    skills: ["React", "Node.js", "Python", "SQL", "UI/UX", "JavaScript"],
+    eligibility: "Undergraduate / Postgraduate students · Work on live production software",
+    deadline: "2026-08-17",
+    applicationUrl: "https://unstop.com/internships/web-development-internship-frontend-backend-uiux-pdftopractice-1730323",
+    source: "Unstop India",
+    sourceUrl: "https://unstop.com/internships/web-development-internship-frontend-backend-uiux-pdftopractice-1730323",
+    extractedAt: new Date().toISOString(),
+    tags: ["unstop", "web-development", "react", "uiux"],
+    matchScore: 93,
+    rawData: {
+      matchReasons: [
+        "✓ Real Live Unstop Opportunity",
+        "✓ Hands-On Production Product Code",
+        "✓ Full Stack & UI/UX Scope"
+      ],
+      stipendDisplay: "₹12,000 /month"
+    }
+  },
+  {
+    id: "unstop-1735257-stackcart",
+    title: "Software Development Internship",
+    organization: "StackCart Labs",
+    type: "internship",
+    description: "Design modular services, build consumer-facing workflows, optimize SQL query execution, and write automated test suites.",
+    location: "Remote / Hybrid",
+    mode: "remote",
+    stipend: 10000,
+    currency: "INR",
+    skills: ["Software Development", "Python", "JavaScript", "SQL", "Real-World Projects"],
+    eligibility: "Undergraduate / Postgraduate / Fresher · 3 months duration",
+    deadline: "2026-08-19",
+    applicationUrl: "https://unstop.com/internships/software-development-internship-stackcart-1735257",
+    source: "Unstop India",
+    sourceUrl: "https://unstop.com/internships/software-development-internship-stackcart-1735257",
+    extractedAt: new Date().toISOString(),
+    tags: ["unstop", "software-dev", "remote"],
+    matchScore: 91,
+    rawData: {
+      matchReasons: [
+        "✓ Real Live Unstop Opportunity",
+        "✓ Real-World Software Engineering Projects",
+        "✓ Performance-Based Bonus"
+      ],
+      stipendDisplay: "₹10,000 /month (Bonus Eligible)"
+    }
+  },
+  {
     id: "demo-cyber-analyst",
     title: "Cybersecurity Analyst Intern",
     organization: "SecureStack (Guaranteed Sandbox)",
@@ -1810,66 +2243,108 @@ const DEMO_INTERNSHIPS: Opportunity[] = [
 ];
 
 function DemoView({ onLaunchDemo }: { onLaunchDemo: (opp: Opportunity) => void }) {
+  const wellfoundOpps = DEMO_INTERNSHIPS.filter(o => o.source === "Wellfound");
+  const unstopOpps = DEMO_INTERNSHIPS.filter(o => o.source === "Unstop India");
+  const sandboxOpps = DEMO_INTERNSHIPS.filter(o => o.source.includes("Sandbox") || o.source.includes("Portal"));
+
+  const renderCard = (o: Opportunity) => (
+    <article className="opportunity-card" key={o.id} style={{ background: "white", padding: 24, borderRadius: 14, border: "1px solid #e3e6e0", display: "flex", flexDirection: "column", gap: 12, boxShadow: "0 2px 8px rgba(0,0,0,0.02)" }}>
+      <div className="card-top" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <span className="pill" style={{ background: o.source === "Wellfound" ? "#eff6ff" : o.source === "Unstop India" ? "#fef3c7" : "#dcfce7", color: o.source === "Wellfound" ? "#1e40af" : o.source === "Unstop India" ? "#92400e" : "#166534", fontSize: 11, fontWeight: 700 }}>
+          {o.source}
+        </span>
+        <strong style={{ color: "#166534", fontSize: 16 }}>{o.matchScore}% Match</strong>
+      </div>
+
+      <h3 style={{ margin: "2px 0 0", fontSize: 18, fontWeight: 800 }}>{o.title}</h3>
+      <p className="organization" style={{ margin: 0, color: "#4b6352", fontWeight: 700, fontSize: 14 }}>{o.organization}</p>
+      
+      <p style={{ margin: 0, fontSize: 13, color: "#4f5e53" }}>
+        📍 {o.location} · 💰 {(o.rawData as any)?.stipendDisplay}
+      </p>
+
+      <p style={{ margin: 0, fontSize: 13, color: "#68806d", lineHeight: 1.5 }}>
+        {o.description}
+      </p>
+
+      <div className="chips" style={{ justifyContent: "flex-start", marginTop: 2 }}>
+        {o.skills.map((s) => <span key={s} style={{ background: "#f0f6ee", color: "#24412e" }}>{s}</span>)}
+      </div>
+
+      <div style={{ background: "#f8faf7", padding: "10px 14px", borderRadius: 8, marginTop: 4 }}>
+        {o.rawData?.matchReasons?.map((r: string) => (
+          <div key={r} style={{ fontSize: 12, color: "#1e3b2a", fontWeight: 600, margin: "2px 0" }}>{r}</div>
+        ))}
+      </div>
+
+      <div style={{ marginTop: "auto", paddingTop: 14 }}>
+        <button
+          type="button"
+          className="primary-button"
+          style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, padding: "12px 18px", fontSize: 14, background: "#143a22" }}
+          onClick={() => onLaunchDemo(o)}
+        >
+          <Play size={15} color="#d9f99d" /> Launch in Real Chromium
+        </button>
+      </div>
+    </article>
+  );
+
   return (
     <section>
-      {/* Demo Top Banner */}
-      <div style={{ background: "linear-gradient(135deg, #142118 0%, #1e3b2a 100%)", color: "#f8fbf3", padding: "26px 30px", borderRadius: 16, marginBottom: 28, border: "1px solid #3d5a49" }}>
+      {/* Top Banner */}
+      <div style={{ background: "linear-gradient(135deg, #142118 0%, #1e3b2a 100%)", color: "#f8fbf3", padding: "26px 30px", borderRadius: 16, marginBottom: 32, border: "1px solid #3d5a49" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
           <span style={{ background: "#22c55e", color: "#142118", padding: "4px 10px", borderRadius: 20, fontSize: 12, fontWeight: 800, letterSpacing: "0.05em" }}>
-            🎯 100% GUARANTEED JUDGE DEMO MODE
+            🎯 JUDGE DEMO SHOWCASE
           </span>
-          <span style={{ fontSize: 13, color: "#a8baa9" }}>Isolated Safe Sandbox</span>
+          <span style={{ fontSize: 13, color: "#a8baa9" }}>Live Public Portals + Local Sandbox</span>
         </div>
         <h2 style={{ margin: "6px 0 10px", fontSize: 24, color: "#d9f99d" }}>
           Live Browser Agent Demonstration
         </h2>
         <p style={{ margin: 0, fontSize: 14, color: "#c3d1c3", lineHeight: 1.6, maxWidth: 840 }}>
-          This dedicated showcase environment demonstrates Scoutly's end-to-end autonomous pipeline without depending on third-party site rate limits or CAPTCHAs.
-          Click <strong>"Launch Demo in Real Chromium"</strong> to watch Scoutly open real Chromium, detect all 9 form fields, attach Yash's resume PDF, fill the form, synthesize AI answers, and complete verified submission.
+          Test Scoutly's autonomous pipeline across verified public <strong>Wellfound</strong> listings, verified <strong>Unstop India</strong> opportunities, and the guaranteed offline Playwright Sandbox. Click <strong>"Launch in Real Chromium"</strong> on any opportunity to watch Scoutly open headed Chromium, detect form fields, attach your resume PDF, and submit verified applications.
         </p>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))", gap: 20 }}>
-        {DEMO_INTERNSHIPS.map((o) => (
-          <article className="opportunity-card" key={o.id} style={{ background: "white", padding: 26, borderRadius: 14, border: "2px solid #c7e5bb", display: "flex", flexDirection: "column", gap: 12 }}>
-            <div className="card-top" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-              <span className="pill" style={{ background: "#dcfce7", color: "#166534", fontSize: 11, fontWeight: 700 }}>
-                {o.source}
-              </span>
-              <strong style={{ color: "#166534", fontSize: 17 }}>{o.matchScore}% Match</strong>
-            </div>
+      {/* SECTION 1: WELLFOUND */}
+      <div style={{ marginBottom: 40 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 18, borderBottom: "2px solid #e2e8f0", paddingBottom: 10 }}>
+          <div style={{ background: "#eff6ff", color: "#1d4ed8", padding: "6px 12px", borderRadius: 8, fontWeight: 800, fontSize: 14 }}>
+            🌐 SECTION 1: WELLFOUND OPPORTUNITIES ({wellfoundOpps.length})
+          </div>
+          <span style={{ fontSize: 13, color: "#64748b" }}>Live public startup internships</span>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))", gap: 20 }}>
+          {wellfoundOpps.map(renderCard)}
+        </div>
+      </div>
 
-            <h3 style={{ margin: 0, fontSize: 19 }}>{o.title}</h3>
-            <p className="organization" style={{ margin: 0, color: "#4b6352", fontWeight: 700 }}>{o.organization}</p>
-            <p style={{ margin: 0, fontSize: 13, color: "#4f5e53" }}>
-              📍 {o.location} · 💰 {(o.rawData as any)?.stipendDisplay}
-            </p>
+      {/* SECTION 2: UNSTOP (BELOW WELLFOUND) */}
+      <div style={{ marginBottom: 40 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 18, borderBottom: "2px solid #e2e8f0", paddingBottom: 10 }}>
+          <div style={{ background: "#fef3c7", color: "#92400e", padding: "6px 12px", borderRadius: 8, fontWeight: 800, fontSize: 14 }}>
+            🇮🇳 SECTION 2: UNSTOP INDIA OPPORTUNITIES ({unstopOpps.length})
+          </div>
+          <span style={{ fontSize: 13, color: "#64748b" }}>Verified public student internship listings</span>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))", gap: 20 }}>
+          {unstopOpps.map(renderCard)}
+        </div>
+      </div>
 
-            <p style={{ margin: 0, fontSize: 13, color: "#68806d", lineHeight: 1.5 }}>
-              {o.description}
-            </p>
-
-            <div className="chips" style={{ justifyContent: "flex-start" }}>
-              {o.skills.map((s) => <span key={s} style={{ background: "#f0f6ee", color: "#24412e" }}>{s}</span>)}
-            </div>
-
-            <div style={{ background: "#f8faf7", padding: "10px 14px", borderRadius: 8, marginTop: 4 }}>
-              {o.rawData?.matchReasons?.map((r: string) => (
-                <div key={r} style={{ fontSize: 12, color: "#1e3b2a", fontWeight: 600, margin: "2px 0" }}>{r}</div>
-              ))}
-            </div>
-
-            <div style={{ marginTop: "auto", paddingTop: 16 }}>
-              <button
-                className="primary-button"
-                style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, padding: "13px 18px", fontSize: 14, background: "#15803d" }}
-                onClick={() => onLaunchDemo(o)}
-              >
-                <Play size={16} /> Launch Demo in Real Chromium
-              </button>
-            </div>
-          </article>
-        ))}
+      {/* SECTION 3: GUARANTEED PLAYWRIGHT SANDBOX */}
+      <div>
+        <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 18, borderBottom: "2px solid #e2e8f0", paddingBottom: 10 }}>
+          <div style={{ background: "#dcfce7", color: "#166534", padding: "6px 12px", borderRadius: 8, fontWeight: 800, fontSize: 14 }}>
+            🛡️ SECTION 3: GUARANTEED OFFLINE PLAYWRIGHT SANDBOX
+          </div>
+          <span style={{ fontSize: 13, color: "#64748b" }}>100% offline-resilient presentation environment</span>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))", gap: 20 }}>
+          {sandboxOpps.map(renderCard)}
+        </div>
       </div>
     </section>
   );
