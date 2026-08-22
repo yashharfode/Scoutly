@@ -1,6 +1,6 @@
 {
   "cybersecurity and_all_0": {
-    "timestamp": 1787390268473,
+    "timestamp": 1787391132545,
     "results": [
       {
         "id": "wellfound-troopr-ai",
@@ -40,7 +40,7 @@
           "bengaluru"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.029Z",
+        "discoveredAt": "2026-08-22T09:32:07.364Z",
         "matchScore": 98,
         "matchReasons": [
           "✓ React matches profile",
@@ -95,7 +95,7 @@
           "ppo"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.029Z",
+        "discoveredAt": "2026-08-22T09:32:07.364Z",
         "matchScore": 98,
         "matchReasons": [
           "✓ Python matches profile",
@@ -152,7 +152,7 @@
           "high-stipend"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.029Z",
+        "discoveredAt": "2026-08-22T09:32:07.364Z",
         "matchScore": 98,
         "matchReasons": [
           "✓ Python matches profile",
@@ -166,6 +166,56 @@
           "🧠 AI Learned: High affinity for Node.js",
           "🧠 AI Learned: High affinity for Healthcare AI",
           "🧠 AI Learned: High affinity for LLMs",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "unstop-1742423-tringflow",
+        "title": "Software Development Internship",
+        "company": "Tringflow Private Limited",
+        "description": "Engineer RESTful API endpoints, connect backend services with Node.js & Python, and integrate third-party developer tools.",
+        "location": "Work from Home (India)",
+        "mode": "remote",
+        "stipend": {
+          "min": 11000,
+          "max": 11000,
+          "currency": "INR",
+          "display": "₹11,000/month"
+        },
+        "duration": "Full Time (12 days left to apply)",
+        "skills": [
+          "Python",
+          "API Development (REST)",
+          "Node.js",
+          "Backend Development"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Undergraduate students",
+        "deadline": "2026-09-03",
+        "postedDate": "Aug 21, 2026",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships/software-development-internship-tringflow-private-limited-1742423",
+        "applicationUrl": "https://unstop.com/internships/software-development-internship-tringflow-private-limited-1742423",
+        "organizationUrl": "https://unstop.com",
+        "tags": [
+          "unstop",
+          "python",
+          "nodejs",
+          "rest-apis",
+          "remote"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:32:07.363Z",
+        "matchScore": 97,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ Node.js matches profile",
+          "✓ Aligns with target career domain",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for Node.js",
           "🧠 AI Learned: Favored remote setup"
         ]
       },
@@ -207,7 +257,7 @@
           "python"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.029Z",
+        "discoveredAt": "2026-08-22T09:32:07.364Z",
         "matchScore": 96,
         "matchReasons": [
           "✓ Python matches profile",
@@ -258,7 +308,7 @@
           "design-tech"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.030Z",
+        "discoveredAt": "2026-08-22T09:32:07.365Z",
         "matchScore": 91,
         "matchReasons": [
           "✓ Python matches profile",
@@ -311,7 +361,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.029Z",
+        "discoveredAt": "2026-08-22T09:32:07.364Z",
         "matchScore": 86,
         "matchReasons": [
           "✓ React matches profile",
@@ -359,7 +409,7 @@
           "cybersecurity"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.030Z",
+        "discoveredAt": "2026-08-22T09:32:07.365Z",
         "matchScore": 85,
         "matchReasons": [
           "✓ Ethical Hacking matches profile",
@@ -407,7 +457,7 @@
           "security"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.030Z",
+        "discoveredAt": "2026-08-22T09:32:07.365Z",
         "matchScore": 85,
         "matchReasons": [
           "✓ Node.js matches profile",
@@ -463,7 +513,7 @@
           "remote-ai"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.029Z",
+        "discoveredAt": "2026-08-22T09:32:07.364Z",
         "matchScore": 81,
         "matchReasons": [
           "✓ React matches profile",
@@ -512,7 +562,7 @@
           "cloud"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.030Z",
+        "discoveredAt": "2026-08-22T09:32:07.365Z",
         "matchScore": 81,
         "matchReasons": [
           "✓ Python matches profile",
@@ -560,7 +610,7 @@
           "network-security"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.030Z",
+        "discoveredAt": "2026-08-22T09:32:07.365Z",
         "matchScore": 79,
         "matchReasons": [
           "✓ Python matches profile",
@@ -611,7 +661,7 @@
           "postgresql"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.029Z",
+        "discoveredAt": "2026-08-22T09:32:07.364Z",
         "matchScore": 78,
         "matchReasons": [
           "✓ Node.js matches profile",
@@ -668,7 +718,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.029Z",
+        "discoveredAt": "2026-08-22T09:32:07.364Z",
         "matchScore": 77,
         "matchReasons": [
           "✓ React matches profile",
@@ -719,7 +769,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.029Z",
+        "discoveredAt": "2026-08-22T09:32:07.364Z",
         "matchScore": 77,
         "matchReasons": [
           "✓ Python matches profile",
@@ -766,7 +816,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:47.209Z",
+        "discoveredAt": "2026-08-22T09:32:10.484Z",
         "matchScore": 77,
         "matchReasons": [
           "✓ Python matches profile",
@@ -815,7 +865,7 @@
           "pune"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.029Z",
+        "discoveredAt": "2026-08-22T09:32:07.364Z",
         "matchScore": 74,
         "matchReasons": [
           "✓ Python matches profile",
@@ -862,7 +912,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:47.210Z",
+        "discoveredAt": "2026-08-22T09:32:10.484Z",
         "matchScore": 72,
         "matchReasons": [
           "✓ Python matches profile",
@@ -907,7 +957,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:47.211Z",
+        "discoveredAt": "2026-08-22T09:32:10.486Z",
         "matchScore": 72,
         "matchReasons": [
           "✓ Python matches profile",
@@ -952,7 +1002,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:47.213Z",
+        "discoveredAt": "2026-08-22T09:32:10.488Z",
         "matchScore": 72,
         "matchReasons": [
           "✓ Python matches profile",
@@ -961,6 +1011,52 @@
           "✓ Stipend meets preference",
           "🧠 AI Learned: High affinity for Python",
           "🧠 AI Learned: High affinity for React"
+        ]
+      },
+      {
+        "id": "unstop-1742713-cruvels",
+        "title": "Full Stack And Systems Engineering Internship",
+        "company": "Cruvels Pvt. Limited",
+        "description": "Work on full-stack web architecture, API integrations, software development life cycle (SDLC), and collaboration tools.",
+        "location": "Work from Home (India)",
+        "mode": "remote",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "Full Time (13 days left to apply)",
+        "skills": [
+          "API Integration",
+          "SDLC",
+          "Full Stack Development",
+          "Git",
+          "Software Development"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Undergraduate / Engineering students",
+        "deadline": "2026-09-04",
+        "postedDate": "Aug 22, 2026",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships/full-stack-and-systems-engineering-internship-cruvels-pvt-limited-1742713",
+        "applicationUrl": "https://unstop.com/internships/full-stack-and-systems-engineering-internship-cruvels-pvt-limited-1742713",
+        "organizationUrl": "https://unstop.com",
+        "tags": [
+          "unstop",
+          "fullstack",
+          "api-integration",
+          "remote"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:32:07.363Z",
+        "matchScore": 65,
+        "matchReasons": [
+          "✓ Aligns with target career domain",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: Favored remote setup"
         ]
       },
       {
@@ -1002,7 +1098,7 @@
           "agentic"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.029Z",
+        "discoveredAt": "2026-08-22T09:32:07.364Z",
         "matchScore": 65,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1054,7 +1150,7 @@
           "bengaluru"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.029Z",
+        "discoveredAt": "2026-08-22T09:32:07.364Z",
         "matchScore": 65,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1063,6 +1159,101 @@
           "✓ Student eligible",
           "🧠 AI Learned: High affinity for Python",
           "🧠 AI Learned: High affinity for LLMs"
+        ]
+      },
+      {
+        "id": "unstop-1742435-marvedge",
+        "title": "Test Engineer Internship (Full-Stack / SDET)",
+        "company": "Marvedge",
+        "description": "Design automated test suites in Python, conduct API regression testing, execute QA validation cycles, and verify web interfaces.",
+        "location": "Work from Home (India)",
+        "mode": "remote",
+        "stipend": {
+          "min": 18000,
+          "max": 18000,
+          "currency": "INR",
+          "display": "₹18,000/month"
+        },
+        "duration": "Full Time (12 days left to apply)",
+        "skills": [
+          "Python",
+          "Automation Testing",
+          "API Testing",
+          "Software QA",
+          "SDET"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Undergraduate / Engineering students",
+        "deadline": "2026-09-03",
+        "postedDate": "Aug 21, 2026",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships/test-engineer-internship-full-stack-sdet-marvedge-1742435",
+        "applicationUrl": "https://unstop.com/internships/test-engineer-internship-full-stack-sdet-marvedge-1742435",
+        "organizationUrl": "https://unstop.com",
+        "tags": [
+          "unstop",
+          "sdet",
+          "python",
+          "automation-testing",
+          "remote"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:32:07.363Z",
+        "matchScore": 61,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "unstop-1741876-rivyou",
+        "title": "Software Developer Internship",
+        "company": "Rivyou",
+        "description": "Develop backend Python microservices, query and model NoSQL databases (MongoDB, Cassandra), and optimize execution pipelines.",
+        "location": "Work from Home | Pan India",
+        "mode": "remote",
+        "stipend": {
+          "min": 10000,
+          "max": 10000,
+          "currency": "INR",
+          "display": "₹10,000/month"
+        },
+        "duration": "Full Time (4 days left to apply)",
+        "skills": [
+          "Python",
+          "NoSQL (MongoDB, Cassandra)",
+          "Debugging",
+          "Backend Development"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Undergraduate students",
+        "deadline": "2026-08-26",
+        "postedDate": "Aug 20, 2026",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships/software-developer-internship-rivyou-1741876",
+        "applicationUrl": "https://unstop.com/internships/software-developer-internship-rivyou-1741876",
+        "organizationUrl": "https://unstop.com",
+        "tags": [
+          "unstop",
+          "python",
+          "mongodb",
+          "cassandra",
+          "remote"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:32:07.363Z",
+        "matchScore": 61,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: Favored remote setup"
         ]
       },
       {
@@ -1099,7 +1290,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:47.210Z",
+        "discoveredAt": "2026-08-22T09:32:10.486Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1143,7 +1334,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:47.211Z",
+        "discoveredAt": "2026-08-22T09:32:10.487Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1187,7 +1378,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:47.211Z",
+        "discoveredAt": "2026-08-22T09:32:10.487Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1231,7 +1422,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:47.211Z",
+        "discoveredAt": "2026-08-22T09:32:10.487Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1275,7 +1466,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:47.211Z",
+        "discoveredAt": "2026-08-22T09:32:10.487Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1319,7 +1510,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:47.212Z",
+        "discoveredAt": "2026-08-22T09:32:10.487Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1363,7 +1554,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:47.212Z",
+        "discoveredAt": "2026-08-22T09:32:10.488Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1407,7 +1598,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:47.213Z",
+        "discoveredAt": "2026-08-22T09:32:10.488Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1458,7 +1649,7 @@
           "databases"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.029Z",
+        "discoveredAt": "2026-08-22T09:32:07.364Z",
         "matchScore": 49,
         "matchReasons": [
           "✓ Node.js matches profile",
@@ -1503,7 +1694,7 @@
           "analyst"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.030Z",
+        "discoveredAt": "2026-08-22T09:32:07.365Z",
         "matchScore": 49,
         "matchReasons": [
           "✓ Network Traffic Analysis matches profile",
@@ -1547,7 +1738,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:47.210Z",
+        "discoveredAt": "2026-08-22T09:32:10.484Z",
         "matchScore": 47,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1590,7 +1781,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:47.210Z",
+        "discoveredAt": "2026-08-22T09:32:10.485Z",
         "matchScore": 47,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1633,7 +1824,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:47.212Z",
+        "discoveredAt": "2026-08-22T09:32:10.487Z",
         "matchScore": 47,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1676,7 +1867,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:47.213Z",
+        "discoveredAt": "2026-08-22T09:32:10.488Z",
         "matchScore": 47,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1719,7 +1910,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:47.213Z",
+        "discoveredAt": "2026-08-22T09:32:10.488Z",
         "matchScore": 47,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1766,7 +1957,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:48.466Z",
+        "discoveredAt": "2026-08-22T09:32:12.535Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -1813,7 +2004,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:48.466Z",
+        "discoveredAt": "2026-08-22T09:32:12.535Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -1860,7 +2051,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:48.467Z",
+        "discoveredAt": "2026-08-22T09:32:12.535Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -1907,7 +2098,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:48.467Z",
+        "discoveredAt": "2026-08-22T09:32:12.536Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -1954,7 +2145,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:48.467Z",
+        "discoveredAt": "2026-08-22T09:32:12.536Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2001,7 +2192,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:48.467Z",
+        "discoveredAt": "2026-08-22T09:32:12.537Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2011,579 +2202,181 @@
         ]
       },
       {
-        "id": "unstop-1742814",
-        "title": "Co-Founder & Growth / Marketing Lead Internship",
-        "company": "ClgKart",
-        "description": "Live internship at ClgKart discovered via Unstop.",
-        "location": "online",
-        "mode": "unknown",
+        "id": "unstop-1742649-vertawo",
+        "title": "Software Development Internship",
+        "company": "Vertawo Labs Private Limited",
+        "description": "Participate in SDLC, code debugging, team collaboration, and building backend microservices for enterprise workflows.",
+        "location": "Gurgaon",
+        "mode": "onsite",
+        "stipend": {
+          "min": 20000,
+          "max": 30000,
+          "currency": "INR",
+          "display": "₹20,000 - ₹30,000/month"
+        },
+        "duration": "Full Time (12 days left to apply)",
+        "skills": [
+          "Debugging",
+          "SDLC",
+          "Teamwork & Collaboration",
+          "Software Development"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Undergraduate / Postgraduate students",
+        "deadline": "2026-09-03",
+        "postedDate": "Aug 21, 2026",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships/software-development-internship-vertawo-labs-private-limited-1742649",
+        "applicationUrl": "https://unstop.com/internships/software-development-internship-vertawo-labs-private-limited-1742649",
+        "organizationUrl": "https://unstop.com",
+        "tags": [
+          "unstop",
+          "software-dev",
+          "debugging",
+          "gurgaon",
+          "high-stipend"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:32:07.363Z",
+        "matchScore": 45,
+        "matchReasons": [
+          "✓ Aligns with target career domain",
+          "✓ Stipend meets preference",
+          "✓ Student eligible"
+        ]
+      },
+      {
+        "id": "unstop-1742287-spiralinfra",
+        "title": "Full Stack Developer Internship",
+        "company": "SpiralInfra",
+        "description": "Build full stack client-server features, manage Git workflows, integrate RESTful services, and optimize frontend JavaScript.",
+        "location": "Work from Home (India)",
+        "mode": "remote",
         "stipend": {
           "min": 15000,
           "max": 15000,
           "currency": "INR",
           "display": "₹15,000/month"
         },
-        "duration": "2-4 Months",
+        "duration": "Full Time (13 days left to apply)",
         "skills": [
-          "cybersecurity and",
-          "cybersecurity",
-          "cyber security",
-          "information security",
-          "SOC analyst",
-          "security analyst",
-          "penetration testing",
-          "ethical hacking"
+          "JavaScript",
+          "Git",
+          "API Development (REST)",
+          "Full Stack Development"
         ],
-        "experience": "Students / Recent Graduates",
-        "eligibility": "Open to all enrolled college students",
+        "experience": "No prior experience required",
+        "eligibility": "Undergraduate students",
         "deadline": "2026-09-04",
-        "postedDate": "Live Feed",
-        "source": "Unstop",
-        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20and",
-        "applicationUrl": "https://unstop.com/internships/co-founder-growth-marketing-lead-internship-clgkart-1742814",
-        "organizationUrl": null,
+        "postedDate": "Aug 21, 2026",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships/full-stack-developer-internship-spiralinfra-1742287",
+        "applicationUrl": "https://unstop.com/internships/full-stack-developer-internship-spiralinfra-1742287",
+        "organizationUrl": "https://unstop.com",
         "tags": [
           "unstop",
-          "student-internship",
-          "india"
+          "fullstack",
+          "javascript",
+          "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:48.082Z",
+        "discoveredAt": "2026-08-22T09:32:07.363Z",
         "matchScore": 45,
         "matchReasons": [
-          "✓ ethical hacking matches profile",
+          "✓ Remote opportunity",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity",
-          "🧠 AI Learned: High affinity for penetration testing"
+          "🧠 AI Learned: Favored remote setup"
         ]
       },
       {
-        "id": "unstop-1742808",
-        "title": "Business Development Associate Internship",
-        "company": "Skillumni",
-        "description": "Live internship at Skillumni discovered via Unstop.",
-        "location": "online",
-        "mode": "unknown",
+        "id": "unstop-1704498-asianpaints",
+        "title": "Asian Paints Alchemy 2026 (Engineering Innovation Track)",
+        "company": "Asian Paints",
+        "description": "Flagship engineering and technology competition with direct PPO and pre-placement internship offers for winning teams.",
+        "location": "Online / National",
+        "mode": "remote",
         "stipend": {
-          "min": 15000,
-          "max": 15000,
+          "min": 50000,
+          "max": 50000,
           "currency": "INR",
-          "display": "₹15,000/month"
+          "display": "₹50,000/month"
         },
-        "duration": "2-4 Months",
+        "duration": "1 Month Left (19,684 Registered)",
         "skills": [
-          "cybersecurity and",
-          "cybersecurity",
-          "cyber security",
-          "information security",
-          "SOC analyst",
-          "security analyst",
-          "penetration testing",
-          "ethical hacking"
+          "Problem Solving",
+          "Engineering Innovation",
+          "Systems Architecture"
         ],
-        "experience": "Students / Recent Graduates",
-        "eligibility": "Open to all enrolled college students",
-        "deadline": "2026-09-04",
-        "postedDate": "Live Feed",
-        "source": "Unstop",
-        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20and",
-        "applicationUrl": "https://unstop.com/internships/business-development-associate-internship-skillumni-1742808",
-        "organizationUrl": null,
+        "experience": "Open to Engineering & Postgraduate students",
+        "eligibility": "Engineering students (1-2 member teams)",
+        "deadline": "2026-09-22",
+        "postedDate": "Jul 2, 2026",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/competitions/crp-asian-paints-alchemy-2026-asian-paints-1704498",
+        "applicationUrl": "https://unstop.com/competitions/crp-asian-paints-alchemy-2026-asian-paints-1704498",
+        "organizationUrl": "https://asianpaints.com",
         "tags": [
           "unstop",
-          "student-internship",
-          "india"
+          "competition",
+          "asian-paints",
+          "featured",
+          "ppo"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:48.083Z",
+        "discoveredAt": "2026-08-22T09:32:07.363Z",
         "matchScore": 45,
         "matchReasons": [
-          "✓ ethical hacking matches profile",
+          "✓ Remote opportunity",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity",
-          "🧠 AI Learned: High affinity for penetration testing"
+          "🧠 AI Learned: Favored remote setup"
         ]
       },
       {
-        "id": "unstop-1742799",
-        "title": "Advisor Sourcing & Insurance Business Development Internship",
-        "company": "Kaiser Abbott Private Limited",
-        "description": "Live internship at Kaiser Abbott Private Limited discovered via Unstop.",
-        "location": "online",
-        "mode": "unknown",
+        "id": "unstop-1740483-preplinc",
+        "title": "Software Developer Internship",
+        "company": "PrepLinc",
+        "description": "Build robust algorithmic modules, manage version control with Git, implement JavaScript components, and write C++ backend logic.",
+        "location": "Work from Home | Pan India",
+        "mode": "remote",
         "stipend": {
           "min": 15000,
-          "max": 15000,
+          "max": 45000,
           "currency": "INR",
-          "display": "₹15,000/month"
+          "display": "₹15,000 - ₹45,000/month"
         },
-        "duration": "2-4 Months",
+        "duration": "Part Time (10 days left to apply)",
         "skills": [
-          "cybersecurity and",
-          "cybersecurity",
-          "cyber security",
-          "information security",
-          "SOC analyst",
-          "security analyst",
-          "penetration testing",
-          "ethical hacking"
+          "C++",
+          "Git",
+          "JavaScript",
+          "Software Development",
+          "Problem Solving"
         ],
-        "experience": "Students / Recent Graduates",
-        "eligibility": "Open to all enrolled college students",
-        "deadline": "2026-09-04",
-        "postedDate": "Live Feed",
-        "source": "Unstop",
-        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20and",
-        "applicationUrl": "https://unstop.com/internships/advisor-sourcing-insurance-business-development-internship-kaiser-abbott-private-limited-1742799",
-        "organizationUrl": null,
+        "experience": "No prior experience required",
+        "eligibility": "Everyone can apply (Pan India)",
+        "deadline": "2026-09-01",
+        "postedDate": "Aug 21, 2026",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships/software-developer-internship-preplinc-1740483",
+        "applicationUrl": "https://unstop.com/internships/software-developer-internship-preplinc-1740483",
+        "organizationUrl": "https://unstop.com",
         "tags": [
           "unstop",
-          "student-internship",
-          "india"
+          "cpp",
+          "javascript",
+          "remote",
+          "high-stipend"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:48.083Z",
-        "matchScore": 45,
+        "discoveredAt": "2026-08-22T09:32:07.363Z",
+        "matchScore": 44,
         "matchReasons": [
-          "✓ ethical hacking matches profile",
+          "✓ Remote opportunity",
           "✓ Stipend meets preference",
-          "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity",
-          "🧠 AI Learned: High affinity for penetration testing"
-        ]
-      },
-      {
-        "id": "unstop-1742791",
-        "title": "Patient Experience Internship",
-        "company": "Pristyn Care",
-        "description": "Live internship at Pristyn Care discovered via Unstop.",
-        "location": "online",
-        "mode": "unknown",
-        "stipend": {
-          "min": 15000,
-          "max": 15000,
-          "currency": "INR",
-          "display": "₹15,000/month"
-        },
-        "duration": "2-4 Months",
-        "skills": [
-          "cybersecurity and",
-          "cybersecurity",
-          "cyber security",
-          "information security",
-          "SOC analyst",
-          "security analyst",
-          "penetration testing",
-          "ethical hacking"
-        ],
-        "experience": "Students / Recent Graduates",
-        "eligibility": "Open to all enrolled college students",
-        "deadline": "2026-09-04",
-        "postedDate": "Live Feed",
-        "source": "Unstop",
-        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20and",
-        "applicationUrl": "https://unstop.com/internships/patient-experience-internship-pristyn-care-1742791",
-        "organizationUrl": null,
-        "tags": [
-          "unstop",
-          "student-internship",
-          "india"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T09:17:48.083Z",
-        "matchScore": 45,
-        "matchReasons": [
-          "✓ ethical hacking matches profile",
-          "✓ Stipend meets preference",
-          "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity",
-          "🧠 AI Learned: High affinity for penetration testing"
-        ]
-      },
-      {
-        "id": "unstop-1742772",
-        "title": "Amazon and Flipkart Product Listing Internship",
-        "company": "Beggin For A Bite",
-        "description": "Live internship at Beggin For A Bite discovered via Unstop.",
-        "location": "online",
-        "mode": "unknown",
-        "stipend": {
-          "min": 15000,
-          "max": 15000,
-          "currency": "INR",
-          "display": "₹15,000/month"
-        },
-        "duration": "2-4 Months",
-        "skills": [
-          "cybersecurity and",
-          "cybersecurity",
-          "cyber security",
-          "information security",
-          "SOC analyst",
-          "security analyst",
-          "penetration testing",
-          "ethical hacking"
-        ],
-        "experience": "Students / Recent Graduates",
-        "eligibility": "Open to all enrolled college students",
-        "deadline": "2026-09-04",
-        "postedDate": "Live Feed",
-        "source": "Unstop",
-        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20and",
-        "applicationUrl": "https://unstop.com/internships/amazon-and-flipkart-product-listing-internship-beggin-for-a-bite-1742772",
-        "organizationUrl": null,
-        "tags": [
-          "unstop",
-          "student-internship",
-          "india"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T09:17:48.083Z",
-        "matchScore": 45,
-        "matchReasons": [
-          "✓ ethical hacking matches profile",
-          "✓ Stipend meets preference",
-          "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity",
-          "🧠 AI Learned: High affinity for penetration testing"
-        ]
-      },
-      {
-        "id": "unstop-1742762",
-        "title": "Marketing Internship",
-        "company": "Axivon Technologies",
-        "description": "Live internship at Axivon Technologies discovered via Unstop.",
-        "location": "online",
-        "mode": "unknown",
-        "stipend": {
-          "min": 15000,
-          "max": 15000,
-          "currency": "INR",
-          "display": "₹15,000/month"
-        },
-        "duration": "2-4 Months",
-        "skills": [
-          "cybersecurity and",
-          "cybersecurity",
-          "cyber security",
-          "information security",
-          "SOC analyst",
-          "security analyst",
-          "penetration testing",
-          "ethical hacking"
-        ],
-        "experience": "Students / Recent Graduates",
-        "eligibility": "Open to all enrolled college students",
-        "deadline": "2026-09-04",
-        "postedDate": "Live Feed",
-        "source": "Unstop",
-        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20and",
-        "applicationUrl": "https://unstop.com/internships/marketing-internship-axivon-technologies-1742762",
-        "organizationUrl": null,
-        "tags": [
-          "unstop",
-          "student-internship",
-          "india"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T09:17:48.083Z",
-        "matchScore": 45,
-        "matchReasons": [
-          "✓ ethical hacking matches profile",
-          "✓ Stipend meets preference",
-          "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity",
-          "🧠 AI Learned: High affinity for penetration testing"
-        ]
-      },
-      {
-        "id": "unstop-1742753",
-        "title": "Product Manager Internship",
-        "company": "GigsForMe",
-        "description": "Live internship at GigsForMe discovered via Unstop.",
-        "location": "online",
-        "mode": "unknown",
-        "stipend": {
-          "min": 15000,
-          "max": 15000,
-          "currency": "INR",
-          "display": "₹15,000/month"
-        },
-        "duration": "2-4 Months",
-        "skills": [
-          "cybersecurity and",
-          "cybersecurity",
-          "cyber security",
-          "information security",
-          "SOC analyst",
-          "security analyst",
-          "penetration testing",
-          "ethical hacking"
-        ],
-        "experience": "Students / Recent Graduates",
-        "eligibility": "Open to all enrolled college students",
-        "deadline": "2026-08-29",
-        "postedDate": "Live Feed",
-        "source": "Unstop",
-        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20and",
-        "applicationUrl": "https://unstop.com/internships/product-manager-internship-gigsforme-1742753",
-        "organizationUrl": null,
-        "tags": [
-          "unstop",
-          "student-internship",
-          "india"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T09:17:48.083Z",
-        "matchScore": 45,
-        "matchReasons": [
-          "✓ ethical hacking matches profile",
-          "✓ Stipend meets preference",
-          "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity",
-          "🧠 AI Learned: High affinity for penetration testing"
-        ]
-      },
-      {
-        "id": "unstop-1742760",
-        "title": "Sales Internship",
-        "company": "URS Group of Companies",
-        "description": "Live internship at URS Group of Companies discovered via Unstop.",
-        "location": "online",
-        "mode": "unknown",
-        "stipend": {
-          "min": 15000,
-          "max": 15000,
-          "currency": "INR",
-          "display": "₹15,000/month"
-        },
-        "duration": "2-4 Months",
-        "skills": [
-          "cybersecurity and",
-          "cybersecurity",
-          "cyber security",
-          "information security",
-          "SOC analyst",
-          "security analyst",
-          "penetration testing",
-          "ethical hacking"
-        ],
-        "experience": "Students / Recent Graduates",
-        "eligibility": "Open to all enrolled college students",
-        "deadline": "2026-09-04",
-        "postedDate": "Live Feed",
-        "source": "Unstop",
-        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20and",
-        "applicationUrl": "https://unstop.com/internships/sales-internship-urs-group-of-companies-1742760",
-        "organizationUrl": null,
-        "tags": [
-          "unstop",
-          "student-internship",
-          "india"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T09:17:48.083Z",
-        "matchScore": 45,
-        "matchReasons": [
-          "✓ ethical hacking matches profile",
-          "✓ Stipend meets preference",
-          "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity",
-          "🧠 AI Learned: High affinity for penetration testing"
-        ]
-      },
-      {
-        "id": "unstop-1742739",
-        "title": "Data Analytics Internship",
-        "company": "Camerinfolks Pvt. Ltd",
-        "description": "Live internship at Camerinfolks Pvt. Ltd discovered via Unstop.",
-        "location": "online",
-        "mode": "unknown",
-        "stipend": {
-          "min": 15000,
-          "max": 15000,
-          "currency": "INR",
-          "display": "₹15,000/month"
-        },
-        "duration": "2-4 Months",
-        "skills": [
-          "cybersecurity and",
-          "cybersecurity",
-          "cyber security",
-          "information security",
-          "SOC analyst",
-          "security analyst",
-          "penetration testing",
-          "ethical hacking"
-        ],
-        "experience": "Students / Recent Graduates",
-        "eligibility": "Open to all enrolled college students",
-        "deadline": "2026-08-22",
-        "postedDate": "Live Feed",
-        "source": "Unstop",
-        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20and",
-        "applicationUrl": "https://unstop.com/internships/data-analytics-internship-camerinfolks-pvt-ltd-1742739",
-        "organizationUrl": null,
-        "tags": [
-          "unstop",
-          "student-internship",
-          "india"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T09:17:48.083Z",
-        "matchScore": 45,
-        "matchReasons": [
-          "✓ ethical hacking matches profile",
-          "✓ Stipend meets preference",
-          "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity",
-          "🧠 AI Learned: High affinity for penetration testing"
-        ]
-      },
-      {
-        "id": "unstop-1742731",
-        "title": "Backend Developer Internship",
-        "company": "Axivon Technologies",
-        "description": "Live internship at Axivon Technologies discovered via Unstop.",
-        "location": "online",
-        "mode": "unknown",
-        "stipend": {
-          "min": 15000,
-          "max": 15000,
-          "currency": "INR",
-          "display": "₹15,000/month"
-        },
-        "duration": "2-4 Months",
-        "skills": [
-          "cybersecurity and",
-          "cybersecurity",
-          "cyber security",
-          "information security",
-          "SOC analyst",
-          "security analyst",
-          "penetration testing",
-          "ethical hacking"
-        ],
-        "experience": "Students / Recent Graduates",
-        "eligibility": "Open to all enrolled college students",
-        "deadline": "2026-09-04",
-        "postedDate": "Live Feed",
-        "source": "Unstop",
-        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20and",
-        "applicationUrl": "https://unstop.com/internships/backend-developer-internship-axivon-technologies-1742731",
-        "organizationUrl": null,
-        "tags": [
-          "unstop",
-          "student-internship",
-          "india"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T09:17:48.084Z",
-        "matchScore": 45,
-        "matchReasons": [
-          "✓ ethical hacking matches profile",
-          "✓ Stipend meets preference",
-          "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity",
-          "🧠 AI Learned: High affinity for penetration testing"
-        ]
-      },
-      {
-        "id": "unstop-1742738",
-        "title": "Web Development Internship",
-        "company": "Confluent Solutions",
-        "description": "Live internship at Confluent Solutions discovered via Unstop.",
-        "location": "online",
-        "mode": "unknown",
-        "stipend": {
-          "min": 15000,
-          "max": 15000,
-          "currency": "INR",
-          "display": "₹15,000/month"
-        },
-        "duration": "2-4 Months",
-        "skills": [
-          "cybersecurity and",
-          "cybersecurity",
-          "cyber security",
-          "information security",
-          "SOC analyst",
-          "security analyst",
-          "penetration testing",
-          "ethical hacking"
-        ],
-        "experience": "Students / Recent Graduates",
-        "eligibility": "Open to all enrolled college students",
-        "deadline": "2026-09-20",
-        "postedDate": "Live Feed",
-        "source": "Unstop",
-        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20and",
-        "applicationUrl": "https://unstop.com/internships/web-development-internship-confluent-solutions-1742738",
-        "organizationUrl": null,
-        "tags": [
-          "unstop",
-          "student-internship",
-          "india"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T09:17:48.084Z",
-        "matchScore": 45,
-        "matchReasons": [
-          "✓ ethical hacking matches profile",
-          "✓ Stipend meets preference",
-          "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity",
-          "🧠 AI Learned: High affinity for penetration testing"
-        ]
-      },
-      {
-        "id": "unstop-1742734",
-        "title": "UI/UX Designer Internship",
-        "company": "Axivon Technologies",
-        "description": "Live internship at Axivon Technologies discovered via Unstop.",
-        "location": "online",
-        "mode": "unknown",
-        "stipend": {
-          "min": 15000,
-          "max": 15000,
-          "currency": "INR",
-          "display": "₹15,000/month"
-        },
-        "duration": "2-4 Months",
-        "skills": [
-          "cybersecurity and",
-          "cybersecurity",
-          "cyber security",
-          "information security",
-          "SOC analyst",
-          "security analyst",
-          "penetration testing",
-          "ethical hacking"
-        ],
-        "experience": "Students / Recent Graduates",
-        "eligibility": "Open to all enrolled college students",
-        "deadline": "2026-09-04",
-        "postedDate": "Live Feed",
-        "source": "Unstop",
-        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20and",
-        "applicationUrl": "https://unstop.com/internships/uiux-designer-internship-axivon-technologies-1742734",
-        "organizationUrl": null,
-        "tags": [
-          "unstop",
-          "student-internship",
-          "india"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T09:17:48.084Z",
-        "matchScore": 45,
-        "matchReasons": [
-          "✓ ethical hacking matches profile",
-          "✓ Stipend meets preference",
-          "✓ Student eligible",
-          "🧠 AI Learned: High affinity for cybersecurity",
-          "🧠 AI Learned: High affinity for penetration testing"
+          "🧠 AI Learned: High affinity for C++",
+          "🧠 AI Learned: Favored remote setup"
         ]
       },
       {
@@ -2620,13 +2413,216 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:47.211Z",
+        "discoveredAt": "2026-08-22T09:32:10.486Z",
         "matchScore": 42,
         "matchReasons": [
           "✓ Python matches profile",
           "✓ React matches profile",
           "🧠 AI Learned: High affinity for Python",
           "🧠 AI Learned: High affinity for React"
+        ]
+      },
+      {
+        "id": "unstop-1742506-myindianthings",
+        "title": "Software Developer Internship",
+        "company": "My Indian Things",
+        "description": "Support SDLC planning, conduct software quality assurance (QA) audits, and implement user experience (UX) enhancements.",
+        "location": "Work from Home (India)",
+        "mode": "remote",
+        "stipend": {
+          "min": 2000,
+          "max": 2000,
+          "currency": "INR",
+          "display": "₹2,000/month"
+        },
+        "duration": "Full Time (6 days left to apply)",
+        "skills": [
+          "SDLC",
+          "Software QA",
+          "UI/UX Design",
+          "Software Development"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Undergraduate students",
+        "deadline": "2026-08-28",
+        "postedDate": "Aug 21, 2026",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships/software-developer-internship-my-indian-things-1742506",
+        "applicationUrl": "https://unstop.com/internships/software-developer-internship-my-indian-things-1742506",
+        "organizationUrl": "https://unstop.com",
+        "tags": [
+          "unstop",
+          "software-dev",
+          "uiux",
+          "remote"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:32:07.363Z",
+        "matchScore": 40,
+        "matchReasons": [
+          "✓ Remote opportunity",
+          "✓ Student eligible",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "unstop-1742814",
+        "title": "Co-Founder & Growth / Marketing Lead Internship",
+        "company": "ClgKart",
+        "description": "Live internship at ClgKart discovered via Unstop.",
+        "location": "online",
+        "mode": "unknown",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "2-4 Months",
+        "skills": [
+          "cybersecurity and",
+          "Software Development",
+          "Web"
+        ],
+        "experience": "Students / Recent Graduates",
+        "eligibility": "Open to all enrolled college students",
+        "deadline": "2026-09-04",
+        "postedDate": "Live Feed",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20and",
+        "applicationUrl": "https://unstop.com/internships/co-founder-growth-marketing-lead-internship-clgkart-1742814",
+        "organizationUrl": null,
+        "tags": [
+          "unstop",
+          "student-internship",
+          "india"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:32:09.477Z",
+        "matchScore": 40,
+        "matchReasons": [
+          "✓ Stipend meets preference",
+          "✓ Student eligible"
+        ]
+      },
+      {
+        "id": "unstop-1742808",
+        "title": "Business Development Associate Internship",
+        "company": "Skillumni",
+        "description": "Live internship at Skillumni discovered via Unstop.",
+        "location": "online",
+        "mode": "unknown",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "2-4 Months",
+        "skills": [
+          "cybersecurity and",
+          "Software Development",
+          "Web"
+        ],
+        "experience": "Students / Recent Graduates",
+        "eligibility": "Open to all enrolled college students",
+        "deadline": "2026-09-04",
+        "postedDate": "Live Feed",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20and",
+        "applicationUrl": "https://unstop.com/internships/business-development-associate-internship-skillumni-1742808",
+        "organizationUrl": null,
+        "tags": [
+          "unstop",
+          "student-internship",
+          "india"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:32:09.477Z",
+        "matchScore": 40,
+        "matchReasons": [
+          "✓ Stipend meets preference",
+          "✓ Student eligible"
+        ]
+      },
+      {
+        "id": "unstop-1742799",
+        "title": "Advisor Sourcing & Insurance Business Development Internship",
+        "company": "Kaiser Abbott Private Limited",
+        "description": "Live internship at Kaiser Abbott Private Limited discovered via Unstop.",
+        "location": "online",
+        "mode": "unknown",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "2-4 Months",
+        "skills": [
+          "cybersecurity and",
+          "Software Development",
+          "Web"
+        ],
+        "experience": "Students / Recent Graduates",
+        "eligibility": "Open to all enrolled college students",
+        "deadline": "2026-09-04",
+        "postedDate": "Live Feed",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20and",
+        "applicationUrl": "https://unstop.com/internships/advisor-sourcing-insurance-business-development-internship-kaiser-abbott-private-limited-1742799",
+        "organizationUrl": null,
+        "tags": [
+          "unstop",
+          "student-internship",
+          "india"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:32:09.477Z",
+        "matchScore": 40,
+        "matchReasons": [
+          "✓ Stipend meets preference",
+          "✓ Student eligible"
+        ]
+      },
+      {
+        "id": "unstop-1742791",
+        "title": "Patient Experience Internship",
+        "company": "Pristyn Care",
+        "description": "Live internship at Pristyn Care discovered via Unstop.",
+        "location": "online",
+        "mode": "unknown",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "2-4 Months",
+        "skills": [
+          "cybersecurity and",
+          "Software Development",
+          "Web"
+        ],
+        "experience": "Students / Recent Graduates",
+        "eligibility": "Open to all enrolled college students",
+        "deadline": "2026-09-04",
+        "postedDate": "Live Feed",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20and",
+        "applicationUrl": "https://unstop.com/internships/patient-experience-internship-pristyn-care-1742791",
+        "organizationUrl": null,
+        "tags": [
+          "unstop",
+          "student-internship",
+          "india"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:32:09.477Z",
+        "matchScore": 40,
+        "matchReasons": [
+          "✓ Stipend meets preference",
+          "✓ Student eligible"
         ]
       },
       {
@@ -2667,7 +2663,7 @@
           "bengaluru"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:17:44.029Z",
+        "discoveredAt": "2026-08-22T09:32:07.364Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ React matches profile",
@@ -2683,28 +2679,28 @@
         "name": "Internshala",
         "status": "no_results",
         "count": 0,
-        "durationMs": 3544
+        "durationMs": 4349
       },
       {
         "id": "company_careers",
         "name": "Direct Company Career Portals",
         "status": "success",
         "count": 10,
-        "durationMs": 4439
+        "durationMs": 5175
       },
       {
         "id": "unstop",
         "name": "Unstop India",
         "status": "success",
-        "count": 12,
-        "durationMs": 4055
+        "count": 13,
+        "durationMs": 2114
       },
       {
         "id": "wellfound",
         "name": "Wellfound & Tech Startups",
         "status": "success",
         "count": 32,
-        "durationMs": 3184
+        "durationMs": 3124
       },
       {
         "id": "aicte",

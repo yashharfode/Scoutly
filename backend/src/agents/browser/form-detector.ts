@@ -10,47 +10,56 @@ export const formDetectionScript = `
 
     // 2. Check for Apply button if form not yet open (Unstop, Wellfound, Greenhouse, Lever)
     let applyButtonSelector = null;
-    const isHeaderOrNav = (el) => !!el.closest('header, nav, .navbar, .global-header, .header, [role="navigation"]');
 
-    const buttons = Array.from(document.querySelectorAll('button, a, input[type="button"], [role="button"]'));
-    for (const b of buttons) {
-      if (isHeaderOrNav(b)) continue;
-      if (b.offsetParent === null) continue;
+    // Check Unstop specific register/apply button IDs and classes first
+    const unstopApplyBtn = document.querySelector('#un-register-btn, .register_btn, .apply_btn, [class*="register_btn"], [class*="apply_btn"]');
+    if (unstopApplyBtn && (unstopApplyBtn as HTMLElement).offsetParent !== null) {
+      if (unstopApplyBtn.id) applyButtonSelector = '#' + CSS.escape(unstopApplyBtn.id);
+      else applyButtonSelector = '.register_btn';
+    }
 
-      const txt = (b.innerText || b.value || b.getAttribute('aria-label') || '').toLowerCase().trim();
-      const href = (b.getAttribute('href') || '').toLowerCase();
-      const classes = (b.className || '').toString().toLowerCase();
+    if (!applyButtonSelector) {
+      const isHeaderOrNav = (el) => !!el.closest('header, nav, .navbar, .global-header, .header, [role="navigation"]');
+      const candidates = Array.from(document.querySelectorAll('button, a, div, span, input[type="button"], [role="button"]'));
+      
+      for (const b of candidates) {
+        if (isHeaderOrNav(b)) continue;
+        if ((b as HTMLElement).offsetParent === null) continue;
 
-      if (
-        txt === 'apply' ||
-        txt === 'apply now' ||
-        txt === 'easy apply' ||
-        txt === 'register' ||
-        txt === 'register now' ||
-        txt === 'apply for this job' ||
-        txt === 'submit an application' ||
-        txt.includes('apply now') ||
-        txt.includes('register now') ||
-        txt.includes('apply (free)') ||
-        txt.includes('register') ||
-        href.includes('/apply') ||
-        href.includes('/register') ||
-        classes.includes('apply-btn') ||
-        classes.includes('register-btn')
-      ) {
-        if (b.id) applyButtonSelector = '#' + CSS.escape(b.id);
-        else if (b.className && typeof b.className === 'string') {
-          applyButtonSelector = b.tagName.toLowerCase() + '.' + b.className.split(' ').filter(Boolean).slice(0, 2).join('.');
-        } else {
-          applyButtonSelector = b.tagName.toLowerCase();
+        const txt = ((b as HTMLElement).innerText || (b as HTMLInputElement).value || b.getAttribute('aria-label') || '').toLowerCase().trim();
+        const href = (b.getAttribute('href') || '').toLowerCase();
+        const classes = (b.className || '').toString().toLowerCase();
+
+        if (
+          txt === 'apply' ||
+          txt === 'apply now' ||
+          txt === 'quick apply' ||
+          txt === 'easy apply' ||
+          txt === 'register' ||
+          txt === 'register now' ||
+          txt.includes('quick apply') ||
+          txt.includes('apply now') ||
+          txt.includes('register now') ||
+          txt.includes('apply (free)') ||
+          href.includes('/apply') ||
+          href.includes('/register') ||
+          classes.includes('register_btn') ||
+          classes.includes('apply-btn')
+        ) {
+          if (b.id) applyButtonSelector = '#' + CSS.escape(b.id);
+          else if (b.className && typeof b.className === 'string') {
+            applyButtonSelector = b.tagName.toLowerCase() + '.' + b.className.split(' ').filter(Boolean).slice(0, 2).join('.');
+          } else {
+            applyButtonSelector = b.tagName.toLowerCase();
+          }
+          break;
         }
-        break;
       }
     }
 
     // 3. Check for Login Wall or Auth Gate inside modal or main view (Ignore global nav login links)
     const hasPassword = !!document.querySelector('input[type="password"]');
-    const modalOrMain = document.querySelector('[role="dialog"], .modal, .auth-modal, .login-modal, main, #app') || document.body;
+    const modalOrMain = document.querySelector('[role="dialog"], .modal, .auth-modal, .login-modal, #login-modal, main, #app') || document.body;
     const pageText = (modalOrMain ? modalOrMain.innerText : '').toLowerCase();
     
     const hasLoginPrompt = (
@@ -62,6 +71,7 @@ export const formDetectionScript = `
       pageText.includes('login with otp') ||
       pageText.includes('enter your mobile number to login') ||
       pageText.includes('enter mobile number') ||
+      pageText.includes('login / register') ||
       window.location.pathname.toLowerCase().includes('/login') ||
       window.location.pathname.toLowerCase().includes('/signin')
     );
