@@ -240,7 +240,7 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
     return filepath;
   }
 
-    async submitAndVerify(): Promise<SubmissionVerificationResult> {
+      async submitAndVerify(): Promise<SubmissionVerificationResult> {
     this.ensureReady();
     console.log("[PlaywrightBrowser] Executing safe submit and verification workflow...");
 
@@ -250,36 +250,46 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
 
       const initialUrl = page.url();
 
-      // Find the GENUINE submit / send application button (Exclude navbars, headers, notification bells)
+      // Find the GENUINE submit / send application button across all standard and modal selectors
       const submitSelector = await page.evaluate(() => {
-        // Exclude header, nav, menu elements
         const isHeaderOrNav = (el: any) => !!el.closest('header, nav, .navbar, .global-header, .notifications, [role="navigation"]');
 
+        // Priority 1: Wellfound specific and modal buttons
+        const modalButtons = Array.from(document.querySelectorAll('[role="dialog"] button, .modal button, [data-test*="Modal"] button, form button, [data-test*="Apply"]'));
+        for (const el of modalButtons) {
+          if (isHeaderOrNav(el)) continue;
+          if ((el as HTMLElement).offsetParent === null) continue; // must be visible
+          const text = ((el as HTMLElement).innerText || (el as HTMLInputElement).value || el.getAttribute("aria-label") || "").toLowerCase().trim();
+          if (text.includes("send") || text.includes("apply") || text.includes("submit")) {
+            if (el.id) return '#' + CSS.escape(el.id);
+            if (el.className && typeof el.className === 'string') {
+              return el.tagName.toLowerCase() + '.' + el.className.split(' ').filter(Boolean).slice(0, 2).join('.');
+            }
+            return '[role="dialog"] button';
+          }
+        }
+
+        // Priority 2: All visible buttons matching send / submit / apply
         const allButtons = Array.from(document.querySelectorAll('button, input[type="submit"], input[type="button"], [role="button"], a.btn, a.button'));
-        
-        // Priority 1: Exact matches in modal or main form
         for (const el of allButtons) {
           if (isHeaderOrNav(el)) continue;
           if ((el as HTMLElement).offsetParent === null) continue; // must be visible
 
           const text = ((el as HTMLElement).innerText || (el as HTMLInputElement).value || el.getAttribute("aria-label") || "").toLowerCase().trim();
-          
-          if (
-            text === "send application" ||
-            text === "submit application" ||
-            text === "apply now" ||
-            text === "submit" ||
-            text === "complete application" ||
-            text === "finish application" ||
-            text === "apply for this job" ||
-            text === "send" ||
-            text.includes("send application") ||
-            text.includes("submit application")
-          ) {
-            // Avoid bell or notification buttons
-            const classes = (el.className || '').toString().toLowerCase();
-            if (classes.includes('bell') || classes.includes('icon') && text.length === 0) continue;
+          const classes = (el.className || '').toString().toLowerCase();
 
+          if (classes.includes('bell') || classes.includes('icon') && text.length === 0) continue;
+
+          if (
+            text.includes("send application") ||
+            text.includes("submit application") ||
+            text.includes("send") ||
+            text.includes("submit") ||
+            text.includes("apply now") ||
+            text.includes("apply to") ||
+            text === "apply" ||
+            (el as HTMLInputElement).type === "submit"
+          ) {
             if (el.id) return '#' + CSS.escape(el.id);
             if (el.className && typeof el.className === 'string') {
               return el.tagName.toLowerCase() + '.' + el.className.split(' ').filter(Boolean).slice(0, 2).join('.');
@@ -288,21 +298,11 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
           }
         }
 
-        // Priority 2: Standard form submit button inside visible form or modal
-        const formSubmit = document.querySelector('form button[type="submit"], form input[type="submit"], [role="dialog"] button[type="submit"]');
-        if (formSubmit && !isHeaderOrNav(formSubmit)) {
-          if (formSubmit.id) return '#' + CSS.escape(formSubmit.id);
-          return formSubmit.tagName.toLowerCase();
-        }
-
-        // Priority 3: Any button containing "Send" or "Apply" inside a modal or dialog
-        const modalBtn = document.querySelector('[role="dialog"] button, .modal button');
-        if (modalBtn) {
-          const txt = ((modalBtn as HTMLElement).innerText || "").toLowerCase();
-          if (txt.includes('send') || txt.includes('apply') || txt.includes('submit')) {
-            if (modalBtn.id) return '#' + CSS.escape(modalBtn.id);
-            return '[role="dialog"] button';
-          }
+        // Priority 3: Any primary action button on the page
+        const primaryBtn = document.querySelector('button[type="submit"], input[type="submit"], button.primary, button.btn-primary');
+        if (primaryBtn && !isHeaderOrNav(primaryBtn)) {
+          if (primaryBtn.id) return '#' + CSS.escape(primaryBtn.id);
+          return primaryBtn.tagName.toLowerCase();
         }
 
         return null;
@@ -310,25 +310,37 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
 
       if (!submitSelector) {
         console.warn("[PlaywrightBrowser] No distinct submit button selector identified.");
-        return {
-          verified: false,
-          error: "Could not locate a visible 'Send Application' button. Please click Send Application in the open Chromium window."
-        };
+        // Attempt a fallback click on any active apply button in the dialog or main view
+        const fallbackClicked = await page.evaluate(() => {
+          const btns = Array.from(document.querySelectorAll('button'));
+          for (const b of btns) {
+            const t = (b.innerText || '').toLowerCase().trim();
+            if (t.includes('send') || t.includes('apply') || t.includes('submit')) {
+              b.click();
+              return true;
+            }
+          }
+          return false;
+        });
+
+        if (!fallbackClicked) {
+          return {
+            verified: false,
+            error: "Could not locate a visible Submit button. Please click Send Application in the open Chromium window."
+          };
+        }
+      } else {
+        console.log(`[PlaywrightBrowser] Clicking genuine submit button: ${submitSelector}`);
+        await Promise.all([
+          page.click(submitSelector, { timeout: 6000 }).catch(async () => {
+            await page.evaluate((sel) => {
+              const btn = document.querySelector(sel) as HTMLElement;
+              if (btn) btn.click();
+            }, submitSelector);
+          }),
+          page.waitForLoadState("networkidle", { timeout: 8000 }).catch(() => {})
+        ]);
       }
-
-      console.log(`[PlaywrightBrowser] Clicking genuine submit button: ${submitSelector}`);
-
-      // Click submit and wait for load
-      await Promise.all([
-        page.click(submitSelector, { timeout: 6000 }).catch(async () => {
-          // fallback try evaluate click
-          await page.evaluate((sel) => {
-            const btn = document.querySelector(sel) as HTMLElement;
-            if (btn) btn.click();
-          }, submitSelector);
-        }),
-        page.waitForLoadState("networkidle", { timeout: 8000 }).catch(() => {})
-      ]);
 
       await page.waitForTimeout(3000);
 
@@ -370,7 +382,6 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
 
         const textSuccess = successKeywords.some(s => lower.includes(s)) || hasAppliedButton;
 
-        // 3. Extract Reference ID
         let appId: string | undefined;
         const idMatch = bodyText.match(/(?:Applications*ID|References*ID|Submissions*ID|ID|Refs*#)[:s]+([A-Z0-9_-]{6,20})/i);
         if (idMatch) {
