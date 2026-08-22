@@ -10,3 +10,4 @@ backend/.env.local
 data/screenshots/*.png
 playwright/.auth/
 .DS_Store
+data/browser-user-data/
