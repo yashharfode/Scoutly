@@ -691,6 +691,23 @@ function CockpitView({
   onCancel: () => void;
   onStartDemo: () => void;
 }) {
+  const [localValues, setLocalValues] = useState<Record<string, string>>({});
+
+  useEffect(() => {
+    if (session?.mappings) {
+      const initial: Record<string, string> = {};
+      session.mappings.forEach((m) => {
+        initial[m.fieldId] = m.value || "";
+      });
+      setLocalValues(initial);
+    }
+  }, [session?.sessionId, session?.mappings?.length]);
+
+  const handleLocalChange = (fieldId: string, newVal: string) => {
+    setLocalValues((prev) => ({ ...prev, [fieldId]: newVal }));
+    onFieldChange(fieldId, newVal);
+  };
+
   if (!session) {
     return (
       <section>
@@ -779,22 +796,7 @@ function CockpitView({
         </div>
       )}
 
-      {/* Waiting for User: Login / CAPTCHA Banner */}
-      {session.hasCaptcha && (
-        <div className="error-banner" style={{ marginTop: 16, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <ShieldAlert size={26} color="#c07b48" />
-            <div>
-              <strong>⏸ CAPTCHA Detected on Live Website</strong>
-              <p style={{ margin: 0, fontSize: 13 }}>Please solve the CAPTCHA inside the opened Chromium browser window.</p>
-            </div>
-          </div>
-          <button className="primary-button" onClick={onResume} style={{ display: "flex", alignItems: "center", gap: 6 }}>
-            <Play size={14} /> I've Solved It — Continue
-          </button>
-        </div>
-      )}
-
+      {/* Waiting for User: Login Banner */}
       {session.isLogin && (
         <div style={{ marginTop: 18, padding: "20px 24px", background: "#fffbeb", border: "2px solid #fde68a", borderRadius: 12, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 14 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -810,6 +812,22 @@ function CockpitView({
           </div>
           <button className="primary-button" onClick={onResume} style={{ background: "#d97706", display: "flex", alignItems: "center", gap: 8, padding: "12px 20px", fontSize: 14 }}>
             <Play size={16} /> I've Logged In — Fast Apply 🚀
+          </button>
+        </div>
+      )}
+
+      {/* Waiting for User: CAPTCHA Banner */}
+      {session.hasCaptcha && (
+        <div className="error-banner" style={{ marginTop: 16, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+            <ShieldAlert size={26} color="#c07b48" />
+            <div>
+              <strong>⏸ CAPTCHA Detected on Live Website</strong>
+              <p style={{ margin: 0, fontSize: 13 }}>Please solve the CAPTCHA inside the opened Chromium browser window.</p>
+            </div>
+          </div>
+          <button className="primary-button" onClick={onResume} style={{ display: "flex", alignItems: "center", gap: 6 }}>
+            <Play size={14} /> I've Solved It — Continue
           </button>
         </div>
       )}
@@ -853,7 +871,7 @@ function CockpitView({
           </div>
 
           <div>
-            <div className={`telemetry-step done`}>
+            <div className="telemetry-step done">
               <div className="step-icon done">✓</div>
               <div>
                 <strong style={{ fontSize: 13 }}>Browser Launched</strong>
@@ -930,7 +948,7 @@ function CockpitView({
           <div style={{ display: "grid", gap: 14 }}>
             {session.fields.map((field) => {
               const mapping = session.mappings.find(m => m.fieldId === field.id);
-              const val = mapping?.value || "";
+              const val = localValues[field.id] !== undefined ? localValues[field.id] : (mapping?.value || "");
               const status = mapping?.status || "missing";
               const isAi = mapping?.aiGenerated;
 
@@ -965,16 +983,18 @@ function CockpitView({
                       rows={3}
                       className="field-input"
                       value={val}
-                      onChange={(e) => onFieldChange(field.id, e.target.value)}
-                      placeholder="Enter details..."
+                      onChange={(e) => handleLocalChange(field.id, e.target.value)}
+                      placeholder="Type your response here..."
+                      style={{ width: "100%", fontFamily: "inherit" }}
                     />
                   ) : (
                     <input
                       type={field.type || "text"}
                       className="field-input"
                       value={val}
-                      onChange={(e) => onFieldChange(field.id, e.target.value)}
-                      placeholder={`Enter ${field.labelText || field.name}...`}
+                      onChange={(e) => handleLocalChange(field.id, e.target.value)}
+                      placeholder={`Enter ${field.labelText || field.name || "value"}...`}
+                      style={{ width: "100%", fontFamily: "inherit" }}
                     />
                   )}
                 </div>

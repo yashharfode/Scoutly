@@ -1,2 +1,3 @@
-2026/08/22-12:56:37.365 29452 Creating DB /Users/harshsahu/AgentCrew/scoutly/data/browser-user-data/Default/Site Characteristics Database since it was missing.
-2026/08/22-12:56:37.371 29452 Reusing MANIFEST /Users/harshsahu/AgentCrew/scoutly/data/browser-user-data/Default/Site Characteristics Database/MANIFEST-000001
+2026/08/22-12:58:32.677 29d58 Reusing MANIFEST /Users/harshsahu/AgentCrew/scoutly/data/browser-user-data/Default/Site Characteristics Database/MANIFEST-000001
+2026/08/22-12:58:32.678 29d58 Recovering log #3
+2026/08/22-12:58:32.678 29d58 Reusing old log /Users/harshsahu/AgentCrew/scoutly/data/browser-user-data/Default/Site Characteristics Database/000003.log 
