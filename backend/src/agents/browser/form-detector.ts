@@ -12,7 +12,6 @@ export const formDetectionScript = `
     const hasPassword = !!document.querySelector('input[type="password"]');
     const pageText = (document.body ? document.body.innerText : '').toLowerCase();
     
-    // Check if there is an explicit login required overlay/gate
     const hasLoginPrompt = (
       pageText.includes('login to apply') ||
       pageText.includes('sign in to apply') ||
@@ -43,7 +42,7 @@ export const formDetectionScript = `
         txt.includes('apply now') ||
         txt.includes('apply for job')
       ) {
-        if (b.offsetParent !== null) { // visible
+        if (b.offsetParent !== null) {
           if (b.id) applyButtonSelector = '#' + CSS.escape(b.id);
           else if (b.className) applyButtonSelector = b.tagName.toLowerCase() + '.' + b.className.split(' ').filter(Boolean).slice(0,2).join('.');
           else applyButtonSelector = b.tagName.toLowerCase();
@@ -52,12 +51,11 @@ export const formDetectionScript = `
       }
     }
 
-    // 4. Extract Form Fields
+    // 4. Extract Application Form Fields (Filter out search bars, headers, nav inputs)
     const fields = [];
     const elements = document.querySelectorAll('input, textarea, select, [contenteditable="true"]');
     
     elements.forEach((el, index) => {
-      // Basic visibility check
       const style = window.getComputedStyle(el);
       if (style.display === 'none' || style.visibility === 'hidden' || (el instanceof HTMLInputElement && el.type === 'hidden')) {
         return;
@@ -66,9 +64,29 @@ export const formDetectionScript = `
       const tag = el.tagName.toLowerCase();
       const type = (el instanceof HTMLInputElement || el instanceof HTMLSelectElement) ? (el.type || 'text') : (tag === 'textarea' ? 'textarea' : 'text');
       
-      // Skip generic search bars and submit buttons
+      // Skip submit, reset, button
       if (type === 'submit' || type === 'button' || type === 'reset') return;
-      if (el.getAttribute('role') === 'searchbox' || (el.getAttribute('placeholder') || '').toLowerCase().includes('search')) return;
+
+      // Filter out global navbar/header search bars
+      const placeholder = (el.getAttribute('placeholder') || '').toLowerCase();
+      const name = (el.getAttribute('name') || '').toLowerCase();
+      const id = (el.id || '').toLowerCase();
+      const role = (el.getAttribute('role') || '').toLowerCase();
+      const inHeaderOrNav = !!el.closest('header, nav, .navbar, .global-header, .qsb, .search-bar, [role="search"]');
+
+      if (
+        role === 'searchbox' ||
+        inHeaderOrNav ||
+        placeholder.includes('search jobs') ||
+        placeholder.includes('search by skills') ||
+        placeholder.includes('enter skills / designations') ||
+        placeholder.includes('search candidate') ||
+        id.includes('search') ||
+        id.includes('qsb') ||
+        name.includes('search')
+      ) {
+        return;
+      }
 
       // Find label text
       let labelText = '';
@@ -93,7 +111,7 @@ export const formDetectionScript = `
         }
       }
 
-      // Generate CSS selector
+      // Generate selector
       let selector = '';
       if (el.id) {
         selector = \`#\${CSS.escape(el.id)}\`;

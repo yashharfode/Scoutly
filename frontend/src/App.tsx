@@ -695,13 +695,13 @@ function CockpitView({
 
   useEffect(() => {
     if (session?.mappings) {
-      const initial: Record<string, string> = {};
+      const updated: Record<string, string> = {};
       session.mappings.forEach((m) => {
-        initial[m.fieldId] = m.value || "";
+        updated[m.fieldId] = m.value || "";
       });
-      setLocalValues(initial);
+      setLocalValues(updated);
     }
-  }, [session?.sessionId, session?.mappings?.length]);
+  }, [session?.sessionId, JSON.stringify(session?.mappings?.map(m => ({ id: m.fieldId, val: m.value })))]);
 
   const handleLocalChange = (fieldId: string, newVal: string) => {
     setLocalValues((prev) => ({ ...prev, [fieldId]: newVal }));
