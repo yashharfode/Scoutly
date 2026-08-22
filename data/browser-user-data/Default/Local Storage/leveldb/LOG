@@ -1,3 +1,5 @@
-2026/08/22-15:02:26.813 467e9 Reusing MANIFEST /Users/harshsahu/AgentCrew/scoutly/data/browser-user-data/Default/Local Storage/leveldb/MANIFEST-000001
-2026/08/22-15:02:26.815 467e9 Recovering log #4
-2026/08/22-15:02:26.816 467e9 Reusing old log /Users/harshsahu/AgentCrew/scoutly/data/browser-user-data/Default/Local Storage/leveldb/000004.log 
+2026/08/22-15:06:27.824 47509 Reusing MANIFEST /Users/harshsahu/AgentCrew/scoutly/data/browser-user-data/Default/Local Storage/leveldb/MANIFEST-000001
+2026/08/22-15:06:27.826 47509 Recovering log #4
+2026/08/22-15:06:27.826 47509 Level-0 table #7: started
+2026/08/22-15:06:27.833 47509 Level-0 table #7: 20046 bytes OK
+2026/08/22-15:06:27.837 47509 Delete type=0 #4

@@ -535,6 +535,25 @@ function DiscoverView({
   );
 }
 
+
+function formatDeadlineBadge(deadlineStr?: string) {
+  if (!deadlineStr) return { text: "Open until filled", isUrgent: false, timestamp: 9999999999999 };
+  const d = new Date(deadlineStr);
+  if (isNaN(d.getTime())) return { text: deadlineStr, isUrgent: false, timestamp: 9999999999999 };
+  
+  const now = new Date();
+  const diffMs = d.getTime() - now.getTime();
+  const diffDays = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
+  
+  if (diffDays <= 0) {
+    return { text: `Closing today (${d.toLocaleDateString("en-IN", { month: "short", day: "numeric" })})`, isUrgent: true, timestamp: d.getTime() };
+  } else if (diffDays <= 14) {
+    return { text: `⏳ ${diffDays} days left (${d.toLocaleDateString("en-IN", { month: "short", day: "numeric" })})`, isUrgent: true, timestamp: d.getTime() };
+  } else {
+    return { text: `📅 Deadline: ${d.toLocaleDateString("en-IN", { month: "short", day: "numeric", year: "numeric" })}`, isUrgent: false, timestamp: d.getTime() };
+  }
+}
+
 function MatchesView({
   results,
   discoverySummary,
@@ -555,12 +574,13 @@ function MatchesView({
   const sources = discoverySummary?.sourceSummary?.sources || [];
   const memoryInsights = discoverySummary?.memoryInsights || [];
 
-  // Filter States
+  // Filter & Sort States
   const [selectedSource, setSelectedSource] = useState<string>("all");
   const [selectedInterest, setSelectedInterest] = useState<string>("all");
   const [selectedMode, setSelectedMode] = useState<string>("all");
   const [minStipend, setMinStipend] = useState<number>(0);
   const [searchTerm, setSearchTerm] = useState<string>("");
+  const [sortBy, setSortBy] = useState<"match" | "deadline" | "stipend" | "newest">("match");
 
   // Derive unique sources from results
   const availableSources = Array.from(new Set(results.map(r => r.source || "Other"))).filter(Boolean);
@@ -574,48 +594,62 @@ function MatchesView({
     { id: "data", label: "📊 Data Science", keywords: ["data", "analytics", "sql", "pandas", "bi", "data engineering", "big data"] }
   ];
 
-  // Apply filters
-  const filteredResults = results.filter(opp => {
-    // 1. Source filter
-    if (selectedSource !== "all" && opp.source !== selectedSource) {
-      return false;
-    }
-
-    // 2. Interest domain filter
-    if (selectedInterest !== "all") {
-      const interestObj = INTERESTS.find(i => i.id === selectedInterest);
-      if (interestObj?.keywords) {
-        const textToMatch = `${opp.title} ${opp.organization} ${opp.description || ""} ${opp.skills.join(" ")} ${opp.tags.join(" ")}`.toLowerCase();
-        const matchesInterest = interestObj.keywords.some(k => textToMatch.includes(k));
-        if (!matchesInterest) return false;
+  // Apply filters and sorting
+  const filteredResults = results
+    .filter(opp => {
+      // 1. Source filter
+      if (selectedSource !== "all" && opp.source !== selectedSource) {
+        return false;
       }
-    }
 
-    // 3. Mode filter
-    if (selectedMode !== "all") {
-      const oppMode = (opp.mode || "").toLowerCase();
-      if (selectedMode === "remote" && !oppMode.includes("remote")) return false;
-      if (selectedMode === "hybrid" && !oppMode.includes("hybrid")) return false;
-      if (selectedMode === "onsite" && (!oppMode.includes("onsite") && oppMode.length > 0 && !oppMode.includes("remote") && !oppMode.includes("hybrid"))) return false;
-    }
+      // 2. Interest domain filter
+      if (selectedInterest !== "all") {
+        const interestObj = INTERESTS.find(i => i.id === selectedInterest);
+        if (interestObj?.keywords) {
+          const textToMatch = `${opp.title} ${opp.organization} ${opp.description || ""} ${opp.skills.join(" ")} ${opp.tags.join(" ")}`.toLowerCase();
+          const matchesInterest = interestObj.keywords.some(k => textToMatch.includes(k));
+          if (!matchesInterest) return false;
+        }
+      }
 
-    // 4. Stipend filter
-    if (minStipend > 0) {
-      const oppStipend = opp.stipend || 0;
-      if (oppStipend > 0 && oppStipend < minStipend) return false;
-    }
+      // 3. Mode filter
+      if (selectedMode !== "all") {
+        const oppMode = (opp.mode || "").toLowerCase();
+        if (selectedMode === "remote" && !oppMode.includes("remote")) return false;
+        if (selectedMode === "hybrid" && !oppMode.includes("hybrid")) return false;
+        if (selectedMode === "onsite" && (!oppMode.includes("onsite") && oppMode.length > 0 && !oppMode.includes("remote") && !oppMode.includes("hybrid"))) return false;
+      }
 
-    // 5. In-page search term
-    if (searchTerm.trim().length > 0) {
-      const term = searchTerm.toLowerCase();
-      const combined = `${opp.title} ${opp.organization} ${opp.location || ""} ${opp.skills.join(" ")} ${opp.description || ""}`.toLowerCase();
-      if (!combined.includes(term)) return false;
-    }
+      // 4. Stipend filter
+      if (minStipend > 0) {
+        const oppStipend = opp.stipend || 0;
+        if (oppStipend > 0 && oppStipend < minStipend) return false;
+      }
 
-    return true;
-  });
+      // 5. In-page search term
+      if (searchTerm.trim().length > 0) {
+        const term = searchTerm.toLowerCase();
+        const combined = `${opp.title} ${opp.organization} ${opp.location || ""} ${opp.skills.join(" ")} ${opp.description || ""}`.toLowerCase();
+        if (!combined.includes(term)) return false;
+      }
 
-  const hasActiveFilters = selectedSource !== "all" || selectedInterest !== "all" || selectedMode !== "all" || minStipend > 0 || searchTerm.length > 0;
+      return true;
+    })
+    .sort((a, b) => {
+      if (sortBy === "deadline") {
+        const dA = formatDeadlineBadge(a.deadline).timestamp;
+        const dB = formatDeadlineBadge(b.deadline).timestamp;
+        return dA - dB;
+      } else if (sortBy === "stipend") {
+        return (b.stipend || 0) - (a.stipend || 0);
+      } else if (sortBy === "newest") {
+        return new Date(b.extractedAt || 0).getTime() - new Date(a.extractedAt || 0).getTime();
+      } else {
+        return (b.matchScore || 0) - (a.matchScore || 0);
+      }
+    });
+
+  const hasActiveFilters = selectedSource !== "all" || selectedInterest !== "all" || selectedMode !== "all" || minStipend > 0 || searchTerm.length > 0 || sortBy !== "match";
 
   const resetFilters = () => {
     setSelectedSource("all");
@@ -623,6 +657,7 @@ function MatchesView({
     setSelectedMode("all");
     setMinStipend(0);
     setSearchTerm("");
+    setSortBy("match");
   };
 
   return (
@@ -670,7 +705,7 @@ function MatchesView({
                   badgeBg = "#f9fafb";
                   dot = "⚪";
                   label = "0 results";
-                } else if ((s.status === "network_error" || s.status === "timeout" || s.status === "blocked")) {
+                } else if (s.status === "network_error" || s.status === "timeout" || s.status === "blocked") {
                   badgeColor = "#b91c1c";
                   badgeBg = "#fef2f2";
                   dot = "🔴";
@@ -712,7 +747,7 @@ function MatchesView({
         )}
       </div>
 
-      {/* Interactive Opportunity Filter Cockpit */}
+      {/* Interactive Opportunity Filter & Sort Cockpit */}
       <div style={{ background: "white", border: "1px solid #c7e5bb", borderRadius: 14, padding: "20px 22px", marginBottom: 24, boxShadow: "0 2px 8px rgba(0,0,0,0.02)" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12, marginBottom: 16 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
@@ -880,6 +915,42 @@ function MatchesView({
             </div>
           </div>
         </div>
+
+        {/* 4. Sort By Controls */}
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 12, borderTop: "1px dashed #e3e6e0", paddingTop: 14, marginTop: 14 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+            <span style={{ fontSize: 12, fontWeight: 800, color: "#1e3b2a", textTransform: "uppercase", letterSpacing: "0.06em" }}>
+              ⚡ Sort Opportunities By:
+            </span>
+            <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+              {[
+                { id: "match", label: "🔥 Best Match" },
+                { id: "deadline", label: "⏳ Deadline (Ending Soonest)" },
+                { id: "stipend", label: "💰 Highest Stipend" },
+                { id: "newest", label: "✨ Newest" }
+              ].map((s) => (
+                <button
+                  key={s.id}
+                  type="button"
+                  onClick={() => setSortBy(s.id as any)}
+                  style={{
+                    padding: "5px 12px",
+                    borderRadius: 20,
+                    fontSize: 12,
+                    fontWeight: sortBy === s.id ? 800 : 500,
+                    border: sortBy === s.id ? "2px solid #166534" : "1px solid #d1d5db",
+                    background: sortBy === s.id ? "#dcfce7" : "#ffffff",
+                    color: sortBy === s.id ? "#14532d" : "#4b5563",
+                    cursor: "pointer",
+                    transition: "all 0.15s"
+                  }}
+                >
+                  {s.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Discovered Opportunities Grid */}
@@ -894,56 +965,80 @@ function MatchesView({
         </div>
       ) : (
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(360px, 1fr))", gap: 20 }}>
-          {filteredResults.map((o) => (
-            <article className="opportunity-card" key={o.id}>
-              <div className="card-top">
-                <span className="pill" style={{ background: "#eef2ff", color: "#3730a3" }}>
-                  {o.source}
-                </span>
-                <strong style={{ color: "#294333", fontSize: 16 }}>{o.matchScore || 85}% Match</strong>
-              </div>
+          {filteredResults.map((o) => {
+            const dl = formatDeadlineBadge(o.deadline);
+            return (
+              <article className="opportunity-card" key={o.id}>
+                <div className="card-top">
+                  <span className="pill" style={{ background: "#eef2ff", color: "#3730a3" }}>
+                    {o.source}
+                  </span>
+                  <strong style={{ color: "#294333", fontSize: 16 }}>{o.matchScore || 85}% Match</strong>
+                </div>
 
-              <h3 style={{ margin: "6px 0 2px" }}>{o.title}</h3>
-              <p className="organization">{o.organization}</p>
-              <p style={{ margin: "4px 0 10px", fontSize: 13, color: "#4f5e53" }}>
-                📍 {o.location || "Remote"} · 💰 {(o.rawData as any)?.stipendDisplay || (o.stipend ? `₹${o.stipend.toLocaleString()}/mo` : "Disclosed on Apply")}
-              </p>
+                <h3 style={{ margin: "6px 0 2px" }}>{o.title}</h3>
+                <p className="organization">{o.organization}</p>
+                
+                <p style={{ margin: "4px 0 6px", fontSize: 13, color: "#4f5e53" }}>
+                  📍 {o.location || "Remote"} · 💰 {(o.rawData as any)?.stipendDisplay || (o.stipend ? `₹${o.stipend.toLocaleString()}/mo` : "Disclosed on Apply")}
+                </p>
 
-              <div className="chips">
-                {o.skills.slice(0, 5).map((s) => (
-                  <span key={s}>{s}</span>
-                ))}
-              </div>
+                {/* Prominent Deadline Badge */}
+                <div style={{ marginBottom: 10 }}>
+                  <span
+                    style={{
+                      background: dl.isUrgent ? "#fef3c7" : "#f1f5f9",
+                      color: dl.isUrgent ? "#92400e" : "#475569",
+                      border: dl.isUrgent ? "1px solid #fde68a" : "1px solid #e2e8f0",
+                      padding: "3px 8px",
+                      borderRadius: 6,
+                      fontSize: 11,
+                      fontWeight: 700,
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: 4
+                    }}
+                  >
+                    {dl.text}
+                  </span>
+                </div>
 
-              {o.rawData?.matchReasons && o.rawData.matchReasons.length > 0 && (
-                <div style={{ background: "#f6f9f5", padding: "8px 12px", borderRadius: 8, marginTop: 10, fontSize: 12, color: "#264831" }}>
-                  {o.rawData.matchReasons.slice(0, 2).map((r: string) => (
-                    <div key={r}>✓ {r}</div>
+                <div className="chips">
+                  {o.skills.slice(0, 5).map((s) => (
+                    <span key={s}>{s}</span>
                   ))}
                 </div>
-              )}
 
-              <div style={{ display: "flex", gap: 10, marginTop: 16 }}>
-                <button
-                  type="button"
-                  className="secondary-button"
-                  onClick={() => onSave(o)}
-                  style={{ display: "flex", alignItems: "center", gap: 6, flex: 1, justifyContent: "center" }}
-                >
-                  <Bookmark size={14} fill={saved.includes(o.id) ? "currentColor" : "none"} />
-                  {saved.includes(o.id) ? "Saved" : "Save"}
-                </button>
-                <button
-                  type="button"
-                  className="primary-button"
-                  onClick={() => onApply(o)}
-                  style={{ display: "flex", alignItems: "center", gap: 6, flex: 2, justifyContent: "center" }}
-                >
-                  <Sparkles size={14} /> Apply with Scoutly
-                </button>
-              </div>
-            </article>
-          ))}
+                {o.rawData?.matchReasons && o.rawData.matchReasons.length > 0 && (
+                  <div style={{ background: "#f6f9f5", padding: "8px 12px", borderRadius: 8, marginTop: 10, fontSize: 12, color: "#264831" }}>
+                    {o.rawData.matchReasons.slice(0, 2).map((r: string) => (
+                      <div key={r}>✓ {r}</div>
+                    ))}
+                  </div>
+                )}
+
+                <div style={{ display: "flex", gap: 10, marginTop: 16 }}>
+                  <button
+                    type="button"
+                    className="secondary-button"
+                    onClick={() => onSave(o)}
+                    style={{ display: "flex", alignItems: "center", gap: 6, flex: 1, justifyContent: "center" }}
+                  >
+                    <Bookmark size={14} fill={saved.includes(o.id) ? "currentColor" : "none"} />
+                    {saved.includes(o.id) ? "Saved" : "Save"}
+                  </button>
+                  <button
+                    type="button"
+                    className="primary-button"
+                    onClick={() => onApply(o)}
+                    style={{ display: "flex", alignItems: "center", gap: 6, flex: 2, justifyContent: "center" }}
+                  >
+                    <Sparkles size={14} /> Apply with Scoutly
+                  </button>
+                </div>
+              </article>
+            );
+          })}
         </div>
       )}
     </section>
