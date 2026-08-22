@@ -282,11 +282,26 @@ export function App() {
           </div>
           <div className="top-actions" style={{ display: "flex", alignItems: "center", gap: 12 }}>
             <button
+              type="button"
               className="primary-button"
               onClick={() => setPage("Demo Mode")}
-              style={{ background: "#166534", color: "#dcfce7", display: "flex", alignItems: "center", gap: 6, padding: "8px 14px", fontSize: 13, border: "1px solid #22c55e" }}
+              style={{
+                background: page === "Demo Mode" ? "#22c55e" : "#166534",
+                color: page === "Demo Mode" ? "#142118" : "#dcfce7",
+                display: "flex",
+                alignItems: "center",
+                gap: 8,
+                padding: "9px 18px",
+                fontSize: 14,
+                fontWeight: 800,
+                border: "2px solid #4ade80",
+                borderRadius: 10,
+                cursor: "pointer",
+                boxShadow: "0 4px 12px rgba(34, 197, 94, 0.25)",
+                zIndex: 10
+              }}
             >
-              <Sparkles size={14} /> 🎯 Judge Demo Mode
+              <Sparkles size={16} /> 🎯 Judge Demo Mode
             </button>
             <div className="avatar">{profile.name[0]}</div>
           </div>
@@ -296,6 +311,9 @@ export function App() {
           <DiscoverView
             profile={profile}
             onSearch={handleSearch}
+            onLaunchJudgeDemo={() => {
+              setPage("Demo Mode");
+            }}
             customUrl={customUrl}
             setCustomUrl={setCustomUrl}
             onApplyDirect={(url) => {
@@ -396,12 +414,14 @@ export function App() {
 function DiscoverView({
   profile,
   onSearch,
+  onLaunchJudgeDemo,
   customUrl,
   setCustomUrl,
   onApplyDirect
 }: {
   profile: StudentProfile;
   onSearch: (q: string) => void;
+  onLaunchJudgeDemo: () => void;
   customUrl: string;
   setCustomUrl: (u: string) => void;
   onApplyDirect: (u: string) => void;
@@ -411,7 +431,29 @@ function DiscoverView({
   return (
     <section>
       <div className="hero-card">
-        <span className="pill">MULTI-SOURCE DISCOVERY & BROWSER AGENT</span>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12, marginBottom: 16 }}>
+          <span className="pill">MULTI-SOURCE DISCOVERY & BROWSER AGENT</span>
+          <button
+            type="button"
+            onClick={() => onLaunchJudgeDemo()}
+            style={{
+              background: "#d9f99d",
+              color: "#142118",
+              border: "none",
+              padding: "10px 18px",
+              borderRadius: 20,
+              fontSize: 13,
+              fontWeight: 800,
+              cursor: "pointer",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 8,
+              boxShadow: "0 4px 14px rgba(0,0,0,0.2)"
+            }}
+          >
+            <Play size={14} color="#142118" /> ⚡ 1-Click Fast Judge Demo
+          </button>
+        </div>
         <h2>Scout and Apply with <em>Scoutly.</em></h2>
         <p>
           Scoutly concurrently searches 11 public portals (Internshala, Unstop, Wellfound, AICTE, Indeed, Foundit, Naukri, Greenhouse, Lever, and Company Portals),
