@@ -5200,5 +5200,2562 @@
         "durationMs": 1
       }
     ]
+  },
+  "cybersecurity_all_1000": {
+    "timestamp": 1787392406013,
+    "results": [
+      {
+        "id": "wellfound-troopr-ai",
+        "title": "AI-First SDE Intern",
+        "company": "Troopr.ai",
+        "description": "Develop conversational agent workflows, integrate LLMs with enterprise Slack/Teams bots, and build MERN stack modules.",
+        "location": "Bengaluru",
+        "mode": "hybrid",
+        "stipend": {
+          "min": 25000,
+          "max": 25000,
+          "currency": "INR",
+          "display": "₹25,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "MERN",
+          "React",
+          "Node.js",
+          "AI Agents",
+          "Python",
+          "LLMs"
+        ],
+        "experience": "0 years experience",
+        "eligibility": "Students excited about autonomous workplace agents",
+        "deadline": "2026-10-31",
+        "postedDate": "Live on Wellfound",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/location/india",
+        "applicationUrl": "https://wellfound.com/location/india",
+        "organizationUrl": "https://troopr.ai",
+        "tags": [
+          "wellfound",
+          "ai-first",
+          "agents",
+          "mern",
+          "bengaluru"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.134Z",
+        "matchScore": 98,
+        "matchReasons": [
+          "✓ React matches profile",
+          "✓ Node.js matches profile",
+          "✓ Python matches profile",
+          "✓ hybrid mode preference",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: High affinity for Node.js",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for LLMs",
+          "🧠 AI Learned: Favored hybrid setup"
+        ]
+      },
+      {
+        "id": "wellfound-4486291-ledgerscfo",
+        "title": "Software Developer Intern",
+        "company": "LedgersCFO",
+        "description": "Build robust fintech applications with Python, Java, React, TypeScript, and integrate LLM APIs for financial analysis workflows.",
+        "location": "Bengaluru / Remote",
+        "mode": "hybrid",
+        "stipend": {
+          "min": 20000,
+          "max": 20000,
+          "currency": "INR",
+          "display": "₹20,000/month"
+        },
+        "duration": "3-6 Months (PPO Potential)",
+        "skills": [
+          "Python",
+          "Java",
+          "React",
+          "TypeScript",
+          "REST",
+          "LLM APIs",
+          "Node.js"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "B.Tech / CSE / IT students seeking full-time conversion opportunities",
+        "deadline": "2026-11-15",
+        "postedDate": "Live on Wellfound",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/jobs/4486291-software-developer-intern",
+        "applicationUrl": "https://wellfound.com/jobs/4486291-software-developer-intern",
+        "organizationUrl": "https://wellfound.com/company/ledgerscfo",
+        "tags": [
+          "wellfound",
+          "software-dev",
+          "python",
+          "react",
+          "ppo"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.134Z",
+        "matchScore": 98,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ Node.js matches profile",
+          "✓ hybrid mode preference",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for Java",
+          "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: High affinity for TypeScript",
+          "🧠 AI Learned: High affinity for REST",
+          "🧠 AI Learned: High affinity for LLM APIs",
+          "🧠 AI Learned: High affinity for Node.js",
+          "🧠 AI Learned: Favored hybrid setup"
+        ]
+      },
+      {
+        "id": "wellfound-rxgpt-health",
+        "title": "AI / Software Engineering Intern",
+        "company": "RxGPT Health",
+        "description": "Build generative AI healthcare features, integrate LLM clinical workflows, and develop high-performance React & Python pipelines.",
+        "location": "Remote (Global / India)",
+        "mode": "remote",
+        "stipend": {
+          "min": 35000,
+          "max": 35000,
+          "currency": "INR",
+          "display": "₹35,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "Python",
+          "AI/ML",
+          "React",
+          "Node.js",
+          "Healthcare AI",
+          "LLMs"
+        ],
+        "experience": "Students & Graduates",
+        "eligibility": "Passion for AI healthcare and web applications",
+        "deadline": "2026-10-31",
+        "postedDate": "Live on Wellfound",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/l/2Cz4wG",
+        "applicationUrl": "https://wellfound.com/l/2Cz4wG",
+        "organizationUrl": "https://wellfound.com/company/rxgpt",
+        "tags": [
+          "wellfound",
+          "rxgpt",
+          "healthcare-ai",
+          "remote",
+          "high-stipend"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.135Z",
+        "matchScore": 98,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ Node.js matches profile",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for AI/ML",
+          "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: High affinity for Node.js",
+          "🧠 AI Learned: High affinity for Healthcare AI",
+          "🧠 AI Learned: High affinity for LLMs",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "unstop-1742423-tringflow",
+        "title": "Software Development Internship",
+        "company": "Tringflow Private Limited",
+        "description": "Engineer RESTful API endpoints, connect backend services with Node.js & Python, and integrate third-party developer tools.",
+        "location": "Work from Home (India)",
+        "mode": "remote",
+        "stipend": {
+          "min": 11000,
+          "max": 11000,
+          "currency": "INR",
+          "display": "₹11,000/month"
+        },
+        "duration": "Full Time (12 days left to apply)",
+        "skills": [
+          "Python",
+          "API Development (REST)",
+          "Node.js",
+          "Backend Development"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Undergraduate students",
+        "deadline": "2026-09-03",
+        "postedDate": "Aug 21, 2026",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships/software-development-internship-tringflow-private-limited-1742423",
+        "applicationUrl": "https://unstop.com/internships/software-development-internship-tringflow-private-limited-1742423",
+        "organizationUrl": "https://unstop.com",
+        "tags": [
+          "unstop",
+          "python",
+          "nodejs",
+          "rest-apis",
+          "remote"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.133Z",
+        "matchScore": 97,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ Node.js matches profile",
+          "✓ Aligns with target career domain",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for Node.js",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "wellfound-2707627-tasklabs",
+        "title": "Full Stack SDE Intern (Founding Team)",
+        "company": "TaskLabs",
+        "description": "Work directly with founding engineers to build AI workflow tools using Python, JavaScript, TypeScript, and modern React interfaces.",
+        "location": "Remote (India)",
+        "mode": "remote",
+        "stipend": {
+          "min": 10000,
+          "max": 10000,
+          "currency": "INR",
+          "display": "₹10,000/month"
+        },
+        "duration": "2-3 Months",
+        "skills": [
+          "Python",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Node.js",
+          "AI APIs"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Open to motivated students eager to build in a fast startup",
+        "deadline": "2026-10-31",
+        "postedDate": "Live on Wellfound",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/jobs/2707627-full-stack-sde-intern-founding-team",
+        "applicationUrl": "https://wellfound.com/jobs/2707627-full-stack-sde-intern-founding-team",
+        "organizationUrl": "https://wellfound.com/company/tasklabs",
+        "tags": [
+          "wellfound",
+          "fullstack",
+          "founding-team",
+          "remote",
+          "python"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.134Z",
+        "matchScore": 96,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ Node.js matches profile",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for TypeScript",
+          "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: High affinity for Node.js",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "gh-figma-sec",
+        "title": "Security Software Engineer Intern",
+        "company": "Figma (via Greenhouse)",
+        "description": "Join Figma's product security team to build threat defense tools, automated auth checks, and developer security SDKs.",
+        "location": "Remote (Global / India eligible)",
+        "mode": "remote",
+        "stipend": {
+          "min": 1200,
+          "max": 1200,
+          "currency": "USD",
+          "display": "$1,200/month"
+        },
+        "duration": "3-4 Months",
+        "skills": [
+          "Python",
+          "TypeScript",
+          "React",
+          "Cybersecurity",
+          "IAM"
+        ],
+        "experience": "Students enrolled in Degree program",
+        "eligibility": "Students graduating in 2026-2029",
+        "deadline": "2026-10-31",
+        "postedDate": "Recent",
+        "source": "Greenhouse ATS",
+        "sourceUrl": "https://boards.greenhouse.io/figma",
+        "applicationUrl": "https://boards.greenhouse.io/figma/jobs/security-intern",
+        "organizationUrl": "https://figma.com",
+        "tags": [
+          "greenhouse",
+          "direct-ats",
+          "design-tech"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.136Z",
+        "matchScore": 91,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ IAM matches profile",
+          "✓ Remote opportunity",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for TypeScript",
+          "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "wellfound-4540186-referralworld",
+        "title": "Software Engineer Intern",
+        "company": "ReferralWorld Careers",
+        "description": "Develop enterprise recruiting tools, microservices, and web portals using Java, React, Node.js, and MongoDB.",
+        "location": "Remote / Onsite (India)",
+        "mode": "remote",
+        "stipend": {
+          "min": 30000,
+          "max": 30000,
+          "currency": "INR",
+          "display": "₹30,000/month"
+        },
+        "duration": "6 Months",
+        "skills": [
+          "Java",
+          "React",
+          "Node.js",
+          "MongoDB",
+          "MERN",
+          "REST APIs"
+        ],
+        "experience": "Batch 2025 / 2026 / 2027 eligible",
+        "eligibility": "Current engineering students with MERN / Java skills",
+        "deadline": "2026-11-30",
+        "postedDate": "Live on Wellfound",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/jobs/4540186-software-engineer-intern-batch-2025-2026-2027",
+        "applicationUrl": "https://wellfound.com/jobs/4540186-software-engineer-intern-batch-2025-2026-2027",
+        "organizationUrl": "https://wellfound.com/company/referralworld",
+        "tags": [
+          "wellfound",
+          "mern",
+          "java",
+          "high-stipend",
+          "remote"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.135Z",
+        "matchScore": 86,
+        "matchReasons": [
+          "✓ React matches profile",
+          "✓ Node.js matches profile",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Java",
+          "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: High affinity for Node.js",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "aicte-cyber-defense",
+        "title": "National Cyber Security Trainee",
+        "company": "CERT-In / AICTE Collaborative Initiative",
+        "description": "Government-backed student internship program focusing on critical infrastructure defense and incident analysis.",
+        "location": "India (Virtual / Remote)",
+        "mode": "remote",
+        "stipend": {
+          "min": 10000,
+          "max": 10000,
+          "currency": "INR",
+          "display": "₹10,000/month"
+        },
+        "duration": "2 Months",
+        "skills": [
+          "Cybersecurity",
+          "Network Security",
+          "Linux",
+          "Ethical Hacking"
+        ],
+        "experience": "College Students",
+        "eligibility": "Enrolled in AICTE-approved engineering institutions",
+        "deadline": "2026-10-20",
+        "postedDate": "Recent",
+        "source": "AICTE Portal",
+        "sourceUrl": "https://internship.aicte-india.org/",
+        "applicationUrl": "https://internship.aicte-india.org/",
+        "organizationUrl": "https://aicte-india.org",
+        "tags": [
+          "aicte",
+          "government",
+          "cybersecurity"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.136Z",
+        "matchScore": 85,
+        "matchReasons": [
+          "✓ Ethical Hacking matches profile",
+          "✓ Aligns with target career domain",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: High affinity for Linux",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "lever-spotify-data",
+        "title": "Security & Trust Engineering Intern",
+        "company": "Postman API Platform (via Lever)",
+        "description": "Build automated security linters, monitor API vulnerability signatures, and contribute to internal security libraries.",
+        "location": "Bengaluru / Remote",
+        "mode": "remote",
+        "stipend": {
+          "min": 30000,
+          "max": 30000,
+          "currency": "INR",
+          "display": "₹30,000/month"
+        },
+        "duration": "6 Months",
+        "skills": [
+          "Node.js",
+          "Python",
+          "Cybersecurity",
+          "Linux",
+          "Docker"
+        ],
+        "experience": "Students",
+        "eligibility": "Engineering students with API & backend development experience",
+        "deadline": "2026-10-15",
+        "postedDate": "Recent",
+        "source": "Lever ATS",
+        "sourceUrl": "https://jobs.lever.co/postman",
+        "applicationUrl": "https://jobs.lever.co/postman/security-intern",
+        "organizationUrl": "https://postman.com",
+        "tags": [
+          "lever",
+          "api",
+          "security"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.136Z",
+        "matchScore": 85,
+        "matchReasons": [
+          "✓ Node.js matches profile",
+          "✓ Python matches profile",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Node.js",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: High affinity for Linux",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "wellfound-4335661-alchemyst-ai",
+        "title": "Full Stack AI Intern",
+        "company": "Alchemyst AI",
+        "description": "Design full-stack AI user interfaces with Next.js, React, TypeScript, Python backend services, WebSockets, and vector databases.",
+        "location": "Remote (India)",
+        "mode": "remote",
+        "stipend": {
+          "min": 25000,
+          "max": 25000,
+          "currency": "INR",
+          "display": "₹25,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Python",
+          "MongoDB",
+          "Redis",
+          "WebSockets",
+          "RAG",
+          "AI"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Students with hands-on web development & AI application projects",
+        "deadline": "2026-10-31",
+        "postedDate": "Live on Wellfound",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/jobs/4335661-full-stack-ai-intern",
+        "applicationUrl": "https://wellfound.com/jobs/4335661-full-stack-ai-intern",
+        "organizationUrl": "https://wellfound.com/company/alchemyst-ai",
+        "tags": [
+          "wellfound",
+          "fullstack",
+          "nextjs",
+          "react",
+          "remote-ai"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.134Z",
+        "matchScore": 81,
+        "matchReasons": [
+          "✓ React matches profile",
+          "✓ Python matches profile",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: High affinity for TypeScript",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "wellfound-live-2091104",
+        "title": "Vice President, Technology & Digital Strategy",
+        "company": "Shatterproof",
+        "description": "About ShatterproofShatterproof is a national nonprofit working toward a world where addiction never defines or ends a life. Through evidence-based programs, advocacy, and public education, Shatterproof works to transform systems for tomorrow, support families today, and end stigma forever. Learn more at shatterproof.org. Who Succeeds at Shatterproof Shatterproof is in a period of transformative and rapid growth. We are building new systems, reimagining how work gets done, and creating more cross-functional alignment to accelerate our mission. To thrive here, you should be energized by building, not just maintaining, and excited to bring structure, clarity, and innovation to evolving spaces. We're looking for team members who: Build systems and processes from the ground up and improve them continuously as we scale. Take ownership and act with a builder's mindset, bringing forward solutions rather than waiting for direction. Influence and collaborate across teams, shaping work through strong communication and relationship-building. Move quickly, learn fast, and adapt with resilience, especially in a high-growth, high-impact environment. Are mission-driven and motivated to leave their mark on an organization working to reverse the addiction crisis. The RoleReporting to the Chief Financial & Administrative Officer, the Vice President, Technology & Digital Strategy serves as Shatterproof's senior technology executive and leads the organization's technology, digital operations, cybersecurity, data, artificial intelligence, enterprise applications, digital platforms, and technology-enabled products. This leader will create and execute a comprehensive technology vision that advances organizational strategy, enables operational excellence, strengthens security and resilience, improves the employee experience, supports fundraising and advocacy, and drives innovation across mission-focused platforms. This role is ideal for a builder who wants the rare opportunity to shape not only an organization's technology strategy, but also how technology, data, AI, and digital platforms accelerate mission impact at scale. The Team The Vice President leads a multidisciplinary team spanning enterprise technology, digital operations, data, and product management. Current direct reports and functional oversight areas include IT Operations, Digital Operations, enterprise CRM and database capabilities, Treatment Atlas Product Management, and Treatment Atlas Data Management. The role is responsible for developing these capabilities into a cohesive, high-performing technology function that provides exceptional organizational support while advancing Shatterproof's digital, data, and platform strategy. The team supports and manages a broad portfolio that includes enterprise technology and workplace operations, cybersecurity and privacy, Salesforce and enterprise applications, website and fundraising technology, business intelligence and reporting, artificial intelligence initiatives, and the current and future technology architecture supporting Treatment Atlas. In addition to leading the internal team, the Vice President oversees a network of managed service providers, software vendors, implementation partners, and technology consultants, ensuring that internal and external resources are aligned to organizational priorities and positioned to scale with Shatterproof's evolving needs. This includes stewardship of strategic technology platforms and vendor relationships that support operations, fundraising, advocacy, data management, and mission delivery. Key ResponsibilitiesEnterprise Technology Leadership & Strategy Develop and execute a multi-year enterprise technology strategy aligned with organizational priorities. Serve as a trusted advisor to executive leadership on technology investments, risks, innovation opportunities, and emerging trends. Establish technology governance, architecture standards, prioritization practices, and a transparent enterprise roadmap. Evaluate and guide major technology investments, platform strategies, sourcing decisions, and vendor partnerships. Ensure technology decisions support mission impact, operational effectiveness, sustainability, and growth. AI Strategy & Digital Innovation Lead Shatterproof's enterprise AI strategy and roadmap. Establish governance frameworks, risk controls, and responsible-use standards for AI technologies. Identify and prioritize AI use cases across fundraising, operations, impact programs, and administration. Lead tool evaluation, pilots, implementation planning, adoption, training, and change management. Monitor emerging technologies and assess opportunities to create measurable organizational value. IT Operations & Workplace Technology Lead IT and workplace technology operations for a distributed workforce. Oversee managed service providers, help desk operations, devices, Microsoft 365, identity and access, collaboration tools, and general application administration. Ensure timely and secure onboarding, offboarding, access management, and technology provisioning. Maintain service standards, knowledge management, policies, procedures, and documentation. Continuously improve reliability, support quality, and the employee technology experience. Cybersecurity, Privacy & Organizational Resilience Lead enterprise cybersecurity strategy, policies, governance, and training. Oversee risk assessments, incident response, cyber insurance requirements, Keeper governance, backups, disaster recovery, and business continuity planning. Partner with leaders to protect organizational, employee, donor, constituent, and program data. Monitor emerging risks and drive practical, prioritized mitigation plans. Digital Platforms, Website & Fundraising Technology Lead the strategy, governance, performance, accessibility, analytics, and integrations for Shatterproof's website and digital engagement ecosystem. Oversee fundraising and advocacy technologies, including DonorDrive and New Mode, and related digital vendors. Partner with Development, Marketing & Communications, and Public Affairs to strengthen constituent experience, engagement, and platform value. Oversee Google Analytics and related reporting and optimization capabilities. Salesforce & Enterprise Applications Own the enterprise Salesforce roadmap and governance framework. Oversee administration, security, permissions, data quality, integrations, reporting, releases, user support, and adoption. Partner with department leaders to prioritize enhancements, automation, workflow improvements, and reporting needs. Ensure enterprise applications remain aligned with operational and strategic priorities. Data, Analytics & Business Intelligence Establish organization-wide data governance, reporting standards, and stewardship practices. Oversee dashboards, data models, access, refreshes, data quality, and Power BI capabilities. Partner with leaders to improve data-informed decision-making and performance visibility. Build scalable, well-governed analytics and reporting capabilities. Treatment Atlas Platform & Product Leadership Serve as technology executive sponsor for Treatment Atlas in close partnership with Impact leadership. Oversee current processing infrastructure, operational monitoring, troubleshooting, releases, integrations, data flows, and vendor coordination. Lead the reimagined platform product and technical roadmap, delivery oversight, architecture, cloud strategy, security, and implementation partners. Ensure platform reliability, scalability, security, usability, and long-term sustainability. Technology Financial Management & Vendor Strategy Develop and manage the annual technology budget, forecasts, and multi-year investment plans. Oversee invoices, purchasing, contracts, renewals, licensing, and license optimization. Lead major vendor decisions, negotiations, performance management, and strategic relationships. Develop clear business cases and recommendations for significant technology investments. Oversee the purpose, vendor relationship, users, integrations, renewals, support, and roadmap for Just5, and manage the LegitScript relationship, certifications, submissions, renewals, and organizational obligations. Team Leadership & Cross-Functional Partnership Lead, coach, and develop a high-performing, multidisciplinary technology and digital operations team. Create clarity around roles, decision rights, service ownership, priorities, and cross-functional ways of working. Assess future capability, capacity, structure, and sourcing needs. Build a culture grounded in accountability, service, collaboration, innovation, documentation, and continuous improvement. Communicate complex technology issues in accessible, business-oriented language and lead change with transparency. Ideal Experience & Qualifications 12+ years of progressive leadership experience spanning technology, digital operations, enterprise systems, product management, data, cybersecurity, or related disciplines. Experience serving as the senior technology leader for a complex organization and developing enterprise technology strategies and roadmaps. Demonstrated experience leading multidisciplinary teams and building organizational capability. Strong experience with cybersecurity, technology governance, privacy-supporting controls, risk management, and organizational resilience. Experience leading CRM, data, analytics, digital platforms, enterprise applications, and major technology implementations. Experience overseeing technology budgets, contracts, licensing, vendor relationships, and implementation partners. Experience introducing and scaling AI-enabled solutions, governance, adoption, and training. Ability to translate organizational needs into practical technology priorities, investments, and execution plans. Executive presence and strong written and verbal communication, with the ability to engage technical and nontechnical stakeholders. Ability to operate effectively in a mission-driven, distributed, and evolving environment. Bachelor's degree or equivalent relevant experience required; advanced degree or relevant certifications preferred. Deep alignment with Shatterproof's mission and values. CompensationThe salary range for this position is $175,000 to $190,000. Placement within the range is determined by experience, internal equity, and organizational budget. Additional Information Ability and authorization to work in the United States required. Ability to work Eastern Time Zone hours required. Domestic travel may be required based on organizational needs. Shatterproof is an equal opportunity employer and is committed to fostering an inclusive workplace.",
+        "location": "USA",
+        "mode": "unknown",
+        "stipend": {
+          "min": 175000,
+          "max": 190000,
+          "currency": "INR",
+          "display": "₹1,75,000 - ₹1,90,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "cybersecurity",
+          "Python",
+          "React",
+          "JavaScript"
+        ],
+        "experience": "Students / Early Career",
+        "eligibility": "Open to passionate builders",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Startup Feed",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/location/india",
+        "applicationUrl": "https://remotive.com/remote-jobs/all-others/vice-president-technology-digital-strategy-2091104",
+        "organizationUrl": "https://remotive.com/remote-jobs/all-others/vice-president-technology-digital-strategy-2091104",
+        "tags": [
+          "wellfound",
+          "startup",
+          "live-feed"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:25.999Z",
+        "matchScore": 81,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ Aligns with target career domain",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React"
+        ]
+      },
+      {
+        "id": "naukri-appsec-intern",
+        "title": "Application Security Testing Intern",
+        "company": "Zscaler Cloud Security",
+        "description": "Participate in DAST/SAST code reviews, API security vulnerability scanning, and vulnerability validation.",
+        "location": "Bengaluru (Hybrid)",
+        "mode": "hybrid",
+        "stipend": {
+          "min": 24000,
+          "max": 24000,
+          "currency": "INR",
+          "display": "₹24,000/month"
+        },
+        "duration": "6 Months",
+        "skills": [
+          "Cybersecurity",
+          "Python",
+          "React",
+          "Linux",
+          "Penetration Testing"
+        ],
+        "experience": "Students",
+        "eligibility": "B.Tech/M.Tech Computer Science / Cybersecurity",
+        "deadline": "2026-10-01",
+        "postedDate": "1 day ago",
+        "source": "Naukri",
+        "sourceUrl": "https://www.naukri.com/cybersecurity-intern-jobs-in-india",
+        "applicationUrl": "https://www.naukri.com/job-listings-appsec-intern",
+        "organizationUrl": "https://zscaler.com",
+        "tags": [
+          "naukri",
+          "appsec",
+          "cloud"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.136Z",
+        "matchScore": 81,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ hybrid mode preference",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: High affinity for Linux",
+          "🧠 AI Learned: High affinity for Penetration Testing",
+          "🧠 AI Learned: Favored hybrid setup"
+        ]
+      },
+      {
+        "id": "foundit-net-sec",
+        "title": "Network Security Trainee",
+        "company": "Spectra Net Technologies",
+        "description": "Assisting senior engineers with firewall audits, secure routing, and endpoint protection testing.",
+        "location": "Pune, Maharashtra",
+        "mode": "hybrid",
+        "stipend": {
+          "min": 14000,
+          "max": 14000,
+          "currency": "INR",
+          "display": "₹14,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "Network Security",
+          "Linux",
+          "Python",
+          "IAM"
+        ],
+        "experience": "Students / Freshers",
+        "eligibility": "Engineering students",
+        "deadline": "2026-10-12",
+        "postedDate": "3 days ago",
+        "source": "Foundit",
+        "sourceUrl": "https://www.foundit.in/srp/results?query=cybersecurity%20intern",
+        "applicationUrl": "https://www.foundit.in/job/network-security-trainee",
+        "organizationUrl": null,
+        "tags": [
+          "foundit",
+          "network-security"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.136Z",
+        "matchScore": 79,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ IAM matches profile",
+          "✓ hybrid mode preference",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Linux",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: Favored hybrid setup"
+        ]
+      },
+      {
+        "id": "wellfound-4388448-rentok",
+        "title": "Backend Engineering Intern",
+        "company": "RentOk",
+        "description": "Develop scalable backend services, design PostgreSQL relational models, manage Redis caching layers, and build Next.js API routes.",
+        "location": "Gurugram / Hybrid",
+        "mode": "hybrid",
+        "stipend": {
+          "min": 18000,
+          "max": 18000,
+          "currency": "INR",
+          "display": "₹18,000/month"
+        },
+        "duration": "3 Months",
+        "skills": [
+          "Node.js",
+          "TypeScript",
+          "React",
+          "Next.js",
+          "PostgreSQL",
+          "Redis"
+        ],
+        "experience": "2nd year student onward",
+        "eligibility": "Students with strong backend API & database architecture knowledge",
+        "deadline": "2026-11-15",
+        "postedDate": "Live on Wellfound",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/jobs/4388448-backend-engineering-intern",
+        "applicationUrl": "https://wellfound.com/jobs/4388448-backend-engineering-intern",
+        "organizationUrl": "https://wellfound.com/company/rentok",
+        "tags": [
+          "wellfound",
+          "backend",
+          "nodejs",
+          "typescript",
+          "postgresql"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.134Z",
+        "matchScore": 78,
+        "matchReasons": [
+          "✓ Node.js matches profile",
+          "✓ React matches profile",
+          "✓ hybrid mode preference",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Node.js",
+          "🧠 AI Learned: High affinity for TypeScript",
+          "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: Favored hybrid setup"
+        ],
+        "warningReasons": [
+          "⚠ Prior experience preferred"
+        ]
+      },
+      {
+        "id": "wellfound-4385681-vitraga",
+        "title": "Software Engineer Intern (Next.js & AI Agents)",
+        "company": "Vitraga",
+        "description": "Build full stack autonomous agent workflows using Next.js, Express, Supabase, LangChain, and MongoDB.",
+        "location": "Remote (India)",
+        "mode": "remote",
+        "stipend": {
+          "min": 10000,
+          "max": 10000,
+          "currency": "INR",
+          "display": "₹10,000/month"
+        },
+        "duration": "3 Months",
+        "skills": [
+          "React",
+          "Next.js",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "Supabase",
+          "LangChain",
+          "AI Agents"
+        ],
+        "experience": "No experience required",
+        "eligibility": "Students with hands-on modern JavaScript / TypeScript stack",
+        "deadline": "2026-10-31",
+        "postedDate": "Live on Wellfound",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/jobs/4385681-software-engineer-intern-next-js-supabase-ai",
+        "applicationUrl": "https://wellfound.com/jobs/4385681-software-engineer-intern-next-js-supabase-ai",
+        "organizationUrl": "https://wellfound.com/company/vitraga",
+        "tags": [
+          "wellfound",
+          "nextjs",
+          "supabase",
+          "ai-agents",
+          "remote"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.135Z",
+        "matchScore": 77,
+        "matchReasons": [
+          "✓ React matches profile",
+          "✓ Node.js matches profile",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: High affinity for Node.js",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "wellfound-3821958-mowka",
+        "title": "Product Engineer Intern",
+        "company": "Mowka",
+        "description": "Design web applications, engineer startup discovery algorithms, build automated scrapers with Playwright, and develop AI workflows.",
+        "location": "Remote (India)",
+        "mode": "remote",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "3 Months",
+        "skills": [
+          "Software development",
+          "Python",
+          "AI",
+          "Playwright",
+          "Web Scraping",
+          "React"
+        ],
+        "experience": "No experience required",
+        "eligibility": "Students passionate about scraping, web applications, and AI tools",
+        "deadline": "2026-10-31",
+        "postedDate": "Live on Wellfound",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/jobs/3821958-2-product-engineer-intern",
+        "applicationUrl": "https://wellfound.com/jobs/3821958-2-product-engineer-intern",
+        "organizationUrl": "https://wellfound.com/company/mowka",
+        "tags": [
+          "wellfound",
+          "product-engineer",
+          "playwright",
+          "ai",
+          "remote"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.135Z",
+        "matchScore": 77,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "wellfound-live-2091097",
+        "title": "Senior Data Engineer",
+        "company": "Lemon.io",
+        "description": "Are you a talented Senior Data Engineer looking for a remote job that lets you show your skills and get decent compensation? Look no further than Lemon.io — the marketplace that connects you with hand-picked startups in the US and Europe. What we offer: The rate depends on your skills and experience. We've already paid out over $11M to our engineers. No more hunting for clients or negotiating rates — let us handle the business side of things so you can focus on what you do best. We'll manually find the best project for you according to your skills and preferences. Choose a schedule that works best for you. It’s possible to communicate async or minimally overlap within team working hours. We respect your seniority so you can expect no micromanagement or screen trackers. Communicate directly with the clients. Most of them have technical backgrounds. Sounds good, yeah? We will support you from the time you submit the application throughout all cooperation stages. Most of our projects involve working in a fast-paced startup environment. We hope you like it as much as we do. Through our community, we will connect you with the best developers from more than 75 countries. We have several different roles for Data Engineers — please check the details if you're interested. Requirements — Data Engineers: 5+ years of commercial experience as a Data Engineer 2+ years of commercial experience with Azure DevOps is a must 2+ years of commercial experience with Databricks 2+ years of experience with DBT is required Experience with Airflow is a plus Requirements — Data Engineers: 4+ years of commercial experience as a Data Engineer 3+ years of experience with Apache Airflow and 2+ years of experience with Snowflake 3+ years of experience with Python and 1+ year with SQL Experience with AWS/GCP/Microsoft Azure/Snowflake is a must Strong technical skills: as a Senior Data Engineer, you are expected to be able to create projects from scratch and have a deep understanding of application architecture. Clear and effective communication in English — advanced ability to discuss business tasks, justify decisions, and communicate issues. Good self-presentation is also essential for upcoming client calls. Strong self-organizational skills — ability to work full-time remotely with no supervision. Reliability — we want to trust you and expect that you won’t let us and the client down. Adaptability and Flexibility — the ability to onboard the project promptly after accepting it and start delivering results quickly. Sounds good for you? Apply now and join the Lemon.io community! NOT YOUR TECH STACK? We have a variety of projects, so if you have 4+ years of commercial software development experience and are proficient in AI Agent Architecture, AI Automation Architecture, AI Engineering, Site Reliability Engineering, Platform Engineering, React & Python, React & Golang, Golang, React & Java, React & Ruby, Ruby, PHP & Vue, Vue & Node.js, React & .NET, Android & iOS, iOS & Swift, Flutter & Dart, Blockchain (Ethereum/Ethers.js/Wagmi/Viem/Solana), Angular & Node.js, Vue & .NET, Python & Vue, DevOps, MLOps, Data Science, Angular & PHP, Angular & .NET, Symfony & React, Symfony & Vue, Symfony & Angular, Python, Symfony & JavaScript & Next.js & TypeScript, Data Analysis, React & PHP, Project Management, Product Management, QA Automation, QA Manual, Embedded Software Engineering, React Native & Node, React Native & React, React Native & Ruby, React Native & Python, WordPress, Android, Data Annotation, Angular, Python & Node, React & Node.js, Java & Spring, Svelte & Python, Svelte & Node.js, Svelte & TypeScript, Rust, Shopify & JavaScript, Vue & Nuxt, PHP & Laravel, UI/UX Design, Animation, Graphic Design, React & Node & React Native, .NET & C#, Electron, Scala, C++, Unreal Engine & C++, Python & LLM, Unity, or Machine Learning Engineering, we would be happy to connect with you and match you with a project that fits your experience. We do not provide visa assistance, and our cooperation model does not include the benefits typically offered with direct hire. We work with developers from 75+ countries across Europe, Latin America, North America (the U.S. and Canada), selected countries in Asia (Japan, Singapore, South Korea, the Philippines, Indonesia, Malaysia, Vietnam, Thailand, and Israel), Oceania (Australia, New Zealand, and Papua New Guinea), and Africa (including Morocco and South Africa).",
+        "location": "LATAM, Europe, USA, Canada, APAC",
+        "mode": "unknown",
+        "stipend": {
+          "min": 25000,
+          "max": 25000,
+          "currency": "INR",
+          "display": "₹25,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "cybersecurity",
+          "Python",
+          "React",
+          "JavaScript"
+        ],
+        "experience": "Students / Early Career",
+        "eligibility": "Open to passionate builders",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Startup Feed",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/location/india",
+        "applicationUrl": "https://remotive.com/remote-jobs/software-development/senior-data-engineer-2091097",
+        "organizationUrl": "https://remotive.com/remote-jobs/software-development/senior-data-engineer-2091097",
+        "tags": [
+          "wellfound",
+          "startup",
+          "live-feed"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:25.999Z",
+        "matchScore": 76,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ Aligns with target career domain",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React"
+        ]
+      },
+      {
+        "id": "wellfound-live-2069746",
+        "title": "Tech Lead Full-Stack Rails Engineer",
+        "company": "Mitre Media",
+        "description": "About Mitre Media Mitre Media is redefining FinTech with AI-driven tools that empower millions of investors. Our portfolio, including Dividend.com and MutualFunds.com, leverages LLMs to deliver novel data insights and visually rich user experiences. For over a decade, we’ve served individual investors, financial advisors, and top asset managers like BlackRock and Vanguard through our premium data, tools, and advertising solutions. Join our lean, entrepreneurial team to shape the future of AI-powered investing from your location ±3 hours from Eastern Time. Our users are deeply engaged, spending over 5 minutes per visit with a bounce rate below 10%, researching investments across hundreds of different categories. With 40 million brokerage accounts in the U.S., we take pride in building tools that make a real impact, fostering a culture of trust, innovation, and dynamism. If you’re passionate about financial technology and AI, we’d love to connect! About the Role As a Full-Stack Rails Tech Lead, you’ll architect and implement LLM-powered web applications within our microservices-based Rails 8 platform. Reporting directly to our CTO, you’ll collaborate with a small, high-impact team to deliver user experiences across Dividend.com, MutualFunds.com and other brands within our portfolio. This role combines expert Ruby on Rails skills with AI integration expertise, requiring you to leverage LLMs in your development workflow, state management and user interactions. You’ll work in a remote-first hybrid environment, which encourages in person collaboration, using ShapeUp to manage projects that trade-off on-time delivery for de-scoped outcomes. As a technical leader, you'll have a seat at the table shaping system architecture, implementing core features all while embracing an entrepreneurial mindset and a “get things done” mentality. Responsibilities Architect and maintain Rails applications (Rails 8) Integrate LLMs into our microservices architecture for state management and real-time user experiences. Enhance front-end experiences with Hotwire, StimulusJS, or React, ensuring seamless AI-driven interactions. Optimize LLM inference for low latency and cost, using caching and asynchronous processing. Required Technical Skills Back-End Ruby (5+ years, expert-level) Ruby on Rails (Rails 6-8 preferred) PostgreSQL (or MySQL) Elasticsearch Redis Docker Front-End StimulusJS or JavaScript ES6 Tailwind CSS HTML HTTP AI Integration Experience integrating AI/ML models (e.g., LLMs, NLP) with web applications Familiarity with LLM frameworks (e.g., LangChain, Hugging Face) or APIs (e.g., xAI, Anthropic) Nice-to-Have Technical Skills Kubernetes for microservices orchestration React for advanced front-end components Graph databases for complex financial data Contributions to open-source RoR or AI projects Required Soft Skills Entrepreneurial mindset with a passion for AI and FinTech Natural leader who mentors and inspires teammates Problem-solver with a “get things done” mentality Excellent communication, thriving in remote and cross-team collaboration Attention to detail, ensuring clean, maintainable code Team player comfortable as an individual contributor Why Join Us? Impactful Work : Build AI-powered tools that help millions of investors make informed decisions from data-driven insights. Cutting-Edge Tech : Work with Rails 8, LLMs, and modern tools like Hotwire, Databricks, and xAI’s API in a microservices architecture. Autonomy and Influence : Collaborate directly with our CEO and CTO to shape our AI-driven platform, with freedom to innovate. Competitive Compensation : $160,000–$200,000 CAD/USD (based on experience) and benefits. Remote Flexibility : Remote-first (±3 hours from ET) with hybrid in office collaboration in Toronto or NYC Growth Opportunities : Budget for AI and Rails conferences (e.g., NeurIPS, RailsConf), plus access to cutting-edge AI tools for experimentation. Dynamic Culture : Join a small, no-ego team passionate about trust, innovation, and making a difference in FinTech. About Mitre Media’s AI-Driven Platform Mitre Media powers premium financial brands like Dividend.com and MutualFunds.com with the Mitre Platform. This platform integrates traditional content management, financial data, first-party data, ad revenue, and subscription tools, all enhanced by LLMs for rich, user-focused experiences. Our data-derived insights delight users, while our advertising solutions deliver unmatched performance for partners like BlackRock and Vanguard, leveraging advanced targeting and first-party data. How to Apply Submit your resume, GitHub profile, and a brief note on why you’re excited about building AI-driven FinTech to jobs@mitremedia.com.",
+        "location": "USA, Canada, USA timezones",
+        "mode": "unknown",
+        "stipend": {
+          "min": 170000,
+          "max": 200000,
+          "currency": "USD",
+          "display": "$1,70,000 - $2,00,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "cybersecurity",
+          "Python",
+          "React",
+          "JavaScript"
+        ],
+        "experience": "Students / Early Career",
+        "eligibility": "Open to passionate builders",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Startup Feed",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/location/india",
+        "applicationUrl": "https://remotive.com/remote-jobs/software-development/tech-lead-full-stack-rails-engineer-2069746",
+        "organizationUrl": "https://remotive.com/remote-jobs/software-development/tech-lead-full-stack-rails-engineer-2069746",
+        "tags": [
+          "wellfound",
+          "startup",
+          "live-feed"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:26.000Z",
+        "matchScore": 76,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ Aligns with target career domain",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React"
+        ]
+      },
+      {
+        "id": "wellfound-live-2091081",
+        "title": "Senior Graphic Designer",
+        "company": "Lemon.io",
+        "description": "Are you a talented Senior Designer looking for a remote job that lets you show your skills and get decent compensation? Look no further than Lemon.io — the marketplace that connects you with hand-picked startups in the US and Europe. What we offer: The rate depends on your skills and experience. We've already paid out over $11M to our engineers & designers . No more hunting for clients or negotiating rates — let us handle the business side of things so you can focus on what you do best. Choose a schedule that works best for you. It’s possible to communicate async or minimally overlap within team working hours. We respect your seniority so you can expect no micromanagement or screen trackers. Communicate directly with the clients. Sounds good, yeah? Most of our projects involve working in a fast-paced startup environment. We hope you like it as much as we do. Requirements: 5+ years of experience in Graphic Design 5+ years of commercial experience with Adobe Creative Suite & Adobe Illustrator Other requirements: Strong design craft — as a Senior Designer, you're expected to build polished, production-ready work from scratch, with a solid grasp of design systems, component architecture, and how your decisions translate into real product or brand outcomes. Clear and confident communication in English — advanced ability to discuss creative briefs, defend design decisions, and flag blockers early. Strong self-presentation is essential, particularly on client calls. High ownership, zero hand-holding — you thrive working full-time remotely, manage your own time, and consistently hit deadlines without being chased. Reliability — we need to trust you completely. If you commit to something, you deliver it. If something changes, you communicate early. Fast ramp-up — you can absorb project context quickly, align with existing style guides or brand directions, and start producing valuable work within the first days, not weeks. NOT YOUR TECH STACK? We have a variety of projects, so if you have 4+ years of commercial software development experience and are proficient in AI Agent Architecture, AI Automation Architecture, AI Engineering, Site Reliability Engineering, Platform Engineering, React & Python, React & Golang, Golang, React & Java, React & Ruby, Ruby, PHP & Vue, Vue & Node.js, React & .NET, Android & iOS, iOS & Swift, Flutter & Dart, Blockchain (Ethereum/Ethers.js/Wagmi/Viem/Solana), Angular & Node.js, Vue & .NET, Python & Vue, DevOps, MLOps, Data Science, Angular & PHP, Angular & .NET, Symfony & React, Symfony & Vue, Symfony & Angular, Python, Symfony & JavaScript & Next.js & TypeScript, Data Analysis, React & PHP, Data Engineering, Project Management, Product Management, QA Automation, QA Manual, Embedded Software Engineering, React Native & Node, React Native & React, React Native & Ruby, React Native & Python, WordPress, Android, Data Annotation, Angular, Python & Node, React & Node.js, Java & Spring, Svelte & Python, Svelte & Node.js, Svelte & TypeScript, Rust, Shopify & JavaScript, Vue & Nuxt, PHP & Laravel, Animation, Graphic Design, React & Node & React Native, .NET & C#, Electron, Scala, C++, Unreal Engine & C++, Python & LLM, Unity, or Machine Learning Engineering, we would be happy to connect with you and match you with a project that fits your experience.",
+        "location": "Americas, Europe, Asia, Africa, Oceania",
+        "mode": "unknown",
+        "stipend": {
+          "min": 25000,
+          "max": 25000,
+          "currency": "INR",
+          "display": "₹25,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "cybersecurity",
+          "Python",
+          "React",
+          "JavaScript"
+        ],
+        "experience": "Students / Early Career",
+        "eligibility": "Open to passionate builders",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Startup Feed",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/location/india",
+        "applicationUrl": "https://remotive.com/remote-jobs/design/senior-graphic-designer-2091081",
+        "organizationUrl": "https://remotive.com/remote-jobs/design/senior-graphic-designer-2091081",
+        "tags": [
+          "wellfound",
+          "startup",
+          "live-feed"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:26.002Z",
+        "matchScore": 76,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ Aligns with target career domain",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React"
+        ]
+      },
+      {
+        "id": "wellfound-4408827-growati",
+        "title": "Full Stack Software Engineer Intern",
+        "company": "Growati",
+        "description": "Build AI automation products, manage database schemas, develop customer-facing web dashboards, and connect AI APIs.",
+        "location": "Pune / Remote",
+        "mode": "hybrid",
+        "stipend": {
+          "min": 12000,
+          "max": 12000,
+          "currency": "INR",
+          "display": "₹12,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "Full-stack development",
+          "Python",
+          "React",
+          "APIs",
+          "Databases",
+          "AI Automation"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Open to students interested in fast-paced product development",
+        "deadline": "2026-10-31",
+        "postedDate": "Live on Wellfound",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/jobs/4408827-software-engineer-intern-full-stack",
+        "applicationUrl": "https://wellfound.com/jobs/4408827-software-engineer-intern-full-stack",
+        "organizationUrl": "https://wellfound.com/company/growati",
+        "tags": [
+          "wellfound",
+          "fullstack",
+          "ai-automation",
+          "pune"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.135Z",
+        "matchScore": 74,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ hybrid mode preference",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: Favored hybrid setup"
+        ]
+      },
+      {
+        "id": "unstop-1742713-cruvels",
+        "title": "Full Stack And Systems Engineering Internship",
+        "company": "Cruvels Pvt. Limited",
+        "description": "Work on full-stack web architecture, API integrations, software development life cycle (SDLC), and collaboration tools.",
+        "location": "Work from Home (India)",
+        "mode": "remote",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "Full Time (13 days left to apply)",
+        "skills": [
+          "API Integration",
+          "SDLC",
+          "Full Stack Development",
+          "Git",
+          "Software Development"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Undergraduate / Engineering students",
+        "deadline": "2026-09-04",
+        "postedDate": "Aug 22, 2026",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships/full-stack-and-systems-engineering-internship-cruvels-pvt-limited-1742713",
+        "applicationUrl": "https://unstop.com/internships/full-stack-and-systems-engineering-internship-cruvels-pvt-limited-1742713",
+        "organizationUrl": "https://unstop.com",
+        "tags": [
+          "unstop",
+          "fullstack",
+          "api-integration",
+          "remote"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.133Z",
+        "matchScore": 65,
+        "matchReasons": [
+          "✓ Aligns with target career domain",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "wellfound-4377335-gravity-ai",
+        "title": "AI Intern",
+        "company": "Gravity AI",
+        "description": "Build LLMs, LangChain agentic workflows, RAG architectures, prompt engineering pipelines, and MLOps APIs.",
+        "location": "Remote (India)",
+        "mode": "remote",
+        "stipend": {
+          "min": 20000,
+          "max": 20000,
+          "currency": "INR",
+          "display": "₹20,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "Python",
+          "ML",
+          "LLMs",
+          "LangChain",
+          "RAG",
+          "Prompt Engineering",
+          "APIs"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Students interested in Agentic AI & LLMs",
+        "deadline": "2026-10-31",
+        "postedDate": "Live on Wellfound",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/jobs/4377335-ai-intern",
+        "applicationUrl": "https://wellfound.com/jobs/4377335-ai-intern",
+        "organizationUrl": "https://wellfound.com/company/gravity-ai",
+        "tags": [
+          "wellfound",
+          "ai",
+          "langchain",
+          "rag",
+          "agentic"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.134Z",
+        "matchScore": 65,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for LLMs",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "wellfound-4246040-teal-india",
+        "title": "AI/ML Engineer Intern",
+        "company": "Teal India",
+        "description": "Build transformer NLP pipelines, BERT models, vector search indexing, Hugging Face integrations, and RAG search modules.",
+        "location": "Bengaluru",
+        "mode": "onsite",
+        "stipend": {
+          "min": 35000,
+          "max": 35000,
+          "currency": "INR",
+          "display": "₹35,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "Python",
+          "NLP",
+          "BERT",
+          "Transformers",
+          "RAG",
+          "LLMs",
+          "Vector Search",
+          "Hugging Face"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Engineering students with strong Python & Machine Learning foundation",
+        "deadline": "2026-10-31",
+        "postedDate": "Live on Wellfound",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/jobs/4246040-intern-ai-ml-engineer",
+        "applicationUrl": "https://wellfound.com/jobs/4246040-intern-ai-ml-engineer",
+        "organizationUrl": "https://wellfound.com/company/teal-india",
+        "tags": [
+          "wellfound",
+          "ai-ml",
+          "nlp",
+          "transformers",
+          "bengaluru"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.134Z",
+        "matchScore": 65,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ Aligns with target career domain",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for LLMs"
+        ]
+      },
+      {
+        "id": "unstop-1742435-marvedge",
+        "title": "Test Engineer Internship (Full-Stack / SDET)",
+        "company": "Marvedge",
+        "description": "Design automated test suites in Python, conduct API regression testing, execute QA validation cycles, and verify web interfaces.",
+        "location": "Work from Home (India)",
+        "mode": "remote",
+        "stipend": {
+          "min": 18000,
+          "max": 18000,
+          "currency": "INR",
+          "display": "₹18,000/month"
+        },
+        "duration": "Full Time (12 days left to apply)",
+        "skills": [
+          "Python",
+          "Automation Testing",
+          "API Testing",
+          "Software QA",
+          "SDET"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Undergraduate / Engineering students",
+        "deadline": "2026-09-03",
+        "postedDate": "Aug 21, 2026",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships/test-engineer-internship-full-stack-sdet-marvedge-1742435",
+        "applicationUrl": "https://unstop.com/internships/test-engineer-internship-full-stack-sdet-marvedge-1742435",
+        "organizationUrl": "https://unstop.com",
+        "tags": [
+          "unstop",
+          "sdet",
+          "python",
+          "automation-testing",
+          "remote"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.133Z",
+        "matchScore": 61,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "unstop-1741876-rivyou",
+        "title": "Software Developer Internship",
+        "company": "Rivyou",
+        "description": "Develop backend Python microservices, query and model NoSQL databases (MongoDB, Cassandra), and optimize execution pipelines.",
+        "location": "Work from Home | Pan India",
+        "mode": "remote",
+        "stipend": {
+          "min": 10000,
+          "max": 10000,
+          "currency": "INR",
+          "display": "₹10,000/month"
+        },
+        "duration": "Full Time (4 days left to apply)",
+        "skills": [
+          "Python",
+          "NoSQL (MongoDB, Cassandra)",
+          "Debugging",
+          "Backend Development"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Undergraduate students",
+        "deadline": "2026-08-26",
+        "postedDate": "Aug 20, 2026",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships/software-developer-internship-rivyou-1741876",
+        "applicationUrl": "https://unstop.com/internships/software-developer-internship-rivyou-1741876",
+        "organizationUrl": "https://unstop.com",
+        "tags": [
+          "unstop",
+          "python",
+          "mongodb",
+          "cassandra",
+          "remote"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.133Z",
+        "matchScore": 61,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "wellfound-live-2091068",
+        "title": "Head of Marketing & Communications",
+        "company": "garden3d",
+        "description": "We are hiring a Head of Marketing & Communications to tell the garden3d story across the internet, from wherever in the world you happen to be. More details if you check our original job posting link About garden3d We are worker owned creative collective, innovating on everything from brands and IRL communities to IoT devices and cross platform apps. We share profit, open source everything, spin out new businesses, and invest in exciting ideas through financial and/or in-kind contributions. Our client roster includes Google , Stripe , Figma , Hinge , Black Socialists in America , ACLU , Pratt , Parsons , Mozilla , The Nobel Prize , MIT , Gnosis , Etsy & Gagosian . We’re the software team behind innovative products like The Light Phone & Mill , and we operate a global, decentralized community space collective called Index Space . We think of our garden3d as collective for creative people, prioritizing a happy, talented, and diverse studio culture. We work on projects that bring value to our world, and we balance deep care for the work we do with a genuine curiosity about life outside of our jobs. Sanctuary Computer — Development At Sanctuary Computer we’re building a different type of technology shop – one that prioritizes close collaboration between the client and the craftsperson. Our projects range from design-forward websites, to robust web apps, to native mobile development. XXIX — Design When we started XXIX in 2013, we set out to create a different kind of design studio and we’ve thrived because we continually ask what a creative practice can be. We’re building a radically different kind of organization that values autonomy, growth, transparency, and shared responsibility. Index Space — Community A network of physical spaces all around the world, Index provides space for the exchange of knowledge and tools. We nurture trust within the creative community through generosity and abundance of ideas and care. garden3d TK — Media At garden3d, we’re in the early stages of building an experimental media company exploring emerging themes related to the evolving landscape of technology, design and culture. We aim to monetize this outlet, publish books, produce screenplays, and release music. Plus, our partner organizations https://www.thelightphone.com/ https://www.mill.com/ https://www.ingredient-ai.com/ The Head of Marketing & Communications Role The garden3d Head of Marketing & Communications has one mandate: make sure everything we put on the internet is compelling and interesting. garden3d is a house of brands - Sanctuary Computer (development), XXIX (design), Index Space (community), USB Club (digital community), and the garden3d umbrella itself - and each needs its own voice, its own audience, and its own drumbeat of work worth sharing. Working in close partnership with our founder & president Hugh Francis , this person decides what we make, where it runs, and whether it clears our bar. You can be based anywhere. A lot of our studios, spaces and people gravitate around New York, so there's some pull to be here, and a good part of this job is noticing what's happening in our world and turning it into content. But we already work across timezones, and we would happily hire in Europe, Singapore, Chicago, or wherever you are. If you're the right person, we want to hear from you. This role will interface with studio leads, designers, developers, editors, animators, photographers, community managers, event producers and ad platforms across every garden3d vertical. Simply, this person can easily context shift between our massively diverse set of workstreams, find the most compelling stories, and get them produced at an exceedingly high bar. This person owns our channels end to end: the garden3d Substack , our podcast, Instagram, X, and the paid accounts behind them. They collab with our team, and a rotating cast of freelance editors, designers and animators, and they run the calendar that keeps a dozen workstreams shipping on time. They think in PESO terms (paid, earned, shared, owned) with the weight on shared and owned media - paid is a tool they use deliberately, and traditional press is a bonus, but not generally where we focus. The ambition runs past marketing a services business. garden3d TK is our young experimental media company, and this role is its engine: books, screenplays, music, media, activations: a record label for ideas. The ideal candidate looks at a worker-owned collective with four studios, a network of community spaces and an open P&L and sees the best content brief on the internet. Responsibilities & Mandates ‍ Quality never less than 8/10 We aspire for 10/10, celebrate 9/10 and never publish anything that’s not an 8/10 - visually, narratively, and in production quality. This person holds that bar across every post, video, essay and episode on every vertical, and would rather kill a piece than let a 6 out the door. Their feedback makes work better and faster, without micromanaging the people who make it. Social That Stops the Scroll They carry a current, practitioner-level read on how each platform works right now: what arrests someone mid-scroll, how a hook earns the next three seconds, why a format lands on TikTok and dies on LinkedIn. Short-form video is a first-class craft here, not an afterthought. ️ A House of Brands, Each in Its Own Voice Sanctuary Computer doesn't sound like XXIX, and neither sounds like Index. They manage several messaging columns at once, keeping each brand's tone distinct while the umbrella story stays coherent. Case Study Production Every client engagement across our creative agencies should end in a case study worth reading. They own that production line - interviewing the team, shaping the narrative, art-directing the assets - and ship case studies that win each studio its next project. ️ Websites That Put Our Best Foot Forward Our websites are usually the first place a prospective client or hire meets us. They own the strategy behind every garden3d site - what it says, what work it shows, and how clearly it communicates what each studio can do - and they keep sites, decks and other collateral current as the work moves, so what people find is sharp and true. ️ Editorial Ownership The Substack , the podcast, and our transparency publications (like the open-source P&L we release every year) are theirs to run: the calendar, the standards, the growth. They capture what happens in our spaces - Index, USB Club, and the communities around them - and turn it into work worth sharing. Producing, Paid & Distribution They direct producers, editors and freelancers like a showrunner: briefs are clear, deadlines are real, and many workstreams move at once without dropping quality. They run paid spend on Meta, Instagram and wherever our audiences live - building audiences, running A/B/C tests on both narrative and adset, and owning budgets against results they can show. Data-Driven Reporting & ROI They measure what our content actually does - audience growth, engagement, leads, pipeline influenced - and report on it plainly. Paid spend, organic effort and production time all get judged on return, and next quarter's plan follows the numbers. Presence IRL garden3d shows up in person: events, conferences, talks, Index programming, and the dinners and openings where our world gathers. They decide which touchpoints are worth our time, get us there looking like ourselves, and bring back stories worth publishing. Culture They model garden3d's values of partnership, curiosity, and accountability. The producers and creatives they direct do the best work of their careers here, because the feedback is honest, the recognition is real, and the taste rubs off. Special Projects In addition to day to day responsibilities, here’s an idea of some of the projects this role may spearhead or support in coming years Turning garden3d TK into a real experimental media brand: books, screenplays, music, and shows Growing our podcast into a property with its own audience Launch campaigns for new Index spaces, USB Club drops, and community programs Making our annual open-source P&L release a media moment Standing up a small content studio that serves all four studios' new-business pipelines Building the systems (and hiring the people) that let us publish more often, while aspiring for a 10/10 content, and never dropping below an 8/10 Qualifications This is a great opportunity for someone looking to make a significant impact in a growing, dynamic company. Based on the responsibilities of this role, we think the right candidate has the following experience and skills: Must have: 8+ years in marketing, content or brand leadership, with real time inside creative studios, agencies or founder-led companies A portfolio that proves exceptional taste - visual, narrative, and tone of voice A design background and/or fluency & comfort producing own visual assets at the required quality level in Figma when necessary Experience owning a company's web presence: site strategy, messaging, and keeping capabilities collateral current Exceptional project management: content calendars, production pipelines, many workstreams at once Short-form video fluency: they've shipped work for Reels, TikTok and Shorts and can say why each piece performed Extensive experience & comfort managing creatives & producers (editors, designers, animators, freelancers) and getting better work out of them than they'd make alone Hands-on experience running paid social on Meta, Instagram and other platforms: audience building, budget ownership, and A/B/C testing across narrative and ad set Working fluency in the PESO model, with a point of view on where paid, earned, shared and owned media each earn their keep Nice-to-have: Experience producing a brand's IRL presence: events, conferences, talks, and the follow-through that turns them into content Podcast or audio production experience Comfort/experience managing multiple messaging columns in a house of brands Newsletter growth experience, Substack especially Community & events marketing: programming, launches, IRL moments Photography, motion or editing chops of their own Fluency with AI production tools, plus the judgment to know when not to use them A press & media network (traditional PR isn't the focus, but relationships help) Experience marketing to design & engineering decision-makers at companies like our clients Book publishing or long-form media experience Experience growing a services business's story into a consumer-scale audience Who you are The person we’re looking for is happy, relaxed and easy to get along with and appreciates a commitment to a culture of transparency, non-dictatorial leadership styles, and alternative methodologies. They’re flexible on anything except conceits that will lower their usually outstanding work quality. They work “smart” by carefully managing their workflow and team. How we interview After you submit your application, a member of our team will reach out. Our interview process starts with an intro call to answer any questions you have about the role and to learn a bit more about your experience and interests. From there, we’ll follow up with a panel interview call where you get to meet a few members of our team, to openly discuss some of our challenges and ensure your skills and interests align with where we’re going as a business. For qualified candidates, the process wraps with a reference call, and an offer to follow. Compensation This role greatly favors autonomous, competent & ambitious operators. It will begin with a 4-month fraction trial contract, paid hourly between $75 - $120 p/hr pending seniority & experience. In the first few weeks of the trial, this individual will propose their own goals to define success in their trial, and present them to our leadership team for approval. At garden3d, we believe that those who shoulder the most responsibility and create the greatest impact should be paid accordingly. If this individual exceeds expectations by the end of the 4-month period, we'll shape a permanent role together, with scope and compensation that grow as our audiences and revenue do. Finally, after a period of proven success in this role (12 - 24 months), this individual will become eligible to join our worker ownership program. ‍ How we work: We believe that there’s a better balance between the poles of freelancing & full time, and for that reason we work differently to most shops: Transparency & Ownership: We release out Profit & Loss statements to the community each year, open source our best ideas, and talk business & money with everyone in the company. We’re proud to run our business with integrity, and for that reason we share everything with our team & community. 150% Carbon Negative: ** Our studio offsets 150% of the carbon we use to do business each year, dated back to our founding in 2015. We turn down work that is not in-line with our morals, and we encourage our peers to do the same. We have been certified climate neutral since 2021 . Strong Morals: ** Since our founding, we've turned down somewhere between $1mm - $2mm of work that didn't meet our moral standards. (Most of that was DTC brands that can't show a valid sustainability initiative). Async & Decentralized: We use tools optimized for calm, thoughtful communication, and opt for async whenever possible. We fight hard to maintain our focus time. Remote Friendly: Our company is fluent in remote work, making our workplace more decentralized, and democratized in the process. Ideas & Products: In our spare studio time, we work to build our own open source or internal products to diversify & bolster our income. We create amazing technology products for our clients, so why not for the studio? → Read more on our Substack, over here . Kindly submit a complete and thoughtful application, including relevant links that help verify your work experience and identity. Applications with missing or insufficient information will not move forward in the review process. Our team carefully reviews every complete submission, and we truly appreciate the time and effort you put into applying! We’re excited to hear from you! ❤",
+        "location": "Worldwide",
+        "mode": "unknown",
+        "stipend": {
+          "min": 150000,
+          "max": 230000,
+          "currency": "USD",
+          "display": "$1,50,000 - $2,30,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "cybersecurity",
+          "Python",
+          "React",
+          "JavaScript"
+        ],
+        "experience": "Students / Early Career",
+        "eligibility": "Open to passionate builders",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Startup Feed",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/location/india",
+        "applicationUrl": "https://remotive.com/remote-jobs/marketing/head-of-marketing-communications-2091068",
+        "organizationUrl": "https://remotive.com/remote-jobs/marketing/head-of-marketing-communications-2091068",
+        "tags": [
+          "wellfound",
+          "startup",
+          "live-feed"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:26.000Z",
+        "matchScore": 56,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React"
+        ]
+      },
+      {
+        "id": "wellfound-live-1680495",
+        "title": "Remote Office Assistant",
+        "company": "Coalition Technologies",
+        "description": "Coalition Technologies is seeking a reliable, detail-oriented, and highly organized Remote Office Assistant to support administrative, bookkeeping, billing, reporting, data entry, and internal operations tasks. This role is ideal for someone with strong communication skills, discretion, attention to detail, and a willingness to learn and grow within a fast-paced remote work environment. As an Office Assistant, you will help support daily administrative operations, assist with entry-level bookkeeping, organize client documents, support internal reporting, and help maintain accurate company records. This position offers strong growth potential for the right candidate, including opportunities for advancement within the Accounting team or other departments. We are looking for talented and diligent candidates who perform well on our skills assessments. Strong skills test performance may be considered even if a candidate does not meet every preferred experience or educational background requirement. Why Join Coalition Technologies? Coalition Technologies is committed to delivering high-quality work for our clients while providing our team with a fun, thriving, innovative, and growth-focused work environment. We offer: 100% remote work with a company that has supported remote team members for more than a decade Competitive profit-sharing bonus plan, with up to 50% of company profits paid to full-time employees each month Competitive Paid Time Off plan that supports work-life balance Subsidized gym memberships Medical, dental, vision, and life insurance packages for eligible US-based team members International Health Insurance Reimbursement Program for eligible international team members Device upgrade and learning reimbursement programs Career development plans with clearly defined goals and rewards Additional job-specific incentives and bonuses Office Assistant Responsibilities As an Office Assistant, your duties will include: Answering phones and emails Completing entry-level bookkeeping tasks, including recording expenses, organizing receipts, and maintaining transaction records Resolving billing issues with clients and internal team members Providing account access, usage reports, data analysis, and other ad hoc support for team members Supporting quality assurance checks for internal and client-facing reports Organizing new client contracts, creating invoices, and processing client payments Contributing to internal database maintenance, upkeep, and data entry Researching, ordering, and distributing company-wide gifts two to three times per year Organizing company events, competitions, and special projects throughout the year Facilitating company holiday calendars, time-off calendars, and schedule variation calendars Required Skills and Qualifications The ideal candidate will have: Willingness to learn, grow, and collaborate with the team and company as a whole Excellent verbal and written communication skills High level of discretion, ethics, and trustworthiness Strong attention to detail and organizational skills Ability to support administrative, bookkeeping, billing, reporting, and data entry tasks Innovative thinking and willingness to challenge existing methods when improvement is possible Availability to work 40 hours per week, Monday through Friday, 9:00 a.m. to 6:00 p.m. Pacific Time Reliable remote workspace with a fast computer, quality internet, camera, microphone, and speakers Preferred Skills The following experience is preferred but not required: Intermediate spreadsheet skills Experience with bookkeeping or financial record keeping Experience with Google Sheets, Microsoft Excel, QuickBooks Online, and Google Workspace Experience supporting billing, invoicing, reporting, data entry, or administrative operations Remote Work Environment Coalition Technologies is a fully remote company. Our team works remotely with the support of time tracking software, structured communication, and a company culture designed to help remote team members succeed. We have supported remote team members for more than a decade and welcome qualified applicants from around the world. Growth Opportunity This position offers a strong opportunity for growth. Successful Office Assistants at Coalition Technologies have advanced quickly and earned promotions within the Accounting team and across other departments. Compensation For candidates located in California, New York, Washington, and Colorado, the starting base pay for this position ranges from $15 to $25 per hour. Compensation may vary based on factors such as experience, qualifications, skills test performance, geographic location, and seniority of the position offered. For candidates outside of California, New York, Washington, and Colorado, compensation may fall outside the listed range.",
+        "location": "Worldwide",
+        "mode": "unknown",
+        "stipend": {
+          "min": 52000,
+          "max": 312000,
+          "currency": "USD",
+          "display": "$52,000 - $3,12,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "cybersecurity",
+          "Python",
+          "React",
+          "JavaScript"
+        ],
+        "experience": "Students / Early Career",
+        "eligibility": "Open to passionate builders",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Startup Feed",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/location/india",
+        "applicationUrl": "https://remotive.com/remote-jobs/marketing/remote-office-assistant-1680495",
+        "organizationUrl": "https://remotive.com/remote-jobs/marketing/remote-office-assistant-1680495",
+        "tags": [
+          "wellfound",
+          "startup",
+          "live-feed"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:26.001Z",
+        "matchScore": 56,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React"
+        ]
+      },
+      {
+        "id": "wellfound-live-2086540",
+        "title": "Inside Sales Contractor",
+        "company": "Credit Wellness, LLC",
+        "description": "About Us We are a financial services start up focusing on helping to improve consumer credit profiles. We are currently seeking KPI driven sales representatives looking to earn up to 45K in their first year while working remotely. We offer comprehensive training and continuous sales coaching to help you meet your financial goals. During our training period we offer a guaranteed training stipend while our trainees are acclimating to the position (*see weekly pay below). If you are a seasoned sales professional looking for the autonomy of a remote position combined with great compensation, we want to hear from you! Compensation Structure This role is 100% commission-based , which means your earning potential is unlimited. In addition, we regularly offer competitive performance-based bonuses to reward hard work and results. Training Period (Weeks 1–4) We invest in your success and want to make sure you’re supported as you get up to speed: Week 1: Commission-only (a chance to start earning right away while learning the ropes). Weeks 2–4: Guaranteed training stipend of $500 USD total – or your commission if it’s higher. You’ll always receive whichever amount benefits you most. Week 0: Unpaid Week 1: $100 guaranteed minimum Week 2: $150 guaranteed minimum Week 3: $250 guaranteed minimum By the end of training, you’ll have the skills to maximize commissions, with the safety net of a guaranteed base during your ramp-up period. Post Training Period: Average first year OTE: 25K-35K (US) Annually Top Rep first year OTE: 35K-45K (US) Annually *The above is the average pay you can expect, however, there is unlimited earning potential for those who are financially motivated top performers looking to exceed sales targets. What will you be doing? Educating inbound callers on their credit standing by providing consultations with the goal of enrolling them in one of our services should they be a good fit. We are looking for team members who are: Tech savvy with the ability to navigate digital tools such as SLACK, CRM software, google sheets, etc. Our team uses these digital tools daily. Growth oriented and always looking to learn and acquire new skills. Autonomous self starters who can work independently and efficiently. Team players with the ability to implement feedback from their sales coaches. Patient and professional with clients. Finances can be a difficult topic for some clients to discuss. We are looking for individuals who showcase empathy and professionalism especially under pressure! Financially motivated individuals who can meet and exceed sales targets. Outgoing with outstanding rapport building and active listening skills. Can you carry a conversation with anyone? This may be for you! You will need: Home office or a quiet place to work. Strong internet connection. Desktop or laptop (*Please Note: Devices such as Chromebooks, IPADs and laptops with 8G’s of RAM and under will have issues supporting our system) Scheduling Training: The schedule for the first four weeks of our training period is 10 AM - 6 PM EST. *The first week of training is mandatory for all new trainees. If a day is missed you may be asked to restart the first week of training. Post Training: We are currently seeking representatives to work on the following schedule: Monday - Friday Shift hours to be discussed with our hiring manager based on our company's needs at the time of hire. Shifts are as follows: 8:00 AM - 4:00 PM EST 8:30 AM - 4:30 PM EST 9:00 AM - 5:00 AM EST 9:30 AM - 5:30 PM EST 10:00 AM - 6:00 PM EST 10:30 AM - 6:30 PM EST 11:00 AM - 7:00 PM EST 11:30 AM - 7:30 PM EST 12:30 PM - 8:30 PM EST 1:30 PM - 9:30 PM EST 2:30 PM - 10:30 PM EST 3:00 PM - 11:00 PM EST Job Type: Contract Shift: 8 hour shift Day shift Evening shift Morning shift Night shift Supplemental Pay: Bonus opportunities Commission pay Experience: Sales: 1 year (Required) Work Location: Remote",
+        "location": "Worldwide",
+        "mode": "unknown",
+        "stipend": {
+          "min": 25000,
+          "max": 35000,
+          "currency": "USD",
+          "display": "$25,000 - $35,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "cybersecurity",
+          "Python",
+          "React",
+          "JavaScript"
+        ],
+        "experience": "Students / Early Career",
+        "eligibility": "Open to passionate builders",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Startup Feed",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/location/india",
+        "applicationUrl": "https://remotive.com/remote-jobs/sales/inside-sales-contractor-2086540",
+        "organizationUrl": "https://remotive.com/remote-jobs/sales/inside-sales-contractor-2086540",
+        "tags": [
+          "wellfound",
+          "startup",
+          "live-feed"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:26.001Z",
+        "matchScore": 56,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React"
+        ]
+      },
+      {
+        "id": "wellfound-live-2091045",
+        "title": "Tier III Service Desk Engineer",
+        "company": "Unio Digital",
+        "description": "Unió Digital is an Arizona-based managed service provider (MSP) delivering Managed IT Services, Low Voltage Cabling, Access Control, Video Surveillance, and Intrusion Services. We believe technology should be intuitive, not intimidating. We are looking for an experienced Tier 3 Service Desk Technician with exceptional problem-solving skills. You will serve as the escalation point within the team, resolving complex technical issues while also leading client onboarding and project initiatives. You are expected to be involved in direct end-user support when required. If you have a passion for ensuring top-quality user support and thrive in a collaborative environment, this role is for you. Duties · Lead and support our helpdesk environment for managed service clients · Coordinate and manage client projects, acting as a bridge between the technical team and the client to ensure project success · Provide above and beyond support to our clients and respond to queries for technical assistance in person, via phone, or electronically as required · Provide training and support to clients during the onboarding process to ensure they understand how to effectively use their new IT systems and services. · Develop project plans for client onboarding and standardization projects, outlining tasks, resources required, and estimated timelines · Install, configure, diagnose, test and resolve technical hardware and software issues · Maintain and update written client and process documentation to ensure effective knowledge management · Provide mentorship and guidance to Tier I and Tier II service desk technicians, fostering a collaborative and knowledgeable team environment · Contribute to the development and improvement of IT service management processes and practices · Evaluate and anticipate IT trends and recommend strategies and implement improvement initiatives Our Technology Stack · Helpdesk / Ticketing – HaloPSA · Documentation – Hudu · RMM – Intune / Immybot · Networking – Meraki · Email/Calendar/Voice/AD – Microsoft 365 · Security Cameras – Rhombus / Avigilon · Door Access – Avigilon Qualification · 6+ years of experience providing IT services and end-user support · Prior experience at a managed service provider is critical to understand the fast-paced nature of the industry · Client-oriented approach with a passion for delivering high-quality customer service · Proven experience leading IT projects · A self-starter who is eager to expand their qualifications · Background in providing direct end-user support · High level of attention to detail · Excellent verbal and written communication skills · IT-related degree and/or certifications (Cisco, A+, Network+, Microsoft, or equivalent) · Advanced technical knowledge, including experience with Azure AD, Active Directory, Intune, or other RMM agents Our Core Values Dream Big, Then Make it Real We flex our imagination and challenge ourselves to a higher standard. Do, rather than talk and tell. Client Driven Results Clients trust us to find solutions that deliver exceptional results. When they succeed, we succeed. Own Your Progress We continuously improve through rapid innovation and embracing our mistakes. Own it means a relentless pursuit of the solution. We Do It Right…even when no one’s watching. Period.",
+        "location": "Worldwide",
+        "mode": "unknown",
+        "stipend": {
+          "min": 25000,
+          "max": 25000,
+          "currency": "INR",
+          "display": "₹25,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "cybersecurity",
+          "Python",
+          "React",
+          "JavaScript"
+        ],
+        "experience": "Students / Early Career",
+        "eligibility": "Open to passionate builders",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Startup Feed",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/location/india",
+        "applicationUrl": "https://remotive.com/remote-jobs/information-technology/tier-iii-service-desk-engineer-2091045",
+        "organizationUrl": "https://remotive.com/remote-jobs/information-technology/tier-iii-service-desk-engineer-2091045",
+        "tags": [
+          "wellfound",
+          "startup",
+          "live-feed"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:26.001Z",
+        "matchScore": 56,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React"
+        ]
+      },
+      {
+        "id": "wellfound-live-2091088",
+        "title": "Sales Jedi",
+        "company": "Creative Force",
+        "description": "Great salary | Profit share | 100% remote | Work from anywhere in Europe | SaaS Awesome opportunity for a self-motivated and energetic people person to join our remote team and help sell our world-leading SaaS products, from anywhere in Europe. We pay a great salary, based on experience and location. We don’t pay commissions, because good sales are a team effort—from engineering, to operations, marketing, and support, our high-performing team all contribute to a great product and service that our clients love. Everybody in the company is rewarded with a share of profit each December—we succeed together. Our much-loved products are in demand and are proven to make a difference to our clients’ lives. You’ll be selling world-leading software through a well-considered process that leaves room for personal flair. SaaS experience is extremely beneficial but strong communication skills, patience, curiosity, keenness to learn and friendliness are key to success in this role. Join our Rebel Alliance Creative Force is experiencing strong growth and as we scale our efforts in 2026 and beyond, we’re looking for enthusiastic individuals to join our diverse team of Jedis to help recruit new clients as they navigate the decision process, and transform them into long-term supporters. You’ll be a respected member of our remote global sales team and will be well supported with the tools, knowledge and answers you need to provide exceptional levels of service, and to make the most from solid sales traction with our two in-demand products. As you master the Force and the multitude of skills needed in this role, attracting clients to join our mission, you will be recognised and rewarded with strong career and salary progression. Responsibilities Help prospects find the specific value they seek (this is the product you are looking for) Collaborate with our diverse international team to push us on the leading edge of our fields Learn to be a product expert and confidently answer product questions from prospects Discover how to be an expert in SaaS for recognition programs Master our sales technology stack Support the complete sales cycle, from qualified lead to close Skillfully navigate consultative sales discussions and live demos Essentials Applications are open to all experience levels, with a minimum of 1 year proven success in SaaS sales or a similar role Must live in Europe Digital native, with enthusiasm for technology Discipline and self-motivation (key to success in remote work) Loads of energy, humour, passion, and empathy Genuine interest to help provide amazing value for people Superior communication skills Commitment to continuous improvement You have access to fast, reliable internet and a dedicated space to work without distractions Meet and exceed measurable performance goals to succeed and progress in this role What we offer Work-life balance 38 hour work week, Monday to Friday (your weekends are yours) 20 days paid annual leave 20 days paid parental leave (available after one year) 12 days paid public holidays (your local country/region public holidays) Your birthday is a holiday every year Personal development and wellbeing Commitment to continued learning and development A culture of promoting work life balance Access to mental health support Location and compensation Full-time role, based remotely, work anywhere within Europe No commission structure. Competitive salary, indexed to your experience and location Budget for computer and office equipment (pending 6 month probationary period) Respect, growth and stability Friendly, sociable, responsible, collaborative team (a great place to be) Respect for each other’s time, value and contribution Regular communication with global team via chat and video calls Dynamic, young, growing tech company leveraging all the latest tech tools and leading industry trends Stable, bootstrapped, independent business (no VCs calling the shots)",
+        "location": "Europe",
+        "mode": "unknown",
+        "stipend": {
+          "min": 25000,
+          "max": 25000,
+          "currency": "INR",
+          "display": "₹25,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "cybersecurity",
+          "Python",
+          "React",
+          "JavaScript"
+        ],
+        "experience": "Students / Early Career",
+        "eligibility": "Open to passionate builders",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Startup Feed",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/location/india",
+        "applicationUrl": "https://remotive.com/remote-jobs/sales/sales-jedi-2091088",
+        "organizationUrl": "https://remotive.com/remote-jobs/sales/sales-jedi-2091088",
+        "tags": [
+          "wellfound",
+          "startup",
+          "live-feed"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:26.001Z",
+        "matchScore": 56,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React"
+        ]
+      },
+      {
+        "id": "wellfound-live-2091087",
+        "title": "SaaS Product Support Jedi",
+        "company": "Creative Force",
+        "description": "We’re on the hunt for a sharp, self-driven SaaS pro who’s as comfortable troubleshooting API and integrations as they are navigating human conversations. Our European client base is growing fast and we need someone who can keep up. Our software isn’t your average plug-and-play; it has a steep learning curve so you’ll need to be technically savvy while also being the kind of person clients genuinely enjoy talking to. If you’ve got SaaS in your DNA, thrive in async/remote environments, and can juggle multiple threads without breaking a sweat — keep reading. The role You’ll join a lean, high-performing global support team working across two SaaS products, Award Force and Good Grants. Day to day you’ll be communicating with colleagues and clients across countries, cultures, and time zones. Support happens across email tickets, phone, and 1-1 Zoom calls. Once you’ve leveled up on product knowledge, you’ll run onboarding sessions and client meetings covering issue resolution, best practices, and product adoption. You’ll also be hands-on with bug testing and reporting, feeding considered feedback to our product teams— always pushing to make our products better. We have a startup mindset. We experiment with new tools, iterate on processes, and move fast. Got a great idea? Pitch it. We’re not big on bureaucracy, only results. We don’t expect you to be a slave to your chair but flexibility is a must. You’ll need to tick these boxes You’re based in the UTC +1 or +2 timezone range. This is non-negotiable. Our European team and clients operate in this window and we don’t allow shift work. If you live outside this range, this one’s not for you 2+ years of professional experience, ideally in a SaaS support or client-facing role Native-level English fluency (bilingual? Even better!) Terms like HTML, CSS, JS, API, integrations, dev console, staging & production environments, GitHub repos, and database queries don’t make you flinch. You don’t need to write code, but you need to get it You’ve got exceptional interpersonal and communication skills—written and verbal Client calls energise you. Four to five Zoom meetings a day? Bring it on You’re a natural problem solver who loves helping others untangle theirs Your writing is clean, well-structured, and detail-oriented You’re curious by nature and love learning new things You’re not allergic to upselling or fielding “sales-y” questions You’re organised and process-driven. Multiple tools for different workflows? No problem — you thrive in that setup You’re self-motivated and independent, but you also value being part of a tight-knit team Remote work isn’t just something you dabble in—it’s where you do your best work. You’ve got fast, reliable internet and a distraction-free workspace ready to go Responsibilities Product support Go deep on product knowledge through self-driven learning—become the expert Be the first point of contact on all inbound support via email/tickets, phone, and eventually live chat Run 1-1 Zoom sessions with clients for technical consultation and query resolution Maintain our consistently impressive first-reply-time metric (yeah, we’re proud of it) Provide technically accurate responses backed by hands-on testing of scenarios Collaborate with engineering to squash bugs and keep clients in the loop with timely updates Spot patterns in user issues and flag them for product improvement Be seriously good with clients Speed matters. Respond quickly and decisively Listen deeply—get to the root of the issue and own it until it’s resolved Treat every client interaction with genuine respect and appreciation Build trusting, long-term relationships rooted in honesty and transparency",
+        "location": "Europe, EMEA, UK, Germany, France, European timezones",
+        "mode": "unknown",
+        "stipend": {
+          "min": 25000,
+          "max": 25000,
+          "currency": "INR",
+          "display": "₹25,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "cybersecurity",
+          "Python",
+          "React",
+          "JavaScript"
+        ],
+        "experience": "Students / Early Career",
+        "eligibility": "Open to passionate builders",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Startup Feed",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/location/india",
+        "applicationUrl": "https://remotive.com/remote-jobs/customer-service/saas-product-support-jedi-2091087",
+        "organizationUrl": "https://remotive.com/remote-jobs/customer-service/saas-product-support-jedi-2091087",
+        "tags": [
+          "wellfound",
+          "startup",
+          "live-feed"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:26.002Z",
+        "matchScore": 56,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React"
+        ]
+      },
+      {
+        "id": "wellfound-live-1749306",
+        "title": "Freelance Copywriter",
+        "company": "Coalition Technologies",
+        "description": "CT Marketing Agency is seeking skilled Freelance Copywriters to write high-quality, SEO-driven content for eCommerce and lead generation websites. This is a freelance, project-based writing role. The ideal candidate has excellent English writing skills, strong research ability, and experience writing content that follows detailed, client-specific guidelines. Projects commonly include category pages, product descriptions, blog posts, SEO landing pages, and website copy. About the Role Our client base is constantly evolving, and writers may create content across a wide range of industries, including: Fashion, including mass-market and luxury brands Skincare and beauty Tech and software Finance and investing Law, including family law, divorce, and product liability Education Home improvement Automobiles and motorcycles Health and wellness Medical and clinical fields Digital marketing SEO, PR, advertising, and marketing Writers with experience in highly specialized industries such as tech, finance, law, health, medical, SEO, PR, advertising, or marketing are strongly encouraged to apply. Responsibilities Write clear, engaging, SEO-friendly content for eCommerce and lead generation websites Create category pages, product descriptions, blog posts, landing pages, and website copy Research client industries, products, services, audiences, and competitors Follow detailed client guidelines and adapt to different brand voices Blend SEO best practices with brand priorities and conversion-focused writing Complete assignments by deadline and communicate professionally with the team Qualifications Excellent English writing, grammar, editing, and proofreading skills 2 to 4 years of professional, non-academic writing experience preferred Strong understanding of SEO writing best practices Ability to research unfamiliar industries and technical topics Ability to write creative, engaging, accurate, and ROI-focused content Portfolio featuring published work preferred Experience in specialized industries strongly preferred Compensation Writers are paid on a per-word basis. Rates are assessed according to our KPI rubric. Initial compensation is up to $0.06 per word, with $0.034 per word being the most typical rate This equals approximately $30 or $17 per 500-word page After 400 live pages, the top rate increases to $0.064 per word, with $0.038 per word being the most typical rate After 800 live pages, the top rate increases to $0.07 per word, with $0.044 per word being the most typical rate Application Process Candidates should be prepared to provide a portfolio featuring published work. Once an offer is extended, writers will complete a brief training course.",
+        "location": "Worldwide",
+        "mode": "unknown",
+        "stipend": {
+          "min": 20000,
+          "max": 35000,
+          "currency": "USD",
+          "display": "$20,000 - $35,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "cybersecurity",
+          "Python",
+          "React",
+          "JavaScript"
+        ],
+        "experience": "Students / Early Career",
+        "eligibility": "Open to passionate builders",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Startup Feed",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/location/india",
+        "applicationUrl": "https://remotive.com/remote-jobs/writing/freelance-copywriter-1749306",
+        "organizationUrl": "https://remotive.com/remote-jobs/writing/freelance-copywriter-1749306",
+        "tags": [
+          "wellfound",
+          "startup",
+          "live-feed"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:26.002Z",
+        "matchScore": 56,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React"
+        ]
+      },
+      {
+        "id": "wellfound-live-2091075",
+        "title": "Business Development Representative",
+        "company": "Outsite",
+        "description": "## About Outsite Outsite is a global coliving company for remote workers — hotel-quality service, extended-stay flexibility, and a built-in community, at the intersection of hospitality and lifestyle. We operate 40+ properties across 21+ cities on 5 continents, with 6,000+ verified members and an NPS of 65. ## About Outsite for Teams Outsite for Teams is Outsite's B2B expansion — giving companies, teams, and communities access to our global network of coliving and coworking spaces for their employees. Rather than a bulk discount, we position it as a meaningful perk: founders and leaders purchase memberships on behalf of their team, and a dedicated account manager keeps them active and engaged. This is a genuine growth priority for the business, and you'll be one of the first dedicated sales hires driving it. ## Role Overview We're hiring a Business Development Representative to build and run outbound sales for Outsite for Teams. You'll identify and prospect the right companies, run discovery calls, and close new business — turning remote-first startups, distributed teams, and growth-stage companies into long-term Outsite for Teams accounts. This is a highly autonomous, build-it-yourself role. You'll help shape the outbound playbook, not just execute someone else's. ## Key Responsibilities ### 1. Prospecting & Outbound - Build and work target lists of remote-first and hybrid companies, using signals like team size (50–500), remote/hybrid language in company descriptions, and titles such as Head of People, Chief of Staff, VP of Operations, or Founder - Source leads via LinkedIn Sales Navigator, Wellfound/AngelList, Crunchbase, remote job boards (We Work Remotely, Remote.co), and Outsite's own member base - Run cold outbound via email, LinkedIn, and calls, and continuously test and refine messaging - Reach out to local companies near Outsite locations to sell business travel and corporate stay packages - Build partnerships with travel agencies and tour operators to generate referral and bundled-stay opportunities ### 2. Sales & Pipeline Management - Run discovery calls to understand a prospect's team, travel patterns, and remote work culture - Own the full sales cycle from first touch to close - Keep the CRM clean and current — every deal staged, every next step logged - Forecast pipeline accurately and hit monthly/quarterly new business targets ### 3. Collaboration & Handoff - Partner with the Head of Marketing on positioning, collateral, and campaigns that support outbound - Hand off closed accounts cleanly to the account management side, with full context on the client's goals - Share market feedback — what's resonating, what isn't — to sharpen Outsite for Teams' pitch and ICP over time ### 4. Reporting - Report weekly on pipeline: volume, stage, conversion, and blockers - Track and share what's working in outbound so it can be systematized ## Required Skills & Experience - 1+ years of B2B sales or business development experience (SDR/BDR background a plus) - Confident, consultative communicator — comfortable running discovery calls with founders and People leaders - Self-starter who's built pipeline from scratch, not just worked warm leads - Able to work autonomously and independently - Comfortable with taking initiative and being proactive - Comfortable working European timezone hours - Strong written communication — outbound copy is part of the job - Organized; keeps a CRM honest without being told to - Comfortable using AI in workflow ## Nice to Have - Experience selling to remote-first or distributed teams - Familiarity with Pipedrive or HubSpot - Existing network in the startup, remote work, or travel/hospitality space - Experience selling a membership, subscription, or perk-style product ## What Success Looks Like (First 90 Days) - A working, documented outbound playbook (lists, messaging, cadence) - A full and accurately-staged pipeline in the CRM - First qualified meetings booked and first deals in late-stage or closed - Clear, weekly reporting rhythm established with Marketing - Sharpened point of view on which ICPs convert fastest ## Benefits - Remote, travel encouraged - Credits for Outsite locations - Salary - $45,000 - $50,000 USD + commission",
+        "location": "Northern America, Europe, UK, France, European timezones",
+        "mode": "unknown",
+        "stipend": {
+          "min": 45000,
+          "max": 50000,
+          "currency": "USD",
+          "display": "$45,000 - $50,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "cybersecurity",
+          "Python",
+          "React",
+          "JavaScript"
+        ],
+        "experience": "Students / Early Career",
+        "eligibility": "Open to passionate builders",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Startup Feed",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/location/india",
+        "applicationUrl": "https://remotive.com/remote-jobs/sales/business-development-representative-2091075",
+        "organizationUrl": "https://remotive.com/remote-jobs/sales/business-development-representative-2091075",
+        "tags": [
+          "wellfound",
+          "startup",
+          "live-feed"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:26.003Z",
+        "matchScore": 56,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React"
+        ]
+      },
+      {
+        "id": "wellfound-4289766-cravv",
+        "title": "Backend Golang SDE Intern",
+        "company": "Cravv",
+        "description": "Develop high-throughput microservices in Go, manage PostgreSQL and Redis caches, implement WebSockets, and build RESTful endpoints.",
+        "location": "Bengaluru",
+        "mode": "onsite",
+        "stipend": {
+          "min": 18000,
+          "max": 18000,
+          "currency": "INR",
+          "display": "₹18,000/month"
+        },
+        "duration": "3 Months",
+        "skills": [
+          "Go",
+          "Node.js",
+          "PostgreSQL",
+          "MongoDB",
+          "Redis",
+          "AWS",
+          "REST",
+          "WebSockets",
+          "DSA"
+        ],
+        "experience": "No experience required",
+        "eligibility": "Students with solid data structures and backend systems knowledge",
+        "deadline": "2026-10-15",
+        "postedDate": "Live on Wellfound",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/jobs/4289766-backend-golang-sde-intern",
+        "applicationUrl": "https://wellfound.com/jobs/4289766-backend-golang-sde-intern",
+        "organizationUrl": "https://wellfound.com/company/cravv",
+        "tags": [
+          "wellfound",
+          "golang",
+          "backend",
+          "websockets",
+          "databases"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.134Z",
+        "matchScore": 49,
+        "matchReasons": [
+          "✓ Node.js matches profile",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Node.js",
+          "🧠 AI Learned: High affinity for AWS",
+          "🧠 AI Learned: High affinity for REST"
+        ]
+      },
+      {
+        "id": "indeed-soc-tier1",
+        "title": "SOC Analyst Intern",
+        "company": "SecureLink CyberDefense",
+        "description": "Review real-time SIEM alerts, conduct initial incident triage, and document remediation workflows.",
+        "location": "Bengaluru, Karnataka",
+        "mode": "onsite",
+        "stipend": {
+          "min": 15000,
+          "max": 20000,
+          "currency": "INR",
+          "display": "₹15,000 - ₹20,000/month"
+        },
+        "duration": "6 Months",
+        "skills": [
+          "Cybersecurity",
+          "SIEM",
+          "Linux",
+          "Network Traffic Analysis"
+        ],
+        "experience": "Students / Freshers",
+        "eligibility": "Bachelor's degree in progress (CS/IT)",
+        "deadline": "2026-09-30",
+        "postedDate": "2 days ago",
+        "source": "Indeed India",
+        "sourceUrl": "https://in.indeed.com/jobs?q=cybersecurity%20intern&l=India",
+        "applicationUrl": "https://in.indeed.com/viewjob?jk=securelink01",
+        "organizationUrl": null,
+        "tags": [
+          "indeed",
+          "soc",
+          "analyst"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.136Z",
+        "matchScore": 49,
+        "matchReasons": [
+          "✓ Network Traffic Analysis matches profile",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: High affinity for Linux",
+          "🧠 AI Learned: High affinity for Network Traffic Analysis"
+        ]
+      },
+      {
+        "id": "wellfound-live-2091093",
+        "title": "Face Deduplication Collection",
+        "company": "TELUS Digital",
+        "description": "The project compensation rate is $0.55 USD per accepted image. The objective of this project is to collect a large and diverse dataset of current neutral selfies, head-pose captures, and historical facial images to support machine-learning research and facial recognition model training at TELUS. The focus is on capturing real-world variation across lighting, poses, expressions, accessories, environments, and aging to improve model accuracy and robustness. The collection includes: • Current Neutral Selfies – clean frontal selfies serving as high-quality identity references, with natural variation in appearance and surroundings. • Current Head-Pose Captures – selfies captured in assigned head directions to introduce pose variation. • Historical Images – older photos from participants’ galleries to capture natural aging and long-term appearance changes. To qualify for payment, you must submit a minimum of 20 valid images. The maximum payout is based on 24 accepted images. Due to the strict automated and manual Quality Control (QC) process, we strongly recommend submitting 30 images to help ensure that enough images remain valid after review Note: Please use a Gmail address as your primary account when applying for this project. Qualification path No specific education is needed to perform the project task.",
+        "location": "USA",
+        "mode": "unknown",
+        "stipend": {
+          "min": null,
+          "max": null,
+          "currency": null,
+          "display": "Pay per task"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "cybersecurity",
+          "Python",
+          "React",
+          "JavaScript"
+        ],
+        "experience": "Students / Early Career",
+        "eligibility": "Open to passionate builders",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Startup Feed",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/location/india",
+        "applicationUrl": "https://remotive.com/remote-jobs/all-others/face-deduplication-collection-2091093",
+        "organizationUrl": "https://remotive.com/remote-jobs/all-others/face-deduplication-collection-2091093",
+        "tags": [
+          "wellfound",
+          "startup",
+          "live-feed"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:26.000Z",
+        "matchScore": 46,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React"
+        ]
+      },
+      {
+        "id": "career-1-tiktok",
+        "title": "Software Engineer Intern",
+        "company": "TikTok",
+        "description": "Official direct career opening for Software Engineer Intern at TikTok. Discovered from verified career portals.",
+        "location": "San Jose, CA",
+        "mode": "unknown",
+        "stipend": {
+          "min": 40000,
+          "max": 85000,
+          "currency": "INR",
+          "display": "₹40,000 - ₹85,000/month"
+        },
+        "duration": "3 Months",
+        "skills": [
+          "cybersecurity",
+          "cyber security",
+          "information security",
+          "SOC analyst",
+          "security analyst",
+          "penetration testing",
+          "ethical hacking",
+          "network security"
+        ],
+        "experience": "Enrolled Students / Freshers",
+        "eligibility": "Pursuing Bachelor's / Master's degree in CS, IT, Cybersecurity or related fields",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Career Listing",
+        "source": "Official Company Career Portal",
+        "sourceUrl": "https://simplify.jobs/c/TikTok?utm_source=GHList&utm_medium=company",
+        "applicationUrl": "https://simplify.jobs/c/TikTok?utm_source=GHList&utm_medium=company",
+        "organizationUrl": "https://simplify.jobs/c/TikTok?utm_source=GHList&utm_medium=company",
+        "tags": [
+          "direct-company",
+          "top-tier",
+          "verified"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:25.320Z",
+        "matchScore": 45,
+        "matchReasons": [
+          "✓ ethical hacking matches profile",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
+        ]
+      },
+      {
+        "id": "career-2-zipline",
+        "title": "Software Engineer Intern - Summer 2027",
+        "company": "Zipline",
+        "description": "Official direct career opening for Software Engineer Intern - Summer 2027 at Zipline. Discovered from verified career portals.",
+        "location": "South SF",
+        "mode": "unknown",
+        "stipend": {
+          "min": 40000,
+          "max": 85000,
+          "currency": "INR",
+          "display": "₹40,000 - ₹85,000/month"
+        },
+        "duration": "3 Months",
+        "skills": [
+          "cybersecurity",
+          "cyber security",
+          "information security",
+          "SOC analyst",
+          "security analyst",
+          "penetration testing",
+          "ethical hacking",
+          "network security"
+        ],
+        "experience": "Enrolled Students / Freshers",
+        "eligibility": "Pursuing Bachelor's / Master's degree in CS, IT, Cybersecurity or related fields",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Career Listing",
+        "source": "Official Company Career Portal",
+        "sourceUrl": "https://simplify.jobs/c/Zipline?utm_source=GHList&utm_medium=company",
+        "applicationUrl": "https://simplify.jobs/c/Zipline?utm_source=GHList&utm_medium=company",
+        "organizationUrl": "https://simplify.jobs/c/Zipline?utm_source=GHList&utm_medium=company",
+        "tags": [
+          "direct-company",
+          "top-tier",
+          "verified"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:25.320Z",
+        "matchScore": 45,
+        "matchReasons": [
+          "✓ ethical hacking matches profile",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
+        ]
+      },
+      {
+        "id": "career-3-amd",
+        "title": "Software Engineer Intern/Co-op - Masters 🎓",
+        "company": "AMD",
+        "description": "Official direct career opening for Software Engineer Intern/Co-op - Masters 🎓 at AMD. Discovered from verified career portals.",
+        "location": "San Jose, CA Santa Clara, CA",
+        "mode": "unknown",
+        "stipend": {
+          "min": 40000,
+          "max": 85000,
+          "currency": "INR",
+          "display": "₹40,000 - ₹85,000/month"
+        },
+        "duration": "3 Months",
+        "skills": [
+          "cybersecurity",
+          "cyber security",
+          "information security",
+          "SOC analyst",
+          "security analyst",
+          "penetration testing",
+          "ethical hacking",
+          "network security"
+        ],
+        "experience": "Enrolled Students / Freshers",
+        "eligibility": "Pursuing Bachelor's / Master's degree in CS, IT, Cybersecurity or related fields",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Career Listing",
+        "source": "Official Company Career Portal",
+        "sourceUrl": "https://simplify.jobs/c/AMD?utm_source=GHList&utm_medium=company",
+        "applicationUrl": "https://simplify.jobs/c/AMD?utm_source=GHList&utm_medium=company",
+        "organizationUrl": "https://simplify.jobs/c/AMD?utm_source=GHList&utm_medium=company",
+        "tags": [
+          "direct-company",
+          "top-tier",
+          "verified"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:25.320Z",
+        "matchScore": 45,
+        "matchReasons": [
+          "✓ ethical hacking matches profile",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
+        ]
+      },
+      {
+        "id": "career-4-amd",
+        "title": "Software Engineer Intern/Co-op",
+        "company": "AMD",
+        "description": "Official direct career opening for Software Engineer Intern/Co-op at AMD. Discovered from verified career portals.",
+        "location": "6 locations Rochester, NY Austin, TX Longmont, CO Fishkill, NY Fort Collins, CO Boxborough, MA",
+        "mode": "unknown",
+        "stipend": {
+          "min": 40000,
+          "max": 85000,
+          "currency": "INR",
+          "display": "₹40,000 - ₹85,000/month"
+        },
+        "duration": "3 Months",
+        "skills": [
+          "cybersecurity",
+          "cyber security",
+          "information security",
+          "SOC analyst",
+          "security analyst",
+          "penetration testing",
+          "ethical hacking",
+          "network security"
+        ],
+        "experience": "Enrolled Students / Freshers",
+        "eligibility": "Pursuing Bachelor's / Master's degree in CS, IT, Cybersecurity or related fields",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Career Listing",
+        "source": "Official Company Career Portal",
+        "sourceUrl": "https://careers.amd.com/jobs/90947?icims=1&utm_source=Simplify&ref=Simplify",
+        "applicationUrl": "https://careers.amd.com/jobs/90947?icims=1&utm_source=Simplify&ref=Simplify",
+        "organizationUrl": "https://careers.amd.com/jobs/90947?icims=1&utm_source=Simplify&ref=Simplify",
+        "tags": [
+          "direct-company",
+          "top-tier",
+          "verified"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:25.321Z",
+        "matchScore": 45,
+        "matchReasons": [
+          "✓ ethical hacking matches profile",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
+        ]
+      },
+      {
+        "id": "career-7-gevernova",
+        "title": "Energy Optimization Software Engineer Intern - Summer 2027 🎓",
+        "company": "GE Vernova",
+        "description": "Official direct career opening for Energy Optimization Software Engineer Intern - Summer 2027 🎓 at GE Vernova. Discovered from verified career portals.",
+        "location": "Bellevue, WA",
+        "mode": "unknown",
+        "stipend": {
+          "min": 40000,
+          "max": 85000,
+          "currency": "INR",
+          "display": "₹40,000 - ₹85,000/month"
+        },
+        "duration": "3 Months",
+        "skills": [
+          "cybersecurity",
+          "cyber security",
+          "information security",
+          "SOC analyst",
+          "security analyst",
+          "penetration testing",
+          "ethical hacking",
+          "network security"
+        ],
+        "experience": "Enrolled Students / Freshers",
+        "eligibility": "Pursuing Bachelor's / Master's degree in CS, IT, Cybersecurity or related fields",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Career Listing",
+        "source": "Official Company Career Portal",
+        "sourceUrl": "https://simplify.jobs/c/GE-Vernova?utm_source=GHList&utm_medium=company",
+        "applicationUrl": "https://simplify.jobs/c/GE-Vernova?utm_source=GHList&utm_medium=company",
+        "organizationUrl": "https://simplify.jobs/c/GE-Vernova?utm_source=GHList&utm_medium=company",
+        "tags": [
+          "direct-company",
+          "top-tier",
+          "verified"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:25.322Z",
+        "matchScore": 45,
+        "matchReasons": [
+          "✓ ethical hacking matches profile",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
+        ]
+      },
+      {
+        "id": "career-8-gevernova",
+        "title": "Project Engineer Intern - Summer 2027 🎓",
+        "company": "GE Vernova",
+        "description": "Official direct career opening for Project Engineer Intern - Summer 2027 🎓 at GE Vernova. Discovered from verified career portals.",
+        "location": "Bellevue, WA",
+        "mode": "unknown",
+        "stipend": {
+          "min": 40000,
+          "max": 85000,
+          "currency": "INR",
+          "display": "₹40,000 - ₹85,000/month"
+        },
+        "duration": "3 Months",
+        "skills": [
+          "cybersecurity",
+          "cyber security",
+          "information security",
+          "SOC analyst",
+          "security analyst",
+          "penetration testing",
+          "ethical hacking",
+          "network security"
+        ],
+        "experience": "Enrolled Students / Freshers",
+        "eligibility": "Pursuing Bachelor's / Master's degree in CS, IT, Cybersecurity or related fields",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Career Listing",
+        "source": "Official Company Career Portal",
+        "sourceUrl": "https://gevernova.wd5.myworkdayjobs.com/only_confidential_executive_recruiting/job/Bellevue/GE-Vernova---Project-Engineer-Intern---Summer-2027_R5050023-1?utm_source=Simplify&ref=Simplify",
+        "applicationUrl": "https://gevernova.wd5.myworkdayjobs.com/only_confidential_executive_recruiting/job/Bellevue/GE-Vernova---Project-Engineer-Intern---Summer-2027_R5050023-1?utm_source=Simplify&ref=Simplify",
+        "organizationUrl": "https://gevernova.wd5.myworkdayjobs.com/only_confidential_executive_recruiting/job/Bellevue/GE-Vernova---Project-Engineer-Intern---Summer-2027_R5050023-1?utm_source=Simplify&ref=Simplify",
+        "tags": [
+          "direct-company",
+          "top-tier",
+          "verified"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:25.322Z",
+        "matchScore": 45,
+        "matchReasons": [
+          "✓ ethical hacking matches profile",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
+        ]
+      },
+      {
+        "id": "unstop-1742649-vertawo",
+        "title": "Software Development Internship",
+        "company": "Vertawo Labs Private Limited",
+        "description": "Participate in SDLC, code debugging, team collaboration, and building backend microservices for enterprise workflows.",
+        "location": "Gurgaon",
+        "mode": "onsite",
+        "stipend": {
+          "min": 20000,
+          "max": 30000,
+          "currency": "INR",
+          "display": "₹20,000 - ₹30,000/month"
+        },
+        "duration": "Full Time (12 days left to apply)",
+        "skills": [
+          "Debugging",
+          "SDLC",
+          "Teamwork & Collaboration",
+          "Software Development"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Undergraduate / Postgraduate students",
+        "deadline": "2026-09-03",
+        "postedDate": "Aug 21, 2026",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships/software-development-internship-vertawo-labs-private-limited-1742649",
+        "applicationUrl": "https://unstop.com/internships/software-development-internship-vertawo-labs-private-limited-1742649",
+        "organizationUrl": "https://unstop.com",
+        "tags": [
+          "unstop",
+          "software-dev",
+          "debugging",
+          "gurgaon",
+          "high-stipend"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.133Z",
+        "matchScore": 45,
+        "matchReasons": [
+          "✓ Aligns with target career domain",
+          "✓ Stipend meets preference",
+          "✓ Student eligible"
+        ]
+      },
+      {
+        "id": "unstop-1742287-spiralinfra",
+        "title": "Full Stack Developer Internship",
+        "company": "SpiralInfra",
+        "description": "Build full stack client-server features, manage Git workflows, integrate RESTful services, and optimize frontend JavaScript.",
+        "location": "Work from Home (India)",
+        "mode": "remote",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "Full Time (13 days left to apply)",
+        "skills": [
+          "JavaScript",
+          "Git",
+          "API Development (REST)",
+          "Full Stack Development"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Undergraduate students",
+        "deadline": "2026-09-04",
+        "postedDate": "Aug 21, 2026",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships/full-stack-developer-internship-spiralinfra-1742287",
+        "applicationUrl": "https://unstop.com/internships/full-stack-developer-internship-spiralinfra-1742287",
+        "organizationUrl": "https://unstop.com",
+        "tags": [
+          "unstop",
+          "fullstack",
+          "javascript",
+          "remote"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.133Z",
+        "matchScore": 45,
+        "matchReasons": [
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "unstop-1704498-asianpaints",
+        "title": "Asian Paints Alchemy 2026 (Engineering Innovation Track)",
+        "company": "Asian Paints",
+        "description": "Flagship engineering and technology competition with direct PPO and pre-placement internship offers for winning teams.",
+        "location": "Online / National",
+        "mode": "remote",
+        "stipend": {
+          "min": 50000,
+          "max": 50000,
+          "currency": "INR",
+          "display": "₹50,000/month"
+        },
+        "duration": "1 Month Left (19,684 Registered)",
+        "skills": [
+          "Problem Solving",
+          "Engineering Innovation",
+          "Systems Architecture"
+        ],
+        "experience": "Open to Engineering & Postgraduate students",
+        "eligibility": "Engineering students (1-2 member teams)",
+        "deadline": "2026-09-22",
+        "postedDate": "Jul 2, 2026",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/competitions/crp-asian-paints-alchemy-2026-asian-paints-1704498",
+        "applicationUrl": "https://unstop.com/competitions/crp-asian-paints-alchemy-2026-asian-paints-1704498",
+        "organizationUrl": "https://asianpaints.com",
+        "tags": [
+          "unstop",
+          "competition",
+          "asian-paints",
+          "featured",
+          "ppo"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.133Z",
+        "matchScore": 45,
+        "matchReasons": [
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "unstop-1740483-preplinc",
+        "title": "Software Developer Internship",
+        "company": "PrepLinc",
+        "description": "Build robust algorithmic modules, manage version control with Git, implement JavaScript components, and write C++ backend logic.",
+        "location": "Work from Home | Pan India",
+        "mode": "remote",
+        "stipend": {
+          "min": 15000,
+          "max": 45000,
+          "currency": "INR",
+          "display": "₹15,000 - ₹45,000/month"
+        },
+        "duration": "Part Time (10 days left to apply)",
+        "skills": [
+          "C++",
+          "Git",
+          "JavaScript",
+          "Software Development",
+          "Problem Solving"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Everyone can apply (Pan India)",
+        "deadline": "2026-09-01",
+        "postedDate": "Aug 21, 2026",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships/software-developer-internship-preplinc-1740483",
+        "applicationUrl": "https://unstop.com/internships/software-developer-internship-preplinc-1740483",
+        "organizationUrl": "https://unstop.com",
+        "tags": [
+          "unstop",
+          "cpp",
+          "javascript",
+          "remote",
+          "high-stipend"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.133Z",
+        "matchScore": 44,
+        "matchReasons": [
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for C++",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "unstop-1742506-myindianthings",
+        "title": "Software Developer Internship",
+        "company": "My Indian Things",
+        "description": "Support SDLC planning, conduct software quality assurance (QA) audits, and implement user experience (UX) enhancements.",
+        "location": "Work from Home (India)",
+        "mode": "remote",
+        "stipend": {
+          "min": 2000,
+          "max": 2000,
+          "currency": "INR",
+          "display": "₹2,000/month"
+        },
+        "duration": "Full Time (6 days left to apply)",
+        "skills": [
+          "SDLC",
+          "Software QA",
+          "UI/UX Design",
+          "Software Development"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Undergraduate students",
+        "deadline": "2026-08-28",
+        "postedDate": "Aug 21, 2026",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships/software-developer-internship-my-indian-things-1742506",
+        "applicationUrl": "https://unstop.com/internships/software-developer-internship-my-indian-things-1742506",
+        "organizationUrl": "https://unstop.com",
+        "tags": [
+          "unstop",
+          "software-dev",
+          "uiux",
+          "remote"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.133Z",
+        "matchScore": 40,
+        "matchReasons": [
+          "✓ Remote opportunity",
+          "✓ Student eligible",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "unstop-1742825",
+        "title": "Campus Representative",
+        "company": "SmartED Innovation",
+        "description": "Live internship at SmartED Innovation discovered via Unstop.",
+        "location": "online",
+        "mode": "unknown",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "2-4 Months",
+        "skills": [
+          "cybersecurity",
+          "Software Development",
+          "Web"
+        ],
+        "experience": "Students / Recent Graduates",
+        "eligibility": "Open to all enrolled college students",
+        "deadline": "2026-09-04",
+        "postedDate": "Live Feed",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity",
+        "applicationUrl": "https://unstop.com/internships/campus-representative-smarted-innovation-1742825",
+        "organizationUrl": null,
+        "tags": [
+          "unstop",
+          "student-internship",
+          "india"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:23.187Z",
+        "matchScore": 40,
+        "matchReasons": [
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for cybersecurity"
+        ]
+      },
+      {
+        "id": "unstop-1742814",
+        "title": "Co-Founder & Growth / Marketing Lead Internship",
+        "company": "ClgKart",
+        "description": "Live internship at ClgKart discovered via Unstop.",
+        "location": "online",
+        "mode": "unknown",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "2-4 Months",
+        "skills": [
+          "cybersecurity",
+          "Software Development",
+          "Web"
+        ],
+        "experience": "Students / Recent Graduates",
+        "eligibility": "Open to all enrolled college students",
+        "deadline": "2026-09-04",
+        "postedDate": "Live Feed",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity",
+        "applicationUrl": "https://unstop.com/internships/co-founder-growth-marketing-lead-internship-clgkart-1742814",
+        "organizationUrl": null,
+        "tags": [
+          "unstop",
+          "student-internship",
+          "india"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:23.187Z",
+        "matchScore": 40,
+        "matchReasons": [
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for cybersecurity"
+        ]
+      },
+      {
+        "id": "unstop-1742808",
+        "title": "Business Development Associate Internship",
+        "company": "Skillumni",
+        "description": "Live internship at Skillumni discovered via Unstop.",
+        "location": "online",
+        "mode": "unknown",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "2-4 Months",
+        "skills": [
+          "cybersecurity",
+          "Software Development",
+          "Web"
+        ],
+        "experience": "Students / Recent Graduates",
+        "eligibility": "Open to all enrolled college students",
+        "deadline": "2026-09-04",
+        "postedDate": "Live Feed",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity",
+        "applicationUrl": "https://unstop.com/internships/business-development-associate-internship-skillumni-1742808",
+        "organizationUrl": null,
+        "tags": [
+          "unstop",
+          "student-internship",
+          "india"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:23.187Z",
+        "matchScore": 40,
+        "matchReasons": [
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for cybersecurity"
+        ]
+      },
+      {
+        "id": "unstop-1742799",
+        "title": "Advisor Sourcing & Insurance Business Development Internship",
+        "company": "Kaiser Abbott Private Limited",
+        "description": "Live internship at Kaiser Abbott Private Limited discovered via Unstop.",
+        "location": "online",
+        "mode": "unknown",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "2-4 Months",
+        "skills": [
+          "cybersecurity",
+          "Software Development",
+          "Web"
+        ],
+        "experience": "Students / Recent Graduates",
+        "eligibility": "Open to all enrolled college students",
+        "deadline": "2026-09-04",
+        "postedDate": "Live Feed",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity",
+        "applicationUrl": "https://unstop.com/internships/advisor-sourcing-insurance-business-development-internship-kaiser-abbott-private-limited-1742799",
+        "organizationUrl": null,
+        "tags": [
+          "unstop",
+          "student-internship",
+          "india"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:23.187Z",
+        "matchScore": 40,
+        "matchReasons": [
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for cybersecurity"
+        ]
+      },
+      {
+        "id": "wellfound-3020063-swift",
+        "title": "Frontend Developer Intern",
+        "company": "Swift",
+        "description": "Architect high-performance frontend interfaces, optimize React state, and build interactive dashboards for checkout solutions.",
+        "location": "Bengaluru",
+        "mode": "onsite",
+        "stipend": {
+          "min": 35000,
+          "max": 35000,
+          "currency": "INR",
+          "display": "₹35,000/month"
+        },
+        "duration": "6 Months",
+        "skills": [
+          "React",
+          "TypeScript",
+          "JavaScript",
+          "HTML/CSS",
+          "Next.js",
+          "Redux"
+        ],
+        "experience": "No prior experience required",
+        "eligibility": "Passionate frontend engineers with clean UI design sense",
+        "deadline": "2026-11-30",
+        "postedDate": "Live on Wellfound",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/jobs/3020063-frontend-developer-intern",
+        "applicationUrl": "https://wellfound.com/jobs/3020063-frontend-developer-intern?autoOpenApplication=true",
+        "organizationUrl": "https://wellfound.com/company/swift-checkout",
+        "tags": [
+          "wellfound",
+          "frontend",
+          "react",
+          "high-stipend",
+          "bengaluru"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T09:53:22.134Z",
+        "matchScore": 40,
+        "matchReasons": [
+          "✓ React matches profile",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: High affinity for TypeScript"
+        ]
+      }
+    ],
+    "sourcesQueried": [
+      {
+        "id": "internshala",
+        "name": "Internshala",
+        "status": "no_results",
+        "count": 0,
+        "durationMs": 1009
+      },
+      {
+        "id": "company_careers",
+        "name": "Direct Company Career Portals",
+        "status": "success",
+        "count": 10,
+        "durationMs": 3190
+      },
+      {
+        "id": "unstop",
+        "name": "Unstop India",
+        "status": "success",
+        "count": 13,
+        "durationMs": 1055
+      },
+      {
+        "id": "wellfound",
+        "name": "Wellfound & Tech Startups",
+        "status": "success",
+        "count": 32,
+        "durationMs": 3869
+      },
+      {
+        "id": "aicte",
+        "name": "AICTE Internship Portal",
+        "status": "success",
+        "count": 1,
+        "durationMs": 0
+      },
+      {
+        "id": "indeed",
+        "name": "Indeed India",
+        "status": "success",
+        "count": 1,
+        "durationMs": 0
+      },
+      {
+        "id": "foundit",
+        "name": "Foundit (Monster India)",
+        "status": "success",
+        "count": 1,
+        "durationMs": 0
+      },
+      {
+        "id": "naukri",
+        "name": "Naukri India",
+        "status": "success",
+        "count": 1,
+        "durationMs": 0
+      },
+      {
+        "id": "linkedin",
+        "name": "LinkedIn Public Jobs",
+        "status": "login_required",
+        "count": 0,
+        "durationMs": 0,
+        "error": "LinkedIn requires user authentication for deeper search filtering."
+      },
+      {
+        "id": "greenhouse",
+        "name": "Greenhouse ATS Boards",
+        "status": "success",
+        "count": 1,
+        "durationMs": 0
+      },
+      {
+        "id": "lever",
+        "name": "Lever ATS Boards",
+        "status": "success",
+        "count": 1,
+        "durationMs": 0
+      }
+    ]
   }
 }
