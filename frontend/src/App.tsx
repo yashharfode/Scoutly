@@ -17,7 +17,9 @@ import {
   BriefcaseBusiness,
   Loader2,
   AlertTriangle,
-  Play
+  Play,
+  SlidersHorizontal,
+  X
 } from "lucide-react";
 import type {
   Page,
@@ -263,7 +265,7 @@ export function App() {
                 fontSize: 12
               }}
             >
-              <option value="playwright">🌐 Live Browser (Playwright)</option>
+              <option value="playwright">🌐 Live Browser (Play, SlidersHorizontal, Xwright)</option>
               <option value="mock">⚡ Fast Mock Mode</option>
             </select>
           </div>
@@ -553,10 +555,80 @@ function MatchesView({
   const sources = discoverySummary?.sourceSummary?.sources || [];
   const memoryInsights = discoverySummary?.memoryInsights || [];
 
+  // Filter States
+  const [selectedSource, setSelectedSource] = useState<string>("all");
+  const [selectedInterest, setSelectedInterest] = useState<string>("all");
+  const [selectedMode, setSelectedMode] = useState<string>("all");
+  const [minStipend, setMinStipend] = useState<number>(0);
+  const [searchTerm, setSearchTerm] = useState<string>("");
+
+  // Derive unique sources from results
+  const availableSources = Array.from(new Set(results.map(r => r.source || "Other"))).filter(Boolean);
+
+  const INTERESTS = [
+    { id: "all", label: "All Interests" },
+    { id: "cyber", label: "🛡️ Cybersecurity", keywords: ["security", "cyber", "threat", "soc", "vulnerability", "appsec", "penetration", "iam"] },
+    { id: "ai", label: "🤖 AI & Machine Learning", keywords: ["ai", "machine learning", "ml", "llm", "deep learning", "neural", "vision", "nlp", "rxgpt"] },
+    { id: "fullstack", label: "💻 Full Stack & Web", keywords: ["full stack", "frontend", "backend", "web", "react", "node", "javascript", "typescript"] },
+    { id: "cloud", label: "☁️ Cloud & DevOps", keywords: ["cloud", "devops", "aws", "docker", "kubernetes", "infra", "ci/cd", "linux"] },
+    { id: "data", label: "📊 Data Science", keywords: ["data", "analytics", "sql", "pandas", "bi", "data engineering", "big data"] }
+  ];
+
+  // Apply filters
+  const filteredResults = results.filter(opp => {
+    // 1. Source filter
+    if (selectedSource !== "all" && opp.source !== selectedSource) {
+      return false;
+    }
+
+    // 2. Interest domain filter
+    if (selectedInterest !== "all") {
+      const interestObj = INTERESTS.find(i => i.id === selectedInterest);
+      if (interestObj?.keywords) {
+        const textToMatch = `${opp.title} ${opp.organization} ${opp.description || ""} ${opp.skills.join(" ")} ${opp.tags.join(" ")}`.toLowerCase();
+        const matchesInterest = interestObj.keywords.some(k => textToMatch.includes(k));
+        if (!matchesInterest) return false;
+      }
+    }
+
+    // 3. Mode filter
+    if (selectedMode !== "all") {
+      const oppMode = (opp.mode || "").toLowerCase();
+      if (selectedMode === "remote" && !oppMode.includes("remote")) return false;
+      if (selectedMode === "hybrid" && !oppMode.includes("hybrid")) return false;
+      if (selectedMode === "onsite" && (!oppMode.includes("onsite") && oppMode.length > 0 && !oppMode.includes("remote") && !oppMode.includes("hybrid"))) return false;
+    }
+
+    // 4. Stipend filter
+    if (minStipend > 0) {
+      const oppStipend = opp.stipend || 0;
+      if (oppStipend > 0 && oppStipend < minStipend) return false;
+    }
+
+    // 5. In-page search term
+    if (searchTerm.trim().length > 0) {
+      const term = searchTerm.toLowerCase();
+      const combined = `${opp.title} ${opp.organization} ${opp.location || ""} ${opp.skills.join(" ")} ${opp.description || ""}`.toLowerCase();
+      if (!combined.includes(term)) return false;
+    }
+
+    return true;
+  });
+
+  const hasActiveFilters = selectedSource !== "all" || selectedInterest !== "all" || selectedMode !== "all" || minStipend > 0 || searchTerm.length > 0;
+
+  const resetFilters = () => {
+    setSelectedSource("all");
+    setSelectedInterest("all");
+    setSelectedMode("all");
+    setMinStipend(0);
+    setSearchTerm("");
+  };
+
   return (
     <section>
       {/* Live Discovery Multi-Source Summary */}
-      <div style={{ background: "white", border: "1px solid #e3e6e0", borderRadius: 14, padding: 22, marginBottom: 24 }}>
+      <div style={{ background: "white", border: "1px solid #e3e6e0", borderRadius: 14, padding: 22, marginBottom: 20 }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12, marginBottom: 14 }}>
           <div>
             <p className="eyebrow" style={{ color: "#2d5a39" }}>MULTI-SOURCE DISCOVERY FEED</p>
@@ -591,41 +663,39 @@ function MatchesView({
                 if (s.status === "login_required") {
                   badgeColor = "#4b5563";
                   badgeBg = "#f3f4f6";
-                  dot = "⚪";
-                  label = "login required";
-                } else if (s.status === "captcha_required") {
-                  badgeColor = "#92400e";
-                  badgeBg = "#fef3c7";
-                  dot = "🟡";
-                  label = "captcha paused";
-                } else if (s.status === "timeout") {
-                  badgeColor = "#92400e";
-                  badgeBg = "#fef3c7";
-                  dot = "🟡";
-                  label = "timed out";
+                  dot = "🔒";
+                  label = "login wall";
                 } else if (s.status === "no_results") {
-                  badgeColor = "#4b5563";
-                  badgeBg = "#f3f4f6";
+                  badgeColor = "#6b7280";
+                  badgeBg = "#f9fafb";
                   dot = "⚪";
-                  label = "0 found";
+                  label = "0 results";
+                } else if ((s.status === "network_error" || s.status === "timeout" || s.status === "blocked")) {
+                  badgeColor = "#b91c1c";
+                  badgeBg = "#fef2f2";
+                  dot = "🔴";
+                  label = "timeout";
                 }
 
                 return (
                   <span
-                    key={s.id}
+                    key={s.name}
                     style={{
                       background: badgeBg,
                       color: badgeColor,
-                      padding: "5px 10px",
+                      padding: "4px 10px",
                       borderRadius: 20,
                       fontSize: 12,
                       fontWeight: 600,
                       display: "inline-flex",
                       alignItems: "center",
-                      gap: 6
+                      gap: 5,
+                      border: "1px solid rgba(0,0,0,0.06)"
                     }}
                   >
-                    <span>{dot}</span> {s.name} — <small style={{ fontWeight: "normal" }}>{label}</small>
+                    <span>{dot}</span>
+                    <span>{s.name}</span>
+                    <span style={{ opacity: 0.75, fontSize: 11 }}>({label})</span>
                   </span>
                 );
               })}
@@ -633,72 +703,247 @@ function MatchesView({
           </div>
         )}
 
-        {/* Self-Learning Memory Insights */}
+        {/* Memory & Preference Learning Insights */}
         {memoryInsights.length > 0 && (
-          <div style={{ marginTop: 14, paddingTop: 12, borderTop: "1px dashed #e3e6e0", display: "flex", alignItems: "center", gap: 8, fontSize: 12, color: "#365c40" }}>
-            <Sparkles size={14} color="#294333" />
-            <span><strong>Self-Learning Insights:</strong> {memoryInsights.join(" · ")}</span>
+          <div style={{ marginTop: 14, paddingTop: 12, borderTop: "1px dashed #e3e6e0", display: "flex", alignItems: "center", gap: 8, fontSize: 12, color: "#2d5a39" }}>
+            <Sparkles size={14} color="#166534" />
+            <span><strong>Self-Learning AI Boost Active:</strong> Ranked higher for your preferred stack ({memoryInsights.join(", ")})</span>
           </div>
         )}
       </div>
 
-      {!results.length ? (
-        <Empty title="No matching internships found." text="Try a broader query in Discover." />
+      {/* Interactive Opportunity Filter Cockpit */}
+      <div style={{ background: "white", border: "1px solid #c7e5bb", borderRadius: 14, padding: "20px 22px", marginBottom: 24, boxShadow: "0 2px 8px rgba(0,0,0,0.02)" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12, marginBottom: 16 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+            <SlidersHorizontal size={18} color="#294333" />
+            <strong style={{ fontSize: 15, color: "#1e3b2a" }}>Filter Discovered Opportunities</strong>
+            <span style={{ background: "#f0f6ee", color: "#294333", padding: "2px 8px", borderRadius: 12, fontSize: 12, fontWeight: 700 }}>
+              Showing {filteredResults.length} of {results.length}
+            </span>
+          </div>
+
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            {hasActiveFilters && (
+              <button
+                type="button"
+                onClick={resetFilters}
+                style={{ background: "none", border: "1px solid #d1d5db", color: "#6b7280", padding: "4px 10px", borderRadius: 6, fontSize: 12, cursor: "pointer", display: "flex", alignItems: "center", gap: 4 }}
+              >
+                <X size={12} /> Reset Filters
+              </button>
+            )}
+            <input
+              type="text"
+              placeholder="Search in results (e.g. Python, SOC)..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              style={{ padding: "6px 12px", border: "1px solid #cbd5e1", borderRadius: 8, fontSize: 13, minWidth: 220 }}
+            />
+          </div>
+        </div>
+
+        {/* 1. Filter by Domain / Interest */}
+        <div style={{ marginBottom: 14 }}>
+          <label style={{ display: "block", fontSize: 11, fontWeight: 700, color: "#546e5a", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 6 }}>
+            Domain & Career Interest
+          </label>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+            {INTERESTS.map((int) => (
+              <button
+                key={int.id}
+                type="button"
+                onClick={() => setSelectedInterest(int.id)}
+                style={{
+                  padding: "6px 12px",
+                  borderRadius: 20,
+                  fontSize: 12,
+                  fontWeight: selectedInterest === int.id ? 700 : 500,
+                  border: selectedInterest === int.id ? "2px solid #22c55e" : "1px solid #d1d5db",
+                  background: selectedInterest === int.id ? "#dcfce7" : "#f9fafb",
+                  color: selectedInterest === int.id ? "#14532d" : "#4b5563",
+                  cursor: "pointer",
+                  transition: "all 0.15s"
+                }}
+              >
+                {int.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* 2. Filter by Internship Website / Source */}
+        <div style={{ marginBottom: 14 }}>
+          <label style={{ display: "block", fontSize: 11, fontWeight: 700, color: "#546e5a", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 6 }}>
+            Internship Source / Portal
+          </label>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+            <button
+              type="button"
+              onClick={() => setSelectedSource("all")}
+              style={{
+                padding: "5px 11px",
+                borderRadius: 8,
+                fontSize: 12,
+                fontWeight: selectedSource === "all" ? 700 : 500,
+                border: selectedSource === "all" ? "2px solid #294333" : "1px solid #d1d5db",
+                background: selectedSource === "all" ? "#294333" : "#ffffff",
+                color: selectedSource === "all" ? "#ffffff" : "#4b5563",
+                cursor: "pointer"
+              }}
+            >
+              All Sources ({results.length})
+            </button>
+            {availableSources.map((src) => {
+              const count = results.filter(r => r.source === src).length;
+              return (
+                <button
+                  key={src}
+                  type="button"
+                  onClick={() => setSelectedSource(src)}
+                  style={{
+                    padding: "5px 11px",
+                    borderRadius: 8,
+                    fontSize: 12,
+                    fontWeight: selectedSource === src ? 700 : 500,
+                    border: selectedSource === src ? "2px solid #166534" : "1px solid #e5e7eb",
+                    background: selectedSource === src ? "#f0fdf4" : "#ffffff",
+                    color: selectedSource === src ? "#15803d" : "#374151",
+                    cursor: "pointer"
+                  }}
+                >
+                  🌐 {src} ({count})
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* 3. Mode & Stipend Selectors */}
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 16, borderTop: "1px dashed #e3e6e0", paddingTop: 12 }}>
+          <div>
+            <label style={{ display: "block", fontSize: 11, fontWeight: 700, color: "#546e5a", textTransform: "uppercase", marginBottom: 4 }}>
+              Work Mode
+            </label>
+            <div style={{ display: "flex", gap: 6 }}>
+              {["all", "remote", "hybrid", "onsite"].map((m) => (
+                <button
+                  key={m}
+                  type="button"
+                  onClick={() => setSelectedMode(m)}
+                  style={{
+                    padding: "4px 10px",
+                    borderRadius: 6,
+                    fontSize: 12,
+                    textTransform: "capitalize",
+                    border: selectedMode === m ? "1px solid #166534" : "1px solid #d1d5db",
+                    background: selectedMode === m ? "#166534" : "#ffffff",
+                    color: selectedMode === m ? "#ffffff" : "#4b5563",
+                    cursor: "pointer"
+                  }}
+                >
+                  {m === "all" ? "All Modes" : m}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <label style={{ display: "block", fontSize: 11, fontWeight: 700, color: "#546e5a", textTransform: "uppercase", marginBottom: 4 }}>
+              Min Stipend
+            </label>
+            <div style={{ display: "flex", gap: 6 }}>
+              {[
+                { val: 0, label: "Any" },
+                { val: 10000, label: "≥ ₹10k" },
+                { val: 15000, label: "≥ ₹15k" },
+                { val: 20000, label: "≥ ₹20k" },
+                { val: 30000, label: "≥ ₹30k" }
+              ].map((s) => (
+                <button
+                  key={s.val}
+                  type="button"
+                  onClick={() => setMinStipend(s.val)}
+                  style={{
+                    padding: "4px 10px",
+                    borderRadius: 6,
+                    fontSize: 12,
+                    border: minStipend === s.val ? "1px solid #166534" : "1px solid #d1d5db",
+                    background: minStipend === s.val ? "#166534" : "#ffffff",
+                    color: minStipend === s.val ? "#ffffff" : "#4b5563",
+                    cursor: "pointer"
+                  }}
+                >
+                  {s.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Discovered Opportunities Grid */}
+      {filteredResults.length === 0 ? (
+        <div className="empty-state">
+          <BriefcaseBusiness size={42} />
+          <h2>No opportunities match your selected filters</h2>
+          <p>Try resetting filters or adjusting domain interest / minimum stipend.</p>
+          <button type="button" className="primary-button" onClick={resetFilters} style={{ marginTop: 14 }}>
+            Reset Filters
+          </button>
+        </div>
       ) : (
-        <div className="cards" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: 20 }}>
-          {results.map((o) => {
-            const stipendStr = (o.rawData as any)?.stipendDisplay || (o.stipend ? `₹${o.stipend.toLocaleString("en-IN")}/month` : "Stipend not disclosed");
-            return (
-              <article className="opportunity-card" key={o.id} style={{ background: "white", padding: 24, borderRadius: 14, border: "1px solid #e3e6e0", display: "flex", flexDirection: "column", gap: 12 }}>
-                <div className="card-top" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span className="pill" style={{ background: "#e9efe8", color: "#24412e", fontSize: 11 }}>
-                    {o.source}
-                  </span>
-                  <strong style={{ color: "#294333", fontSize: 16 }}>{o.matchScore}% Match</strong>
-                </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(360px, 1fr))", gap: 20 }}>
+          {filteredResults.map((o) => (
+            <article className="opportunity-card" key={o.id}>
+              <div className="card-top">
+                <span className="pill" style={{ background: "#eef2ff", color: "#3730a3" }}>
+                  {o.source}
+                </span>
+                <strong style={{ color: "#294333", fontSize: 16 }}>{o.matchScore || 85}% Match</strong>
+              </div>
 
-                <h3 style={{ margin: 0, fontSize: 18 }}>{o.title}</h3>
-                <p className="organization" style={{ margin: 0, color: "#68806d", fontWeight: 600 }}>{o.organization}</p>
-                <p style={{ margin: 0, fontSize: 13, color: "#4f5e53" }}>
-                  📍 {o.mode?.replace("_", " ") || "Remote"} · 💰 {stipendStr}
-                </p>
+              <h3 style={{ margin: "6px 0 2px" }}>{o.title}</h3>
+              <p className="organization">{o.organization}</p>
+              <p style={{ margin: "4px 0 10px", fontSize: 13, color: "#4f5e53" }}>
+                📍 {o.location || "Remote"} · 💰 {(o.rawData as any)?.stipendDisplay || (o.stipend ? `₹${o.stipend.toLocaleString()}/mo` : "Disclosed on Apply")}
+              </p>
 
-                {o.description && (
-                  <p style={{ margin: 0, fontSize: 12, color: "#68806d", lineHeight: 1.5 }}>
-                    {o.description.slice(0, 140)}...
-                  </p>
-                )}
+              <div className="chips">
+                {o.skills.slice(0, 5).map((s) => (
+                  <span key={s}>{s}</span>
+                ))}
+              </div>
 
-                <div className="chips" style={{ justifyContent: "flex-start" }}>
-                  {o.skills.map((s) => <span key={s}>{s}</span>)}
-                </div>
-
-                <div className="why" style={{ display: "flex", flexDirection: "column", gap: 3, marginTop: 4 }}>
-                  {o.rawData?.matchReasons?.slice(0, 3).map((reason: string) => (
-                    <span key={reason} style={{ fontSize: 11, color: "#285233" }}>{reason}</span>
+              {o.rawData?.matchReasons && o.rawData.matchReasons.length > 0 && (
+                <div style={{ background: "#f6f9f5", padding: "8px 12px", borderRadius: 8, marginTop: 10, fontSize: 12, color: "#264831" }}>
+                  {o.rawData.matchReasons.slice(0, 2).map((r: string) => (
+                    <div key={r}>✓ {r}</div>
                   ))}
                 </div>
+              )}
 
-                <div style={{ marginTop: "auto", display: "flex", gap: 10, paddingTop: 14 }}>
-                  <button
-                    className="secondary-button"
-                    style={{ flex: 1 }}
-                    disabled={saved.includes(o.id)}
-                    onClick={() => onSave(o)}
-                  >
-                    {saved.includes(o.id) ? "Saved" : "Save"}
-                  </button>
-                  <button
-                    className="primary-button"
-                    style={{ flex: 2, display: "flex", alignItems: "center", justifyContent: "center", gap: 6 }}
-                    onClick={() => onApply(o)}
-                  >
-                    <Sparkles size={16} /> Apply with Scoutly
-                  </button>
-                </div>
-              </article>
-            );
-          })}
+              <div style={{ display: "flex", gap: 10, marginTop: 16 }}>
+                <button
+                  type="button"
+                  className="secondary-button"
+                  onClick={() => onSave(o)}
+                  style={{ display: "flex", alignItems: "center", gap: 6, flex: 1, justifyContent: "center" }}
+                >
+                  <Bookmark size={14} fill={saved.includes(o.id) ? "currentColor" : "none"} />
+                  {saved.includes(o.id) ? "Saved" : "Save"}
+                </button>
+                <button
+                  type="button"
+                  className="primary-button"
+                  onClick={() => onApply(o)}
+                  style={{ display: "flex", alignItems: "center", gap: 6, flex: 2, justifyContent: "center" }}
+                >
+                  <Sparkles size={14} /> Apply with Scoutly
+                </button>
+              </div>
+            </article>
+          ))}
         </div>
       )}
     </section>
@@ -781,10 +1026,10 @@ function CockpitView({
           <BriefcaseBusiness size={42} />
           <h2>No active browser session</h2>
           <p style={{ marginBottom: 20 }}>
-            Select an internship or launch the guaranteed local Playwright browser agent demo.
+            Select an internship or launch the guaranteed local Play, SlidersHorizontal, Xwright browser agent demo.
           </p>
           <button className="primary-button" onClick={onStartDemo} style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
-            <Sparkles size={16} /> Launch Local Playwright Demo
+            <Sparkles size={16} /> Launch Local Play, SlidersHorizontal, Xwright Demo
           </button>
         </div>
 
@@ -1247,7 +1492,7 @@ const DEMO_INTERNSHIPS: Opportunity[] = [
     rawData: {
       matchReasons: [
         "✓ 100% Guaranteed Offline Demo",
-        "✓ Real Playwright Chromium Automation",
+        "✓ Real Play, SlidersHorizontal, Xwright Chromium Automation",
         "✓ Real PDF Resume Attachment",
         "✓ Verified Reference ID Confirmation"
       ],
