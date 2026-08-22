@@ -118,5 +118,54 @@
       "stipendDisplay": "₹35,000/month"
     },
     "matchScore": 87
+  },
+  {
+    "id": "wellfound-4486291-ledgerscfo",
+    "title": "Software Developer Intern",
+    "organization": "LedgersCFO",
+    "type": "internship",
+    "description": "Build robust fintech applications with Python, Java, React, TypeScript, and integrate LLM APIs for financial analysis workflows.",
+    "location": "Bengaluru / Remote",
+    "mode": "hybrid",
+    "stipend": 20000,
+    "currency": "INR",
+    "skills": [
+      "Python",
+      "Java",
+      "React",
+      "TypeScript",
+      "REST",
+      "LLM APIs",
+      "Node.js"
+    ],
+    "eligibility": "B.Tech / CSE / IT students seeking full-time conversion opportunities",
+    "deadline": "2026-11-15",
+    "applicationUrl": "https://wellfound.com/jobs/4486291-software-developer-intern",
+    "source": "Wellfound",
+    "sourceUrl": "https://wellfound.com/jobs/4486291-software-developer-intern",
+    "extractedAt": "2026-08-22T09:09:51.961Z",
+    "tags": [
+      "wellfound",
+      "software-dev",
+      "python",
+      "react",
+      "ppo"
+    ],
+    "rawData": {
+      "matchReasons": [
+        "✓ Python matches profile",
+        "✓ React matches profile",
+        "✓ Node.js matches profile",
+        "✓ hybrid mode preference",
+        "✓ Stipend meets preference",
+        "✓ Student eligible",
+        "🧠 AI Learned: High affinity for Python",
+        "🧠 AI Learned: High affinity for React",
+        "🧠 AI Learned: High affinity for Node.js",
+        "🧠 AI Learned: Favored hybrid setup"
+      ],
+      "stipendDisplay": "₹20,000/month"
+    },
+    "matchScore": 89
   }
 ]
