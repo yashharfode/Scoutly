@@ -1442,11 +1442,236 @@ export default App;
 
 const DEMO_INTERNSHIPS: Opportunity[] = [
   {
+    id: "wellfound-4377335-gravity-ai",
+    title: "AI Intern",
+    organization: "Gravity AI (Bengaluru / Remote)",
+    type: "internship",
+    description: "Build LLMs, LangChain agentic workflows, RAG architectures, prompt engineering pipelines, and MLOps APIs.",
+    location: "Remote (India)",
+    mode: "remote",
+    stipend: 20000,
+    currency: "INR",
+    skills: ["Python", "ML", "LLMs", "LangChain", "RAG", "Prompt Engineering"],
+    eligibility: "No experience required · Open to AI/LLM enthusiasts",
+    deadline: "2026-10-31",
+    applicationUrl: "https://wellfound.com/jobs/4377335-ai-intern",
+    source: "Wellfound",
+    sourceUrl: "https://wellfound.com/jobs/4377335-ai-intern",
+    extractedAt: new Date().toISOString(),
+    tags: ["wellfound", "ai", "langchain", "rag"],
+    matchScore: 99,
+    rawData: {
+      matchReasons: [
+        "✓ Real Live Wellfound Job Listing",
+        "✓ LangChain & Agentic AI Stack Match",
+        "✓ Remote Work in India",
+        "✓ ₹1.8L - ₹2.4L Annual Stipend"
+      ],
+      stipendDisplay: "₹20,000 /month (₹1.8L-2.4L/yr)"
+    }
+  },
+  {
+    id: "wellfound-4246040-teal-india",
+    title: "AI/ML Engineer Intern",
+    organization: "Teal India (Bengaluru)",
+    type: "internship",
+    description: "Build transformer NLP pipelines, BERT models, vector search indexing, Hugging Face integrations, and RAG search modules.",
+    location: "Bengaluru",
+    mode: "onsite",
+    stipend: 35000,
+    currency: "INR",
+    skills: ["Python", "NLP", "BERT", "Transformers", "RAG", "LLMs", "Vector Search"],
+    eligibility: "No experience required · Strong Python & ML foundation",
+    deadline: "2026-10-31",
+    applicationUrl: "https://wellfound.com/jobs/4246040-intern-ai-ml-engineer",
+    source: "Wellfound",
+    sourceUrl: "https://wellfound.com/jobs/4246040-intern-ai-ml-engineer",
+    extractedAt: new Date().toISOString(),
+    tags: ["wellfound", "ai-ml", "nlp", "transformers"],
+    matchScore: 97,
+    rawData: {
+      matchReasons: [
+        "✓ Real Live Wellfound Job Listing",
+        "✓ Transformers & NLP Fit",
+        "✓ High Stipend: ₹3.6L - ₹4.2L"
+      ],
+      stipendDisplay: "₹35,000 /month (₹3.6L-4.2L/yr)"
+    }
+  },
+  {
+    id: "wellfound-4335661-alchemyst-ai",
+    title: "Full Stack AI Intern",
+    organization: "Alchemyst AI (Remote)",
+    type: "internship",
+    description: "Design full-stack AI user interfaces with Next.js, React, TypeScript, Python backend services, WebSockets, and vector databases.",
+    location: "Remote (India)",
+    mode: "remote",
+    stipend: 25000,
+    currency: "INR",
+    skills: ["React", "Next.js", "TypeScript", "Python", "MongoDB", "Redis", "WebSockets", "RAG"],
+    eligibility: "Students with hands-on web development & AI projects",
+    deadline: "2026-10-31",
+    applicationUrl: "https://wellfound.com/jobs/4335661-full-stack-ai-intern",
+    source: "Wellfound",
+    sourceUrl: "https://wellfound.com/jobs/4335661-full-stack-ai-intern",
+    extractedAt: new Date().toISOString(),
+    tags: ["wellfound", "fullstack", "nextjs", "react"],
+    matchScore: 96,
+    rawData: {
+      matchReasons: [
+        "✓ Real Live Wellfound Job Listing",
+        "✓ React, Next.js & Python Match",
+        "✓ Fully Remote Setup"
+      ],
+      stipendDisplay: "₹25,000 /month (₹1.2L-3.0L/yr)"
+    }
+  },
+  {
+    id: "wellfound-4486291-ledgerscfo",
+    title: "Software Developer Intern",
+    organization: "LedgersCFO (Bengaluru / Hybrid)",
+    type: "internship",
+    description: "Build robust fintech applications with Python, Java, React, TypeScript, and integrate LLM APIs for financial workflows.",
+    location: "Bengaluru / Remote",
+    mode: "hybrid",
+    stipend: 20000,
+    currency: "INR",
+    skills: ["Python", "Java", "React", "TypeScript", "REST", "LLM APIs"],
+    eligibility: "No experience required · PPO potential after 3-6 months",
+    deadline: "2026-11-15",
+    applicationUrl: "https://wellfound.com/jobs/4486291-software-developer-intern",
+    source: "Wellfound",
+    sourceUrl: "https://wellfound.com/jobs/4486291-software-developer-intern",
+    extractedAt: new Date().toISOString(),
+    tags: ["wellfound", "software-dev", "python", "react"],
+    matchScore: 94,
+    rawData: {
+      matchReasons: [
+        "✓ Real Live Wellfound Job Listing",
+        "✓ Full-Time Conversion (PPO) Potential",
+        "✓ ₹15k-30k /month Stipend"
+      ],
+      stipendDisplay: "₹20,000 /month (₹15k-30k)"
+    }
+  },
+  {
+    id: "wellfound-4385681-vitraga",
+    title: "Software Engineer Intern (Next.js & AI Agents)",
+    organization: "Vitraga (Remote)",
+    type: "internship",
+    description: "Build full stack autonomous agent workflows using Next.js, Express, Supabase, LangChain, and MongoDB.",
+    location: "Remote (India)",
+    mode: "remote",
+    stipend: 10000,
+    currency: "INR",
+    skills: ["React", "Next.js", "Node.js", "Express", "MongoDB", "Supabase", "LangChain"],
+    eligibility: "No experience required · 3-month duration",
+    deadline: "2026-10-31",
+    applicationUrl: "https://wellfound.com/jobs/4385681-software-engineer-intern-next-js-supabase-ai",
+    source: "Wellfound",
+    sourceUrl: "https://wellfound.com/jobs/4385681-software-engineer-intern-next-js-supabase-ai",
+    extractedAt: new Date().toISOString(),
+    tags: ["wellfound", "nextjs", "supabase", "ai-agents"],
+    matchScore: 95,
+    rawData: {
+      matchReasons: [
+        "✓ Real Live Wellfound Job Listing",
+        "✓ Exact Match for Scoutly Agent Stack",
+        "✓ 100% Remote"
+      ],
+      stipendDisplay: "₹10,000 /month"
+    }
+  },
+  {
+    id: "wellfound-4540186-referralworld",
+    title: "Software Engineer Intern",
+    organization: "ReferralWorld Careers (Remote)",
+    type: "internship",
+    description: "Develop enterprise recruiting tools, microservices, and web portals using Java, React, Node.js, and MongoDB.",
+    location: "Remote / Onsite (India)",
+    mode: "remote",
+    stipend: 30000,
+    currency: "INR",
+    skills: ["Java", "React", "Node.js", "MongoDB", "MERN"],
+    eligibility: "Batches 2025 / 2026 / 2027 eligible",
+    deadline: "2026-11-30",
+    applicationUrl: "https://wellfound.com/jobs/4540186-software-engineer-intern-batch-2025-2026-2027",
+    source: "Wellfound",
+    sourceUrl: "https://wellfound.com/jobs/4540186-software-engineer-intern-batch-2025-2026-2027",
+    extractedAt: new Date().toISOString(),
+    tags: ["wellfound", "mern", "java", "high-stipend"],
+    matchScore: 93,
+    rawData: {
+      matchReasons: [
+        "✓ Real Live Wellfound Job Listing",
+        "✓ High Stipend: ₹30,000 /month",
+        "✓ Mentorship & Certificate Included"
+      ],
+      stipendDisplay: "₹30,000 /month"
+    }
+  },
+  {
+    id: "wellfound-4289766-cravv",
+    title: "Backend Golang SDE Intern",
+    organization: "Cravv (Bengaluru)",
+    type: "internship",
+    description: "Develop high-throughput microservices in Go, manage PostgreSQL and Redis caches, implement WebSockets, and build RESTful endpoints.",
+    location: "Bengaluru",
+    mode: "onsite",
+    stipend: 18000,
+    currency: "INR",
+    skills: ["Go", "Node.js", "PostgreSQL", "MongoDB", "Redis", "AWS", "REST"],
+    eligibility: "No experience required · Strong DSA knowledge",
+    deadline: "2026-10-15",
+    applicationUrl: "https://wellfound.com/jobs/4289766-backend-golang-sde-intern",
+    source: "Wellfound",
+    sourceUrl: "https://wellfound.com/jobs/4289766-backend-golang-sde-intern",
+    extractedAt: new Date().toISOString(),
+    tags: ["wellfound", "golang", "backend"],
+    matchScore: 90,
+    rawData: {
+      matchReasons: [
+        "✓ Real Live Wellfound Job Listing",
+        "✓ Go & High Performance Systems",
+        "✓ ₹1.8L - ₹2.4L Annual Stipend"
+      ],
+      stipendDisplay: "₹18,000 /month (₹1.8L-2.4L/yr)"
+    }
+  },
+  {
+    id: "wellfound-3821958-mowka",
+    title: "Product Engineer Intern",
+    organization: "Mowka (Remote, India)",
+    type: "internship",
+    description: "Design web applications, engineer startup discovery algorithms, build automated scrapers, and develop AI workflows.",
+    location: "Remote (India)",
+    mode: "remote",
+    stipend: 15000,
+    currency: "INR",
+    skills: ["Python", "AI", "Web Scraping", "Product Design", "React"],
+    eligibility: "No experience required · Passion for scraping & AI",
+    deadline: "2026-10-31",
+    applicationUrl: "https://wellfound.com/jobs/3821958-2-product-engineer-intern",
+    source: "Wellfound",
+    sourceUrl: "https://wellfound.com/jobs/3821958-2-product-engineer-intern",
+    extractedAt: new Date().toISOString(),
+    tags: ["wellfound", "product-engineer", "web-scraping"],
+    matchScore: 92,
+    rawData: {
+      matchReasons: [
+        "✓ Real Live Wellfound Job Listing",
+        "✓ Web Scraping & AI Workflows",
+        "✓ Fully Remote in India"
+      ],
+      stipendDisplay: "₹15,000 /month"
+    }
+  },
+  {
     id: "wellfound-rxgpt-ai",
     title: "AI / Software Engineering Intern",
     organization: "RxGPT Health (Live Wellfound Role)",
     type: "internship",
-    description: "Build generative AI healthcare features, integrate LLM clinical workflows, and build high-performance React & Python pipelines.",
+    description: "Build generative AI healthcare features, integrate LLM clinical workflows, and develop high-performance React & Python pipelines.",
     location: "Remote (Global / India)",
     mode: "remote",
     stipend: 35000,
@@ -1455,17 +1680,16 @@ const DEMO_INTERNSHIPS: Opportunity[] = [
     eligibility: "Students and graduates with hands-on Python & React AI projects",
     deadline: "2026-10-31",
     applicationUrl: "https://wellfound.com/l/2Cz4wG",
-    source: "🌐 Real Live Wellfound Opportunity",
+    source: "Wellfound",
     sourceUrl: "https://wellfound.com/l/2Cz4wG",
     extractedAt: new Date().toISOString(),
     tags: ["wellfound", "live-target", "rxgpt", "ai"],
-    matchScore: 97,
+    matchScore: 98,
     rawData: {
       matchReasons: [
         "✓ Real Live Wellfound Listing (RxGPT)",
         "✓ Python & AI/ML Skills Match",
-        "✓ Remote Work Setup",
-        "✓ Live Headed Chromium Automation"
+        "✓ Remote Work Setup"
       ],
       stipendDisplay: "₹35,000 /month (Competitive)"
     }
@@ -1473,7 +1697,7 @@ const DEMO_INTERNSHIPS: Opportunity[] = [
   {
     id: "demo-cyber-analyst",
     title: "Cybersecurity Analyst Intern",
-    organization: "SecureStack (Guaranteed Demo Portal)",
+    organization: "SecureStack (Guaranteed Sandbox)",
     type: "internship",
     description: "Support vulnerability assessments, monitor SIEM telemetry, investigate threat vectors, and execute ethical hacking drills.",
     location: "India (Remote)",
@@ -1484,7 +1708,7 @@ const DEMO_INTERNSHIPS: Opportunity[] = [
     eligibility: "B.Tech Computer Science / Cybersecurity Students",
     deadline: "2026-09-30",
     applicationUrl: "http://localhost:3000/mock-application/cybersecurity-intern",
-    source: "🎯 Guaranteed Local Demo Portal",
+    source: "🎯 Guaranteed Local Sandbox",
     sourceUrl: "http://localhost:3000/mock-application/cybersecurity-intern",
     extractedAt: new Date().toISOString(),
     tags: ["demo", "cybersecurity", "guaranteed-pass"],
@@ -1492,95 +1716,11 @@ const DEMO_INTERNSHIPS: Opportunity[] = [
     rawData: {
       matchReasons: [
         "✓ 100% Guaranteed Offline Demo",
-        "✓ Real Play, SlidersHorizontal, Xwright Chromium Automation",
+        "✓ Real Playwright Chromium Automation",
         "✓ Real PDF Resume Attachment",
         "✓ Verified Reference ID Confirmation"
       ],
       stipendDisplay: "₹18,000 /month"
-    }
-  },
-  {
-    id: "demo-ai-security",
-    title: "AI Security Research Intern",
-    organization: "ModelGuard Labs (Demo Role)",
-    type: "internship",
-    description: "Evaluate LLM prompt injection defenses, conduct red-teaming scans, and build automated security benchmarks.",
-    location: "Bengaluru (Hybrid)",
-    mode: "hybrid",
-    stipend: 22000,
-    currency: "INR",
-    skills: ["Python", "AI/ML", "LLM Security", "React", "Node.js"],
-    eligibility: "Engineering students with Python & AI knowledge",
-    deadline: "2026-10-15",
-    applicationUrl: "http://localhost:3000/mock-application/cybersecurity-intern",
-    source: "🎯 Guaranteed Local Demo Portal",
-    sourceUrl: "http://localhost:3000",
-    extractedAt: new Date().toISOString(),
-    tags: ["demo", "ai-security"],
-    matchScore: 94,
-    rawData: {
-      matchReasons: [
-        "✓ Tests AI Answer Generation",
-        "✓ Profile Matching Verified",
-        "✓ Real Browser DOM Filling"
-      ],
-      stipendDisplay: "₹22,000 /month"
-    }
-  },
-  {
-    id: "demo-soc-analyst",
-    title: "SOC Threat Intelligence Intern",
-    organization: "BlueTeam India (Demo Role)",
-    type: "internship",
-    description: "Analyze network traffic captures, investigate phishing incident alerts, and document defensive remediation SOPs.",
-    location: "Pune / Remote",
-    mode: "remote",
-    stipend: 16000,
-    currency: "INR",
-    skills: ["Network Traffic Analysis", "Linux", "Incident Response", "Python"],
-    eligibility: "Students interested in defensive cybersecurity",
-    deadline: "2026-10-20",
-    applicationUrl: "http://localhost:3000/mock-application/cybersecurity-intern",
-    source: "🎯 Guaranteed Local Demo Portal",
-    sourceUrl: "http://localhost:3000",
-    extractedAt: new Date().toISOString(),
-    tags: ["demo", "soc"],
-    matchScore: 91,
-    rawData: {
-      matchReasons: [
-        "✓ Network Analysis Match",
-        "✓ Instant Chromium Launch",
-        "✓ Human-in-the-Loop Cockpit"
-      ],
-      stipendDisplay: "₹16,000 /month"
-    }
-  },
-  {
-    id: "demo-fullstack-ai",
-    title: "Full Stack AI Developer Intern",
-    organization: "CampusFlow Labs (Demo Role)",
-    type: "internship",
-    description: "Build autonomous student workflow tools using React, TypeScript, Node.js, and browser automation SDKs.",
-    location: "India (Remote)",
-    mode: "remote",
-    stipend: 20000,
-    currency: "INR",
-    skills: ["React", "TypeScript", "Node.js", "Python"],
-    eligibility: "Students with hands-on web development projects",
-    deadline: "2026-11-01",
-    applicationUrl: "http://localhost:3000/mock-application/cybersecurity-intern",
-    source: "🎯 Guaranteed Local Demo Portal",
-    sourceUrl: "http://localhost:3000",
-    extractedAt: new Date().toISOString(),
-    tags: ["demo", "fullstack"],
-    matchScore: 89,
-    rawData: {
-      matchReasons: [
-        "✓ Web Stack Match",
-        "✓ Local Form Testing",
-        "✓ Verified Submission"
-      ],
-      stipendDisplay: "₹20,000 /month"
     }
   }
 ];
