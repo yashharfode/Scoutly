@@ -9,7 +9,7 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
   private page: Page | null = null;
   private isClosed = false;
 
-  async open(url: string): Promise<BrowserActionResult> {
+    async open(url: string): Promise<BrowserActionResult> {
     if (this.isClosed) throw new Error("Browser session is closed.");
 
     try {
@@ -17,16 +17,28 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
         const userDataDir = path.resolve(process.cwd(), "..", "data", "browser-user-data");
         if (!fs.existsSync(userDataDir)) fs.mkdirSync(userDataDir, { recursive: true });
 
-        console.log(`[PlaywrightBrowser] Launching persistent Chromium context at: ${userDataDir}`);
-        this.context = await chromium.launchPersistentContext(userDataDir, {
-          headless: false,
-          viewport: { width: 1280, height: 800 },
-          userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-          args: [
-            "--start-maximized",
-            "--disable-blink-features=AutomationControlled"
-          ]
-        });
+        console.log(`[PlaywrightBrowser] Launching Chromium context (user data: ${userDataDir})...`);
+        try {
+          this.context = await chromium.launchPersistentContext(userDataDir, {
+            headless: false,
+            viewport: { width: 1280, height: 800 },
+            userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            args: [
+              "--start-maximized",
+              "--disable-blink-features=AutomationControlled"
+            ]
+          });
+        } catch (lockErr: any) {
+          console.warn(`[PlaywrightBrowser] Persistent context busy (${lockErr.message}). Falling back to isolated browser launch.`);
+          const browser = await chromium.launch({
+            headless: false,
+            args: ["--start-maximized", "--disable-blink-features=AutomationControlled"]
+          });
+          this.context = await browser.newContext({
+            viewport: { width: 1280, height: 800 },
+            userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+          });
+        }
 
         const pages = this.context.pages();
         this.page = pages.length > 0 ? pages[0] : await this.context.newPage();

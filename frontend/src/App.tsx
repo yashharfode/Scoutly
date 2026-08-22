@@ -376,7 +376,9 @@ export function App() {
         {page === "Demo Mode" && (
           <DemoView
             onLaunchDemo={(opp) => {
-              handleApply(opp, opp.applicationUrl);
+              const host = window.location.hostname || "localhost";
+              const targetUrl = `http://${host}:3000/mock-application/cybersecurity-intern`;
+              handleApply({ ...opp, applicationUrl: targetUrl }, targetUrl);
             }}
           />
         )}
