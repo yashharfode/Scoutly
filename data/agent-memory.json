@@ -1,9 +1,9 @@
 {
   "skillWeights": {
-    "python": 5,
+    "python": 7,
     "cybersecurity": 6,
     "linux": 4,
-    "react": 4,
+    "react": 6,
     "network traffic analysis": 3,
     "penetration testing": 3,
     ".net": 3,
@@ -16,29 +16,32 @@
     "data science": 3,
     "video": 3,
     "open source": 3,
-    "ai/ml": 3,
+    "ai/ml": 5,
     "figma": 3,
     "project management": 3,
     "editing": 3,
     "iot": 3,
-    "testing": 3
+    "testing": 3,
+    "node.js": 3,
+    "healthcare ai": 3,
+    "llms": 3
   },
   "preferredModes": {
-    "remote": 5,
+    "remote": 7,
     "hybrid": 4
   },
   "preferredLocations": {
     "india": 3,
     "remote": 5
   },
-  "averageTargetStipend": 86500,
+  "averageTargetStipend": 60750,
   "totalApplications": 1,
-  "totalSaved": 3,
+  "totalSaved": 4,
   "totalDismissed": 0,
   "insights": [
-    "Learned Interest: Frequently scouts CYBERSECURITY, PYTHON, LINUX opportunities.",
+    "Learned Interest: Frequently scouts PYTHON, CYBERSECURITY, REACT opportunities.",
     "Preferred Setup: REMOTE roles receive an autonomous +15% match boost.",
-    "Calibrated Target Stipend: Approx ₹86,500/month based on your activity."
+    "Calibrated Target Stipend: Approx ₹60,750/month based on your activity."
   ],
-  "lastUpdated": "2026-08-22T07:41:45.806Z"
+  "lastUpdated": "2026-08-22T08:22:04.954Z"
 }
