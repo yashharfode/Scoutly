@@ -1,0 +1,37 @@
+[
+  {
+    "id": "mock-ai-security",
+    "title": "AI Security Research Intern",
+    "organization": "ModelGuard Labs",
+    "type": "internship",
+    "description": "Help evaluate LLM prompt-injection risks and improve secure AI systems.",
+    "location": "India",
+    "mode": "hybrid",
+    "stipend": 22000,
+    "currency": "INR",
+    "skills": [
+      "Python",
+      "AI",
+      "LLM Security"
+    ],
+    "eligibility": "B.Tech students with Python experience.",
+    "deadline": "2026-09-08",
+    "applicationUrl": "https://example.com/apply/modelguard",
+    "source": "Scoutly Demo",
+    "sourceUrl": "https://example.com",
+    "extractedAt": "2026-08-22T06:07:26.432Z",
+    "tags": [
+      "cybersecurity",
+      "ai"
+    ],
+    "rawData": {
+      "matchReasons": [
+        "✓ Python matches your profile",
+        "✓ AI matches your profile",
+        "✓ hybrid preference",
+        "✓ Stipend requirement met"
+      ]
+    },
+    "matchScore": 88
+  }
+]

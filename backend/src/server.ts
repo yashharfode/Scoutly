@@ -1,0 +1,20 @@
+import express from "express";
+import path from "node:path";
+import cors from "cors";
+import { ZodError } from "zod";
+import { env } from "./config/env.js";
+import { profileRouter } from "./routes/profile.routes.js";
+import { opportunitiesRouter } from "./routes/opportunities.routes.js";
+import { applyRouter } from "./routes/apply.routes.js";
+import { mockApplicationRouter } from "./routes/mock-application.routes.js";
+
+const app = express();
+app.use(cors()); app.use(express.json());
+app.use("/data/screenshots", express.static(path.resolve(process.cwd(), "..", "data", "screenshots")));
+app.get("/api/health", (_req, res) => res.json({ status: "ok", mockMode: env.MOCK_MODE, browserMode: env.BROWSER_MODE, aiConfigured: Boolean(env.OPENROUTER_API_KEY) }));
+app.use("/api", profileRouter);
+app.use("/api", opportunitiesRouter);
+app.use("/api", applyRouter);
+app.use(mockApplicationRouter);
+app.use((error: unknown, _req: express.Request, res: express.Response, _next: express.NextFunction) => { if (error instanceof ZodError) return res.status(400).json({ error: "Invalid request data", details: error.flatten() }); console.error(error); return res.status(500).json({ error: "The local service could not complete that request." }); });
+app.listen(env.PORT, () => console.log(`Scoutly API listening at http://localhost:${env.PORT}`));

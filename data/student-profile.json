@@ -1,0 +1,75 @@
+{
+  "name": "Yash Harfode",
+  "college": "Samrat Ashok Technological Institute, Vidisha",
+  "degree": "B.Tech Computer Science (Cybersecurity)",
+  "branch": "Cybersecurity",
+  "year": "Expected 2029",
+  "location": "India",
+  "skills": [
+    "Python",
+    "Network Traffic Analysis",
+    "IAM",
+    "Ethical Hacking",
+    "React",
+    "Node.js"
+  ],
+  "projects": [
+    {
+      "name": "Prompt Defender",
+      "description": "Cybersecurity tool that scans AI prompts, detects malicious intent, and classifies risk levels.",
+      "technologies": [
+        "Python",
+        "LLM Security"
+      ]
+    },
+    {
+      "name": "NivaranAI",
+      "description": "AI healthcare assistant that converts patient voice input into structured SOAP medical notes.",
+      "technologies": [
+        "React.js",
+        "Node.js",
+        "AI APIs"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "organization": "Forage",
+      "title": "AIG Shields Up — Cybersecurity Threat Analysis",
+      "description": "Analyzed vulnerabilities, drafted remediation guides, and used Python for ethical hacking simulations.",
+      "period": "Feb 2025"
+    },
+    {
+      "organization": "Forage",
+      "title": "ANZ Cyber Security — Network Traffic Analysis",
+      "description": "Investigated suspicious emails and analyzed packet captures with open-source tools.",
+      "period": "Feb 2025"
+    },
+    {
+      "organization": "Forage",
+      "title": "Tata Security Analyst — Identity & Access Management",
+      "description": "Contributed IAM documentation aligning security with business goals.",
+      "period": "Feb 2025"
+    }
+  ],
+  "preferredDomains": [
+    "Cybersecurity",
+    "AI/ML",
+    "Software Development"
+  ],
+  "preferredLocations": [
+    "India"
+  ],
+  "preferredMode": [
+    "remote",
+    "hybrid",
+    "in_person"
+  ],
+  "minimumStipend": 10000,
+  "resumePath": "Resume/Yash_Harfode_Resume.pdf",
+  "github": "https://github.com/yashharfode/",
+  "linkedin": "https://linkedin.com/in/yashharfode",
+  "portfolio": "https://yashharfode.dev",
+  "email": "yashharfode123@gmail.com",
+  "phone": "9244161034"
+}

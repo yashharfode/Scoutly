@@ -1,0 +1,12 @@
+node_modules/
+dist/
+backend/dist/
+frontend/dist/
+.env
+.env.local
+backend/.env
+backend/.env.local
+*.log
+data/screenshots/*.png
+playwright/.auth/
+.DS_Store
