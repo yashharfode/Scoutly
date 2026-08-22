@@ -2755,7 +2755,7 @@
     ]
   },
   "cybersecurity 000_all_10000": {
-    "timestamp": 1787391381209,
+    "timestamp": 1787393678156,
     "results": [
       {
         "id": "wellfound-troopr-ai",
@@ -2795,7 +2795,7 @@
           "bengaluru"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.806Z",
+        "discoveredAt": "2026-08-22T10:14:35.120Z",
         "matchScore": 98,
         "matchReasons": [
           "✓ React matches profile",
@@ -2850,7 +2850,7 @@
           "ppo"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.806Z",
+        "discoveredAt": "2026-08-22T10:14:35.120Z",
         "matchScore": 98,
         "matchReasons": [
           "✓ Python matches profile",
@@ -2907,7 +2907,7 @@
           "high-stipend"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.806Z",
+        "discoveredAt": "2026-08-22T10:14:35.120Z",
         "matchScore": 98,
         "matchReasons": [
           "✓ Python matches profile",
@@ -2960,7 +2960,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.805Z",
+        "discoveredAt": "2026-08-22T10:14:35.119Z",
         "matchScore": 97,
         "matchReasons": [
           "✓ Python matches profile",
@@ -3012,7 +3012,7 @@
           "python"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.806Z",
+        "discoveredAt": "2026-08-22T10:14:35.120Z",
         "matchScore": 96,
         "matchReasons": [
           "✓ Python matches profile",
@@ -3066,7 +3066,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.806Z",
+        "discoveredAt": "2026-08-22T10:14:35.120Z",
         "matchScore": 86,
         "matchReasons": [
           "✓ React matches profile",
@@ -3114,7 +3114,7 @@
           "cybersecurity"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.806Z",
+        "discoveredAt": "2026-08-22T10:14:35.121Z",
         "matchScore": 85,
         "matchReasons": [
           "✓ Ethical Hacking matches profile",
@@ -3162,7 +3162,7 @@
           "security"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.807Z",
+        "discoveredAt": "2026-08-22T10:14:35.121Z",
         "matchScore": 85,
         "matchReasons": [
           "✓ Node.js matches profile",
@@ -3218,7 +3218,7 @@
           "remote-ai"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.806Z",
+        "discoveredAt": "2026-08-22T10:14:35.120Z",
         "matchScore": 81,
         "matchReasons": [
           "✓ React matches profile",
@@ -3267,7 +3267,7 @@
           "cloud"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.806Z",
+        "discoveredAt": "2026-08-22T10:14:35.121Z",
         "matchScore": 81,
         "matchReasons": [
           "✓ Python matches profile",
@@ -3315,7 +3315,7 @@
           "network-security"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.806Z",
+        "discoveredAt": "2026-08-22T10:14:35.121Z",
         "matchScore": 79,
         "matchReasons": [
           "✓ Python matches profile",
@@ -3366,7 +3366,7 @@
           "postgresql"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.806Z",
+        "discoveredAt": "2026-08-22T10:14:35.120Z",
         "matchScore": 78,
         "matchReasons": [
           "✓ Node.js matches profile",
@@ -3423,7 +3423,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.806Z",
+        "discoveredAt": "2026-08-22T10:14:35.120Z",
         "matchScore": 77,
         "matchReasons": [
           "✓ React matches profile",
@@ -3474,7 +3474,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.806Z",
+        "discoveredAt": "2026-08-22T10:14:35.120Z",
         "matchScore": 77,
         "matchReasons": [
           "✓ Python matches profile",
@@ -3521,7 +3521,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:17.671Z",
+        "discoveredAt": "2026-08-22T10:14:36.713Z",
         "matchScore": 77,
         "matchReasons": [
           "✓ Python matches profile",
@@ -3570,7 +3570,7 @@
           "pune"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.806Z",
+        "discoveredAt": "2026-08-22T10:14:35.120Z",
         "matchScore": 74,
         "matchReasons": [
           "✓ Python matches profile",
@@ -3617,7 +3617,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:17.671Z",
+        "discoveredAt": "2026-08-22T10:14:36.713Z",
         "matchScore": 72,
         "matchReasons": [
           "✓ Python matches profile",
@@ -3662,7 +3662,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:17.672Z",
+        "discoveredAt": "2026-08-22T10:14:36.715Z",
         "matchScore": 72,
         "matchReasons": [
           "✓ Python matches profile",
@@ -3707,7 +3707,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:17.674Z",
+        "discoveredAt": "2026-08-22T10:14:36.716Z",
         "matchScore": 72,
         "matchReasons": [
           "✓ Python matches profile",
@@ -3754,7 +3754,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.805Z",
+        "discoveredAt": "2026-08-22T10:14:35.119Z",
         "matchScore": 65,
         "matchReasons": [
           "✓ Aligns with target career domain",
@@ -3803,7 +3803,7 @@
           "agentic"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.806Z",
+        "discoveredAt": "2026-08-22T10:14:35.120Z",
         "matchScore": 65,
         "matchReasons": [
           "✓ Python matches profile",
@@ -3855,7 +3855,7 @@
           "bengaluru"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.806Z",
+        "discoveredAt": "2026-08-22T10:14:35.120Z",
         "matchScore": 65,
         "matchReasons": [
           "✓ Python matches profile",
@@ -3903,7 +3903,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.805Z",
+        "discoveredAt": "2026-08-22T10:14:35.119Z",
         "matchScore": 61,
         "matchReasons": [
           "✓ Python matches profile",
@@ -3950,7 +3950,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.805Z",
+        "discoveredAt": "2026-08-22T10:14:35.119Z",
         "matchScore": 61,
         "matchReasons": [
           "✓ Python matches profile",
@@ -3995,7 +3995,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:17.672Z",
+        "discoveredAt": "2026-08-22T10:14:36.715Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -4039,7 +4039,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:17.672Z",
+        "discoveredAt": "2026-08-22T10:14:36.715Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -4083,7 +4083,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:17.673Z",
+        "discoveredAt": "2026-08-22T10:14:36.715Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -4127,7 +4127,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:17.673Z",
+        "discoveredAt": "2026-08-22T10:14:36.716Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -4171,7 +4171,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:17.673Z",
+        "discoveredAt": "2026-08-22T10:14:36.716Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -4215,7 +4215,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:17.673Z",
+        "discoveredAt": "2026-08-22T10:14:36.716Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -4259,7 +4259,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:17.673Z",
+        "discoveredAt": "2026-08-22T10:14:36.716Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -4303,7 +4303,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:17.674Z",
+        "discoveredAt": "2026-08-22T10:14:36.717Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -4354,7 +4354,7 @@
           "databases"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.806Z",
+        "discoveredAt": "2026-08-22T10:14:35.120Z",
         "matchScore": 49,
         "matchReasons": [
           "✓ Node.js matches profile",
@@ -4399,7 +4399,7 @@
           "analyst"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.806Z",
+        "discoveredAt": "2026-08-22T10:14:35.121Z",
         "matchScore": 49,
         "matchReasons": [
           "✓ Network Traffic Analysis matches profile",
@@ -4447,7 +4447,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:20.433Z",
+        "discoveredAt": "2026-08-22T10:14:37.627Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -4494,7 +4494,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:20.434Z",
+        "discoveredAt": "2026-08-22T10:14:37.629Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -4541,7 +4541,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:20.434Z",
+        "discoveredAt": "2026-08-22T10:14:37.629Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -4588,7 +4588,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:20.434Z",
+        "discoveredAt": "2026-08-22T10:14:37.629Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -4635,7 +4635,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:20.435Z",
+        "discoveredAt": "2026-08-22T10:14:37.630Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -4682,7 +4682,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:20.435Z",
+        "discoveredAt": "2026-08-22T10:14:37.630Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -4727,7 +4727,7 @@
           "high-stipend"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.805Z",
+        "discoveredAt": "2026-08-22T10:14:35.119Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ Aligns with target career domain",
@@ -4770,7 +4770,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.805Z",
+        "discoveredAt": "2026-08-22T10:14:35.119Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ Remote opportunity",
@@ -4814,7 +4814,7 @@
           "ppo"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.805Z",
+        "discoveredAt": "2026-08-22T10:14:35.119Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ Remote opportunity",
@@ -4860,7 +4860,7 @@
           "high-stipend"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.805Z",
+        "discoveredAt": "2026-08-22T10:14:35.119Z",
         "matchScore": 44,
         "matchReasons": [
           "✓ Remote opportunity",
@@ -4903,13 +4903,93 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:17.672Z",
+        "discoveredAt": "2026-08-22T10:14:36.715Z",
         "matchScore": 42,
         "matchReasons": [
           "✓ Python matches profile",
           "✓ React matches profile",
           "🧠 AI Learned: High affinity for Python",
           "🧠 AI Learned: High affinity for React"
+        ]
+      },
+      {
+        "id": "unstop-1742832",
+        "title": "Front End Developer Internship",
+        "company": "Aimnod Services",
+        "description": "Live internship at Aimnod Services discovered via Unstop.",
+        "location": "online",
+        "mode": "unknown",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "2-4 Months",
+        "skills": [
+          "cybersecurity 000",
+          "Software Development",
+          "Web"
+        ],
+        "experience": "Students / Recent Graduates",
+        "eligibility": "Open to all enrolled college students",
+        "deadline": "2026-09-04",
+        "postedDate": "Live Feed",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20000",
+        "applicationUrl": "https://unstop.com/internships/front-end-developer-internship-aimnod-services-1742832",
+        "organizationUrl": null,
+        "tags": [
+          "unstop",
+          "student-internship",
+          "india"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T10:14:37.083Z",
+        "matchScore": 40,
+        "matchReasons": [
+          "✓ Stipend meets preference",
+          "✓ Student eligible"
+        ]
+      },
+      {
+        "id": "unstop-1742825",
+        "title": "Campus Representative",
+        "company": "SmartED Innovation",
+        "description": "Live internship at SmartED Innovation discovered via Unstop.",
+        "location": "online",
+        "mode": "unknown",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "2-4 Months",
+        "skills": [
+          "cybersecurity 000",
+          "Software Development",
+          "Web"
+        ],
+        "experience": "Students / Recent Graduates",
+        "eligibility": "Open to all enrolled college students",
+        "deadline": "2026-09-04",
+        "postedDate": "Live Feed",
+        "source": "Unstop India",
+        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20000",
+        "applicationUrl": "https://unstop.com/internships/campus-representative-smarted-innovation-1742825",
+        "organizationUrl": null,
+        "tags": [
+          "unstop",
+          "student-internship",
+          "india"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T10:14:37.083Z",
+        "matchScore": 40,
+        "matchReasons": [
+          "✓ Stipend meets preference",
+          "✓ Student eligible"
         ]
       },
       {
@@ -4945,7 +5025,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:17.773Z",
+        "discoveredAt": "2026-08-22T10:14:37.083Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Stipend meets preference",
@@ -4985,87 +5065,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:17.773Z",
-        "matchScore": 40,
-        "matchReasons": [
-          "✓ Stipend meets preference",
-          "✓ Student eligible"
-        ]
-      },
-      {
-        "id": "unstop-1742799",
-        "title": "Advisor Sourcing & Insurance Business Development Internship",
-        "company": "Kaiser Abbott Private Limited",
-        "description": "Live internship at Kaiser Abbott Private Limited discovered via Unstop.",
-        "location": "online",
-        "mode": "unknown",
-        "stipend": {
-          "min": 15000,
-          "max": 15000,
-          "currency": "INR",
-          "display": "₹15,000/month"
-        },
-        "duration": "2-4 Months",
-        "skills": [
-          "cybersecurity 000",
-          "Software Development",
-          "Web"
-        ],
-        "experience": "Students / Recent Graduates",
-        "eligibility": "Open to all enrolled college students",
-        "deadline": "2026-09-04",
-        "postedDate": "Live Feed",
-        "source": "Unstop India",
-        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20000",
-        "applicationUrl": "https://unstop.com/internships/advisor-sourcing-insurance-business-development-internship-kaiser-abbott-private-limited-1742799",
-        "organizationUrl": null,
-        "tags": [
-          "unstop",
-          "student-internship",
-          "india"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T09:36:17.773Z",
-        "matchScore": 40,
-        "matchReasons": [
-          "✓ Stipend meets preference",
-          "✓ Student eligible"
-        ]
-      },
-      {
-        "id": "unstop-1742791",
-        "title": "Patient Experience Internship",
-        "company": "Pristyn Care",
-        "description": "Live internship at Pristyn Care discovered via Unstop.",
-        "location": "online",
-        "mode": "unknown",
-        "stipend": {
-          "min": 15000,
-          "max": 15000,
-          "currency": "INR",
-          "display": "₹15,000/month"
-        },
-        "duration": "2-4 Months",
-        "skills": [
-          "cybersecurity 000",
-          "Software Development",
-          "Web"
-        ],
-        "experience": "Students / Recent Graduates",
-        "eligibility": "Open to all enrolled college students",
-        "deadline": "2026-09-04",
-        "postedDate": "Live Feed",
-        "source": "Unstop India",
-        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20000",
-        "applicationUrl": "https://unstop.com/internships/patient-experience-internship-pristyn-care-1742791",
-        "organizationUrl": null,
-        "tags": [
-          "unstop",
-          "student-internship",
-          "india"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T09:36:17.773Z",
+        "discoveredAt": "2026-08-22T10:14:37.083Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Stipend meets preference",
@@ -5110,7 +5110,7 @@
           "bengaluru"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:36:16.806Z",
+        "discoveredAt": "2026-08-22T10:14:35.120Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ React matches profile",
@@ -5126,35 +5126,35 @@
         "name": "Internshala",
         "status": "no_results",
         "count": 0,
-        "durationMs": 4400
+        "durationMs": 3070
       },
       {
         "id": "company_careers",
         "name": "Direct Company Career Portals",
         "status": "success",
         "count": 10,
-        "durationMs": 3633
+        "durationMs": 2513
       },
       {
         "id": "unstop",
         "name": "Unstop India",
         "status": "success",
         "count": 13,
-        "durationMs": 968
+        "durationMs": 1964
       },
       {
         "id": "wellfound",
         "name": "Wellfound & Tech Startups",
         "status": "success",
         "count": 32,
-        "durationMs": 869
+        "durationMs": 1597
       },
       {
         "id": "aicte",
         "name": "AICTE Internship Portal",
         "status": "success",
         "count": 1,
-        "durationMs": 0
+        "durationMs": 1
       },
       {
         "id": "indeed",
@@ -5197,7 +5197,7 @@
         "name": "Lever ATS Boards",
         "status": "success",
         "count": 1,
-        "durationMs": 1
+        "durationMs": 0
       }
     ]
   },

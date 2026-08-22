@@ -1,5 +1,7 @@
 import type { ApplicationRecord, Opportunity, DiscoverySearchResponse, StudentProfile } from "../types/domain";
 
+const API_BASE = import.meta.env.VITE_API_URL ? String(import.meta.env.VITE_API_URL).replace(/\/$/, "") : "";
+
 const fallbackProfile: StudentProfile = {
   name: "Yash Harfode",
   college: "Samrat Ashok Technological Institute, Vidisha",
@@ -26,7 +28,7 @@ const fallbackProfile: StudentProfile = {
 
 export async function getProfile(): Promise<StudentProfile> {
   try {
-    const response = await fetch("/api/profile");
+    const response = await fetch(`${API_BASE}/api/profile`);
     if (response.ok) return response.json() as Promise<StudentProfile>;
   } catch {}
   const stored = localStorage.getItem("scoutly-profile");
@@ -36,7 +38,7 @@ export async function getProfile(): Promise<StudentProfile> {
 export async function saveProfile(profile: StudentProfile): Promise<StudentProfile> {
   localStorage.setItem("scoutly-profile", JSON.stringify(profile));
   try {
-    const response = await fetch("/api/profile", {
+    const response = await fetch(`${API_BASE}/api/profile`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(profile)
@@ -48,7 +50,7 @@ export async function saveProfile(profile: StudentProfile): Promise<StudentProfi
 
 export async function searchOpportunities(query: string, forceRefresh = false): Promise<DiscoverySearchResponse> {
   try {
-    const response = await fetch("/api/search", {
+    const response = await fetch(`${API_BASE}/api/search`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ query, forceRefresh })
@@ -65,14 +67,14 @@ export async function searchOpportunities(query: string, forceRefresh = false): 
 
 export async function getSavedOpportunities(): Promise<Opportunity[]> {
   try {
-    const res = await fetch("/api/saved");
+    const res = await fetch(`${API_BASE}/api/saved`);
     if (res.ok) return res.json();
   } catch {}
   return [];
 }
 
 export async function saveOpportunity(opportunity: Opportunity): Promise<void> {
-  const response = await fetch("/api/saved", {
+  const response = await fetch(`${API_BASE}/api/saved`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(opportunity)
@@ -81,12 +83,12 @@ export async function saveOpportunity(opportunity: Opportunity): Promise<void> {
 }
 
 export async function removeSavedOpportunity(id: string): Promise<void> {
-  await fetch(`/api/saved/${id}`, { method: "DELETE" });
+  await fetch(`${API_BASE}/api/saved/${id}`, { method: "DELETE" });
 }
 
 export async function getApplications(): Promise<ApplicationRecord[]> {
   try {
-    const res = await fetch("/api/applications");
+    const res = await fetch(`${API_BASE}/api/applications`);
     if (res.ok) return res.json();
   } catch {}
   return [];
@@ -100,7 +102,7 @@ export async function startApplicationSession(params: {
   organization?: string;
   browserMode?: "mock" | "playwright";
 }): Promise<{ sessionId: string; url: string; mode: string }> {
-  const res = await fetch("/api/apply/prepare", {
+  const res = await fetch(`${API_BASE}/api/apply/prepare`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(params)
@@ -110,7 +112,7 @@ export async function startApplicationSession(params: {
 }
 
 export async function analyzeApplicationPage(sessionId: string): Promise<any> {
-  const res = await fetch("/api/apply/analyze", {
+  const res = await fetch(`${API_BASE}/api/apply/analyze`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ sessionId })
@@ -120,7 +122,7 @@ export async function analyzeApplicationPage(sessionId: string): Promise<any> {
 }
 
 export async function fillApplicationForm(sessionId: string): Promise<any> {
-  const res = await fetch("/api/apply/fill", {
+  const res = await fetch(`${API_BASE}/api/apply/fill`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ sessionId })
@@ -130,7 +132,7 @@ export async function fillApplicationForm(sessionId: string): Promise<any> {
 }
 
 export async function updateApplicationField(sessionId: string, fieldId: string, value: string): Promise<any> {
-  const res = await fetch("/api/apply/update-field", {
+  const res = await fetch(`${API_BASE}/api/apply/update-field`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ sessionId, fieldId, value })
@@ -140,7 +142,7 @@ export async function updateApplicationField(sessionId: string, fieldId: string,
 }
 
 export async function regenerateAIAnswer(sessionId: string, fieldId: string): Promise<any> {
-  const res = await fetch("/api/apply/regenerate-answer", {
+  const res = await fetch(`${API_BASE}/api/apply/regenerate-answer`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ sessionId, fieldId })
@@ -150,7 +152,7 @@ export async function regenerateAIAnswer(sessionId: string, fieldId: string): Pr
 }
 
 export async function submitApplication(sessionId: string): Promise<any> {
-  const res = await fetch("/api/apply/submit", {
+  const res = await fetch(`${API_BASE}/api/apply/submit`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ sessionId })
@@ -160,7 +162,7 @@ export async function submitApplication(sessionId: string): Promise<any> {
 }
 
 export async function cancelApplication(sessionId: string): Promise<any> {
-  await fetch("/api/apply/cancel", {
+  await fetch(`${API_BASE}/api/apply/cancel`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ sessionId })
@@ -168,7 +170,7 @@ export async function cancelApplication(sessionId: string): Promise<any> {
 }
 
 export async function resumeApplicationSession(sessionId: string): Promise<any> {
-  const res = await fetch("/api/apply/resume", {
+  const res = await fetch(`${API_BASE}/api/apply/resume`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ sessionId })
@@ -178,7 +180,7 @@ export async function resumeApplicationSession(sessionId: string): Promise<any> 
 }
 
 export async function getSessionStatus(sessionId: string): Promise<any> {
-  const res = await fetch(`/api/apply/session/${sessionId}`);
+  const res = await fetch(`${API_BASE}/api/apply/session/${sessionId}`);
   if (!res.ok) throw new Error("Failed to get session status.");
   return res.json();
 }
@@ -189,7 +191,7 @@ export async function uploadResumeFile(file: File): Promise<{ success: boolean; 
     reader.onload = async () => {
       try {
         const base64Data = (reader.result as string).split(",")[1];
-        const res = await fetch("/api/profile/upload-resume", {
+        const res = await fetch(`${API_BASE}/api/profile/upload-resume`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -211,7 +213,7 @@ export async function uploadResumeFile(file: File): Promise<{ success: boolean; 
 
 export async function getAgentMemory(): Promise<any> {
   try {
-    const res = await fetch("/api/agent/memory");
+    const res = await fetch(`${API_BASE}/api/agent/memory`);
     if (res.ok) return res.json();
   } catch {}
   return null;
@@ -224,7 +226,7 @@ export async function getStudentEvents(type?: string, mode?: string, search?: st
     if (mode && mode !== "all") params.append("mode", mode);
     if (search) params.append("search", search);
 
-    const res = await fetch(`/api/events?${params.toString()}`);
+    const res = await fetch(`${API_BASE}/api/events?${params.toString()}`);
     if (res.ok) {
       const data = await res.json();
       return data.events || [];

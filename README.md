@@ -240,3 +240,47 @@ Scoutly includes a dedicated **Judge Demo Mode** pre-configured for live present
 Built with ❤️ by **[Yash Harfode](https://github.com/yashharfode/)** • *Scoutly AI Agent*
 
 </div>
+
+---
+
+## 🚢 Deployment Guide
+
+### Option 1: 1-Command Docker Compose (Full-Stack)
+Run both Frontend & Backend with Playwright Chromium pre-installed:
+```bash
+docker compose up --build -d
+```
+- Frontend UI: `http://localhost` (or `http://localhost:5173`)
+- Backend API: `http://localhost:3000`
+
+---
+
+### Option 2: Deploy Frontend on Vercel
+1. Push your repository to GitHub.
+2. Import the repository in [Vercel Dashboard](https://vercel.com).
+3. Vercel will automatically detect `vercel.json` and build `frontend/dist`.
+4. Set the Environment Variable:
+   ```env
+   VITE_API_URL=https://your-backend-service.onrender.com
+   ```
+
+---
+
+### Option 3: Deploy Backend on Render (Docker Service)
+1. In [Render Dashboard](https://render.com), create a **New Web Service**.
+2. Connect your `Scoutly` GitHub repository.
+3. Select **Docker** environment (it automatically detects the root `Dockerfile`).
+4. Set Environment Variables:
+   - `PORT=3000`
+   - `NODE_ENV=production`
+   - `BROWSER_MODE=playwright`
+   - `MOCK_MODE=false`
+   - `OPENROUTER_API_KEY=your_key` (optional)
+
+---
+
+### Option 4: Deploy Backend on Railway
+1. In [Railway Dashboard](https://railway.app), create a **New Project** from GitHub repo.
+2. Railway will automatically use `railway.json` and `Dockerfile`.
+3. Add `PORT=3000` and generate your public domain.
+

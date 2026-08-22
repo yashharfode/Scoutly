@@ -1,0 +1,11 @@
+node_modules
+*/node_modules
+.git
+.gitignore
+*.log
+.env
+.DS_Store
+dist
+*/dist
+data/screenshots/*
+!data/screenshots/.gitkeep
