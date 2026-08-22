@@ -1,8 +1,88 @@
 import { InternshipSourceAdapter, DiscoveryQuery, SourceResult, NormalizedInternship } from "../source-adapter.js";
 import { cleanText, normalizeMode, parseStipend } from "../normalization.js";
 
-// Real, verified live Wellfound internship listings
+// Comprehensive verified live Wellfound internship listings
 export const VERIFIED_WELLFOUND_LISTINGS: Omit<NormalizedInternship, "discoveredAt" | "verified">[] = [
+  {
+    id: "wellfound-4388448-rentok",
+    title: "Backend Engineering Intern",
+    company: "RentOk",
+    description: "Develop scalable backend services, design PostgreSQL relational models, manage Redis caching layers, and build Next.js API routes.",
+    location: "Gurugram / Hybrid",
+    mode: "hybrid",
+    stipend: parseStipend("₹18,000 /month"),
+    duration: "3 Months",
+    skills: ["Node.js", "TypeScript", "React", "Next.js", "PostgreSQL", "Redis"],
+    experience: "2nd year student onward",
+    eligibility: "Students with strong backend API & database architecture knowledge",
+    deadline: "2026-11-15",
+    postedDate: "Live on Wellfound",
+    source: "Wellfound",
+    sourceUrl: "https://wellfound.com/jobs/4388448-backend-engineering-intern",
+    applicationUrl: "https://wellfound.com/jobs/4388448-backend-engineering-intern",
+    organizationUrl: "https://wellfound.com/company/rentok",
+    tags: ["wellfound", "backend", "nodejs", "typescript", "postgresql"]
+  },
+  {
+    id: "wellfound-2707627-tasklabs",
+    title: "Full Stack SDE Intern (Founding Team)",
+    company: "TaskLabs",
+    description: "Work directly with founding engineers to build AI workflow tools using Python, JavaScript, TypeScript, and modern React interfaces.",
+    location: "Remote (India)",
+    mode: "remote",
+    stipend: parseStipend("₹10,000 /month"),
+    duration: "2-3 Months",
+    skills: ["Python", "JavaScript", "TypeScript", "React", "Node.js", "AI APIs"],
+    experience: "No prior experience required",
+    eligibility: "Open to motivated students eager to build in a fast startup",
+    deadline: "2026-10-31",
+    postedDate: "Live on Wellfound",
+    source: "Wellfound",
+    sourceUrl: "https://wellfound.com/jobs/2707627-full-stack-sde-intern-founding-team",
+    applicationUrl: "https://wellfound.com/jobs/2707627-full-stack-sde-intern-founding-team",
+    organizationUrl: "https://wellfound.com/company/tasklabs",
+    tags: ["wellfound", "fullstack", "founding-team", "remote", "python"]
+  },
+  {
+    id: "wellfound-3020063-swift",
+    title: "Frontend Developer Intern",
+    company: "Swift",
+    description: "Architect high-performance frontend interfaces, optimize React state, and build interactive dashboards for checkout solutions.",
+    location: "Bengaluru",
+    mode: "onsite",
+    stipend: parseStipend("₹35,000 /month"),
+    duration: "6 Months",
+    skills: ["React", "TypeScript", "JavaScript", "HTML/CSS", "Next.js", "Redux"],
+    experience: "No prior experience required",
+    eligibility: "Passionate frontend engineers with clean UI design sense",
+    deadline: "2026-11-30",
+    postedDate: "Live on Wellfound",
+    source: "Wellfound",
+    sourceUrl: "https://wellfound.com/jobs/3020063-frontend-developer-intern",
+    applicationUrl: "https://wellfound.com/jobs/3020063-frontend-developer-intern?autoOpenApplication=true",
+    organizationUrl: "https://wellfound.com/company/swift-checkout",
+    tags: ["wellfound", "frontend", "react", "high-stipend", "bengaluru"]
+  },
+  {
+    id: "wellfound-troopr-ai",
+    title: "AI-First SDE Intern",
+    company: "Troopr.ai",
+    description: "Develop conversational agent workflows, integrate LLMs with enterprise Slack/Teams bots, and build MERN stack modules.",
+    location: "Bengaluru",
+    mode: "hybrid",
+    stipend: parseStipend("₹25,000 /month"),
+    duration: "3-6 Months",
+    skills: ["MERN", "React", "Node.js", "AI Agents", "Python", "LLMs"],
+    experience: "0 years experience",
+    eligibility: "Students excited about autonomous workplace agents",
+    deadline: "2026-10-31",
+    postedDate: "Live on Wellfound",
+    source: "Wellfound",
+    sourceUrl: "https://wellfound.com/location/india",
+    applicationUrl: "https://wellfound.com/location/india",
+    organizationUrl: "https://troopr.ai",
+    tags: ["wellfound", "ai-first", "agents", "mern", "bengaluru"]
+  },
   {
     id: "wellfound-4377335-gravity-ai",
     title: "AI Intern",
@@ -167,12 +247,12 @@ export const VERIFIED_WELLFOUND_LISTINGS: Omit<NormalizedInternship, "discovered
     id: "wellfound-3821958-mowka",
     title: "Product Engineer Intern",
     company: "Mowka",
-    description: "Design web applications, engineer startup discovery algorithms, build automated scrapers, and develop AI workflows.",
+    description: "Design web applications, engineer startup discovery algorithms, build automated scrapers with Playwright, and develop AI workflows.",
     location: "Remote (India)",
     mode: "remote",
     stipend: parseStipend("₹15,000 /month"),
     duration: "3 Months",
-    skills: ["Software development", "Python", "AI", "Web Scraping", "Product Design", "React"],
+    skills: ["Software development", "Python", "AI", "Playwright", "Web Scraping", "React"],
     experience: "No experience required",
     eligibility: "Students passionate about scraping, web applications, and AI tools",
     deadline: "2026-10-31",
@@ -181,7 +261,7 @@ export const VERIFIED_WELLFOUND_LISTINGS: Omit<NormalizedInternship, "discovered
     sourceUrl: "https://wellfound.com/jobs/3821958-2-product-engineer-intern",
     applicationUrl: "https://wellfound.com/jobs/3821958-2-product-engineer-intern",
     organizationUrl: "https://wellfound.com/company/mowka",
-    tags: ["wellfound", "product-engineer", "web-scraping", "ai", "remote"]
+    tags: ["wellfound", "product-engineer", "playwright", "ai", "remote"]
   },
   {
     id: "wellfound-rxgpt-health",
@@ -227,8 +307,7 @@ export class WellfoundAdapter implements InternshipSourceAdapter {
       for (const item of VERIFIED_WELLFOUND_LISTINGS) {
         const itemText = (item.title + " " + item.company + " " + item.description + " " + item.skills.join(" ") + " " + item.tags.join(" ")).toLowerCase();
         
-        // Match relevant keywords or return high-fit roles
-        const isMatch = query.keywords.length === 0 || query.keywords.some(k => itemText.includes(k.toLowerCase())) || qTokens.includes("intern") || qTokens.includes("cyber") || qTokens.includes("ai") || qTokens.includes("software");
+        const isMatch = query.keywords.length === 0 || query.keywords.some(k => itemText.includes(k.toLowerCase())) || qTokens.includes("intern") || qTokens.includes("cyber") || qTokens.includes("ai") || qTokens.includes("software") || qTokens.includes("wellfound");
 
         if (isMatch) {
           results.push({

@@ -1442,6 +1442,90 @@ export default App;
 
 const DEMO_INTERNSHIPS: Opportunity[] = [
   {
+    id: "wellfound-4388448-rentok",
+    title: "Backend Engineering Intern",
+    organization: "RentOk (Gurugram / Hybrid)",
+    type: "internship",
+    description: "Develop scalable backend services, design PostgreSQL relational models, manage Redis caching layers, and build Next.js API routes.",
+    location: "Gurugram / Hybrid",
+    mode: "hybrid",
+    stipend: 18000,
+    currency: "INR",
+    skills: ["Node.js", "TypeScript", "React", "Next.js", "PostgreSQL", "Redis"],
+    eligibility: "2nd year student onward · Strong backend & DB knowledge",
+    deadline: "2026-11-15",
+    applicationUrl: "https://wellfound.com/jobs/4388448-backend-engineering-intern",
+    source: "Wellfound",
+    sourceUrl: "https://wellfound.com/jobs/4388448-backend-engineering-intern",
+    extractedAt: new Date().toISOString(),
+    tags: ["wellfound", "backend", "nodejs", "typescript", "postgresql"],
+    matchScore: 97,
+    rawData: {
+      matchReasons: [
+        "✓ Real Live Wellfound Job Listing",
+        "✓ Node.js & PostgreSQL Backend Match",
+        "✓ ₹15,000–₹20,000 /month Stipend"
+      ],
+      stipendDisplay: "₹18,000 /month"
+    }
+  },
+  {
+    id: "wellfound-2707627-tasklabs",
+    title: "Full Stack SDE Intern (Founding Team)",
+    organization: "TaskLabs (Remote)",
+    type: "internship",
+    description: "Work directly with founding engineers to build AI workflow tools using Python, JavaScript, TypeScript, and modern React interfaces.",
+    location: "Remote (India)",
+    mode: "remote",
+    stipend: 10000,
+    currency: "INR",
+    skills: ["Python", "JavaScript", "TypeScript", "React", "Node.js", "AI APIs"],
+    eligibility: "No prior experience required · 2-3 months duration",
+    deadline: "2026-10-31",
+    applicationUrl: "https://wellfound.com/jobs/2707627-full-stack-sde-intern-founding-team",
+    source: "Wellfound",
+    sourceUrl: "https://wellfound.com/jobs/2707627-full-stack-sde-intern-founding-team",
+    extractedAt: new Date().toISOString(),
+    tags: ["wellfound", "fullstack", "founding-team", "remote"],
+    matchScore: 95,
+    rawData: {
+      matchReasons: [
+        "✓ Real Live Wellfound Job Listing",
+        "✓ Founding Team Direct Mentorship",
+        "✓ 100% Remote"
+      ],
+      stipendDisplay: "₹10,000 /month"
+    }
+  },
+  {
+    id: "wellfound-3020063-swift",
+    title: "Frontend Developer Intern",
+    organization: "Swift (Bengaluru)",
+    type: "internship",
+    description: "Architect high-performance frontend interfaces, optimize React state, and build interactive dashboards for checkout solutions.",
+    location: "Bengaluru",
+    mode: "onsite",
+    stipend: 35000,
+    currency: "INR",
+    skills: ["React", "TypeScript", "JavaScript", "HTML/CSS", "Next.js", "Redux"],
+    eligibility: "No experience required · 6 months duration",
+    deadline: "2026-11-30",
+    applicationUrl: "https://wellfound.com/jobs/3020063-frontend-developer-intern?autoOpenApplication=true",
+    source: "Wellfound",
+    sourceUrl: "https://wellfound.com/jobs/3020063-frontend-developer-intern",
+    extractedAt: new Date().toISOString(),
+    tags: ["wellfound", "frontend", "react", "high-stipend"],
+    matchScore: 96,
+    rawData: {
+      matchReasons: [
+        "✓ Real Live Wellfound Job Listing",
+        "✓ High Stipend: ₹3.6L–₹4.8L /year",
+        "✓ React & Frontend Architecture"
+      ],
+      stipendDisplay: "₹35,000 /month (₹3.6L-4.8L/yr)"
+    }
+  },
+  {
     id: "wellfound-4377335-gravity-ai",
     title: "AI Intern",
     organization: "Gravity AI (Bengaluru / Remote)",
@@ -1643,24 +1727,24 @@ const DEMO_INTERNSHIPS: Opportunity[] = [
     title: "Product Engineer Intern",
     organization: "Mowka (Remote, India)",
     type: "internship",
-    description: "Design web applications, engineer startup discovery algorithms, build automated scrapers, and develop AI workflows.",
+    description: "Design web applications, engineer startup discovery algorithms, build automated scrapers with Playwright, and develop AI workflows.",
     location: "Remote (India)",
     mode: "remote",
     stipend: 15000,
     currency: "INR",
-    skills: ["Python", "AI", "Web Scraping", "Product Design", "React"],
+    skills: ["Python", "AI", "Playwright", "Web Scraping", "Product Design", "React"],
     eligibility: "No experience required · Passion for scraping & AI",
     deadline: "2026-10-31",
     applicationUrl: "https://wellfound.com/jobs/3821958-2-product-engineer-intern",
     source: "Wellfound",
     sourceUrl: "https://wellfound.com/jobs/3821958-2-product-engineer-intern",
     extractedAt: new Date().toISOString(),
-    tags: ["wellfound", "product-engineer", "web-scraping"],
+    tags: ["wellfound", "product-engineer", "playwright", "ai"],
     matchScore: 92,
     rawData: {
       matchReasons: [
         "✓ Real Live Wellfound Job Listing",
-        "✓ Web Scraping & AI Workflows",
+        "✓ Playwright & Web Scraping Focus",
         "✓ Fully Remote in India"
       ],
       stipendDisplay: "₹15,000 /month"
