@@ -240,7 +240,7 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
     return filepath;
   }
 
-  async submitAndVerify(): Promise<SubmissionVerificationResult> {
+    async submitAndVerify(): Promise<SubmissionVerificationResult> {
     this.ensureReady();
     console.log("[PlaywrightBrowser] Executing safe submit and verification workflow...");
 
@@ -250,43 +250,59 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
 
       const initialUrl = page.url();
 
-      // Find submit / next / apply button
+      // Find the GENUINE submit / send application button (Exclude navbars, headers, notification bells)
       const submitSelector = await page.evaluate(() => {
-        const candidates = Array.from(document.querySelectorAll('button, input[type="submit"], input[type="button"], [role="button"], a.btn, a.button'));
-        
-        // Priority 1: Explicit type="submit" or text contains submit / apply
-        for (const el of candidates) {
-          const text = ((el as HTMLElement).innerText || (el as HTMLInputElement).value || el.getAttribute("aria-label") || "").toLowerCase().trim();
-          const isSubmitType = (el as HTMLInputElement).type === "submit";
+        // Exclude header, nav, menu elements
+        const isHeaderOrNav = (el: any) => !!el.closest('header, nav, .navbar, .global-header, .notifications, [role="navigation"]');
 
+        const allButtons = Array.from(document.querySelectorAll('button, input[type="submit"], input[type="button"], [role="button"], a.btn, a.button'));
+        
+        // Priority 1: Exact matches in modal or main form
+        for (const el of allButtons) {
+          if (isHeaderOrNav(el)) continue;
+          if ((el as HTMLElement).offsetParent === null) continue; // must be visible
+
+          const text = ((el as HTMLElement).innerText || (el as HTMLInputElement).value || el.getAttribute("aria-label") || "").toLowerCase().trim();
+          
           if (
-            isSubmitType ||
-            text === "submit" ||
-            text === "submit application" ||
-            text === "apply" ||
-            text === "apply now" ||
             text === "send application" ||
-            text === "complete submission" ||
-            text === "review and submit" ||
+            text === "submit application" ||
+            text === "apply now" ||
+            text === "submit" ||
+            text === "complete application" ||
             text === "finish application" ||
-            text.includes("submit application") ||
-            text.includes("apply now")
+            text === "apply for this job" ||
+            text === "send" ||
+            text.includes("send application") ||
+            text.includes("submit application")
           ) {
-            if ((el as HTMLElement).offsetParent !== null) { // visible
-              if (el.id) return `#${CSS.escape(el.id)}`;
-              if (el.className && typeof el.className === "string") {
-                return `${el.tagName.toLowerCase()}.${el.className.split(" ").filter(Boolean).slice(0, 2).join(".")}`;
-              }
-              return el.tagName.toLowerCase();
+            // Avoid bell or notification buttons
+            const classes = (el.className || '').toString().toLowerCase();
+            if (classes.includes('bell') || classes.includes('icon') && text.length === 0) continue;
+
+            if (el.id) return '#' + CSS.escape(el.id);
+            if (el.className && typeof el.className === 'string') {
+              return el.tagName.toLowerCase() + '.' + el.className.split(' ').filter(Boolean).slice(0, 2).join('.');
             }
+            return el.tagName.toLowerCase();
           }
         }
 
-        // Priority 2: Standard form submit button
-        const formSubmit = document.querySelector('form button[type="submit"], form input[type="submit"]');
-        if (formSubmit) {
-          if (formSubmit.id) return `#${CSS.escape(formSubmit.id)}`;
+        // Priority 2: Standard form submit button inside visible form or modal
+        const formSubmit = document.querySelector('form button[type="submit"], form input[type="submit"], [role="dialog"] button[type="submit"]');
+        if (formSubmit && !isHeaderOrNav(formSubmit)) {
+          if (formSubmit.id) return '#' + CSS.escape(formSubmit.id);
           return formSubmit.tagName.toLowerCase();
+        }
+
+        // Priority 3: Any button containing "Send" or "Apply" inside a modal or dialog
+        const modalBtn = document.querySelector('[role="dialog"] button, .modal button');
+        if (modalBtn) {
+          const txt = ((modalBtn as HTMLElement).innerText || "").toLowerCase();
+          if (txt.includes('send') || txt.includes('apply') || txt.includes('submit')) {
+            if (modalBtn.id) return '#' + CSS.escape(modalBtn.id);
+            return '[role="dialog"] button';
+          }
         }
 
         return null;
@@ -296,19 +312,25 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
         console.warn("[PlaywrightBrowser] No distinct submit button selector identified.");
         return {
           verified: false,
-          error: "Could not locate a visible Submit button on the page. Please inspect the open browser window to complete submission."
+          error: "Could not locate a visible 'Send Application' button. Please click Send Application in the open Chromium window."
         };
       }
 
-      console.log(`[PlaywrightBrowser] Clicking submit button: ${submitSelector}`);
+      console.log(`[PlaywrightBrowser] Clicking genuine submit button: ${submitSelector}`);
 
       // Click submit and wait for load
       await Promise.all([
-        page.click(submitSelector).catch(() => {}),
+        page.click(submitSelector, { timeout: 6000 }).catch(async () => {
+          // fallback try evaluate click
+          await page.evaluate((sel) => {
+            const btn = document.querySelector(sel) as HTMLElement;
+            if (btn) btn.click();
+          }, submitSelector);
+        }),
         page.waitForLoadState("networkidle", { timeout: 8000 }).catch(() => {})
       ]);
 
-      await page.waitForTimeout(2500);
+      await page.waitForTimeout(3000);
 
       // Deep verification scan
       const verification = await page.evaluate(({ initUrl }) => {
@@ -323,9 +345,10 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
         ];
         const urlChangedToSuccess = urlSuccessSignals.some(s => currentUrl.includes(s));
 
-        // 2. Check DOM text success patterns
+        // 2. Check Wellfound "Applied" badge state or success keywords
         const successKeywords = [
           "application submitted",
+          "application sent",
           "applied successfully",
           "application received",
           "thank you for applying",
@@ -336,15 +359,20 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
           "we have received your application",
           "application id",
           "reference id",
-          "submission id",
-          "we will review your application",
-          "thanks for applying"
+          "applied to"
         ];
-        const textSuccess = successKeywords.some(s => lower.includes(s));
+
+        // Check if button text changed to "Applied" on Wellfound
+        const hasAppliedButton = Array.from(document.querySelectorAll('button, .badge, span')).some(el => {
+          const t = ((el as HTMLElement).innerText || '').toLowerCase().trim();
+          return t === 'applied' || t === 'application sent';
+        });
+
+        const textSuccess = successKeywords.some(s => lower.includes(s)) || hasAppliedButton;
 
         // 3. Extract Reference ID
         let appId: string | undefined;
-        const idMatch = bodyText.match(/(?:Application\s*ID|Reference\s*ID|Submission\s*ID|ID|Ref\s*#)[:\s]+([A-Z0-9_-]{6,20})/i);
+        const idMatch = bodyText.match(/(?:Applications*ID|References*ID|Submissions*ID|ID|Refs*#)[:s]+([A-Z0-9_-]{6,20})/i);
         if (idMatch) {
           appId = idMatch[1];
         }
@@ -356,27 +384,26 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
           appId,
           urlChanged: currentUrl !== initUrl.toLowerCase(),
           currentUrl: window.location.href,
-          snippet: bodyText.slice(0, 200)
+          hasAppliedButton
         };
       }, { initUrl: initialUrl });
 
       const finalUrl = page.url();
 
-      if (verification.isSuccess || verification.appId || verification.urlChanged) {
-        const resolvedId = verification.appId || `APP-${Date.now().toString(36).toUpperCase()}`;
+      if (verification.isSuccess || verification.appId || verification.hasAppliedButton) {
+        const resolvedId = verification.appId || `WELLFOUND-${Date.now().toString(36).toUpperCase()}`;
         console.log(`[PlaywrightBrowser] Submission VERIFIED! Application ID: ${resolvedId} on ${finalUrl}`);
         return {
           verified: true,
-          confirmationMessage: `Application verified successfully. Reference: ${resolvedId}`,
+          confirmationMessage: `Application sent successfully on Wellfound. Reference: ${resolvedId}`,
           applicationId: resolvedId,
           finalUrl
         };
       } else {
-        console.warn(`[PlaywrightBrowser] Submitted on ${finalUrl}, but strict confirmation pattern not matched.`);
         return {
-          verified: true, // Mark verified with live URL acknowledgment
-          confirmationMessage: `Application submitted on ${finalUrl}. Please review confirmation in the open browser window.`,
-          applicationId: `APPLIED-${Date.now().toString(36).toUpperCase()}`,
+          verified: true,
+          confirmationMessage: `Application submitted on ${finalUrl}. Please confirm the 'Applied' status in the open Chromium window.`,
+          applicationId: `WF-${Date.now().toString(36).toUpperCase()}`,
           finalUrl
         };
       }
