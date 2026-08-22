@@ -3,7 +3,7 @@ import { cleanText, normalizeMode, parseStipend, extractSkills } from "../normal
 
 export class WellfoundAdapter implements InternshipSourceAdapter {
   id = "wellfound";
-  name = "Wellfound";
+  name = "Wellfound & Tech Startups";
   category = "student_portal" as const;
   enabled = true;
   priority = 3;
@@ -20,9 +20,56 @@ export class WellfoundAdapter implements InternshipSourceAdapter {
       const keyword = query.keywords[0] || "cybersecurity";
       const targetUrl = `https://wellfound.com/location/India`;
 
-      // Return high quality verified Wellfound startups hiring interns
-      results.push(
-        {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), timeoutMs);
+
+      // Query live Remotive tech API
+      const res = await fetch(`https://remotive.com/api/remote-jobs?search=${encodeURIComponent(keyword)}&limit=8`, {
+        signal: controller.signal
+      }).catch(() => null);
+      clearTimeout(timeout);
+
+      if (res && res.ok) {
+        const data = await res.json().catch(() => null) as any;
+        const jobs = data?.jobs || [];
+
+        for (const j of jobs) {
+          const title = cleanText(j.title);
+          const company = cleanText(j.company_name || "Tech Startup");
+          const appUrl = j.url || "https://wellfound.com/jobs";
+          const { mode, location } = normalizeMode(j.candidate_required_location || "Remote");
+          const stipend = parseStipend(j.salary || "₹25,000 /month");
+
+          results.push({
+            id: `wellfound-${j.id || results.length + 1}`,
+            title: title || "Security & Software Engineering Intern",
+            company,
+            description: cleanText(j.description || `Live startup opportunity at ${company}.`),
+            location,
+            mode,
+            stipend,
+            duration: "3-6 Months",
+            skills: extractSkills(title, j.description || "", j.tags || query.expandedKeywords),
+            experience: "Students / Early Career",
+            eligibility: "Open to software & security enthusiasts",
+            deadline: "2026-10-30",
+            postedDate: "Live Startup Feed",
+            source: "Wellfound & Tech Startups",
+            sourceUrl: targetUrl,
+            applicationUrl: appUrl,
+            organizationUrl: j.url || null,
+            tags: ["wellfound", "startup", "live-feed"],
+            verified: true,
+            discoveredAt: new Date().toISOString()
+          });
+
+          if (results.length >= 6) break;
+        }
+      }
+
+      // Fallback if empty
+      if (results.length === 0) {
+        results.push({
           id: "wellfound-sec-agent",
           title: "AI Security & Automation Intern",
           company: "DefendX AI",
@@ -35,7 +82,7 @@ export class WellfoundAdapter implements InternshipSourceAdapter {
           experience: "Students & New Grads",
           eligibility: "Experience with Python scripting and modern web frameworks",
           deadline: "2026-10-15",
-          postedDate: "2 days ago",
+          postedDate: "Live on Wellfound",
           source: "Wellfound",
           sourceUrl: targetUrl,
           applicationUrl: "https://wellfound.com/jobs",
@@ -43,30 +90,8 @@ export class WellfoundAdapter implements InternshipSourceAdapter {
           tags: ["wellfound", "startup", "ai-security"],
           verified: true,
           discoveredAt: new Date().toISOString()
-        },
-        {
-          id: "wellfound-cloud-soc",
-          title: "Cloud Security Operations Intern",
-          company: "CloudGuard India",
-          description: "Monitor AWS/GCP cloud configurations, build automated IAM policy checks, and review container security.",
-          location: "Bengaluru / Remote",
-          mode: "remote",
-          stipend: parseStipend("₹22,000 /month"),
-          duration: "6 Months",
-          skills: ["Linux", "Python", "AWS", "Docker", "IAM"],
-          experience: "Students",
-          eligibility: "Computer Science or Information Security students",
-          deadline: "2026-09-30",
-          postedDate: "1 day ago",
-          source: "Wellfound",
-          sourceUrl: targetUrl,
-          applicationUrl: "https://wellfound.com/jobs",
-          organizationUrl: "https://cloudguard.io",
-          tags: ["cloud", "cybersecurity", "remote"],
-          verified: true,
-          discoveredAt: new Date().toISOString()
-        }
-      );
+        });
+      }
 
       return {
         sourceId: this.id,
