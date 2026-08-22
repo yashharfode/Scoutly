@@ -8,7 +8,7 @@ export const formDetectionScript = `
       document.body.innerText.toLowerCase().includes('cloudflare ray id')
     );
 
-    // 2. Check for Apply button if form not yet open (Unstop, Wellfound, Greenhouse, Lever)
+    // 2. Identify Apply/Register CTA Button (Strictly exclude root containers like __next, root, app)
     let applyButtonSelector = null;
 
     // Check Unstop specific register/apply button IDs and classes first
@@ -20,15 +20,22 @@ export const formDetectionScript = `
 
     if (!applyButtonSelector) {
       const isHeaderOrNav = (el) => !!el.closest('header, nav, .navbar, .global-header, .header, [role="navigation"]');
-      const candidates = Array.from(document.querySelectorAll('button, a, div, span, input[type="button"], [role="button"]'));
+      const containerIds = ['__next', 'root', 'app', 'layout', 'main', 'wrapper', 'container', 'body'];
+
+      // Only query genuine button elements or leaf clickable elements
+      const candidates = Array.from(document.querySelectorAll('button, a, input[type="button"], input[type="submit"], [role="button"], div.register_btn, div.apply-btn, span.register_btn'));
       
       for (const b of candidates) {
         if (isHeaderOrNav(b)) continue;
-        if (b.offsetParent === null) continue;
+        if (b.offsetParent === null) continue; // must be visible
+        if (b.id && containerIds.includes(b.id.toLowerCase())) continue; // never select page container
 
         const txt = (b.innerText || b.value || b.getAttribute('aria-label') || '').toLowerCase().trim();
         const href = (b.getAttribute('href') || '').toLowerCase();
         const classes = (b.className || '').toString().toLowerCase();
+
+        // Must be a button-like element (short text, not a massive container)
+        if (txt.length > 50) continue;
 
         if (
           txt === 'apply' ||
@@ -37,6 +44,8 @@ export const formDetectionScript = `
           txt === 'easy apply' ||
           txt === 'register' ||
           txt === 'register now' ||
+          txt === 'apply for this job' ||
+          txt === 'send application' ||
           txt.includes('quick apply') ||
           txt.includes('apply now') ||
           txt.includes('register now') ||
@@ -46,9 +55,11 @@ export const formDetectionScript = `
           classes.includes('register_btn') ||
           classes.includes('apply-btn')
         ) {
-          if (b.id) applyButtonSelector = '#' + CSS.escape(b.id);
-          else if (b.className && typeof b.className === 'string') {
-            applyButtonSelector = b.tagName.toLowerCase() + '.' + b.className.split(' ').filter(Boolean).slice(0, 2).join('.');
+          if (b.id && !containerIds.includes(b.id.toLowerCase())) {
+            applyButtonSelector = '#' + CSS.escape(b.id);
+          } else if (b.className && typeof b.className === 'string') {
+            const validClasses = b.className.split(' ').filter(c => c && !c.includes(':') && !c.includes('/')).slice(0, 2);
+            applyButtonSelector = b.tagName.toLowerCase() + (validClasses.length ? '.' + validClasses.join('.') : '');
           } else {
             applyButtonSelector = b.tagName.toLowerCase();
           }
@@ -59,7 +70,7 @@ export const formDetectionScript = `
 
     // 3. Check for Login Wall or Auth Gate inside modal or main view (Ignore global nav login links)
     const hasPassword = !!document.querySelector('input[type="password"]');
-    const modalOrMain = document.querySelector('[role="dialog"], .modal, .auth-modal, .login-modal, #login-modal, main, #app') || document.body;
+    const modalOrMain = document.querySelector('[role="dialog"], .modal, .auth-modal, .login-modal, #login-modal') || document.body;
     const pageText = (modalOrMain ? modalOrMain.innerText : '').toLowerCase();
     
     const hasLoginPrompt = (
@@ -71,7 +82,6 @@ export const formDetectionScript = `
       pageText.includes('login with otp') ||
       pageText.includes('enter your mobile number to login') ||
       pageText.includes('enter mobile number') ||
-      pageText.includes('login / register') ||
       window.location.pathname.toLowerCase().includes('/login') ||
       window.location.pathname.toLowerCase().includes('/signin')
     );

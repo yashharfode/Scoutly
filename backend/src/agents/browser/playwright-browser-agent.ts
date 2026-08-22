@@ -71,21 +71,37 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
     }
   }
 
-    async inspectPage(): Promise<PageInspectionResult> {
+      async inspectPage(): Promise<PageInspectionResult> {
     this.ensureReady();
     console.log("[PlaywrightBrowser] Inspecting page DOM...");
 
     try {
       const activePage = this.getActivePage();
       await activePage.bringToFront().catch(() => {});
+      
+      // Wait for dynamic React content to settle
+      await activePage.waitForTimeout(1500);
+
       let rawResult = await activePage.evaluate(formDetectionScript) as any;
 
       // If landing page has few inputs and an Apply/Register button, click it to open the application modal/page!
       if (rawResult.fields.length <= 2) {
         let clicked = false;
 
-        // Try primary detected selector
-        if (rawResult.applyButtonSelector) {
+        // Check for Unstop specific Quick Apply button
+        const unstopBtn = activePage.locator("#un-register-btn, .register_btn, [class*='register_btn']").first();
+        if (await unstopBtn.count() > 0 && await unstopBtn.isVisible().catch(() => false)) {
+          console.log("[PlaywrightBrowser] Unstop Quick Apply button found. Clicking #un-register-btn...");
+          try {
+            await unstopBtn.click({ force: true, timeout: 5000 });
+            clicked = true;
+          } catch (err: any) {
+            console.log(`[PlaywrightBrowser] Unstop click failed: ${err.message}`);
+          }
+        }
+
+        // Try primary detected selector if not yet clicked
+        if (!clicked && rawResult.applyButtonSelector && rawResult.applyButtonSelector !== '#__next' && rawResult.applyButtonSelector !== '#root') {
           console.log(`[PlaywrightBrowser] Landing page detected. Clicking Apply button: "${rawResult.applyButtonSelector}"...`);
           try {
             await activePage.click(rawResult.applyButtonSelector, { timeout: 4000 });
@@ -95,23 +111,23 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
           }
         }
 
-        // Unstop / Landing page fallback button search
+        // Text-based fallback search for visible CTA buttons
         if (!clicked) {
           try {
-            const fallbackSelector = await activePage.evaluate(() => {
-              const btns = Array.from(document.querySelectorAll('button, a, [role="button"]'));
+            const fallbackClicked = await activePage.evaluate(() => {
+              const btns = Array.from(document.querySelectorAll('button, a, [role="button"], div.register_btn'));
               for (const b of btns) {
                 if (b.closest('header, nav, .navbar, .global-header')) continue;
                 if ((b as HTMLElement).offsetParent === null) continue;
                 const t = ((b as HTMLElement).innerText || "").toLowerCase().trim();
-                if (t === 'apply' || t === 'apply now' || t === 'register' || t === 'register now' || t.includes('apply now') || t.includes('register now')) {
+                if (t === 'apply' || t === 'apply now' || t === 'quick apply' || t === 'register' || t === 'register now' || t.includes('quick apply') || t.includes('apply now') || t.includes('register now')) {
                   (b as HTMLElement).click();
                   return true;
                 }
               }
               return false;
             });
-            if (fallbackSelector) clicked = true;
+            if (fallbackClicked) clicked = true;
           } catch (e2: any) {}
         }
 

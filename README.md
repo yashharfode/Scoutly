@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🦅 Scoutly
-### **Autonomous AI Browser Agent for Student Internship Discovery & Verified Applications**
+### **Autonomous AI Browser Agent for Student Internship Discovery, Hackathons & Verified Applications**
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
@@ -11,15 +11,16 @@
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
 <p align="center">
-  <b>Scoutly</b> is a privacy-first, autonomous AI agent that concurrently scouts <b>11+ live internship platforms</b> (Unstop, Wellfound, Company Portals, AICTE, Greenhouse, Lever, etc.), learns student preferences over time, and uses <b>headed Playwright Chromium</b> to auto-fill applications, attach resumes, synthesize grounded AI responses, and request final approval in an interactive <b>Human-in-the-Loop Cockpit</b>.
+  <b>Scoutly</b> is a privacy-first, autonomous AI agent that concurrently scouts <b>11+ live student platforms</b> (Unstop, Wellfound, Direct Portals, AICTE, Greenhouse, Lever, etc.), discovers national <b>hackathons & technical bootcamps</b>, learns student preferences over time, and uses <b>headed Playwright Chromium</b> to auto-fill applications, attach resumes, synthesize grounded AI responses, and request final approval in an interactive <b>Human-in-the-Loop Cockpit</b>.
 </p>
 
-[✨ Live Features](#-key-features) •
-[🏗️ Architecture](#️-system-architecture) •
-[🔄 Flowcharts](#-workflow-diagrams) •
+[✨ Key Features](#-key-features) •
+[🏗️ System Architecture](#️-system-architecture) •
+[🔄 Workflows & Flowcharts](#-workflows--flowcharts) •
 [💻 Tech Stack](#-tech-stack) •
 [🚀 Quickstart](#-getting-started) •
-[🎯 Judge Demo Mode](#-judge-demo-mode)
+[🎯 Judge Demo Mode](#-judge-demo-mode) •
+[🛡️ Ethical Principles](#️-ethical--security-principles)
 
 ---
 
@@ -30,102 +31,112 @@
 ### 🔍 1. Multi-Source Discovery Engine (11+ Concurrent Portals)
 - **Concurrently queries 11 public job platforms** in parallel with non-blocking resilience (`Promise.allSettled`).
 - **Live Connected Sources**:
-  - 🌐 **Unstop India** (Live Public Search API)
+  - 🌐 **Unstop India** (Live Public Search API & Quick Apply Feed)
   - 🌐 **Wellfound (AngelList Talent)** (Verified Live Startup Roles & Custom Questions)
   - 🌐 **Direct Company Career Portals** (Palantir, AMD, Figma, Microsoft, TikTok, Jane Street, etc.)
   - 🌐 **AICTE Government Internship Portal**
   - 🌐 **Greenhouse & Lever ATS Boards**
   - 🌐 **Indeed & Foundit India Aggregators**
 - **Smart Normalization & Deduplication**: Cleans titles, normalizes modes (*Remote / Hybrid / Onsite*), parses stipends (*e.g., ₹18,000/mo, 15k-25k, $500*), and deduplicates across platforms using source-authority priority (*Direct ATS > Portals > Aggregators*).
-- **Interactive Multi-Filter Cockpit**: Instant filtering by **Domain/Interest** (*Cybersecurity, AI/ML, Full Stack, DevOps, Data Science*), **Website Source**, **Work Mode**, **Min Stipend**, and **Real-Time In-Page Search**.
+- **Interactive Multi-Filter Cockpit**: Instant filtering by **Domain/Interest** (*Cybersecurity, AI/ML, Full Stack, DevOps, Data Science*), **Website Source**, **Work Mode**, and **Min Stipend**.
+- **⏳ Deadline Sorting & Urgent Countdown Badges**:
+  - Toggle sorting by **Best Match**, **Deadline (Ending Soonest)**, **Highest Stipend**, or **Newest**.
+  - Dynamic visual countdown badges (*e.g. `⏳ 4 days left (Aug 26)`, `⏳ 12 days left (Sep 3)`*).
 
 ---
 
-### 🤖 2. Persistent Playwright Browser Agent
-- **Real Headed Chromium Automation**: Launches real Chromium browser windows right on your desktop.
+### 🎪 2. Student Events, Hackathons & Masterclasses
+- **Beyond Internships Tab**: Dedicated showcase for high-impact student engineering milestones.
+- **💻 National & Global Hackathons**:
+  - **Smart India Hackathon (SIH 2026)** *(Ministry of Education & AICTE — ₹1,00,000 / Problem Statement)*
+  - **ETHIndia 2026** *(Devfolio & Ethereum Foundation — $100,000+ Bounties, Bengaluru)*
+  - **HackMIT 2026** *(MIT Tech Club — Global Student Track)*
+- **🎓 Technical Workshops & Bootcamps**:
+  - **Google Cloud GenAI & Agentic Workflows Workshop** *(GDG — Gemini 1.5 Pro & Vertex AI Credits)*
+  - **Offensive Security & Threat Hunting Bootcamp** *(Nullcon & CyberPeace Foundation)*
+  - **AWS Cloud & Serverless Masterclass** *(AWS User Group India)*
+- **🏆 Competitions & PPO Innovation Tracks**:
+  - **Asian Paints Alchemy 2026** *(Direct PPO Interview Track — ₹5,00,000 Prize Pool)*
+  - **Microsoft Imagine Cup 2026** *(Microsoft Learn — $100,000 Global Award)*
+
+---
+
+### 🤖 3. Universal Playwright Browser Agent
+- **Universal ATS & Platform Compatibility**: Works across **Wellfound, Unstop (`#un-register-btn`), Greenhouse, Lever, Workday, Ashby, SmartRecruiters, Indeed**, and direct company career portals.
+- **Real Headed Chromium Automation**: Launches genuine Chromium browser windows right on your desktop.
 - **Persistent Session Storage (`data/browser-user-data`)**: Saves cookies, local storage, and Google/OTP logins. Log in once on any portal—Scoutly remembers you for all future applications!
 - **Auth Gate & Login Pause**: If an application requires login, Scoutly pauses and displays an interactive banner:  
   `[ 🔐 I've Logged In — Fast Apply 🚀 ]`. Once clicked, it resumes autofill immediately.
 - **Multi-Tab & Popup Tracking**: Listens for newly opened popup windows and redirects, keeping focus on the active form tab.
 - **Real PDF Resume Attachment**: Auto-detects and attaches `Resume/Yash_Harfode_Resume.pdf` to file upload inputs.
+- **Comprehensive HTML Element Support**: Native handling for text inputs, `<textarea>`, `<select>` dropdowns, `input[type="checkbox"]` agreements, and `input[type="radio"]` work authorization toggles.
 
 ---
 
-### 🧠 3. Self-Learning AI Engine
-- **Memory Tracking (`data/agent-memory.json`)**: Automatically tracks user searches, saved opportunities, applications, and dismissals.
-- **Adaptive Match Boosting (+15%)**: Dynamically adjusts match scoring (up to 100%) and highlights personalized match reasons based on the student's tech stack and history.
-- **Grounded AI Answers**: Synthesizes genuine, first-person answers for subjective application questions (*e.g., "Why are you interested in this role?"*) using verified student projects without fabricating skills.
+### 🧠 4. Grounded AI Answer Generator & Semantic Mapping
+- **Profile-Grounded Answers**: Uses OpenRouter / Claude 3.5 Sonnet / Gemini 1.5 Pro to synthesize tailored, honest answers based strictly on the student's verified skills and project experience.
+- **Anti-Hallucination Guardrails**: Prompts are constrained to never invent work experience, fake GPA, or fabricate credentials.
+- **Deterministic Field Mapping**: Prioritizes verified student profile data (*First Name, Last Name, Email, Phone, College, Degree, GitHub, LinkedIn, Skills*) before generating subjective essays.
 
 ---
 
-### 🛡️ 4. Human-in-the-Loop Review Cockpit
-- **Interactive Field Review**: Displays all detected DOM form fields classified into `Safe Match (✓)`, `Review Required (⚠)`, and `Missing Input (❗)`.
-- **Instant Fluid Editing**: Real-time optimistic editing in review textareas with live browser DOM synchronization.
-- **Regenerate AI**: 1-click regeneration of subjective question answers.
-- **Verified Submissions**: Clicks submit only upon explicit user approval, inspects the response page for confirmation receipts, and extracts unique Reference IDs (*e.g., `SCOUTLY-3F58CD`*).
+### 🛡️ 5. Human-in-the-Loop Apply Cockpit
+- **Interactive Review Interface**: Inspect and edit mapped answers in real-time with instant UI updates.
+- **Field-Level AI Regeneration**: Don't like a specific answer? Click `[ 🪄 Regenerate AI ]` for that specific field without re-running the entire application.
+- **100% User Verification**: Scoutly never submits an application without explicit human approval.
+- **Verified Reference ID Extraction**: Post-submission Heuristic scanner extracts Confirmation IDs, Application IDs, and reference numbers for complete audit trails.
+
+---
+
+### 💡 6. Self-Learning Adaptive Memory
+- **Learns User Preferences**: Remembers which skills and roles you apply to most frequently.
+- **Dynamic Re-Ranking**: Automatically boosts match scores and rankings for your preferred technologies in subsequent searches.
 
 ---
 
 ## 🏗️ System Architecture
 
 ```
-                                  ┌────────────────────────────────────────────────────────┐
-                                  │                  SCOUTLY CLIENT (Vite/React)           │
-                                  │  - Multi-Source Filter Cockpit   - Human-in-the-Loop   │
-                                  │  - Judge Demo Showcase           - Profile Management  │
-                                  └───────────────────────────┬────────────────────────────┘
-                                                              │ REST API / JSON
-                                                              ▼
-┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                              SCOUTLY BACKEND (Node.js/Express)                                         │
-├─────────────────────────────────────────┬──────────────────────────────────────────┬───────────────────────────────────┤
-│        DISCOVERY ENGINE                 │          BROWSER AGENT ENGINE            │        SELF-LEARNING MEMORY       │
-│  - 11 Concurrent Adapters               │  - Playwright Persistent Chromium Context│  - Search & Apply Tracking        │
-│  - Unstop, Wellfound, AICTE, ATS feeds  │  - DOM Inspection & Smart Apply Trigger  │  - Adaptive Preference Ranking    │
-│  - Deduplication & Normalization        │  - PDF Resume Multi-Path Attachment      │  - Match Score Weighting (+15%)   │
-│  - Transparent 10-Min Caching           │  - Safe Submit & Reference Verification  │  - Persistent storage in JSON     │
-└─────────────────────────────────────────┴──────────────────────────────────────────┴───────────────────────────────────┘
-                                                              │
-                    ┌─────────────────────────────────────────┴─────────────────────────────────────────┐
-                    ▼                                                                                   ▼
-┌───────────────────────────────────────┐                                           ┌───────────────────────────────────────┐
-│     EXTERNAL PUBLIC JOB SOURCES       │                                           │        REAL HEADED CHROMIUM           │
-│  - Unstop Public Search API           │                                           │  - Persistent Session Cookies         │
-│  - Wellfound Live Startup Listings    │                                           │  - Live Form Autofill & Events        │
-│  - Direct Company Career Feeds        │                                           │  - Real Resume PDF Upload             │
-│  - AICTE Govt Internship Portal       │                                           │  - Human-Supervised Submission        │
-└───────────────────────────────────────┘                                           └───────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────────┐
+│                          REACT 18 FRONTEND                             │
+│  Discover • Matches • Saved Cockpit • Events & Hackathons • Demo Mode  │
+└──────────────────────────────────┬─────────────────────────────────────┘
+                                   │  HTTP REST API / JSON
+                                   ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                        EXPRESS TYPESCRIPT SERVER                       │
+│  Routes: /api/search • /api/events • /api/apply • /api/profile         │
+└──────┬───────────────────────────┬───────────────────────────────┬─────┘
+       │                           │                               │
+       ▼                           ▼                               ▼
+┌──────────────┐         ┌────────────────────┐         ┌────────────────┐
+│  DISCOVERY   │         │   AI SYNTHESIS     │         │   PLAYWRIGHT   │
+│   ENGINE     │         │      ENGINE        │         │ BROWSER AGENT  │
+│ 11+ Sources  │         │ OpenRouter/Claude  │         │ Headed Chrome  │
+│ Deduplication│         │ Guardrails & Memory│         │ Heuristic DOM  │
+└──────────────┘         └────────────────────┘         └────────────────┘
 ```
 
 ---
 
-## 🔄 Workflow Diagrams
+## 🔄 Workflows & Flowcharts
 
 ### 1. Multi-Source Discovery Pipeline
 
 ```mermaid
 flowchart TD
-    UserQuery["User Enters Query / Clicks Career Interest Preset"] --> DiscoveryEngine["Discovery Engine Orchestrator"]
-    
-    DiscoveryEngine --> CheckCache{"Cache Valid in\ndata/discovery-cache.json?"}
-    CheckCache -- "YES (Cache Hit)" --> RankedFeed["Ranked & Deduplicated Results"]
-    
-    CheckCache -- "NO (Cache Miss)" --> ParallelSearch["Query 11 Sources Concurrently (Promise.allSettled)"]
-    
-    ParallelSearch --> S1["Unstop India API"]
-    ParallelSearch --> S2["Wellfound Live Startups"]
-    ParallelSearch --> S3["Company Career Feeds"]
-    ParallelSearch --> S4["AICTE Govt Portal"]
-    ParallelSearch --> S5["Indeed / Foundit / Naukri"]
-    ParallelSearch --> S6["Greenhouse / Lever ATS"]
-    
-    S1 & S2 & S3 & S4 & S5 & S6 --> Normalizer["Normalize (Mode, Stipend, Text, Skills)"]
-    Normalizer --> Deduplicator["Deduplicate by (Company, Title) & Authority"]
-    Deduplicator --> Ranking["Multi-Factor Scoring (Profile Fit + Memory Boost)"]
-    Ranking --> SaveCache["Persist to Cache (TTL 10m)"]
-    SaveCache --> RankedFeed
-    
-    RankedFeed --> FilterCockpit["Interactive Frontend Filter Cockpit\n(Filter by Source, Domain, Mode, Min Stipend)"]
+    A[Student Queries Scoutly] --> B{Discovery Cache Valid?}
+    B -- Yes --> C[⚡ Serve Cached Ranked Results]
+    B -- No --> D[🌐 Concurrently Query 11 Sources]
+    D --> E[Unstop India API]
+    D --> F[Wellfound Startups Feed]
+    D --> G[Direct Company Portals]
+    D --> H[AICTE Govt Portal]
+    D --> I[Greenhouse & Lever ATS]
+    D --> J[Indeed & Foundit Aggregators]
+    E & F & G & H & I & J --> K[🧹 Semantic Normalization & Deduplication]
+    K --> L[🧠 Adaptive Memory Ranking & Scoring]
+    L --> M[🎛️ Interactive Filter & Deadline Sort Cockpit]
 ```
 
 ---
@@ -134,124 +145,98 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    Start["User Clicks 'Apply with Scoutly'"] --> LaunchBrowser["Launch Persistent Chromium (data/browser-user-data)"]
-    LaunchBrowser --> Navigate["Navigate to Internship Application URL"]
-    Navigate --> Inspect["Inspect DOM (form-detector.ts)"]
-    
-    Inspect --> LandingCheck{"Landing Page with\n'Apply' Button?"}
-    LandingCheck -- YES --> ClickApply["Click 'Apply / Register' Button & Wait for Modal"]
-    ClickApply --> InspectAgain["Re-Inspect Modal Form Fields"]
-    LandingCheck -- NO --> InspectAgain
-    
-    InspectAgain --> AuthCheck{"Login Wall or\nCAPTCHA Required?"}
-    AuthCheck -- "Login Wall" --> PauseAuth["Pause & Display Cockpit Banner:\n'🔐 I've Logged In — Fast Apply 🚀'"]
-    PauseAuth --> UserLogin["User Logs In Once in Chromium"]
-    UserLogin --> ResumeAuth["Click 'Fast Apply' & Resume"]
-    
-    AuthCheck -- "No Auth Wall / Logged In" --> MapFields["Semantic Profile Mapping (field-mapper.ts)"]
-    ResumeAuth --> MapFields
-    
-    MapFields --> FillForm["Autofill Inputs & Attach Resume/Yash_Harfode_Resume.pdf"]
-    FillForm --> AISynthesis["Synthesize Grounded AI Answers for Questions"]
-    AISynthesis --> CockpitReview["Human-in-the-Loop Cockpit Review\n(User can edit any text in real-time)"]
-    
-    CockpitReview --> UserApprove["User Clicks 'Approve & Submit Application'"]
-    UserApprove --> SafeSubmit["Click Genuine Submit Button (Exclude Nav/Header)"]
-    SafeSubmit --> Verify["Scan for Confirmation Signals & Reference ID (SCOUTLY-XXXXXX)"]
-    Verify --> Confirmed["🎉 Submission Confirmed & Recorded in Tracker"]
+    A[User clicks 'Apply with Scoutly'] --> B[🚀 Launch Headed Playwright Chromium]
+    B --> C[Inspect Landing Page DOM]
+    C --> D{Is Apply / Register CTA Present?}
+    D -- Yes --> E[Auto-Click CTA / Unstop #un-register-btn]
+    D -- No --> F[Inspect Open Form Directly]
+    E --> G{Is Login Required?}
+    G -- Yes --> H[Pause & Display 'Login in Chromium' Cockpit Banner]
+    H --> I[User Logs in & Clicks 'Fast Apply']
+    I --> J[Re-Inspect Form & Extract Fields]
+    G -- No --> J
+    F --> J
+    J --> K[🗺️ Map Fields to Yash's Profile]
+    K --> L[🤖 Synthesize Tailored AI Answers]
+    L --> M[✍️ Fill Inputs, Dropdowns, Checkboxes & Attach Resume PDF]
+    M --> N[🛡️ Human Review in Apply Cockpit]
+    N --> O[User Reviews / Edits & Clicks 'Approve & Submit']
+    O --> P[Trigger Submit Button]
+    P --> Q[🔍 Post-Submit Verification & Confirmation ID Capture]
+    Q --> R[✅ Mark Verified in Application History]
 ```
 
 ---
 
 ## 💻 Tech Stack
 
-| Layer | Technology | Description |
-|---|---|---|
-| **Frontend UI** | **React 18, TypeScript, Vite, TailwindCSS** | High-performance dashboard with instant local state editing, interactive filter pills, and live telemetry |
-| **Icons & Design** | **Lucide-React, DM Mono, Plus Jakarta Sans** | Modern aesthetic with emerald/forest palette, badges, and responsive layouts |
-| **Backend Engine** | **Node.js, Express, TypeScript (TSX)** | RESTful API server with source adapters, session managers, and profile storage |
-| **Browser Automation**| **Playwright (Chromium Headed)** | Persistent context, native event dispatches, multi-tab listeners, and file upload handlers |
-| **AI Synthesis** | **OpenRouter / OpenAI Compatible API** | Grounded answer generation strictly aligned with student experience and projects |
-| **Persistence** | **Local JSON Filesystem** | `student-profile.json`, `agent-memory.json`, `discovery-cache.json`, `browser-user-data/` |
-| **Testing** | **TSX Automated Test Suites** | 18/18 discovery engine tests & 8-checkpoint verified Playwright E2E browser tests |
+| Layer | Technologies |
+|---|---|
+| **Frontend UI** | React 18, Vite, TypeScript, TailwindCSS, Lucide React |
+| **Backend Engine** | Node.js, Express, TypeScript, Zod Schema Validation |
+| **Browser Automation** | Playwright (Headed Chromium with Persistent User Profile) |
+| **Discovery Sources** | Unstop, Wellfound, AICTE, Greenhouse, Lever, Indeed, Foundit, Direct Portals |
+| **AI Synthesis** | OpenRouter (Claude 3.5 Sonnet / Gemini 1.5 Pro / GPT-4o) |
+| **Persistence** | Local JSON File Storage (`data/profile.json`, `data/saved.json`, `data/memory.json`) |
+| **Automated Testing** | Node Test Runner, TSX, E2E Checkpoint Verification Suites |
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- **Node.js 20+** installed
-- **npm** package manager
+- **Node.js** v18 or higher installed.
+- **Google Chrome / Chromium** (installed automatically via Playwright).
 
-### 1. Clone & Install Dependencies
+### 1. Clone & Install
 ```bash
 git clone https://github.com/yashharfode/Scoutly.git
 cd Scoutly
-
-# Install root, backend, and frontend packages
-npm install
-npm install --prefix backend
-npm install --prefix frontend
+npm run install:all
 ```
 
-### 2. Configure Environment Variables
-Copy `.env.example` to `.env`:
+### 2. Configure Environment (Optional AI Key)
 ```bash
 cp .env.example .env
 ```
-*(Optional: Add your OpenRouter API key to `.env` for customized AI answer synthesis).*
+*(Add `OPENROUTER_API_KEY=your_key` for live AI answer synthesis, or use built-in heuristic generation).*
 
-### 3. Launch Development Servers
-Run both backend and frontend concurrently:
+### 3. Run Development Servers
 ```bash
-# Terminal 1: Backend API (Port 3000)
-npm run dev --prefix backend
+# Terminal 1: Start Backend API (Port 3000)
+npm run start --prefix backend
 
-# Terminal 2: Frontend Client (Port 5173)
+# Terminal 2: Start Frontend UI (Port 5173)
 npm run dev --prefix frontend
 ```
-Open **[http://localhost:5173](http://localhost:5173)** in your browser.
+Open **[http://localhost:5173](http://localhost:5173)** in your browser!
 
 ---
 
 ## 🎯 Judge Demo Mode
 
-Scoutly includes a **1-Click Judge Demo Mode** specifically built for hackathon presentations:
+Scoutly includes a dedicated **Judge Demo Mode** pre-configured for live presentations and evaluations:
 
-```bash
-# In the Web App:
-1. Click the glowing "🎯 Judge Demo Mode" button in the Topbar or "⚡ 1-Click Fast Judge Demo" on Discover.
-2. Select any demo internship (e.g. RxGPT Health, Gravity AI, or SecureStack Sandbox).
-3. Click "Launch Demo in Real Chromium".
-4. Watch real Chromium open on your desktop, auto-detect 9 fields, attach Yash's resume PDF, fill the form, synthesize AI answers, and submit with verified Reference ID!
-```
-
----
-
-## 🧪 Automated Test Verification
-
-Run the built-in automated test suites:
-
-```bash
-# Run Discovery Engine tests (18 test cases)
-cd backend && ./node_modules/.bin/tsx src/tests/discovery.test.ts
-
-# Run Verified Playwright End-to-End browser test (8 checkpoints)
-cd backend && ./node_modules/.bin/tsx src/tests/verified-e2e.test.ts
-```
+1. Click **`🎯 Judge Demo Mode`** in the top navigation bar or sidebar.
+2. Explore 3 organized sections:
+   - **🌐 Section 1: Verified Wellfound Roles** (*RentOk, Swift, TaskLabs, Gravity AI, Teal India, Alchemyst AI, LedgersCFO, Vitraga, ReferralWorld, Cravv, Mowka, RxGPT*).
+   - **🇮🇳 Section 2: Verified Unstop India Roles** (*Cruvels, Vertawo Labs, PrepLinc, Marvedge, Tringflow, SpiralInfra, Rivyou, My Indian Things, Asian Paints*).
+   - **🛡️ Section 3: Guaranteed Offline Playwright Sandbox** (*SecureStack Cybersecurity Analyst*).
+3. Click **"Launch in Real Chromium"** on any card to watch Scoutly open real Chromium, auto-fill the application, attach your resume, and prompt for human approval!
 
 ---
 
-## 🔒 Privacy, Safety & Ethical Principles
+## 🛡️ Ethical & Security Principles
 
-1. **Local-First & Transparent**: All student profile data and browser session credentials stay stored locally on the user's machine.
-2. **Never Submit Without Human Approval**: Scoutly autofills and prepares fields, but the final submission requires explicit student confirmation.
-3. **Anti-Hallucination AI**: AI answers are strictly grounded in verified student profile details; fake credentials, degrees, or certifications are never fabricated.
-4. **Public Scraping Integrity**: Discovers opportunities only from publicly accessible feeds without bypassing paywalls or unauthorized private endpoints.
+- **No Blind Submissions**: Scoutly enforces strict human approval before any final application submit button is clicked.
+- **Privacy-First Architecture**: All student profile data, resumes, and cookies remain 100% local on your machine (`data/`).
+- **Grounded Responses**: AI answer generation uses constrained prompting to eliminate hallucinations and adhere strictly to real credentials.
+- **Rate-Limit Conscious**: Public discovery sources use polite concurrency, user-agent identification, and responsive caching.
 
 ---
 
 <div align="center">
-  <b>Built for Students by Yash Harfode & Harsh Sahu</b><br>
-  <i>Empowering students to discover, match, and apply to dream internships autonomously.</i>
+
+Built with ❤️ by **[Yash Harfode](https://github.com/yashharfode/)** • *Scoutly AI Agent*
+
 </div>
