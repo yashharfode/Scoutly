@@ -3,7 +3,6 @@ import fs from "node:fs";
 import { 
   DiscoveryQuery, 
   NormalizedInternship, 
-  SourceResult, 
   OpportunityMode 
 } from "./source-adapter.js";
 import { SourceRegistry } from "./source-registry.js";
@@ -126,20 +125,25 @@ export class DiscoveryEngine {
     profile: StudentProfile, 
     forceRefresh = false
   ): Promise<DiscoveryResponse> {
+    console.log("\n==================================================");
+    console.log(`🔍 [Scoutly Discovery] Searching for: "${rawQuery}"`);
+    console.log("==================================================");
+
     const telemetry: string[] = [];
     telemetry.push(`discovery_started: "${rawQuery}"`);
 
     const query = this.parseQuery(rawQuery);
     telemetry.push(`query_parsed: keywords=[${query.keywords.join(", ")}], mode=${query.mode || "any"}, minStipend=${query.minimumStipend || "none"}`);
 
-    // Check Local Cache (TTL 15 mins)
+    // Check Local Cache (TTL 10 mins)
     const cacheKey = `${query.keywords.join("_")}_${query.mode || "all"}_${query.minimumStipend || 0}`;
     if (!forceRefresh) {
       try {
         if (fs.existsSync(cacheFilePath)) {
           const cacheData = JSON.parse(fs.readFileSync(cacheFilePath, "utf8"));
           const entry = cacheData[cacheKey] as CacheEntry;
-          if (entry && (Date.now() - entry.timestamp) < 15 * 60 * 1000) {
+          if (entry && (Date.now() - entry.timestamp) < 10 * 60 * 1000) {
+            console.log(`⚡ [Cache Hit] Returning ${entry.results.length} cached listings for "${rawQuery}"`);
             telemetry.push("cache_hit: returning freshly cached discovery feed");
             const rankedCached = entry.results.map(item => rankInternship(item, profile, query));
             return {
@@ -169,10 +173,15 @@ export class DiscoveryEngine {
 
     // Step 1: Parallel Source Search via Promise.allSettled()
     const adapters = SourceRegistry.getEnabledAdapters();
-    telemetry.push(`sources_queried: launching ${adapters.length} adapters concurrently with 12s timeout`);
+    console.log(`🌐 [Discovery Engine] Concurrently querying ${adapters.length} public sources...`);
+    adapters.forEach(a => console.log(`   ➡️ Querying: ${a.name} (${a.category})`));
 
     const settled = await Promise.allSettled(
-      adapters.map(adapter => adapter.search(query, 12000))
+      adapters.map(async (adapter) => {
+        const res = await adapter.search(query, 12000);
+        console.log(`   ✓ [${res.sourceName}] status: ${res.status.toUpperCase()} | found: ${res.count} listings | ${res.durationMs}ms`);
+        return res;
+      })
     );
 
     let rawListings: NormalizedInternship[] = [];
@@ -195,6 +204,7 @@ export class DiscoveryEngine {
         });
         rawListings.push(...res.results);
       } else {
+        console.log(`   ❌ [${adapter.name}] failed: ${outcome.reason?.message}`);
         SourceHealthTracker.recordResult(adapter.id, adapter.name, "network_error", 12000, outcome.reason?.message);
         sourceStatuses.push({
           id: adapter.id,
@@ -257,6 +267,7 @@ export class DiscoveryEngine {
     const successfulCount = sourceStatuses.filter(s => s.status === "success").length;
     const finalMessage = `Scoutly searched ${sourceStatuses.length} public sources and combined ${ranked.length} relevant internships into your personalized feed.`;
 
+    console.log(`✅ [Discovery Complete] ${ranked.length} total verified internships returned from ${successfulCount}/${sourceStatuses.length} sources.\n`);
     telemetry.push("discovery_completed");
 
     return {

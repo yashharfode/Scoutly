@@ -1,6 +1,6 @@
 {
   "cybersecurity 000_all_10000": {
-    "timestamp": 1787382971506,
+    "timestamp": 1787383141775,
     "results": [
       {
         "id": "aicte-cyber-defense",
@@ -36,7 +36,7 @@
           "cybersecurity"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:10.400Z",
+        "discoveredAt": "2026-08-22T07:18:57.770Z",
         "matchScore": 81,
         "matchReasons": [
           "✓ Ethical Hacking matches profile",
@@ -83,7 +83,7 @@
           "security"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:10.400Z",
+        "discoveredAt": "2026-08-22T07:18:57.771Z",
         "matchScore": 77,
         "matchReasons": [
           "✓ Node.js matches profile",
@@ -129,7 +129,7 @@
           "network-security"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:10.400Z",
+        "discoveredAt": "2026-08-22T07:18:57.770Z",
         "matchScore": 70,
         "matchReasons": [
           "✓ Python matches profile",
@@ -175,7 +175,7 @@
           "cloud"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:10.400Z",
+        "discoveredAt": "2026-08-22T07:18:57.770Z",
         "matchScore": 64,
         "matchReasons": [
           "✓ Python matches profile",
@@ -224,7 +224,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:10.760Z",
+        "discoveredAt": "2026-08-22T07:19:00.478Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ Aligns with target career domain",
@@ -266,7 +266,7 @@
           "analyst"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:10.400Z",
+        "discoveredAt": "2026-08-22T07:18:57.770Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ Network Traffic Analysis matches profile",
@@ -313,7 +313,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:10.742Z",
+        "discoveredAt": "2026-08-22T07:19:01.771Z",
         "matchScore": 41,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -359,7 +359,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:10.743Z",
+        "discoveredAt": "2026-08-22T07:19:01.771Z",
         "matchScore": 41,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -405,7 +405,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:10.743Z",
+        "discoveredAt": "2026-08-22T07:19:01.771Z",
         "matchScore": 41,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -451,7 +451,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:10.743Z",
+        "discoveredAt": "2026-08-22T07:19:01.771Z",
         "matchScore": 41,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -497,7 +497,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:10.743Z",
+        "discoveredAt": "2026-08-22T07:19:01.771Z",
         "matchScore": 41,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -543,7 +543,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:10.743Z",
+        "discoveredAt": "2026-08-22T07:19:01.772Z",
         "matchScore": 41,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -589,7 +589,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:11.146Z",
+        "discoveredAt": "2026-08-22T07:19:00.546Z",
         "matchScore": 41,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -636,7 +636,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:11.146Z",
+        "discoveredAt": "2026-08-22T07:19:00.546Z",
         "matchScore": 41,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -683,7 +683,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:11.146Z",
+        "discoveredAt": "2026-08-22T07:19:00.546Z",
         "matchScore": 41,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -730,7 +730,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:11.146Z",
+        "discoveredAt": "2026-08-22T07:19:00.546Z",
         "matchScore": 41,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -777,7 +777,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:11.146Z",
+        "discoveredAt": "2026-08-22T07:19:00.546Z",
         "matchScore": 41,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -824,7 +824,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:11.146Z",
+        "discoveredAt": "2026-08-22T07:19:00.546Z",
         "matchScore": 41,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -871,7 +871,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:11.146Z",
+        "discoveredAt": "2026-08-22T07:19:00.546Z",
         "matchScore": 41,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -918,7 +918,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:11.146Z",
+        "discoveredAt": "2026-08-22T07:19:00.546Z",
         "matchScore": 41,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -965,7 +965,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:11.146Z",
+        "discoveredAt": "2026-08-22T07:19:00.547Z",
         "matchScore": 41,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -1012,7 +1012,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:11.147Z",
+        "discoveredAt": "2026-08-22T07:19:00.547Z",
         "matchScore": 41,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -1059,7 +1059,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:11.147Z",
+        "discoveredAt": "2026-08-22T07:19:00.547Z",
         "matchScore": 41,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -1106,7 +1106,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:11.147Z",
+        "discoveredAt": "2026-08-22T07:19:00.547Z",
         "matchScore": 41,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -1153,7 +1153,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:10.760Z",
+        "discoveredAt": "2026-08-22T07:19:00.480Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Aligns with target career domain",
@@ -1198,7 +1198,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:10.763Z",
+        "discoveredAt": "2026-08-22T07:19:00.483Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Stipend meets preference"
@@ -1242,7 +1242,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T07:16:10.764Z",
+        "discoveredAt": "2026-08-22T07:19:00.484Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Aligns with target career domain",
@@ -1256,35 +1256,35 @@
         "name": "Internshala",
         "status": "no_results",
         "count": 0,
-        "durationMs": 1127
+        "durationMs": 3432
       },
       {
         "id": "company_careers",
         "name": "Direct Company Career Portals",
         "status": "success",
         "count": 10,
-        "durationMs": 346
+        "durationMs": 4017
       },
       {
         "id": "unstop",
         "name": "Unstop India",
         "status": "success",
         "count": 12,
-        "durationMs": 748
+        "durationMs": 2791
       },
       {
         "id": "wellfound",
         "name": "Wellfound & Tech Startups",
         "status": "success",
         "count": 6,
-        "durationMs": 365
+        "durationMs": 2727
       },
       {
         "id": "aicte",
         "name": "AICTE Internship Portal",
         "status": "success",
         "count": 1,
-        "durationMs": 0
+        "durationMs": 13
       },
       {
         "id": "indeed",
@@ -1320,7 +1320,7 @@
         "name": "Greenhouse ATS Boards",
         "status": "success",
         "count": 1,
-        "durationMs": 0
+        "durationMs": 1
       },
       {
         "id": "lever",
