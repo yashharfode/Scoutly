@@ -376,9 +376,13 @@ export function App() {
         {page === "Demo Mode" && (
           <DemoView
             onLaunchDemo={(opp) => {
-              const host = window.location.hostname || "localhost";
-              const targetUrl = `http://${host}:3000/mock-application/cybersecurity-intern`;
-              handleApply({ ...opp, applicationUrl: targetUrl }, targetUrl);
+              if (opp.applicationUrl.startsWith("http") && !opp.applicationUrl.includes("localhost")) {
+                handleApply(opp, opp.applicationUrl);
+              } else {
+                const host = window.location.hostname || "localhost";
+                const targetUrl = `http://${host}:3000/mock-application/cybersecurity-intern`;
+                handleApply({ ...opp, applicationUrl: targetUrl }, targetUrl);
+              }
             }}
           />
         )}
@@ -1150,6 +1154,35 @@ export default App;
 
 
 const DEMO_INTERNSHIPS: Opportunity[] = [
+  {
+    id: "wellfound-rxgpt-ai",
+    title: "AI / Software Engineering Intern",
+    organization: "RxGPT Health (Live Wellfound Role)",
+    type: "internship",
+    description: "Build generative AI healthcare features, integrate LLM clinical workflows, and build high-performance React & Python pipelines.",
+    location: "Remote (Global / India)",
+    mode: "remote",
+    stipend: 35000,
+    currency: "INR",
+    skills: ["Python", "AI/ML", "React", "Node.js", "Healthcare AI"],
+    eligibility: "Students and graduates with hands-on Python & React AI projects",
+    deadline: "2026-10-31",
+    applicationUrl: "https://wellfound.com/l/2Cz4wG",
+    source: "🌐 Real Live Wellfound Opportunity",
+    sourceUrl: "https://wellfound.com/l/2Cz4wG",
+    extractedAt: new Date().toISOString(),
+    tags: ["wellfound", "live-target", "rxgpt", "ai"],
+    matchScore: 97,
+    rawData: {
+      matchReasons: [
+        "✓ Real Live Wellfound Listing (RxGPT)",
+        "✓ Python & AI/ML Skills Match",
+        "✓ Remote Work Setup",
+        "✓ Live Headed Chromium Automation"
+      ],
+      stipendDisplay: "₹35,000 /month (Competitive)"
+    }
+  },
   {
     id: "demo-cyber-analyst",
     title: "Cybersecurity Analyst Intern",

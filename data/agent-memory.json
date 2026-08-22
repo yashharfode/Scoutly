@@ -5,7 +5,23 @@
     "linux": 4,
     "react": 4,
     "network traffic analysis": 3,
-    "penetration testing": 3
+    "penetration testing": 3,
+    ".net": 3,
+    "android": 3,
+    "apache": 3,
+    "aws": 3,
+    "azure": 3,
+    "c#": 3,
+    "c++": 3,
+    "data science": 3,
+    "video": 3,
+    "open source": 3,
+    "ai/ml": 3,
+    "figma": 3,
+    "project management": 3,
+    "editing": 3,
+    "iot": 3,
+    "testing": 3
   },
   "preferredModes": {
     "remote": 5,
@@ -15,14 +31,14 @@
     "india": 3,
     "remote": 5
   },
-  "averageTargetStipend": 21000,
+  "averageTargetStipend": 86500,
   "totalApplications": 1,
-  "totalSaved": 1,
+  "totalSaved": 3,
   "totalDismissed": 0,
   "insights": [
     "Learned Interest: Frequently scouts CYBERSECURITY, PYTHON, LINUX opportunities.",
     "Preferred Setup: REMOTE roles receive an autonomous +15% match boost.",
-    "Calibrated Target Stipend: Approx ₹21,000/month based on your activity."
+    "Calibrated Target Stipend: Approx ₹86,500/month based on your activity."
   ],
-  "lastUpdated": "2026-08-22T07:25:54.465Z"
+  "lastUpdated": "2026-08-22T07:41:45.806Z"
 }
