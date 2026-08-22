@@ -1,0 +1,708 @@
+{
+  "cybersecurity 000_all_10000": {
+    "timestamp": 1787382562343,
+    "results": [
+      {
+        "id": "wellfound-cloud-soc",
+        "title": "Cloud Security Operations Intern",
+        "company": "CloudGuard India",
+        "description": "Monitor AWS/GCP cloud configurations, build automated IAM policy checks, and review container security.",
+        "location": "Bengaluru / Remote",
+        "mode": "remote",
+        "stipend": {
+          "min": 22000,
+          "max": 22000,
+          "currency": "INR",
+          "display": "₹22,000/month"
+        },
+        "duration": "6 Months",
+        "skills": [
+          "Linux",
+          "Python",
+          "AWS",
+          "Docker",
+          "IAM"
+        ],
+        "experience": "Students",
+        "eligibility": "Computer Science or Information Security students",
+        "deadline": "2026-09-30",
+        "postedDate": "1 day ago",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/location/India",
+        "applicationUrl": "https://wellfound.com/jobs",
+        "organizationUrl": "https://cloudguard.io",
+        "tags": [
+          "cloud",
+          "cybersecurity",
+          "remote"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T07:09:15.589Z",
+        "matchScore": 93,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ IAM matches profile",
+          "✓ Aligns with target career domain",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "wellfound-sec-agent",
+        "title": "AI Security & Automation Intern",
+        "company": "DefendX AI",
+        "description": "Build autonomous security agents that triage web vulnerabilities, analyze auth logs, and test API defenses.",
+        "location": "Remote (India)",
+        "mode": "remote",
+        "stipend": {
+          "min": 25000,
+          "max": 25000,
+          "currency": "INR",
+          "display": "₹25,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "Python",
+          "Cybersecurity",
+          "React",
+          "Node.js",
+          "AI/ML"
+        ],
+        "experience": "Students & New Grads",
+        "eligibility": "Experience with Python scripting and modern web frameworks",
+        "deadline": "2026-10-15",
+        "postedDate": "2 days ago",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/location/India",
+        "applicationUrl": "https://wellfound.com/jobs",
+        "organizationUrl": "https://defendx.ai",
+        "tags": [
+          "wellfound",
+          "startup",
+          "ai-security"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T07:09:15.589Z",
+        "matchScore": 83,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ Node.js matches profile",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "aicte-cyber-defense",
+        "title": "National Cyber Security Trainee",
+        "company": "CERT-In / AICTE Collaborative Initiative",
+        "description": "Government-backed student internship program focusing on critical infrastructure defense and incident analysis.",
+        "location": "India (Virtual / Remote)",
+        "mode": "remote",
+        "stipend": {
+          "min": 10000,
+          "max": 10000,
+          "currency": "INR",
+          "display": "₹10,000/month"
+        },
+        "duration": "2 Months",
+        "skills": [
+          "Cybersecurity",
+          "Network Security",
+          "Linux",
+          "Ethical Hacking"
+        ],
+        "experience": "College Students",
+        "eligibility": "Enrolled in AICTE-approved engineering institutions",
+        "deadline": "2026-10-20",
+        "postedDate": "Recent",
+        "source": "AICTE Portal",
+        "sourceUrl": "https://internship.aicte-india.org/",
+        "applicationUrl": "https://internship.aicte-india.org/",
+        "organizationUrl": "https://aicte-india.org",
+        "tags": [
+          "aicte",
+          "government",
+          "cybersecurity"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T07:09:15.589Z",
+        "matchScore": 81,
+        "matchReasons": [
+          "✓ Ethical Hacking matches profile",
+          "✓ Aligns with target career domain",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "lever-spotify-data",
+        "title": "Security & Trust Engineering Intern",
+        "company": "Postman API Platform (via Lever)",
+        "description": "Build automated security linters, monitor API vulnerability signatures, and contribute to internal security libraries.",
+        "location": "Bengaluru / Remote",
+        "mode": "remote",
+        "stipend": {
+          "min": 30000,
+          "max": 30000,
+          "currency": "INR",
+          "display": "₹30,000/month"
+        },
+        "duration": "6 Months",
+        "skills": [
+          "Node.js",
+          "Python",
+          "Cybersecurity",
+          "Linux",
+          "Docker"
+        ],
+        "experience": "Students",
+        "eligibility": "Engineering students with API & backend development experience",
+        "deadline": "2026-10-15",
+        "postedDate": "Recent",
+        "source": "Lever ATS",
+        "sourceUrl": "https://jobs.lever.co/postman",
+        "applicationUrl": "https://jobs.lever.co/postman/security-intern",
+        "organizationUrl": "https://postman.com",
+        "tags": [
+          "lever",
+          "api",
+          "security"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T07:09:15.589Z",
+        "matchScore": 77,
+        "matchReasons": [
+          "✓ Node.js matches profile",
+          "✓ Python matches profile",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "foundit-net-sec",
+        "title": "Network Security Trainee",
+        "company": "Spectra Net Technologies",
+        "description": "Assisting senior engineers with firewall audits, secure routing, and endpoint protection testing.",
+        "location": "Pune, Maharashtra",
+        "mode": "hybrid",
+        "stipend": {
+          "min": 14000,
+          "max": 14000,
+          "currency": "INR",
+          "display": "₹14,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "Network Security",
+          "Linux",
+          "Python",
+          "IAM"
+        ],
+        "experience": "Students / Freshers",
+        "eligibility": "Engineering students",
+        "deadline": "2026-10-12",
+        "postedDate": "3 days ago",
+        "source": "Foundit",
+        "sourceUrl": "https://www.foundit.in/srp/results?query=cybersecurity%20000%20intern",
+        "applicationUrl": "https://www.foundit.in/job/network-security-trainee",
+        "organizationUrl": null,
+        "tags": [
+          "foundit",
+          "network-security"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T07:09:15.589Z",
+        "matchScore": 70,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ IAM matches profile",
+          "✓ hybrid mode preference",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python"
+        ]
+      },
+      {
+        "id": "naukri-appsec-intern",
+        "title": "Application Security Testing Intern",
+        "company": "Zscaler Cloud Security",
+        "description": "Participate in DAST/SAST code reviews, API security vulnerability scanning, and vulnerability validation.",
+        "location": "Bengaluru (Hybrid)",
+        "mode": "hybrid",
+        "stipend": {
+          "min": 24000,
+          "max": 24000,
+          "currency": "INR",
+          "display": "₹24,000/month"
+        },
+        "duration": "6 Months",
+        "skills": [
+          "Cybersecurity",
+          "Python",
+          "React",
+          "Linux",
+          "Penetration Testing"
+        ],
+        "experience": "Students",
+        "eligibility": "B.Tech/M.Tech Computer Science / Cybersecurity",
+        "deadline": "2026-10-01",
+        "postedDate": "1 day ago",
+        "source": "Naukri",
+        "sourceUrl": "https://www.naukri.com/cybersecurity%20000-intern-jobs-in-india",
+        "applicationUrl": "https://www.naukri.com/job-listings-appsec-intern",
+        "organizationUrl": "https://zscaler.com",
+        "tags": [
+          "naukri",
+          "appsec",
+          "cloud"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T07:09:15.589Z",
+        "matchScore": 64,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ hybrid mode preference",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: High affinity for Python"
+        ]
+      },
+      {
+        "id": "direct-microsoft-sec",
+        "title": "Security Software Engineering Intern",
+        "company": "Microsoft University Careers",
+        "description": "Work on cloud defense in Azure Security Center, threat detection modeling, and modern cryptography implementations.",
+        "location": "Hyderabad / Bengaluru / Remote",
+        "mode": "hybrid",
+        "stipend": {
+          "min": 80000,
+          "max": 80000,
+          "currency": "INR",
+          "display": "₹80,000/month"
+        },
+        "duration": "2-3 Months",
+        "skills": [
+          "C++",
+          "Python",
+          "Cybersecurity",
+          "Azure",
+          "Linux"
+        ],
+        "experience": "B.Tech/M.Tech Students",
+        "eligibility": "Pre-final year engineering students",
+        "deadline": "2026-10-30",
+        "postedDate": "Recent",
+        "source": "Company Careers Portal",
+        "sourceUrl": "https://careers.microsoft.com/students",
+        "applicationUrl": "https://careers.microsoft.com/students/us/en/job/security-intern",
+        "organizationUrl": "https://microsoft.com",
+        "tags": [
+          "microsoft",
+          "direct",
+          "cloud-security"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T07:09:15.589Z",
+        "matchScore": 57,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ hybrid mode preference",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for Cybersecurity"
+        ]
+      },
+      {
+        "id": "unstop-1742772",
+        "title": "Amazon and Flipkart Product Listing Internship",
+        "company": "Beggin For A Bite",
+        "description": "Internship at Beggin For A Bite posted on Unstop.",
+        "location": "Remote (India / Global)",
+        "mode": "remote",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "2-4 Months",
+        "skills": [
+          "cybersecurity 000",
+          "Cybersecurity"
+        ],
+        "experience": "Students / Recent Graduates",
+        "eligibility": "All college students eligible",
+        "deadline": "2026-09-04",
+        "postedDate": "Recent",
+        "source": "Unstop",
+        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20000",
+        "applicationUrl": "https://unstop.com/o/https://unstop.com/internships/amazon-and-flipkart-product-listing-internship-beggin-for-a-bite-1742772",
+        "organizationUrl": null,
+        "tags": [
+          "unstop",
+          "internship",
+          "tech"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T07:09:22.339Z",
+        "matchScore": 49,
+        "matchReasons": [
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "unstop-1742762",
+        "title": "Marketing Internship",
+        "company": "Axivon Technologies",
+        "description": "Internship at Axivon Technologies posted on Unstop.",
+        "location": "Remote (India / Global)",
+        "mode": "remote",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "2-4 Months",
+        "skills": [
+          "cybersecurity 000",
+          "Cybersecurity"
+        ],
+        "experience": "Students / Recent Graduates",
+        "eligibility": "All college students eligible",
+        "deadline": "2026-09-04",
+        "postedDate": "Recent",
+        "source": "Unstop",
+        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20000",
+        "applicationUrl": "https://unstop.com/o/https://unstop.com/internships/marketing-internship-axivon-technologies-1742762",
+        "organizationUrl": null,
+        "tags": [
+          "unstop",
+          "internship",
+          "tech"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T07:09:22.340Z",
+        "matchScore": 49,
+        "matchReasons": [
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "unstop-1742753",
+        "title": "Product Manager Internship",
+        "company": "GigsForMe",
+        "description": "Internship at GigsForMe posted on Unstop.",
+        "location": "Remote (India / Global)",
+        "mode": "remote",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "2-4 Months",
+        "skills": [
+          "cybersecurity 000",
+          "Cybersecurity"
+        ],
+        "experience": "Students / Recent Graduates",
+        "eligibility": "All college students eligible",
+        "deadline": "2026-08-29",
+        "postedDate": "Recent",
+        "source": "Unstop",
+        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20000",
+        "applicationUrl": "https://unstop.com/o/https://unstop.com/internships/product-manager-internship-gigsforme-1742753",
+        "organizationUrl": null,
+        "tags": [
+          "unstop",
+          "internship",
+          "tech"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T07:09:22.340Z",
+        "matchScore": 49,
+        "matchReasons": [
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "unstop-1742760",
+        "title": "Sales Internship",
+        "company": "URS Group of Companies",
+        "description": "Internship at URS Group of Companies posted on Unstop.",
+        "location": "Remote (India / Global)",
+        "mode": "remote",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "2-4 Months",
+        "skills": [
+          "cybersecurity 000",
+          "Cybersecurity"
+        ],
+        "experience": "Students / Recent Graduates",
+        "eligibility": "All college students eligible",
+        "deadline": "2026-09-04",
+        "postedDate": "Recent",
+        "source": "Unstop",
+        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20000",
+        "applicationUrl": "https://unstop.com/o/https://unstop.com/internships/sales-internship-urs-group-of-companies-1742760",
+        "organizationUrl": null,
+        "tags": [
+          "unstop",
+          "internship",
+          "tech"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T07:09:22.340Z",
+        "matchScore": 49,
+        "matchReasons": [
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "unstop-1742739",
+        "title": "Data Analytics Internship",
+        "company": "Camerinfolks Pvt. Ltd",
+        "description": "Internship at Camerinfolks Pvt. Ltd posted on Unstop.",
+        "location": "Remote (India / Global)",
+        "mode": "remote",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "2-4 Months",
+        "skills": [
+          "cybersecurity 000",
+          "Cybersecurity"
+        ],
+        "experience": "Students / Recent Graduates",
+        "eligibility": "All college students eligible",
+        "deadline": "2026-08-22",
+        "postedDate": "Recent",
+        "source": "Unstop",
+        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20000",
+        "applicationUrl": "https://unstop.com/o/https://unstop.com/internships/data-analytics-internship-camerinfolks-pvt-ltd-1742739",
+        "organizationUrl": null,
+        "tags": [
+          "unstop",
+          "internship",
+          "tech"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T07:09:22.340Z",
+        "matchScore": 49,
+        "matchReasons": [
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "unstop-1742731",
+        "title": "Backend Developer Internship",
+        "company": "Axivon Technologies",
+        "description": "Internship at Axivon Technologies posted on Unstop.",
+        "location": "Remote (India / Global)",
+        "mode": "remote",
+        "stipend": {
+          "min": 15000,
+          "max": 15000,
+          "currency": "INR",
+          "display": "₹15,000/month"
+        },
+        "duration": "2-4 Months",
+        "skills": [
+          "cybersecurity 000",
+          "Cybersecurity"
+        ],
+        "experience": "Students / Recent Graduates",
+        "eligibility": "All college students eligible",
+        "deadline": "2026-09-04",
+        "postedDate": "Recent",
+        "source": "Unstop",
+        "sourceUrl": "https://unstop.com/internships?searchTerm=cybersecurity%20000",
+        "applicationUrl": "https://unstop.com/o/https://unstop.com/internships/backend-developer-internship-axivon-technologies-1742731",
+        "organizationUrl": null,
+        "tags": [
+          "unstop",
+          "internship",
+          "tech"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T07:09:22.341Z",
+        "matchScore": 49,
+        "matchReasons": [
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "indeed-soc-tier1",
+        "title": "SOC Analyst Intern",
+        "company": "SecureLink CyberDefense",
+        "description": "Review real-time SIEM alerts, conduct initial incident triage, and document remediation workflows.",
+        "location": "Bengaluru, Karnataka",
+        "mode": "onsite",
+        "stipend": {
+          "min": 15000,
+          "max": 20000,
+          "currency": "INR",
+          "display": "₹15,000 - ₹20,000/month"
+        },
+        "duration": "6 Months",
+        "skills": [
+          "Cybersecurity",
+          "SIEM",
+          "Linux",
+          "Network Traffic Analysis"
+        ],
+        "experience": "Students / Freshers",
+        "eligibility": "Bachelor's degree in progress (CS/IT)",
+        "deadline": "2026-09-30",
+        "postedDate": "2 days ago",
+        "source": "Indeed India",
+        "sourceUrl": "https://in.indeed.com/jobs?q=cybersecurity%20000%20intern&l=India",
+        "applicationUrl": "https://in.indeed.com/viewjob?jk=securelink01",
+        "organizationUrl": null,
+        "tags": [
+          "indeed",
+          "soc",
+          "analyst"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T07:09:15.589Z",
+        "matchScore": 45,
+        "matchReasons": [
+          "✓ Network Traffic Analysis matches profile",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: High affinity for Network Traffic Analysis"
+        ]
+      }
+    ],
+    "sourcesQueried": [
+      {
+        "id": "internshala",
+        "name": "Internshala",
+        "status": "no_results",
+        "count": 0,
+        "durationMs": 6092
+      },
+      {
+        "id": "unstop",
+        "name": "Unstop",
+        "status": "success",
+        "count": 6,
+        "durationMs": 6753
+      },
+      {
+        "id": "wellfound",
+        "name": "Wellfound",
+        "status": "success",
+        "count": 2,
+        "durationMs": 0
+      },
+      {
+        "id": "aicte",
+        "name": "AICTE Internship Portal",
+        "status": "success",
+        "count": 1,
+        "durationMs": 0
+      },
+      {
+        "id": "indeed",
+        "name": "Indeed India",
+        "status": "success",
+        "count": 1,
+        "durationMs": 0
+      },
+      {
+        "id": "foundit",
+        "name": "Foundit (Monster India)",
+        "status": "success",
+        "count": 1,
+        "durationMs": 0
+      },
+      {
+        "id": "naukri",
+        "name": "Naukri India",
+        "status": "success",
+        "count": 1,
+        "durationMs": 0
+      },
+      {
+        "id": "linkedin",
+        "name": "LinkedIn Public Jobs",
+        "status": "login_required",
+        "count": 0,
+        "durationMs": 0,
+        "error": "LinkedIn requires user authentication for deeper search filtering."
+      },
+      {
+        "id": "greenhouse",
+        "name": "Greenhouse ATS Boards",
+        "status": "success",
+        "count": 1,
+        "durationMs": 0
+      },
+      {
+        "id": "lever",
+        "name": "Lever ATS Boards",
+        "status": "success",
+        "count": 1,
+        "durationMs": 0
+      },
+      {
+        "id": "company_careers",
+        "name": "Direct Company Career Portals",
+        "status": "success",
+        "count": 1,
+        "durationMs": 0
+      }
+    ]
+  }
+}

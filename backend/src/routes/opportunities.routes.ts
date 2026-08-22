@@ -2,14 +2,22 @@ import { randomUUID } from "node:crypto";
 import path from "node:path";
 import { Router } from "express";
 import { z } from "zod";
-import type { Application, Opportunity, StudentProfile } from "../models/domain.js";
+import type { Application, Opportunity } from "../models/domain.js";
 import { profileStorage } from "../storage/profile.storage.js";
 import { JsonStorage } from "../storage/json-storage.js";
 import { AgentMemoryManager } from "../agents/learning/agent-memory.js";
+import { DiscoveryEngine } from "../discovery/discovery-engine.js";
+import { SourceRegistry } from "../discovery/source-registry.js";
+import { SourceHealthTracker } from "../discovery/source-status.js";
 
 const savedStorage = new JsonStorage<Opportunity[]>(path.resolve(process.cwd(), "..", "data", "saved-opportunities.json"), []);
 export const applicationsStorage = new JsonStorage<Application[]>(path.resolve(process.cwd(), "..", "data", "applications.json"), []);
-const searchSchema = z.object({ query: z.string().trim().min(2) });
+
+const searchSchema = z.object({
+  query: z.string().trim().min(2),
+  forceRefresh: z.boolean().optional()
+});
+
 const opportunitySchema = z.object({
   id: z.string(),
   title: z.string(),
@@ -32,152 +40,52 @@ const opportunitySchema = z.object({
   matchScore: z.number().optional()
 });
 
-// Curated verified opportunities (Local Playwright Demo & Real Portal Listings)
-const curatedOpportunities: Opportunity[] = [
-  { 
-    id: "mock-cyber-analyst", 
-    title: "Cybersecurity Analyst Intern", 
-    organization: "SecureStack (Local Application Portal)", 
-    type: "internship", 
-    description: "Support threat triage, security monitoring, and practical vulnerability analysis.", 
-    location: "India", 
-    mode: "remote", 
-    stipend: 18000, 
-    currency: "INR", 
-    skills: ["Python", "Network Security", "Linux", "IAM"], 
-    eligibility: "Students pursuing computer science or cybersecurity.", 
-    deadline: "2026-09-15", 
-    applicationUrl: "http://localhost:3000/mock-application/cybersecurity-intern", 
-    source: "Verified Local Portal", 
-    sourceUrl: "http://localhost:3000", 
-    extractedAt: new Date().toISOString(), 
-    tags: ["cybersecurity", "networking", "python"] 
-  },
-  { 
-    id: "wellfound-ai-security", 
-    title: "AI / Security Engineering Intern", 
-    organization: "Wellfound Verified Role", 
-    type: "internship", 
-    description: "Build LLM-powered agent features, evaluate prompt injection risks, and build defensive pipelines.", 
-    location: "India (Remote)", 
-    mode: "remote", 
-    stipend: 25000, 
-    currency: "INR", 
-    skills: ["Python", "AI/ML", "React", "Node.js", "LLM Security"], 
-    eligibility: "B.Tech students with Python and AI experience.", 
-    deadline: "2026-09-30", 
-    applicationUrl: "https://wellfound.com/jobs", 
-    source: "Wellfound Live", 
-    sourceUrl: "https://wellfound.com/location/India", 
-    extractedAt: new Date().toISOString(), 
-    tags: ["ai", "security", "remote"] 
-  },
-  { 
-    id: "mock-soc-analyst", 
-    title: "SOC Threat Intelligence Intern", 
-    organization: "BlueTeam India", 
-    type: "internship", 
-    description: "Analyze suspicious network traffic, investigate incident response alerts, and document security findings.", 
-    location: "Bengaluru, India", 
-    mode: "hybrid", 
-    stipend: 15000, 
-    currency: "INR", 
-    skills: ["Network Traffic Analysis", "Linux", "Incident Response", "Python"], 
-    eligibility: "Students interested in defensive security and SOC operations.", 
-    deadline: "2026-09-20", 
-    applicationUrl: "http://localhost:3000/mock-application/cybersecurity-intern", 
-    source: "Defensive Security Portal", 
-    sourceUrl: "http://localhost:3000", 
-    extractedAt: new Date().toISOString(), 
-    tags: ["cybersecurity", "soc", "linux"] 
-  },
-  { 
-    id: "mock-fullstack-dev", 
-    title: "Full Stack AI Developer Intern", 
-    organization: "CampusFlow Labs", 
-    type: "internship", 
-    description: "Build student-facing autonomous agent workflows with React, TypeScript, and Node.js.", 
-    location: "India (Remote)", 
-    mode: "remote", 
-    stipend: 20000, 
-    currency: "INR", 
-    skills: ["React", "Node.js", "TypeScript", "Python"], 
-    eligibility: "Students with hands-on web development projects.", 
-    deadline: "2026-10-05", 
-    applicationUrl: "http://localhost:3000/mock-application/cybersecurity-intern", 
-    source: "CampusFlow Portal", 
-    sourceUrl: "http://localhost:3000", 
-    extractedAt: new Date().toISOString(), 
-    tags: ["react", "typescript", "node.js"] 
-  }
-];
-
-// Fetch live opportunities from real remote jobs API with timeout/fallback
-async function fetchLiveWebOpportunities(query: string): Promise<Opportunity[]> {
-  try {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 3500);
-
-    const res = await fetch(`https://remotive.com/api/remote-jobs?category=software-dev&limit=6`, {
-      signal: controller.signal
-    });
-    clearTimeout(timeout);
-
-    if (res.ok) {
-      const data = await res.json() as any;
-      if (Array.isArray(data?.jobs)) {
-        return data.jobs.slice(0, 4).map((j: any): Opportunity => ({
-          id: `live-${j.id}`,
-          title: j.title || "Software Engineering Intern",
-          organization: j.company_name || "Tech Company",
-          type: "internship",
-          description: j.description?.replace(/<[^>]+>/g, "").slice(0, 200) || "",
-          location: j.candidate_required_location || "Remote",
-          mode: "remote",
-          stipend: 22000,
-          currency: "INR",
-          skills: (j.tags || ["Python", "JavaScript", "React"]).slice(0, 4),
-          deadline: "2026-10-15",
-          applicationUrl: j.url || "https://wellfound.com/jobs",
-          source: "Live Web Feed",
-          sourceUrl: j.url || "",
-          extractedAt: new Date().toISOString(),
-          tags: ["live-feed", ...(j.tags || [])]
-        }));
-      }
-    }
-  } catch (e) {
-    // Network offline or timeout -> fall back cleanly to curated
-  }
-  return [];
-}
-
 export const opportunitiesRouter = Router();
 
-// Search & Adaptive Match Ranking
+// Multi-Source AI Discovery Endpoint
 opportunitiesRouter.post("/search", async (req, res, next) => {
   try {
-    const { query } = searchSchema.parse(req.body);
+    const { query, forceRefresh } = searchSchema.parse(req.body);
     const profile = await profileStorage.get();
 
-    // 1. Fetch live opportunities + combine with curated
-    const liveListings = await fetchLiveWebOpportunities(query);
-    const allOpportunities = [...curatedOpportunities, ...liveListings];
+    const discovery = await DiscoveryEngine.discover(query, profile, !!forceRefresh);
 
-    // 2. Score with Self-Learning Agent Memory
-    const results = allOpportunities
-      .map(o => AgentMemoryManager.scoreWithLearning(o, profile, query))
-      .sort((a, b) => (b.matchScore ?? 0) - (a.matchScore ?? 0));
+    // Transform normalized results for frontend cards & Apply Agent compatibility
+    const results: Opportunity[] = discovery.results.map(item => ({
+      id: item.id,
+      title: item.title,
+      organization: item.company,
+      type: "internship",
+      description: item.description,
+      location: item.location,
+      mode: item.mode === "onsite" ? "in_person" : item.mode === "unknown" ? undefined : item.mode,
+      stipend: item.stipend.min || undefined,
+      currency: item.stipend.currency || "INR",
+      skills: item.skills,
+      eligibility: item.eligibility || undefined,
+      deadline: item.deadline || undefined,
+      applicationUrl: item.applicationUrl,
+      source: item.source,
+      sourceUrl: item.sourceUrl,
+      extractedAt: item.discoveredAt,
+      tags: item.tags,
+      matchScore: item.matchScore,
+      rawData: {
+        matchReasons: item.matchReasons,
+        warningReasons: item.warningReasons,
+        stipendDisplay: item.stipend.display
+      }
+    }));
 
     res.json({
-      status: "success",
-      aiStatus: "self_learning_active",
+      status: discovery.status,
+      aiStatus: "multi_source_active",
+      message: discovery.message,
+      sourceSummary: discovery.sourceSummary,
+      stats: discovery.stats,
+      cached: discovery.cached,
       memoryInsights: AgentMemoryManager.getMemory().insights,
-      stats: {
-        raw: allOpportunities.length,
-        duplicatesRemoved: 0,
-        matched: results.length
-      },
+      telemetry: discovery.telemetry,
       results
     });
   } catch (error) {
@@ -185,7 +93,25 @@ opportunitiesRouter.post("/search", async (req, res, next) => {
   }
 });
 
-// Agent Self-Learning Memory Endpoints
+// Discovery Sources & Health
+opportunitiesRouter.get("/discovery/sources", async (_req, res) => {
+  const adapters = SourceRegistry.getAllAdapters();
+  res.json({
+    sources: adapters.map(a => ({
+      id: a.id,
+      name: a.name,
+      category: a.category,
+      enabled: a.enabled,
+      priority: a.priority
+    }))
+  });
+});
+
+opportunitiesRouter.get("/discovery/health", async (_req, res) => {
+  res.json({ health: SourceHealthTracker.getAllHealth() });
+});
+
+// Self-Learning Agent Memory
 opportunitiesRouter.get("/agent/memory", async (_req, res) => {
   res.json(AgentMemoryManager.getMemory());
 });
@@ -219,7 +145,6 @@ opportunitiesRouter.post("/saved", async (req, res, next) => {
     const saved = await savedStorage.get();
     if (!saved.some(o => o.id === item.id)) {
       saved.push(item);
-      // Reinforce Agent Self-Learning
       AgentMemoryManager.recordAction("save", item);
     }
     await savedStorage.save(saved);

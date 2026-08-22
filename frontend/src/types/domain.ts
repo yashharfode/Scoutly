@@ -77,3 +77,38 @@ export interface ApplicationRecord {
   appliedAt?: string;
   answers: Record<string, string>;
 }
+
+export interface SourceHealthItem {
+  id: string;
+  name: string;
+  status: "success" | "no_results" | "timeout" | "blocked" | "login_required" | "captcha_required" | "rate_limited" | "network_error" | "disabled";
+  count: number;
+  durationMs: number;
+  error?: string | null;
+}
+
+export interface SourceSummary {
+  totalSources: number;
+  successfulSources: number;
+  failedSources: number;
+  sources: SourceHealthItem[];
+}
+
+export interface DiscoverySearchResponse {
+  status: string;
+  aiStatus: string;
+  message?: string;
+  sourceSummary?: SourceSummary;
+  stats: {
+    raw?: number;
+    totalRaw?: number;
+    validCount?: number;
+    duplicatesRemoved: number;
+    matched?: number;
+    finalCount?: number;
+  };
+  cached?: boolean;
+  memoryInsights?: string[];
+  telemetry?: string[];
+  results: Opportunity[];
+}

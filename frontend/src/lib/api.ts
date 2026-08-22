@@ -1,4 +1,4 @@
-import type { ApplicationRecord, Opportunity, SearchResponse, StudentProfile } from "../types/domain";
+import type { ApplicationRecord, Opportunity, DiscoverySearchResponse, StudentProfile } from "../types/domain";
 
 const fallbackProfile: StudentProfile = {
   name: "Yash Harfode",
@@ -46,14 +46,14 @@ export async function saveProfile(profile: StudentProfile): Promise<StudentProfi
   return profile;
 }
 
-export async function searchOpportunities(query: string): Promise<SearchResponse> {
+export async function searchOpportunities(query: string, forceRefresh = false): Promise<DiscoverySearchResponse> {
   try {
     const response = await fetch("/api/search", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ query })
+      body: JSON.stringify({ query, forceRefresh })
     });
-    if (response.ok) return response.json() as Promise<SearchResponse>;
+    if (response.ok) return response.json() as Promise<DiscoverySearchResponse>;
   } catch {}
   return {
     status: "success",
