@@ -1,4 +1,4 @@
-export type Page = "Discover" | "Matches" | "Saved" | "Applications" | "My Profile" | "Demo Mode" | "Settings";
+export type Page = "Discover" | "Matches" | "Saved" | "Events & Workshops" | "Applications" | "My Profile" | "Demo Mode" | "Settings";
 export interface StudentProfile { name: string; college: string; degree: string; branch: string; year: string; location: string; skills: string[]; projects: { name: string; description: string; technologies: string[] }[]; experience: { organization: string; title: string; description: string; period: string }[]; preferredDomains: string[]; preferredLocations: string[]; preferredMode: string[]; minimumStipend: number; resumePath: string; github: string; linkedin: string; portfolio: string; email: string; phone: string; }
 export interface Opportunity { id: string; title: string; organization: string; type: "internship"; description?: string; location?: string; mode?: string; stipend?: number; currency?: string; skills: string[]; eligibility?: string; deadline?: string; applicationUrl: string; source: string; sourceUrl: string; extractedAt: string; tags: string[]; matchScore?: number; rawData?: { matchReasons?: string[]; stipendDisplay?: string; warningReasons?: string[] } | Record<string, any>; }
 export interface SearchResponse { status: string; aiStatus: string; stats: { raw: number; duplicatesRemoved: number; matched: number }; results: Opportunity[]; }
@@ -111,4 +111,20 @@ export interface DiscoverySearchResponse {
   memoryInsights?: string[];
   telemetry?: string[];
   results: Opportunity[];
+}
+
+export interface StudentEvent {
+  id: string;
+  title: string;
+  organizer: string;
+  type: "hackathon" | "workshop" | "competition" | "conference";
+  description: string;
+  date: string;
+  mode: "online" | "in-person" | "hybrid";
+  location: string;
+  registrationDeadline: string;
+  rewards: string;
+  tags: string[];
+  registrationUrl: string;
+  featured?: boolean;
 }

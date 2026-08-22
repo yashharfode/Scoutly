@@ -13,7 +13,7 @@ export const formDetectionScript = `
 
     // Check Unstop specific register/apply button IDs and classes first
     const unstopApplyBtn = document.querySelector('#un-register-btn, .register_btn, .apply_btn, [class*="register_btn"], [class*="apply_btn"]');
-    if (unstopApplyBtn && (unstopApplyBtn as HTMLElement).offsetParent !== null) {
+    if (unstopApplyBtn && unstopApplyBtn.offsetParent !== null) {
       if (unstopApplyBtn.id) applyButtonSelector = '#' + CSS.escape(unstopApplyBtn.id);
       else applyButtonSelector = '.register_btn';
     }
@@ -24,9 +24,9 @@ export const formDetectionScript = `
       
       for (const b of candidates) {
         if (isHeaderOrNav(b)) continue;
-        if ((b as HTMLElement).offsetParent === null) continue;
+        if (b.offsetParent === null) continue;
 
-        const txt = ((b as HTMLElement).innerText || (b as HTMLInputElement).value || b.getAttribute('aria-label') || '').toLowerCase().trim();
+        const txt = (b.innerText || b.value || b.getAttribute('aria-label') || '').toLowerCase().trim();
         const href = (b.getAttribute('href') || '').toLowerCase();
         const classes = (b.className || '').toString().toLowerCase();
 

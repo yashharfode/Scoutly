@@ -216,3 +216,19 @@ export async function getAgentMemory(): Promise<any> {
   } catch {}
   return null;
 }
+
+export async function getStudentEvents(type?: string, mode?: string, search?: string): Promise<any[]> {
+  try {
+    const params = new URLSearchParams();
+    if (type && type !== "all") params.append("type", type);
+    if (mode && mode !== "all") params.append("mode", mode);
+    if (search) params.append("search", search);
+
+    const res = await fetch(`/api/events?${params.toString()}`);
+    if (res.ok) {
+      const data = await res.json();
+      return data.events || [];
+    }
+  } catch {}
+  return [];
+}

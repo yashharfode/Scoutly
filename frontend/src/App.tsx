@@ -24,7 +24,7 @@ import {
 import type {
   Page,
   StudentProfile,
-  Opportunity,
+  Opportunity, StudentEvent,
   ApplicationSession,
   ApplicationRecord,
   DiscoverySearchResponse
@@ -35,7 +35,7 @@ import {
   uploadResumeFile,
   searchOpportunities,
   getSavedOpportunities,
-  saveOpportunity,
+  saveOpportunity, getStudentEvents,
   removeSavedOpportunity,
   getApplications,
   startApplicationSession,
@@ -238,6 +238,9 @@ export function App() {
           <button className={`nav-link ${page === "Saved" ? "active" : ""}`} onClick={() => setPage("Saved")}>
             <Bookmark size={18} /> Saved ({saved.length})
           </button>
+          <button className={`nav-link ${page === "Events & Workshops" ? "active" : ""}`} onClick={() => setPage("Events & Workshops")}>
+            <Calendar size={18} /> Events & Hackathons
+          </button>
           <button className={`nav-link ${page === "Applications" ? "active" : ""}`} onClick={() => setPage("Applications")}>
             <FileCheck2 size={18} /> Apply Cockpit {activeSession ? "⚡" : ""}
           </button>
@@ -358,6 +361,14 @@ export function App() {
               setSaved(await getSavedOpportunities());
             }}
             onApply={handleApply}
+          />
+        )}
+
+        {page === "Events & Workshops" && (
+          <EventsView
+            onLaunchEvent={(eventUrl) => {
+              window.open(eventUrl, "_blank");
+            }}
           />
         )}
 
@@ -1044,6 +1055,243 @@ function MatchesView({
     </section>
   );
 }
+
+
+function EventsView({ onLaunchEvent }: { onLaunchEvent: (url: string, title: string) => void }) {
+  const [events, setEvents] = useState<StudentEvent[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [selectedType, setSelectedType] = useState<string>("all");
+  const [selectedMode, setSelectedMode] = useState<string>("all");
+  const [search, setSearch] = useState<string>("");
+
+  const loadEvents = async () => {
+    setLoading(true);
+    try {
+      const data = await getStudentEvents(selectedType, selectedMode, search);
+      setEvents(data);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    loadEvents();
+  }, [selectedType, selectedMode, search]);
+
+  const eventTypeIcons: Record<string, { label: string; icon: string; bg: string; color: string }> = {
+    hackathon: { label: "💻 Hackathon", icon: "💻", bg: "#eff6ff", color: "#1e40af" },
+    workshop: { label: "🎓 Workshop & Bootcamp", icon: "🎓", bg: "#faf5ff", color: "#6b21a8" },
+    competition: { label: "🏆 National Competition", icon: "🏆", bg: "#fefce8", color: "#854d0e" },
+    conference: { label: "🌐 Tech Summit", icon: "🌐", bg: "#f0fdf4", color: "#166534" }
+  };
+
+  return (
+    <section>
+      {/* Top Banner */}
+      <div style={{ background: "linear-gradient(135deg, #142118 0%, #1e3b2a 100%)", color: "#f8fbf3", padding: "26px 32px", borderRadius: 16, marginBottom: 26, border: "1px solid #3d5a49" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
+          <span style={{ background: "#22c55e", color: "#142118", padding: "4px 10px", borderRadius: 20, fontSize: 12, fontWeight: 800 }}>
+            🎪 BEYOND INTERNSHIPS
+          </span>
+          <span style={{ fontSize: 13, color: "#a8baa9" }}>Hackathons, Masterclasses & Competitions</span>
+        </div>
+        <h2 style={{ margin: "4px 0 8px", fontSize: 24, color: "#d9f99d" }}>
+          Student Events, Hackathons & Technical Workshops
+        </h2>
+        <p style={{ margin: 0, fontSize: 14, color: "#c3d1c3", lineHeight: 1.6, maxWidth: 840 }}>
+          Supercharge your career profile with national hackathons (<strong>SIH 2026, ETHIndia, HackMIT</strong>), Google & AWS technical workshops, and direct PPO innovation competitions.
+        </p>
+      </div>
+
+      {/* Filter Cockpit */}
+      <div style={{ background: "white", border: "1px solid #e3e6e0", borderRadius: 14, padding: "18px 22px", marginBottom: 24, boxShadow: "0 2px 8px rgba(0,0,0,0.02)" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12, marginBottom: 14 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+            <SlidersHorizontal size={16} color="#166534" />
+            <strong style={{ fontSize: 14, color: "#142118" }}>Filter Student Events ({events.length})</strong>
+          </div>
+          <input
+            type="text"
+            placeholder="Search events (e.g. Gemini, Cyber, AWS)..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            style={{ padding: "6px 12px", border: "1px solid #cbd5e1", borderRadius: 8, fontSize: 13, minWidth: 240 }}
+          />
+        </div>
+
+        {/* Type & Mode filter pills */}
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 12, alignItems: "center" }}>
+          <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+            {[
+              { id: "all", label: "All Categories" },
+              { id: "hackathon", label: "💻 Hackathons" },
+              { id: "workshop", label: "🎓 Workshops & Bootcamps" },
+              { id: "competition", label: "🏆 Competitions & PPO" }
+            ].map((t) => (
+              <button
+                key={t.id}
+                type="button"
+                onClick={() => setSelectedType(t.id)}
+                style={{
+                  padding: "5px 12px",
+                  borderRadius: 20,
+                  fontSize: 12,
+                  fontWeight: selectedType === t.id ? 800 : 500,
+                  border: selectedType === t.id ? "2px solid #166534" : "1px solid #d1d5db",
+                  background: selectedType === t.id ? "#dcfce7" : "#ffffff",
+                  color: selectedType === t.id ? "#14532d" : "#4b5563",
+                  cursor: "pointer"
+                }}
+              >
+                {t.label}
+              </button>
+            ))}
+          </div>
+
+          <div style={{ display: "flex", gap: 6, marginLeft: "auto" }}>
+            {[
+              { id: "all", label: "All Modes" },
+              { id: "online", label: "🌐 Online" },
+              { id: "in-person", label: "📍 In-Person" },
+              { id: "hybrid", label: "⚡ Hybrid" }
+            ].map((m) => (
+              <button
+                key={m.id}
+                type="button"
+                onClick={() => setSelectedMode(m.id)}
+                style={{
+                  padding: "4px 10px",
+                  borderRadius: 6,
+                  fontSize: 12,
+                  border: selectedMode === m.id ? "1px solid #166534" : "1px solid #d1d5db",
+                  background: selectedMode === m.id ? "#166534" : "#ffffff",
+                  color: selectedMode === m.id ? "#ffffff" : "#4b5563",
+                  cursor: "pointer"
+                }}
+              >
+                {m.label}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Events Grid */}
+      {loading ? (
+        <div style={{ textAlign: "center", padding: "40px 0", color: "#64748b" }}>
+          <RefreshCw size={24} className="spin" style={{ margin: "0 auto 10px" }} />
+          <p>Discovering upcoming student events & hackathons...</p>
+        </div>
+      ) : events.length === 0 ? (
+        <div className="empty-state" style={{ background: "white", padding: 40, borderRadius: 14, border: "1px dashed #cbd5e1", textAlign: "center" }}>
+          <Calendar size={36} color="#94a3b8" style={{ margin: "0 auto 10px" }} />
+          <h3 style={{ margin: "0 0 6px" }}>No events found for this filter</h3>
+          <p style={{ color: "#64748b", margin: 0 }}>Try resetting your category or search query.</p>
+        </div>
+      ) : (
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(360px, 1fr))", gap: 22 }}>
+          {events.map((e) => {
+            const meta = eventTypeIcons[e.type] || { label: e.type, bg: "#f3f4f6", color: "#374151" };
+            return (
+              <article
+                key={e.id}
+                style={{
+                  background: "white",
+                  border: "1px solid #e3e6e0",
+                  borderRadius: 16,
+                  padding: "24px 26px",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 12,
+                  boxShadow: "0 2px 8px rgba(0,0,0,0.02)",
+                  position: "relative"
+                }}
+              >
+                {/* Top Badge Row */}
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <span style={{ background: meta.bg, color: meta.color, padding: "4px 10px", borderRadius: 20, fontSize: 11, fontWeight: 800 }}>
+                    {meta.label}
+                  </span>
+                  {e.featured && (
+                    <span style={{ background: "#fef3c7", color: "#92400e", padding: "3px 8px", borderRadius: 6, fontSize: 11, fontWeight: 800 }}>
+                      🔥 Featured Event
+                    </span>
+                  )}
+                </div>
+
+                {/* Title & Organizer */}
+                <div>
+                  <h3 style={{ margin: "4px 0 2px", fontSize: 18, color: "#142118", fontWeight: 800, letterSpacing: "-0.02em" }}>
+                    {e.title}
+                  </h3>
+                  <div style={{ color: "#475569", fontWeight: 700, fontSize: 13 }}>
+                    {e.organizer}
+                  </div>
+                </div>
+
+                {/* Description */}
+                <p style={{ margin: 0, fontSize: 13, color: "#4f5e53", lineHeight: 1.5 }}>
+                  {e.description}
+                </p>
+
+                {/* Key Event Details */}
+                <div style={{ background: "#f8faf7", padding: "10px 14px", borderRadius: 10, display: "grid", gap: 6, fontSize: 12, color: "#1e3b2a" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                    <Calendar size={13} color="#166534" />
+                    <strong>Event Date:</strong> <span>{e.date}</span>
+                  </div>
+                  <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                    <MapPin size={13} color="#166534" />
+                    <strong>Location:</strong> <span style={{ textTransform: "capitalize" }}>{e.location} ({e.mode})</span>
+                  </div>
+                  <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                    <Sparkles size={13} color="#ca8a04" />
+                    <strong>Rewards:</strong> <span style={{ color: "#15803d", fontWeight: 700 }}>{e.rewards}</span>
+                  </div>
+                </div>
+
+                {/* Tag Chips */}
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                  {e.tags.map((t) => (
+                    <span key={t} style={{ background: "#f1f5f9", color: "#334155", padding: "3px 8px", borderRadius: 6, fontSize: 11, fontWeight: 600 }}>
+                      {t}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Action Buttons */}
+                <div style={{ marginTop: "auto", paddingTop: 12, borderTop: "1px solid #f1f5f9" }}>
+                  <button
+                    type="button"
+                    onClick={() => onLaunchEvent(e.registrationUrl, e.title)}
+                    style={{
+                      width: "100%",
+                      background: "#143a22",
+                      color: "#f8fbf3",
+                      border: "none",
+                      padding: "11px 16px",
+                      borderRadius: 8,
+                      fontSize: 13,
+                      fontWeight: 700,
+                      cursor: "pointer",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: 6
+                    }}
+                  >
+                    🚀 Register on Official Site <ArrowRight size={14} />
+                  </button>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      )}
+    </section>
+  );
+}
+
 
 function SavedView({
   saved,

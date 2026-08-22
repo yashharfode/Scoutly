@@ -1,6 +1,6 @@
 {
   "cybersecurity and_all_0": {
-    "timestamp": 1787391132545,
+    "timestamp": 1787391795207,
     "results": [
       {
         "id": "wellfound-troopr-ai",
@@ -40,7 +40,7 @@
           "bengaluru"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.364Z",
+        "discoveredAt": "2026-08-22T09:43:11.092Z",
         "matchScore": 98,
         "matchReasons": [
           "✓ React matches profile",
@@ -95,7 +95,7 @@
           "ppo"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.364Z",
+        "discoveredAt": "2026-08-22T09:43:11.092Z",
         "matchScore": 98,
         "matchReasons": [
           "✓ Python matches profile",
@@ -152,7 +152,7 @@
           "high-stipend"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.364Z",
+        "discoveredAt": "2026-08-22T09:43:11.092Z",
         "matchScore": 98,
         "matchReasons": [
           "✓ Python matches profile",
@@ -205,7 +205,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.363Z",
+        "discoveredAt": "2026-08-22T09:43:11.091Z",
         "matchScore": 97,
         "matchReasons": [
           "✓ Python matches profile",
@@ -257,7 +257,7 @@
           "python"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.364Z",
+        "discoveredAt": "2026-08-22T09:43:11.092Z",
         "matchScore": 96,
         "matchReasons": [
           "✓ Python matches profile",
@@ -308,7 +308,7 @@
           "design-tech"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.365Z",
+        "discoveredAt": "2026-08-22T09:43:11.093Z",
         "matchScore": 91,
         "matchReasons": [
           "✓ Python matches profile",
@@ -361,7 +361,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.364Z",
+        "discoveredAt": "2026-08-22T09:43:11.092Z",
         "matchScore": 86,
         "matchReasons": [
           "✓ React matches profile",
@@ -409,7 +409,7 @@
           "cybersecurity"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.365Z",
+        "discoveredAt": "2026-08-22T09:43:11.092Z",
         "matchScore": 85,
         "matchReasons": [
           "✓ Ethical Hacking matches profile",
@@ -457,7 +457,7 @@
           "security"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.365Z",
+        "discoveredAt": "2026-08-22T09:43:11.093Z",
         "matchScore": 85,
         "matchReasons": [
           "✓ Node.js matches profile",
@@ -513,7 +513,7 @@
           "remote-ai"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.364Z",
+        "discoveredAt": "2026-08-22T09:43:11.092Z",
         "matchScore": 81,
         "matchReasons": [
           "✓ React matches profile",
@@ -562,7 +562,7 @@
           "cloud"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.365Z",
+        "discoveredAt": "2026-08-22T09:43:11.093Z",
         "matchScore": 81,
         "matchReasons": [
           "✓ Python matches profile",
@@ -610,7 +610,7 @@
           "network-security"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.365Z",
+        "discoveredAt": "2026-08-22T09:43:11.093Z",
         "matchScore": 79,
         "matchReasons": [
           "✓ Python matches profile",
@@ -661,7 +661,7 @@
           "postgresql"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.364Z",
+        "discoveredAt": "2026-08-22T09:43:11.092Z",
         "matchScore": 78,
         "matchReasons": [
           "✓ Node.js matches profile",
@@ -718,7 +718,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.364Z",
+        "discoveredAt": "2026-08-22T09:43:11.092Z",
         "matchScore": 77,
         "matchReasons": [
           "✓ React matches profile",
@@ -769,7 +769,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.364Z",
+        "discoveredAt": "2026-08-22T09:43:11.092Z",
         "matchScore": 77,
         "matchReasons": [
           "✓ Python matches profile",
@@ -816,7 +816,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:10.484Z",
+        "discoveredAt": "2026-08-22T09:43:14.095Z",
         "matchScore": 77,
         "matchReasons": [
           "✓ Python matches profile",
@@ -865,7 +865,7 @@
           "pune"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.364Z",
+        "discoveredAt": "2026-08-22T09:43:11.092Z",
         "matchScore": 74,
         "matchReasons": [
           "✓ Python matches profile",
@@ -912,7 +912,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:10.484Z",
+        "discoveredAt": "2026-08-22T09:43:14.095Z",
         "matchScore": 72,
         "matchReasons": [
           "✓ Python matches profile",
@@ -957,7 +957,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:10.486Z",
+        "discoveredAt": "2026-08-22T09:43:14.096Z",
         "matchScore": 72,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1002,7 +1002,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:10.488Z",
+        "discoveredAt": "2026-08-22T09:43:14.098Z",
         "matchScore": 72,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1049,7 +1049,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.363Z",
+        "discoveredAt": "2026-08-22T09:43:11.091Z",
         "matchScore": 65,
         "matchReasons": [
           "✓ Aligns with target career domain",
@@ -1098,7 +1098,7 @@
           "agentic"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.364Z",
+        "discoveredAt": "2026-08-22T09:43:11.092Z",
         "matchScore": 65,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1150,7 +1150,7 @@
           "bengaluru"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.364Z",
+        "discoveredAt": "2026-08-22T09:43:11.092Z",
         "matchScore": 65,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1198,7 +1198,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.363Z",
+        "discoveredAt": "2026-08-22T09:43:11.091Z",
         "matchScore": 61,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1245,7 +1245,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.363Z",
+        "discoveredAt": "2026-08-22T09:43:11.091Z",
         "matchScore": 61,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1290,7 +1290,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:10.486Z",
+        "discoveredAt": "2026-08-22T09:43:14.096Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1334,7 +1334,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:10.487Z",
+        "discoveredAt": "2026-08-22T09:43:14.097Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1378,7 +1378,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:10.487Z",
+        "discoveredAt": "2026-08-22T09:43:14.097Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1422,7 +1422,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:10.487Z",
+        "discoveredAt": "2026-08-22T09:43:14.097Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1466,7 +1466,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:10.487Z",
+        "discoveredAt": "2026-08-22T09:43:14.098Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1510,7 +1510,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:10.487Z",
+        "discoveredAt": "2026-08-22T09:43:14.098Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1554,7 +1554,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:10.488Z",
+        "discoveredAt": "2026-08-22T09:43:14.098Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1598,7 +1598,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:10.488Z",
+        "discoveredAt": "2026-08-22T09:43:14.099Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1649,7 +1649,7 @@
           "databases"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.364Z",
+        "discoveredAt": "2026-08-22T09:43:11.092Z",
         "matchScore": 49,
         "matchReasons": [
           "✓ Node.js matches profile",
@@ -1694,7 +1694,7 @@
           "analyst"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.365Z",
+        "discoveredAt": "2026-08-22T09:43:11.093Z",
         "matchScore": 49,
         "matchReasons": [
           "✓ Network Traffic Analysis matches profile",
@@ -1738,7 +1738,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:10.484Z",
+        "discoveredAt": "2026-08-22T09:43:14.095Z",
         "matchScore": 47,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1781,7 +1781,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:10.485Z",
+        "discoveredAt": "2026-08-22T09:43:14.096Z",
         "matchScore": 47,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1824,7 +1824,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:10.487Z",
+        "discoveredAt": "2026-08-22T09:43:14.098Z",
         "matchScore": 47,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1867,7 +1867,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:10.488Z",
+        "discoveredAt": "2026-08-22T09:43:14.098Z",
         "matchScore": 47,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1910,7 +1910,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:10.488Z",
+        "discoveredAt": "2026-08-22T09:43:14.099Z",
         "matchScore": 47,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1957,7 +1957,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:12.535Z",
+        "discoveredAt": "2026-08-22T09:43:13.329Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2004,7 +2004,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:12.535Z",
+        "discoveredAt": "2026-08-22T09:43:13.330Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2051,7 +2051,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:12.535Z",
+        "discoveredAt": "2026-08-22T09:43:13.332Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2098,7 +2098,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:12.536Z",
+        "discoveredAt": "2026-08-22T09:43:13.332Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2145,7 +2145,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:12.536Z",
+        "discoveredAt": "2026-08-22T09:43:13.333Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2192,7 +2192,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:12.537Z",
+        "discoveredAt": "2026-08-22T09:43:13.333Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2237,7 +2237,7 @@
           "high-stipend"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.363Z",
+        "discoveredAt": "2026-08-22T09:43:11.091Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ Aligns with target career domain",
@@ -2280,7 +2280,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.363Z",
+        "discoveredAt": "2026-08-22T09:43:11.091Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ Remote opportunity",
@@ -2324,7 +2324,7 @@
           "ppo"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.363Z",
+        "discoveredAt": "2026-08-22T09:43:11.091Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ Remote opportunity",
@@ -2370,7 +2370,7 @@
           "high-stipend"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.363Z",
+        "discoveredAt": "2026-08-22T09:43:11.091Z",
         "matchScore": 44,
         "matchReasons": [
           "✓ Remote opportunity",
@@ -2413,7 +2413,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:10.486Z",
+        "discoveredAt": "2026-08-22T09:43:14.097Z",
         "matchScore": 42,
         "matchReasons": [
           "✓ Python matches profile",
@@ -2457,7 +2457,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.363Z",
+        "discoveredAt": "2026-08-22T09:43:11.091Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Remote opportunity",
@@ -2498,7 +2498,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:09.477Z",
+        "discoveredAt": "2026-08-22T09:43:13.321Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Stipend meets preference",
@@ -2538,7 +2538,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:09.477Z",
+        "discoveredAt": "2026-08-22T09:43:13.321Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Stipend meets preference",
@@ -2578,7 +2578,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:09.477Z",
+        "discoveredAt": "2026-08-22T09:43:13.321Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Stipend meets preference",
@@ -2618,7 +2618,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:09.477Z",
+        "discoveredAt": "2026-08-22T09:43:13.321Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Stipend meets preference",
@@ -2663,7 +2663,7 @@
           "bengaluru"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T09:32:07.364Z",
+        "discoveredAt": "2026-08-22T09:43:11.092Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ React matches profile",
@@ -2679,28 +2679,28 @@
         "name": "Internshala",
         "status": "no_results",
         "count": 0,
-        "durationMs": 4349
+        "durationMs": 4109
       },
       {
         "id": "company_careers",
         "name": "Direct Company Career Portals",
         "status": "success",
         "count": 10,
-        "durationMs": 5175
+        "durationMs": 2242
       },
       {
         "id": "unstop",
         "name": "Unstop India",
         "status": "success",
         "count": 13,
-        "durationMs": 2114
+        "durationMs": 2230
       },
       {
         "id": "wellfound",
         "name": "Wellfound & Tech Startups",
         "status": "success",
         "count": 32,
-        "durationMs": 3124
+        "durationMs": 3007
       },
       {
         "id": "aicte",
@@ -2714,7 +2714,7 @@
         "name": "Indeed India",
         "status": "success",
         "count": 1,
-        "durationMs": 0
+        "durationMs": 1
       },
       {
         "id": "foundit",
