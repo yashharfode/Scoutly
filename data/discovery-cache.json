@@ -1,6 +1,6 @@
 {
   "cybersecurity and_all_0": {
-    "timestamp": 1787386896380,
+    "timestamp": 1787387422168,
     "results": [
       {
         "id": "wellfound-rxgpt-health",
@@ -40,8 +40,8 @@
           "high-stipend"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.358Z",
-        "matchScore": 87,
+        "discoveredAt": "2026-08-22T08:30:14.828Z",
+        "matchScore": 98,
         "matchReasons": [
           "✓ Python matches profile",
           "✓ React matches profile",
@@ -51,55 +51,9 @@
           "🧠 AI Learned: High affinity for Python",
           "🧠 AI Learned: High affinity for AI/ML",
           "🧠 AI Learned: High affinity for React",
-          "🧠 AI Learned: Favored remote setup"
-        ]
-      },
-      {
-        "id": "gh-figma-sec",
-        "title": "Security Software Engineer Intern",
-        "company": "Figma (via Greenhouse)",
-        "description": "Join Figma's product security team to build threat defense tools, automated auth checks, and developer security SDKs.",
-        "location": "Remote (Global / India eligible)",
-        "mode": "remote",
-        "stipend": {
-          "min": 1200,
-          "max": 1200,
-          "currency": "USD",
-          "display": "$1,200/month"
-        },
-        "duration": "3-4 Months",
-        "skills": [
-          "Python",
-          "TypeScript",
-          "React",
-          "Cybersecurity",
-          "IAM"
-        ],
-        "experience": "Students enrolled in Degree program",
-        "eligibility": "Students graduating in 2026-2029",
-        "deadline": "2026-10-31",
-        "postedDate": "Recent",
-        "source": "Greenhouse ATS",
-        "sourceUrl": "https://boards.greenhouse.io/figma",
-        "applicationUrl": "https://boards.greenhouse.io/figma/jobs/security-intern",
-        "organizationUrl": "https://figma.com",
-        "tags": [
-          "greenhouse",
-          "direct-ats",
-          "design-tech"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.360Z",
-        "matchScore": 87,
-        "matchReasons": [
-          "✓ Python matches profile",
-          "✓ React matches profile",
-          "✓ IAM matches profile",
-          "✓ Remote opportunity",
-          "✓ Student eligible",
-          "🧠 AI Learned: High affinity for Python",
-          "🧠 AI Learned: High affinity for React",
-          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: High affinity for Node.js",
+          "🧠 AI Learned: High affinity for Healthcare AI",
+          "🧠 AI Learned: High affinity for LLMs",
           "🧠 AI Learned: Favored remote setup"
         ]
       },
@@ -142,8 +96,8 @@
           "ppo"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.358Z",
-        "matchScore": 85,
+        "discoveredAt": "2026-08-22T08:30:14.828Z",
+        "matchScore": 89,
         "matchReasons": [
           "✓ Python matches profile",
           "✓ React matches profile",
@@ -153,7 +107,57 @@
           "✓ Student eligible",
           "🧠 AI Learned: High affinity for Python",
           "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: High affinity for Node.js",
           "🧠 AI Learned: Favored hybrid setup"
+        ]
+      },
+      {
+        "id": "gh-figma-sec",
+        "title": "Security Software Engineer Intern",
+        "company": "Figma (via Greenhouse)",
+        "description": "Join Figma's product security team to build threat defense tools, automated auth checks, and developer security SDKs.",
+        "location": "Remote (Global / India eligible)",
+        "mode": "remote",
+        "stipend": {
+          "min": 1200,
+          "max": 1200,
+          "currency": "USD",
+          "display": "$1,200/month"
+        },
+        "duration": "3-4 Months",
+        "skills": [
+          "Python",
+          "TypeScript",
+          "React",
+          "Cybersecurity",
+          "IAM"
+        ],
+        "experience": "Students enrolled in Degree program",
+        "eligibility": "Students graduating in 2026-2029",
+        "deadline": "2026-10-31",
+        "postedDate": "Recent",
+        "source": "Greenhouse ATS",
+        "sourceUrl": "https://boards.greenhouse.io/figma",
+        "applicationUrl": "https://boards.greenhouse.io/figma/jobs/security-intern",
+        "organizationUrl": "https://figma.com",
+        "tags": [
+          "greenhouse",
+          "direct-ats",
+          "design-tech"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T08:30:14.830Z",
+        "matchScore": 87,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ IAM matches profile",
+          "✓ Remote opportunity",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: Favored remote setup"
         ]
       },
       {
@@ -190,7 +194,7 @@
           "cybersecurity"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.360Z",
+        "discoveredAt": "2026-08-22T08:30:14.830Z",
         "matchScore": 85,
         "matchReasons": [
           "✓ Ethical Hacking matches profile",
@@ -201,56 +205,6 @@
           "🧠 AI Learned: High affinity for Cybersecurity",
           "🧠 AI Learned: High affinity for Linux",
           "🧠 AI Learned: Favored remote setup"
-        ]
-      },
-      {
-        "id": "naukri-appsec-intern",
-        "title": "Application Security Testing Intern",
-        "company": "Zscaler Cloud Security",
-        "description": "Participate in DAST/SAST code reviews, API security vulnerability scanning, and vulnerability validation.",
-        "location": "Bengaluru (Hybrid)",
-        "mode": "hybrid",
-        "stipend": {
-          "min": 24000,
-          "max": 24000,
-          "currency": "INR",
-          "display": "₹24,000/month"
-        },
-        "duration": "6 Months",
-        "skills": [
-          "Cybersecurity",
-          "Python",
-          "React",
-          "Linux",
-          "Penetration Testing"
-        ],
-        "experience": "Students",
-        "eligibility": "B.Tech/M.Tech Computer Science / Cybersecurity",
-        "deadline": "2026-10-01",
-        "postedDate": "1 day ago",
-        "source": "Naukri",
-        "sourceUrl": "https://www.naukri.com/cybersecurity%20and-intern-jobs-in-india",
-        "applicationUrl": "https://www.naukri.com/job-listings-appsec-intern",
-        "organizationUrl": "https://zscaler.com",
-        "tags": [
-          "naukri",
-          "appsec",
-          "cloud"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.360Z",
-        "matchScore": 81,
-        "matchReasons": [
-          "✓ Python matches profile",
-          "✓ React matches profile",
-          "✓ hybrid mode preference",
-          "✓ Stipend meets preference",
-          "🧠 AI Learned: High affinity for Cybersecurity",
-          "🧠 AI Learned: High affinity for Python",
-          "🧠 AI Learned: High affinity for React",
-          "🧠 AI Learned: High affinity for Linux",
-          "🧠 AI Learned: High affinity for Penetration Testing",
-          "🧠 AI Learned: Favored hybrid setup"
         ]
       },
       {
@@ -288,64 +242,19 @@
           "security"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.360Z",
-        "matchScore": 81,
+        "discoveredAt": "2026-08-22T08:30:14.831Z",
+        "matchScore": 85,
         "matchReasons": [
           "✓ Node.js matches profile",
           "✓ Python matches profile",
           "✓ Remote opportunity",
           "✓ Stipend meets preference",
           "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Node.js",
           "🧠 AI Learned: High affinity for Python",
           "🧠 AI Learned: High affinity for Cybersecurity",
           "🧠 AI Learned: High affinity for Linux",
           "🧠 AI Learned: Favored remote setup"
-        ]
-      },
-      {
-        "id": "foundit-net-sec",
-        "title": "Network Security Trainee",
-        "company": "Spectra Net Technologies",
-        "description": "Assisting senior engineers with firewall audits, secure routing, and endpoint protection testing.",
-        "location": "Pune, Maharashtra",
-        "mode": "hybrid",
-        "stipend": {
-          "min": 14000,
-          "max": 14000,
-          "currency": "INR",
-          "display": "₹14,000/month"
-        },
-        "duration": "3-6 Months",
-        "skills": [
-          "Network Security",
-          "Linux",
-          "Python",
-          "IAM"
-        ],
-        "experience": "Students / Freshers",
-        "eligibility": "Engineering students",
-        "deadline": "2026-10-12",
-        "postedDate": "3 days ago",
-        "source": "Foundit",
-        "sourceUrl": "https://www.foundit.in/srp/results?query=cybersecurity%20and%20intern",
-        "applicationUrl": "https://www.foundit.in/job/network-security-trainee",
-        "organizationUrl": null,
-        "tags": [
-          "foundit",
-          "network-security"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.360Z",
-        "matchScore": 79,
-        "matchReasons": [
-          "✓ Python matches profile",
-          "✓ IAM matches profile",
-          "✓ hybrid mode preference",
-          "✓ Stipend meets preference",
-          "✓ Student eligible",
-          "🧠 AI Learned: High affinity for Linux",
-          "🧠 AI Learned: High affinity for Python",
-          "🧠 AI Learned: Favored hybrid setup"
         ]
       },
       {
@@ -386,8 +295,8 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.358Z",
-        "matchScore": 78,
+        "discoveredAt": "2026-08-22T08:30:14.828Z",
+        "matchScore": 82,
         "matchReasons": [
           "✓ React matches profile",
           "✓ Node.js matches profile",
@@ -395,7 +304,104 @@
           "✓ Stipend meets preference",
           "✓ Student eligible",
           "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: High affinity for Node.js",
           "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "naukri-appsec-intern",
+        "title": "Application Security Testing Intern",
+        "company": "Zscaler Cloud Security",
+        "description": "Participate in DAST/SAST code reviews, API security vulnerability scanning, and vulnerability validation.",
+        "location": "Bengaluru (Hybrid)",
+        "mode": "hybrid",
+        "stipend": {
+          "min": 24000,
+          "max": 24000,
+          "currency": "INR",
+          "display": "₹24,000/month"
+        },
+        "duration": "6 Months",
+        "skills": [
+          "Cybersecurity",
+          "Python",
+          "React",
+          "Linux",
+          "Penetration Testing"
+        ],
+        "experience": "Students",
+        "eligibility": "B.Tech/M.Tech Computer Science / Cybersecurity",
+        "deadline": "2026-10-01",
+        "postedDate": "1 day ago",
+        "source": "Naukri",
+        "sourceUrl": "https://www.naukri.com/cybersecurity%20and-intern-jobs-in-india",
+        "applicationUrl": "https://www.naukri.com/job-listings-appsec-intern",
+        "organizationUrl": "https://zscaler.com",
+        "tags": [
+          "naukri",
+          "appsec",
+          "cloud"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T08:30:14.830Z",
+        "matchScore": 81,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "✓ hybrid mode preference",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for Cybersecurity",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: High affinity for Linux",
+          "🧠 AI Learned: High affinity for Penetration Testing",
+          "🧠 AI Learned: Favored hybrid setup"
+        ]
+      },
+      {
+        "id": "foundit-net-sec",
+        "title": "Network Security Trainee",
+        "company": "Spectra Net Technologies",
+        "description": "Assisting senior engineers with firewall audits, secure routing, and endpoint protection testing.",
+        "location": "Pune, Maharashtra",
+        "mode": "hybrid",
+        "stipend": {
+          "min": 14000,
+          "max": 14000,
+          "currency": "INR",
+          "display": "₹14,000/month"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "Network Security",
+          "Linux",
+          "Python",
+          "IAM"
+        ],
+        "experience": "Students / Freshers",
+        "eligibility": "Engineering students",
+        "deadline": "2026-10-12",
+        "postedDate": "3 days ago",
+        "source": "Foundit",
+        "sourceUrl": "https://www.foundit.in/srp/results?query=cybersecurity%20and%20intern",
+        "applicationUrl": "https://www.foundit.in/job/network-security-trainee",
+        "organizationUrl": null,
+        "tags": [
+          "foundit",
+          "network-security"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T08:30:14.830Z",
+        "matchScore": 79,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ IAM matches profile",
+          "✓ hybrid mode preference",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Linux",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: Favored hybrid setup"
         ]
       },
       {
@@ -439,7 +445,7 @@
           "remote-ai"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.358Z",
+        "discoveredAt": "2026-08-22T08:30:14.828Z",
         "matchScore": 77,
         "matchReasons": [
           "✓ React matches profile",
@@ -449,6 +455,59 @@
           "✓ Student eligible",
           "🧠 AI Learned: High affinity for React",
           "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: Favored remote setup"
+        ]
+      },
+      {
+        "id": "wellfound-4385681-vitraga",
+        "title": "Software Engineer Intern (Next.js & AI Agents)",
+        "company": "Vitraga",
+        "description": "Build full stack autonomous agent workflows using Next.js, Express, Supabase, LangChain, and MongoDB.",
+        "location": "Remote (India)",
+        "mode": "remote",
+        "stipend": {
+          "min": 10000,
+          "max": 10000,
+          "currency": "INR",
+          "display": "₹10,000/month"
+        },
+        "duration": "3 Months",
+        "skills": [
+          "React",
+          "Next.js",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "Supabase",
+          "LangChain",
+          "AI Agents"
+        ],
+        "experience": "No experience required",
+        "eligibility": "Students with hands-on modern JavaScript / TypeScript stack",
+        "deadline": "2026-10-31",
+        "postedDate": "Live on Wellfound",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/jobs/4385681-software-engineer-intern-next-js-supabase-ai",
+        "applicationUrl": "https://wellfound.com/jobs/4385681-software-engineer-intern-next-js-supabase-ai",
+        "organizationUrl": "https://wellfound.com/company/vitraga",
+        "tags": [
+          "wellfound",
+          "nextjs",
+          "supabase",
+          "ai-agents",
+          "remote"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T08:30:14.828Z",
+        "matchScore": 77,
+        "matchReasons": [
+          "✓ React matches profile",
+          "✓ Node.js matches profile",
+          "✓ Remote opportunity",
+          "✓ Stipend meets preference",
+          "✓ Student eligible",
+          "🧠 AI Learned: High affinity for React",
+          "🧠 AI Learned: High affinity for Node.js",
           "🧠 AI Learned: Favored remote setup"
         ]
       },
@@ -490,7 +549,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.358Z",
+        "discoveredAt": "2026-08-22T08:30:14.828Z",
         "matchScore": 77,
         "matchReasons": [
           "✓ Python matches profile",
@@ -537,7 +596,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.682Z",
+        "discoveredAt": "2026-08-22T08:30:21.459Z",
         "matchScore": 77,
         "matchReasons": [
           "✓ Python matches profile",
@@ -586,7 +645,7 @@
           "pune"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.358Z",
+        "discoveredAt": "2026-08-22T08:30:14.828Z",
         "matchScore": 74,
         "matchReasons": [
           "✓ Python matches profile",
@@ -597,58 +656,6 @@
           "🧠 AI Learned: High affinity for Python",
           "🧠 AI Learned: High affinity for React",
           "🧠 AI Learned: Favored hybrid setup"
-        ]
-      },
-      {
-        "id": "wellfound-4385681-vitraga",
-        "title": "Software Engineer Intern (Next.js & AI Agents)",
-        "company": "Vitraga",
-        "description": "Build full stack autonomous agent workflows using Next.js, Express, Supabase, LangChain, and MongoDB.",
-        "location": "Remote (India)",
-        "mode": "remote",
-        "stipend": {
-          "min": 10000,
-          "max": 10000,
-          "currency": "INR",
-          "display": "₹10,000/month"
-        },
-        "duration": "3 Months",
-        "skills": [
-          "React",
-          "Next.js",
-          "Node.js",
-          "Express",
-          "MongoDB",
-          "Supabase",
-          "LangChain",
-          "AI Agents"
-        ],
-        "experience": "No experience required",
-        "eligibility": "Students with hands-on modern JavaScript / TypeScript stack",
-        "deadline": "2026-10-31",
-        "postedDate": "Live on Wellfound",
-        "source": "Wellfound",
-        "sourceUrl": "https://wellfound.com/jobs/4385681-software-engineer-intern-next-js-supabase-ai",
-        "applicationUrl": "https://wellfound.com/jobs/4385681-software-engineer-intern-next-js-supabase-ai",
-        "organizationUrl": "https://wellfound.com/company/vitraga",
-        "tags": [
-          "wellfound",
-          "nextjs",
-          "supabase",
-          "ai-agents",
-          "remote"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.358Z",
-        "matchScore": 73,
-        "matchReasons": [
-          "✓ React matches profile",
-          "✓ Node.js matches profile",
-          "✓ Remote opportunity",
-          "✓ Stipend meets preference",
-          "✓ Student eligible",
-          "🧠 AI Learned: High affinity for React",
-          "🧠 AI Learned: Favored remote setup"
         ]
       },
       {
@@ -685,7 +692,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.682Z",
+        "discoveredAt": "2026-08-22T08:30:21.459Z",
         "matchScore": 72,
         "matchReasons": [
           "✓ Python matches profile",
@@ -730,7 +737,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.683Z",
+        "discoveredAt": "2026-08-22T08:30:21.461Z",
         "matchScore": 72,
         "matchReasons": [
           "✓ Python matches profile",
@@ -775,7 +782,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.683Z",
+        "discoveredAt": "2026-08-22T08:30:21.463Z",
         "matchScore": 72,
         "matchReasons": [
           "✓ Python matches profile",
@@ -825,14 +832,15 @@
           "agentic"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.358Z",
-        "matchScore": 61,
+        "discoveredAt": "2026-08-22T08:30:14.828Z",
+        "matchScore": 65,
         "matchReasons": [
           "✓ Python matches profile",
           "✓ Remote opportunity",
           "✓ Stipend meets preference",
           "✓ Student eligible",
           "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for LLMs",
           "🧠 AI Learned: Favored remote setup"
         ]
       },
@@ -876,14 +884,15 @@
           "bengaluru"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.358Z",
-        "matchScore": 61,
+        "discoveredAt": "2026-08-22T08:30:14.828Z",
+        "matchScore": 65,
         "matchReasons": [
           "✓ Python matches profile",
           "✓ Aligns with target career domain",
           "✓ Stipend meets preference",
           "✓ Student eligible",
-          "🧠 AI Learned: High affinity for Python"
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for LLMs"
         ]
       },
       {
@@ -920,7 +929,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.683Z",
+        "discoveredAt": "2026-08-22T08:30:21.460Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -964,7 +973,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.683Z",
+        "discoveredAt": "2026-08-22T08:30:21.461Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1008,7 +1017,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.683Z",
+        "discoveredAt": "2026-08-22T08:30:21.461Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1052,7 +1061,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.683Z",
+        "discoveredAt": "2026-08-22T08:30:21.462Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1096,7 +1105,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.683Z",
+        "discoveredAt": "2026-08-22T08:30:21.462Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1140,7 +1149,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.683Z",
+        "discoveredAt": "2026-08-22T08:30:21.462Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1184,7 +1193,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.683Z",
+        "discoveredAt": "2026-08-22T08:30:21.462Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1228,7 +1237,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.683Z",
+        "discoveredAt": "2026-08-22T08:30:21.463Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1272,7 +1281,7 @@
           "analyst"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.360Z",
+        "discoveredAt": "2026-08-22T08:30:14.830Z",
         "matchScore": 49,
         "matchReasons": [
           "✓ Network Traffic Analysis matches profile",
@@ -1316,7 +1325,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.682Z",
+        "discoveredAt": "2026-08-22T08:30:21.459Z",
         "matchScore": 47,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1359,7 +1368,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.682Z",
+        "discoveredAt": "2026-08-22T08:30:21.460Z",
         "matchScore": 47,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1402,7 +1411,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.683Z",
+        "discoveredAt": "2026-08-22T08:30:21.462Z",
         "matchScore": 47,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1445,7 +1454,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.683Z",
+        "discoveredAt": "2026-08-22T08:30:21.463Z",
         "matchScore": 47,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1488,7 +1497,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.683Z",
+        "discoveredAt": "2026-08-22T08:30:21.463Z",
         "matchScore": 47,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1535,7 +1544,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.591Z",
+        "discoveredAt": "2026-08-22T08:30:17.817Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -1582,7 +1591,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.592Z",
+        "discoveredAt": "2026-08-22T08:30:17.818Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -1629,7 +1638,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.592Z",
+        "discoveredAt": "2026-08-22T08:30:17.821Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -1676,7 +1685,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.592Z",
+        "discoveredAt": "2026-08-22T08:30:17.821Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -1723,7 +1732,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.593Z",
+        "discoveredAt": "2026-08-22T08:30:17.821Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -1770,7 +1779,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.593Z",
+        "discoveredAt": "2026-08-22T08:30:17.822Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -1817,7 +1826,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.768Z",
+        "discoveredAt": "2026-08-22T08:30:18.366Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -1865,7 +1874,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.768Z",
+        "discoveredAt": "2026-08-22T08:30:18.366Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -1913,7 +1922,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.768Z",
+        "discoveredAt": "2026-08-22T08:30:18.366Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -1961,7 +1970,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.768Z",
+        "discoveredAt": "2026-08-22T08:30:18.366Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2009,7 +2018,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.768Z",
+        "discoveredAt": "2026-08-22T08:30:18.366Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2057,7 +2066,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.768Z",
+        "discoveredAt": "2026-08-22T08:30:18.367Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2105,7 +2114,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.768Z",
+        "discoveredAt": "2026-08-22T08:30:18.367Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2153,7 +2162,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.769Z",
+        "discoveredAt": "2026-08-22T08:30:18.367Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2201,7 +2210,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.769Z",
+        "discoveredAt": "2026-08-22T08:30:18.367Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2249,7 +2258,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.769Z",
+        "discoveredAt": "2026-08-22T08:30:18.367Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2297,7 +2306,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.769Z",
+        "discoveredAt": "2026-08-22T08:30:18.367Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2345,7 +2354,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.769Z",
+        "discoveredAt": "2026-08-22T08:30:18.368Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2353,49 +2362,6 @@
           "✓ Student eligible",
           "🧠 AI Learned: High affinity for cybersecurity",
           "🧠 AI Learned: High affinity for penetration testing"
-        ]
-      },
-      {
-        "id": "wellfound-live-2091093",
-        "title": "Face Deduplication Collection",
-        "company": "TELUS Digital",
-        "description": "The project compensation rate is $0.55 USD per accepted image. The objective of this project is to collect a large and diverse dataset of current neutral selfies, head-pose captures, and historical facial images to support machine-learning research and facial recognition model training at TELUS. The focus is on capturing real-world variation across lighting, poses, expressions, accessories, environments, and aging to improve model accuracy and robustness. The collection includes: • Current Neutral Selfies – clean frontal selfies serving as high-quality identity references, with natural variation in appearance and surroundings. • Current Head-Pose Captures – selfies captured in assigned head directions to introduce pose variation. • Historical Images – older photos from participants’ galleries to capture natural aging and long-term appearance changes. To qualify for payment, you must submit a minimum of 20 valid images. The maximum payout is based on 24 accepted images. Due to the strict automated and manual Quality Control (QC) process, we strongly recommend submitting 30 images to help ensure that enough images remain valid after review Note: Please use a Gmail address as your primary account when applying for this project. Qualification path No specific education is needed to perform the project task.",
-        "location": "USA",
-        "mode": "unknown",
-        "stipend": {
-          "min": null,
-          "max": null,
-          "currency": null,
-          "display": "Pay per task"
-        },
-        "duration": "3-6 Months",
-        "skills": [
-          "cybersecurity and",
-          "Python",
-          "React",
-          "JavaScript"
-        ],
-        "experience": "Students / Early Career",
-        "eligibility": "Open to passionate builders",
-        "deadline": "2026-10-31",
-        "postedDate": "Live Startup Feed",
-        "source": "Wellfound",
-        "sourceUrl": "https://wellfound.com/location/india",
-        "applicationUrl": "https://remotive.com/remote-jobs/all-others/face-deduplication-collection-2091093",
-        "organizationUrl": "https://remotive.com/remote-jobs/all-others/face-deduplication-collection-2091093",
-        "tags": [
-          "wellfound",
-          "startup",
-          "live-feed"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.683Z",
-        "matchScore": 42,
-        "matchReasons": [
-          "✓ Python matches profile",
-          "✓ React matches profile",
-          "🧠 AI Learned: High affinity for Python",
-          "🧠 AI Learned: High affinity for React"
         ]
       },
       {
@@ -2439,13 +2405,57 @@
           "databases"
         ],
         "verified": true,
-        "discoveredAt": "2026-08-22T08:21:35.358Z",
-        "matchScore": 41,
+        "discoveredAt": "2026-08-22T08:30:14.828Z",
+        "matchScore": 45,
         "matchReasons": [
           "✓ Node.js matches profile",
           "✓ Stipend meets preference",
           "✓ Student eligible",
+          "🧠 AI Learned: High affinity for Node.js",
           "🧠 AI Learned: High affinity for AWS"
+        ]
+      },
+      {
+        "id": "wellfound-live-2091093",
+        "title": "Face Deduplication Collection",
+        "company": "TELUS Digital",
+        "description": "The project compensation rate is $0.55 USD per accepted image. The objective of this project is to collect a large and diverse dataset of current neutral selfies, head-pose captures, and historical facial images to support machine-learning research and facial recognition model training at TELUS. The focus is on capturing real-world variation across lighting, poses, expressions, accessories, environments, and aging to improve model accuracy and robustness. The collection includes: • Current Neutral Selfies – clean frontal selfies serving as high-quality identity references, with natural variation in appearance and surroundings. • Current Head-Pose Captures – selfies captured in assigned head directions to introduce pose variation. • Historical Images – older photos from participants’ galleries to capture natural aging and long-term appearance changes. To qualify for payment, you must submit a minimum of 20 valid images. The maximum payout is based on 24 accepted images. Due to the strict automated and manual Quality Control (QC) process, we strongly recommend submitting 30 images to help ensure that enough images remain valid after review Note: Please use a Gmail address as your primary account when applying for this project. Qualification path No specific education is needed to perform the project task.",
+        "location": "USA",
+        "mode": "unknown",
+        "stipend": {
+          "min": null,
+          "max": null,
+          "currency": null,
+          "display": "Pay per task"
+        },
+        "duration": "3-6 Months",
+        "skills": [
+          "cybersecurity and",
+          "Python",
+          "React",
+          "JavaScript"
+        ],
+        "experience": "Students / Early Career",
+        "eligibility": "Open to passionate builders",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Startup Feed",
+        "source": "Wellfound",
+        "sourceUrl": "https://wellfound.com/location/india",
+        "applicationUrl": "https://remotive.com/remote-jobs/all-others/face-deduplication-collection-2091093",
+        "organizationUrl": "https://remotive.com/remote-jobs/all-others/face-deduplication-collection-2091093",
+        "tags": [
+          "wellfound",
+          "startup",
+          "live-feed"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-08-22T08:30:21.461Z",
+        "matchScore": 42,
+        "matchReasons": [
+          "✓ Python matches profile",
+          "✓ React matches profile",
+          "🧠 AI Learned: High affinity for Python",
+          "🧠 AI Learned: High affinity for React"
         ]
       }
     ],
@@ -2455,28 +2465,28 @@
         "name": "Internshala",
         "status": "no_results",
         "count": 0,
-        "durationMs": 1019
+        "durationMs": 7341
       },
       {
         "id": "company_careers",
         "name": "Direct Company Career Portals",
         "status": "success",
         "count": 10,
-        "durationMs": 237
+        "durationMs": 2998
       },
       {
         "id": "unstop",
         "name": "Unstop India",
         "status": "success",
         "count": 12,
-        "durationMs": 412
+        "durationMs": 3543
       },
       {
         "id": "wellfound",
         "name": "Wellfound & Tech Startups",
         "status": "success",
         "count": 28,
-        "durationMs": 325
+        "durationMs": 6635
       },
       {
         "id": "aicte",
