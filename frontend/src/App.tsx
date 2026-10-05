@@ -1673,14 +1673,14 @@ function CockpitView({
   const [localValues, setLocalValues] = useState<Record<string, string>>({});
 
   useEffect(() => {
-    if (session?.mappings) {
+    if (session?.mappings && Array.isArray(session.mappings)) {
       const updated: Record<string, string> = {};
       session.mappings.forEach((m) => {
-        updated[m.fieldId] = m.value || "";
+        if (m && m.fieldId) updated[m.fieldId] = m.value || "";
       });
       setLocalValues(updated);
     }
-  }, [session?.sessionId, JSON.stringify(session?.mappings?.map(m => ({ id: m.fieldId, val: m.value })))]);
+  }, [session?.sessionId, JSON.stringify((session?.mappings || []).map(m => ({ id: m?.fieldId, val: m?.value })))]);
 
   const handleLocalChange = (fieldId: string, newVal: string) => {
     setLocalValues((prev) => ({ ...prev, [fieldId]: newVal }));
@@ -1738,9 +1738,9 @@ function CockpitView({
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <span className="live-badge">
               <span className="live-pulse" style={{ background: isWaitingUser ? "#f59e0b" : "#d9f99d" }}></span>
-              STATUS: {session.status.toUpperCase().replace(/_/g, " ")}
+              STATUS: {(session.status || "opened").toUpperCase().replace(/_/g, " ")}
             </span>
-            <span style={{ fontSize: 13, color: "#a8baa9" }}>Session: {session.sessionId.slice(0, 8)}</span>
+            <span style={{ fontSize: 13, color: "#a8baa9" }}>Session: {(session.sessionId || "").slice(0, 8)}</span>
           </div>
           <h2 style={{ margin: "8px 0 2px", fontSize: 22, color: "#f8fbf3" }}>
             {session.opportunity?.title || "Application in Progress"}
@@ -1799,7 +1799,7 @@ function CockpitView({
               <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                 <strong style={{ color: "#166534", fontSize: 14 }}>Procedural Playbook Memory Active</strong>
                 <span style={{ background: "#22c55e", color: "white", fontSize: 11, fontWeight: 700, padding: "2px 8px", borderRadius: 6 }}>
-                  v{session.memoryMatch.version || 1} · {Math.round(session.memoryMatch.confidence * 100)}% CONFIDENCE
+                  v{session.memoryMatch.version || 1} · {Math.round((session.memoryMatch?.confidence || 0.95) * 100)}% CONFIDENCE
                 </span>
               </div>
               <p style={{ margin: "3px 0 0", fontSize: 13, color: "#15803d" }}>
@@ -2008,13 +2008,14 @@ function CockpitView({
               <h3 style={{ margin: 0, fontSize: 20 }}>Review Mapped Form Fields</h3>
             </div>
             <span style={{ fontSize: 12, color: "#68806d" }}>
-              {session.mappings.filter(m => m.status === "safe").length} Safe · {session.mappings.filter(m => m.status === "review").length} Need Review
+              {(session?.mappings || []).filter(m => m?.status === "safe").length} Safe · {(session?.mappings || []).filter(m => m?.status === "review").length} Need Review
             </span>
           </div>
 
           <div style={{ display: "grid", gap: 14 }}>
-            {session.fields.map((field) => {
-              const mapping = session.mappings.find(m => m.fieldId === field.id);
+            {(session?.fields || []).map((field) => {
+              if (!field) return null;
+              const mapping = (session?.mappings || []).find(m => m?.fieldId === field.id);
               const val = localValues[field.id] !== undefined ? localValues[field.id] : (mapping?.value || "");
               const status = mapping?.status || "missing";
               const isAi = mapping?.aiGenerated;

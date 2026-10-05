@@ -1,6 +1,6 @@
 {
   "cybersecurity and_all_0": {
-    "timestamp": 1791211312047,
+    "timestamp": 1791214712678,
     "results": [
       {
         "id": "wellfound-troopr-ai",
@@ -40,7 +40,7 @@
           "bengaluru"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.486Z",
+        "discoveredAt": "2026-10-05T15:38:14.432Z",
         "matchScore": 98,
         "matchReasons": [
           "✓ React matches profile",
@@ -95,7 +95,7 @@
           "ppo"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.487Z",
+        "discoveredAt": "2026-10-05T15:38:14.432Z",
         "matchScore": 98,
         "matchReasons": [
           "✓ Python matches profile",
@@ -152,7 +152,7 @@
           "high-stipend"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.487Z",
+        "discoveredAt": "2026-10-05T15:38:14.432Z",
         "matchScore": 98,
         "matchReasons": [
           "✓ Python matches profile",
@@ -205,7 +205,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.484Z",
+        "discoveredAt": "2026-10-05T15:38:14.429Z",
         "matchScore": 97,
         "matchReasons": [
           "✓ Python matches profile",
@@ -257,7 +257,7 @@
           "python"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.486Z",
+        "discoveredAt": "2026-10-05T15:38:14.432Z",
         "matchScore": 96,
         "matchReasons": [
           "✓ Python matches profile",
@@ -308,7 +308,7 @@
           "design-tech"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.490Z",
+        "discoveredAt": "2026-10-05T15:38:14.436Z",
         "matchScore": 91,
         "matchReasons": [
           "✓ Python matches profile",
@@ -361,7 +361,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.487Z",
+        "discoveredAt": "2026-10-05T15:38:14.432Z",
         "matchScore": 86,
         "matchReasons": [
           "✓ React matches profile",
@@ -409,7 +409,7 @@
           "cybersecurity"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.489Z",
+        "discoveredAt": "2026-10-05T15:38:14.435Z",
         "matchScore": 85,
         "matchReasons": [
           "✓ Ethical Hacking matches profile",
@@ -457,7 +457,7 @@
           "security"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.490Z",
+        "discoveredAt": "2026-10-05T15:38:14.436Z",
         "matchScore": 85,
         "matchReasons": [
           "✓ Node.js matches profile",
@@ -513,7 +513,7 @@
           "remote-ai"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.487Z",
+        "discoveredAt": "2026-10-05T15:38:14.432Z",
         "matchScore": 81,
         "matchReasons": [
           "✓ React matches profile",
@@ -562,7 +562,7 @@
           "cloud"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.490Z",
+        "discoveredAt": "2026-10-05T15:38:14.435Z",
         "matchScore": 81,
         "matchReasons": [
           "✓ Python matches profile",
@@ -610,7 +610,7 @@
           "network-security"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.489Z",
+        "discoveredAt": "2026-10-05T15:38:14.435Z",
         "matchScore": 79,
         "matchReasons": [
           "✓ Python matches profile",
@@ -661,7 +661,7 @@
           "postgresql"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.486Z",
+        "discoveredAt": "2026-10-05T15:38:14.431Z",
         "matchScore": 78,
         "matchReasons": [
           "✓ Node.js matches profile",
@@ -718,7 +718,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.487Z",
+        "discoveredAt": "2026-10-05T15:38:14.432Z",
         "matchScore": 77,
         "matchReasons": [
           "✓ React matches profile",
@@ -769,7 +769,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.487Z",
+        "discoveredAt": "2026-10-05T15:38:14.432Z",
         "matchScore": 77,
         "matchReasons": [
           "✓ Python matches profile",
@@ -819,7 +819,7 @@
           "pune"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.487Z",
+        "discoveredAt": "2026-10-05T15:38:14.432Z",
         "matchScore": 74,
         "matchReasons": [
           "✓ Python matches profile",
@@ -866,7 +866,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.847Z",
+        "discoveredAt": "2026-10-05T15:38:15.128Z",
         "matchScore": 72,
         "matchReasons": [
           "✓ Python matches profile",
@@ -911,7 +911,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.847Z",
+        "discoveredAt": "2026-10-05T15:38:15.129Z",
         "matchScore": 72,
         "matchReasons": [
           "✓ Python matches profile",
@@ -956,7 +956,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.848Z",
+        "discoveredAt": "2026-10-05T15:38:15.130Z",
         "matchScore": 72,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1001,7 +1001,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.848Z",
+        "discoveredAt": "2026-10-05T15:38:15.131Z",
         "matchScore": 72,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1010,6 +1010,54 @@
           "✓ Stipend meets preference",
           "🧠 AI Learned: High affinity for Python",
           "🧠 AI Learned: High affinity for React"
+        ]
+      },
+      {
+        "id": "career-7-caci",
+        "title": "Software Development Intern",
+        "company": "CACI",
+        "description": "Official direct career opening for Software Development Intern at CACI. Discovered from verified career portals.",
+        "location": "Oklahoma City, OK",
+        "mode": "unknown",
+        "stipend": {
+          "min": 40000,
+          "max": 85000,
+          "currency": "INR",
+          "display": "₹40,000 - ₹85,000/month"
+        },
+        "duration": "3 Months",
+        "skills": [
+          "cybersecurity and",
+          "cybersecurity",
+          "cyber security",
+          "information security",
+          "SOC analyst",
+          "security analyst",
+          "penetration testing",
+          "ethical hacking"
+        ],
+        "experience": "Enrolled Students / Freshers",
+        "eligibility": "Pursuing Bachelor's / Master's degree in CS, IT, Cybersecurity or related fields",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Career Listing",
+        "source": "Official Company Career Portal",
+        "sourceUrl": "https://simplify.jobs/c/CACI?utm_source=GHList&utm_medium=company",
+        "applicationUrl": "https://simplify.jobs/c/CACI?utm_source=GHList&utm_medium=company",
+        "organizationUrl": "https://simplify.jobs/c/CACI?utm_source=GHList&utm_medium=company",
+        "tags": [
+          "direct-company",
+          "top-tier",
+          "verified"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-10-05T15:38:32.602Z",
+        "matchScore": 65,
+        "matchReasons": [
+          "✓ ethical hacking matches profile",
+          "✓ Aligns with target career domain",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
         ]
       },
       {
@@ -1048,7 +1096,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.484Z",
+        "discoveredAt": "2026-10-05T15:38:14.429Z",
         "matchScore": 65,
         "matchReasons": [
           "✓ Aligns with target career domain",
@@ -1097,7 +1145,7 @@
           "agentic"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.487Z",
+        "discoveredAt": "2026-10-05T15:38:14.432Z",
         "matchScore": 65,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1149,7 +1197,7 @@
           "bengaluru"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.487Z",
+        "discoveredAt": "2026-10-05T15:38:14.432Z",
         "matchScore": 65,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1197,7 +1245,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.484Z",
+        "discoveredAt": "2026-10-05T15:38:14.429Z",
         "matchScore": 61,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1244,7 +1292,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.484Z",
+        "discoveredAt": "2026-10-05T15:38:14.429Z",
         "matchScore": 61,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1289,7 +1337,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.847Z",
+        "discoveredAt": "2026-10-05T15:38:15.128Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1333,7 +1381,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.847Z",
+        "discoveredAt": "2026-10-05T15:38:15.129Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1377,7 +1425,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.847Z",
+        "discoveredAt": "2026-10-05T15:38:15.129Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1421,7 +1469,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.848Z",
+        "discoveredAt": "2026-10-05T15:38:15.129Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1465,7 +1513,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.848Z",
+        "discoveredAt": "2026-10-05T15:38:15.130Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1509,7 +1557,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.848Z",
+        "discoveredAt": "2026-10-05T15:38:15.130Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1553,7 +1601,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.848Z",
+        "discoveredAt": "2026-10-05T15:38:15.130Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1597,7 +1645,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.849Z",
+        "discoveredAt": "2026-10-05T15:38:15.131Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1641,7 +1689,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.849Z",
+        "discoveredAt": "2026-10-05T15:38:15.131Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1685,7 +1733,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.849Z",
+        "discoveredAt": "2026-10-05T15:38:15.132Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1729,7 +1777,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.849Z",
+        "discoveredAt": "2026-10-05T15:38:15.132Z",
         "matchScore": 52,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1780,7 +1828,7 @@
           "databases"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.487Z",
+        "discoveredAt": "2026-10-05T15:38:14.432Z",
         "matchScore": 49,
         "matchReasons": [
           "✓ Node.js matches profile",
@@ -1825,7 +1873,7 @@
           "analyst"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.489Z",
+        "discoveredAt": "2026-10-05T15:38:14.435Z",
         "matchScore": 49,
         "matchReasons": [
           "✓ Network Traffic Analysis matches profile",
@@ -1869,7 +1917,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.848Z",
+        "discoveredAt": "2026-10-05T15:38:15.131Z",
         "matchScore": 47,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1912,7 +1960,7 @@
           "live-feed"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.848Z",
+        "discoveredAt": "2026-10-05T15:38:15.131Z",
         "matchScore": 47,
         "matchReasons": [
           "✓ Python matches profile",
@@ -1959,7 +2007,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:50.188Z",
+        "discoveredAt": "2026-10-05T15:38:32.600Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2006,7 +2054,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:50.188Z",
+        "discoveredAt": "2026-10-05T15:38:32.600Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2053,7 +2101,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:50.188Z",
+        "discoveredAt": "2026-10-05T15:38:32.601Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2100,7 +2148,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:50.188Z",
+        "discoveredAt": "2026-10-05T15:38:32.601Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2110,7 +2158,54 @@
         ]
       },
       {
-        "id": "career-5-merck",
+        "id": "career-5-motorola",
+        "title": "Android Applications Developer Intern",
+        "company": "Motorola",
+        "description": "Official direct career opening for Android Applications Developer Intern at Motorola. Discovered from verified career portals.",
+        "location": "Chicago, IL",
+        "mode": "unknown",
+        "stipend": {
+          "min": 40000,
+          "max": 85000,
+          "currency": "INR",
+          "display": "₹40,000 - ₹85,000/month"
+        },
+        "duration": "3 Months",
+        "skills": [
+          "cybersecurity and",
+          "cybersecurity",
+          "cyber security",
+          "information security",
+          "SOC analyst",
+          "security analyst",
+          "penetration testing",
+          "ethical hacking"
+        ],
+        "experience": "Enrolled Students / Freshers",
+        "eligibility": "Pursuing Bachelor's / Master's degree in CS, IT, Cybersecurity or related fields",
+        "deadline": "2026-10-31",
+        "postedDate": "Live Career Listing",
+        "source": "Official Company Career Portal",
+        "sourceUrl": "https://simplify.jobs/c/MotorolaSolutions?utm_source=GHList&utm_medium=company",
+        "applicationUrl": "https://simplify.jobs/c/MotorolaSolutions?utm_source=GHList&utm_medium=company",
+        "organizationUrl": "https://simplify.jobs/c/MotorolaSolutions?utm_source=GHList&utm_medium=company",
+        "tags": [
+          "direct-company",
+          "top-tier",
+          "verified"
+        ],
+        "verified": true,
+        "discoveredAt": "2026-10-05T15:38:32.601Z",
+        "matchScore": 45,
+        "matchReasons": [
+          "✓ ethical hacking matches profile",
+          "✓ Stipend meets preference",
+          "🧠 AI Learned: High affinity for cybersecurity",
+          "🧠 AI Learned: High affinity for penetration testing"
+        ]
+      },
+      {
+        "id": "career-6-merck",
         "title": "IT Developer Analyst Intern",
         "company": "Merck",
         "description": "Official direct career opening for IT Developer Analyst Intern at Merck. Discovered from verified career portals.",
@@ -2147,7 +2242,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:50.188Z",
+        "discoveredAt": "2026-10-05T15:38:32.602Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2157,7 +2252,7 @@
         ]
       },
       {
-        "id": "career-6-electronicarts",
+        "id": "career-8-electronicarts",
         "title": "Software Engineer Intern",
         "company": "Electronic Arts",
         "description": "Official direct career opening for Software Engineer Intern at Electronic Arts. Discovered from verified career portals.",
@@ -2194,7 +2289,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:50.189Z",
+        "discoveredAt": "2026-10-05T15:38:32.602Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2204,7 +2299,7 @@
         ]
       },
       {
-        "id": "career-7-databricks",
+        "id": "career-9-databricks",
         "title": "Software Engineer Intern",
         "company": "Databricks",
         "description": "Official direct career opening for Software Engineer Intern at Databricks. Discovered from verified career portals.",
@@ -2241,7 +2336,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:50.189Z",
+        "discoveredAt": "2026-10-05T15:38:32.602Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2251,7 +2346,7 @@
         ]
       },
       {
-        "id": "career-8-arc",
+        "id": "career-10-arc",
         "title": "Software Engineer Intern",
         "company": "Arc",
         "description": "Official direct career opening for Software Engineer Intern at Arc. Discovered from verified career portals.",
@@ -2288,101 +2383,7 @@
           "verified"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:50.189Z",
-        "matchScore": 45,
-        "matchReasons": [
-          "✓ ethical hacking matches profile",
-          "✓ Stipend meets preference",
-          "🧠 AI Learned: High affinity for cybersecurity",
-          "🧠 AI Learned: High affinity for penetration testing"
-        ]
-      },
-      {
-        "id": "career-9-harvey",
-        "title": "Software Engineer Intern",
-        "company": "Harvey",
-        "description": "Official direct career opening for Software Engineer Intern at Harvey. Discovered from verified career portals.",
-        "location": "NYC",
-        "mode": "unknown",
-        "stipend": {
-          "min": 40000,
-          "max": 85000,
-          "currency": "INR",
-          "display": "₹40,000 - ₹85,000/month"
-        },
-        "duration": "3 Months",
-        "skills": [
-          "cybersecurity and",
-          "cybersecurity",
-          "cyber security",
-          "information security",
-          "SOC analyst",
-          "security analyst",
-          "penetration testing",
-          "ethical hacking"
-        ],
-        "experience": "Enrolled Students / Freshers",
-        "eligibility": "Pursuing Bachelor's / Master's degree in CS, IT, Cybersecurity or related fields",
-        "deadline": "2026-10-31",
-        "postedDate": "Live Career Listing",
-        "source": "Official Company Career Portal",
-        "sourceUrl": "https://simplify.jobs/c/Harvey?utm_source=GHList&utm_medium=company",
-        "applicationUrl": "https://simplify.jobs/c/Harvey?utm_source=GHList&utm_medium=company",
-        "organizationUrl": "https://simplify.jobs/c/Harvey?utm_source=GHList&utm_medium=company",
-        "tags": [
-          "direct-company",
-          "top-tier",
-          "verified"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-10-05T14:41:50.189Z",
-        "matchScore": 45,
-        "matchReasons": [
-          "✓ ethical hacking matches profile",
-          "✓ Stipend meets preference",
-          "🧠 AI Learned: High affinity for cybersecurity",
-          "🧠 AI Learned: High affinity for penetration testing"
-        ]
-      },
-      {
-        "id": "career-10-harvey",
-        "title": "Software Engineer Intern - Summer 2027",
-        "company": "Harvey",
-        "description": "Official direct career opening for Software Engineer Intern - Summer 2027 at Harvey. Discovered from verified career portals.",
-        "location": "SF",
-        "mode": "unknown",
-        "stipend": {
-          "min": 40000,
-          "max": 85000,
-          "currency": "INR",
-          "display": "₹40,000 - ₹85,000/month"
-        },
-        "duration": "3 Months",
-        "skills": [
-          "cybersecurity and",
-          "cybersecurity",
-          "cyber security",
-          "information security",
-          "SOC analyst",
-          "security analyst",
-          "penetration testing",
-          "ethical hacking"
-        ],
-        "experience": "Enrolled Students / Freshers",
-        "eligibility": "Pursuing Bachelor's / Master's degree in CS, IT, Cybersecurity or related fields",
-        "deadline": "2026-10-31",
-        "postedDate": "Live Career Listing",
-        "source": "Official Company Career Portal",
-        "sourceUrl": "https://jobs.ashbyhq.com/harvey/3a34578d-d42e-45bb-ac5c-0c3357e8cbb7/application?embed=true&utm_source=Simplify&ref=Simplify",
-        "applicationUrl": "https://jobs.ashbyhq.com/harvey/3a34578d-d42e-45bb-ac5c-0c3357e8cbb7/application?embed=true&utm_source=Simplify&ref=Simplify",
-        "organizationUrl": "https://jobs.ashbyhq.com/harvey/3a34578d-d42e-45bb-ac5c-0c3357e8cbb7/application?embed=true&utm_source=Simplify&ref=Simplify",
-        "tags": [
-          "direct-company",
-          "top-tier",
-          "verified"
-        ],
-        "verified": true,
-        "discoveredAt": "2026-10-05T14:41:50.190Z",
+        "discoveredAt": "2026-10-05T15:38:32.603Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ ethical hacking matches profile",
@@ -2427,7 +2428,7 @@
           "high-stipend"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.484Z",
+        "discoveredAt": "2026-10-05T15:38:14.429Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ Aligns with target career domain",
@@ -2470,7 +2471,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.484Z",
+        "discoveredAt": "2026-10-05T15:38:14.429Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ Remote opportunity",
@@ -2514,7 +2515,7 @@
           "ppo"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.484Z",
+        "discoveredAt": "2026-10-05T15:38:14.429Z",
         "matchScore": 45,
         "matchReasons": [
           "✓ Remote opportunity",
@@ -2560,7 +2561,7 @@
           "high-stipend"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.484Z",
+        "discoveredAt": "2026-10-05T15:38:14.429Z",
         "matchScore": 44,
         "matchReasons": [
           "✓ Remote opportunity",
@@ -2604,7 +2605,7 @@
           "remote"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.484Z",
+        "discoveredAt": "2026-10-05T15:38:14.429Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Remote opportunity",
@@ -2645,7 +2646,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:51.958Z",
+        "discoveredAt": "2026-10-05T15:38:15.148Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Stipend meets preference",
@@ -2685,7 +2686,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:51.958Z",
+        "discoveredAt": "2026-10-05T15:38:15.148Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Stipend meets preference",
@@ -2725,7 +2726,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:51.959Z",
+        "discoveredAt": "2026-10-05T15:38:15.148Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Stipend meets preference",
@@ -2765,7 +2766,7 @@
           "india"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:51.959Z",
+        "discoveredAt": "2026-10-05T15:38:15.148Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ Stipend meets preference",
@@ -2810,7 +2811,7 @@
           "bengaluru"
         ],
         "verified": true,
-        "discoveredAt": "2026-10-05T14:41:49.486Z",
+        "discoveredAt": "2026-10-05T15:38:14.432Z",
         "matchScore": 40,
         "matchReasons": [
           "✓ React matches profile",
@@ -2826,35 +2827,35 @@
         "name": "Internshala",
         "status": "no_results",
         "count": 0,
-        "durationMs": 1712
+        "durationMs": 2551
       },
       {
         "id": "company_careers",
         "name": "Direct Company Career Portals",
         "status": "success",
         "count": 10,
-        "durationMs": 710
+        "durationMs": 18176
       },
       {
         "id": "unstop",
         "name": "Unstop India",
         "status": "success",
         "count": 13,
-        "durationMs": 2475
+        "durationMs": 719
       },
       {
         "id": "wellfound",
         "name": "Wellfound & Tech Startups",
         "status": "success",
         "count": 31,
-        "durationMs": 363
+        "durationMs": 701
       },
       {
         "id": "aicte",
         "name": "AICTE Internship Portal",
         "status": "success",
         "count": 1,
-        "durationMs": 0
+        "durationMs": 1
       },
       {
         "id": "indeed",
@@ -2890,7 +2891,7 @@
         "name": "Greenhouse ATS Boards",
         "status": "success",
         "count": 1,
-        "durationMs": 0
+        "durationMs": 1
       },
       {
         "id": "lever",
