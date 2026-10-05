@@ -1,5 +1,6 @@
 import { FormField, FieldMapping } from "./browser-types.js";
 import { StudentProfile } from "../../models/domain.js";
+import { WebsitePlaybook } from "../memory/experience-memory.types.js";
 
 // Specificity-ordered multi-signal mapping rules for ALL job portals and ATS systems
 const MAPPING_RULES: { key: keyof StudentProfile | string; keywords: string[]; defaultVal?: string }[] = [
@@ -131,12 +132,12 @@ function containsWordOrPhrase(haystack: string, needle: string): boolean {
   return normHaystack.includes(normNeedle);
 }
 
-export function mapFields(fields: FormField[], profile: StudentProfile): FieldMapping[] {
+export function mapFields(fields: FormField[], profile: StudentProfile, playbook?: WebsitePlaybook | null): FieldMapping[] {
   const mappings: FieldMapping[] = [];
 
-  const nameParts = (profile.name || "Yash Harfode").trim().split(" ");
-  const firstName = nameParts[0] || "Yash";
-  const lastName = nameParts.slice(1).join(" ") || "Harfode";
+  const nameParts = (profile.name || "Alex Chen").trim().split(" ");
+  const firstName = nameParts[0] || "Alex";
+  const lastName = nameParts.slice(1).join(" ") || "Chen";
 
   for (const field of fields) {
     const label = normalize(field.labelText || "");
@@ -146,6 +147,43 @@ export function mapFields(fields: FormField[], profile: StudentProfile): FieldMa
     const id = normalize(field.id || "");
 
     const fullText = `${label} ${name} ${placeholder} ${aria} ${id}`;
+
+    // 0. Check Playbook Experience Memory (Level 2/3)
+    if (playbook && playbook.fieldMappings && playbook.fieldMappings.length > 0) {
+      const remembered = playbook.fieldMappings.find(k => {
+        const kObserved = `${k.observedName} ${k.observedLabel} ${k.observedPlaceholder}`.toLowerCase();
+        return (
+          (field.name && k.observedName && field.name.toLowerCase() === k.observedName.toLowerCase()) ||
+          (field.id && k.semanticType && field.id.toLowerCase().includes(k.semanticType.toLowerCase())) ||
+          (field.labelText && k.observedLabel && field.labelText.toLowerCase().includes(k.observedLabel.toLowerCase())) ||
+          (kObserved.includes(id.toLowerCase()))
+        );
+      });
+
+      if (remembered && remembered.confidence >= 0.85) {
+        let val = "";
+        if (remembered.mapping.startsWith("profile.")) {
+          const key = remembered.mapping.replace("profile.", "") as keyof StudentProfile;
+          const raw = profile[key];
+          if (Array.isArray(raw)) val = raw.join(", ");
+          else if (raw !== undefined && raw !== null) val = String(raw);
+        } else if (remembered.strategy === "checkbox_agree") {
+          val = "true";
+        }
+
+        if (val) {
+          mappings.push({
+            fieldId: field.id,
+            value: val,
+            source: "experience_memory", // Reused from procedural playbook memory
+            confidence: Math.max(0.96, remembered.confidence),
+            status: "safe",
+            aiGenerated: false
+          });
+          continue;
+        }
+      }
+    }
 
     // 1. Semantic match with universal ATS rules
     let matchedRule: typeof MAPPING_RULES[0] | null = null;

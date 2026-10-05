@@ -129,5 +129,59 @@
     "notes": "Applied to Co-Founder & Growth / Marketing Lead Internship at ClgKart with Scoutly Browser Agent. Ref: WF-MT45TBS0",
     "appliedAt": "2026-08-22T09:12:08.930Z",
     "answers": {}
+  },
+  {
+    "id": "SCOUTLY-A46A9E",
+    "opportunityId": "cyber-intern-01",
+    "status": "submitted",
+    "notes": "Verified submission via Playwright. ID: SCOUTLY-A46A9E",
+    "appliedAt": "2026-10-05T13:37:07.002Z",
+    "answers": {
+      "fullName": "Yash Harfode",
+      "email": "yashharfode123@gmail.com",
+      "phone": "9244161034",
+      "college": "Samrat Ashok Technological Institute, Vidisha",
+      "github": "https://github.com/yashharfode/",
+      "linkedin": "https://linkedin.com/in/yashharfode",
+      "resume": "Resume/Yash_Harfode_Resume.pdf",
+      "interest": "Python, Network Traffic Analysis, IAM, Ethical Hacking, React, Node.js",
+      "stipend": "18000"
+    }
+  },
+  {
+    "id": "SCOUTLY-D6815E",
+    "opportunityId": "cyber-intern-01",
+    "status": "submitted",
+    "notes": "Verified submission via Playwright. ID: SCOUTLY-D6815E",
+    "appliedAt": "2026-10-05T13:39:59.754Z",
+    "answers": {
+      "fullName": "Yash Harfode",
+      "email": "yashharfode123@gmail.com",
+      "phone": "9244161034",
+      "college": "Samrat Ashok Technological Institute, Vidisha",
+      "github": "https://github.com/yashharfode/",
+      "linkedin": "https://linkedin.com/in/yashharfode",
+      "resume": "Resume/Yash_Harfode_Resume.pdf",
+      "interest": "Python, Network Traffic Analysis, IAM, Ethical Hacking, React, Node.js",
+      "stipend": "18000"
+    }
+  },
+  {
+    "id": "SCOUTLY-88EE6B",
+    "opportunityId": "cyber-intern-01",
+    "status": "submitted",
+    "notes": "Verified submission via Playwright. ID: SCOUTLY-88EE6B",
+    "appliedAt": "2026-10-05T13:46:40.823Z",
+    "answers": {
+      "fullName": "Yash Harfode",
+      "email": "yashharfode123@gmail.com",
+      "phone": "9244161034",
+      "college": "Samrat Ashok Technological Institute, Vidisha",
+      "github": "https://github.com/yashharfode/",
+      "linkedin": "https://linkedin.com/in/yashharfode",
+      "resume": "Resume/Yash_Harfode_Resume.pdf",
+      "interest": "Python, Network Traffic Analysis, IAM, Ethical Hacking, React, Node.js",
+      "stipend": "18000"
+    }
   }
 ]

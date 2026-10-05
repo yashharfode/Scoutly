@@ -1,29 +1,29 @@
-import type { ApplicationRecord, Opportunity, DiscoverySearchResponse, StudentProfile } from "../types/domain";
+import type { ApplicationRecord, Opportunity, DiscoverySearchResponse, StudentProfile, MemorySummary } from "../types/domain";
 
 const API_BASE = import.meta.env.VITE_API_URL ? String(import.meta.env.VITE_API_URL).replace(/\/$/, "") : "";
 
 const fallbackProfile: StudentProfile = {
-  name: "Yash Harfode",
-  college: "Samrat Ashok Technological Institute, Vidisha",
+  name: "Alex Chen",
+  college: "National Institute of Technology, Engineering",
   degree: "B.Tech Computer Science (Cybersecurity)",
   branch: "Cybersecurity",
-  year: "Expected 2029",
-  location: "India",
+  year: "Expected 2027",
+  location: "India / Remote",
   skills: ["Python", "Network Traffic Analysis", "IAM", "Ethical Hacking", "React", "Node.js", "Linux"],
   projects: [
-    { name: "Scoutly", description: "Autonomous AI agent for student opportunity discovery and application automation", technologies: ["React", "Node.js", "Playwright", "TypeScript"] }
+    { name: "Scoutly", description: "Agentic internship application copilot with procedural experience memory", technologies: ["React", "Node.js", "Playwright", "TypeScript"] }
   ],
   experience: [],
   preferredDomains: ["Cybersecurity", "AI/ML", "Software Development"],
   preferredLocations: ["India", "Remote"],
   preferredMode: ["remote", "hybrid", "in_person"],
   minimumStipend: 10000,
-  resumePath: "Resume/Yash_Harfode_Resume.pdf",
-  github: "https://github.com/yashharfode/",
-  linkedin: "https://linkedin.com/in/yashharfode",
-  portfolio: "https://yashharfode.dev",
-  email: "yashharfode123@gmail.com",
-  phone: "+91 9244161034"
+  resumePath: "Resume/demo-resume.pdf",
+  github: "https://github.com/scoutly-ai",
+  linkedin: "https://linkedin.com/in/alexchen-scoutly",
+  portfolio: "https://scoutly.ai/demo",
+  email: "alex.chen.cs@demo.scoutly.ai",
+  phone: "+91 98765 43210"
 };
 
 export async function getProfile(): Promise<StudentProfile> {
@@ -231,6 +231,30 @@ export async function getStudentEvents(type?: string, mode?: string, search?: st
       const data = await res.json();
       return data.events || [];
     }
+  } catch {}
+  return [];
+}
+
+export async function getMemorySummary(): Promise<MemorySummary | null> {
+  try {
+    const res = await fetch(`${API_BASE}/api/memory/summary`);
+    if (res.ok) return res.json();
+  } catch {}
+  return null;
+}
+
+export async function getMemoryPlaybooks(): Promise<any[]> {
+  try {
+    const res = await fetch(`${API_BASE}/api/memory/playbooks`);
+    if (res.ok) return res.json();
+  } catch {}
+  return [];
+}
+
+export async function getMemoryRuns(): Promise<any[]> {
+  try {
+    const res = await fetch(`${API_BASE}/api/memory/runs`);
+    if (res.ok) return res.json();
   } catch {}
   return [];
 }

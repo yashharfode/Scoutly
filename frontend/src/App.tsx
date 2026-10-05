@@ -19,7 +19,8 @@ import {
   AlertTriangle,
   Play,
   Clock, Building2, ShieldCheck, Calendar, MapPin, DollarSign, Folder, SlidersHorizontal,
-  X
+  X,
+  Brain
 } from "lucide-react";
 import type {
   Page,
@@ -27,7 +28,8 @@ import type {
   Opportunity, StudentEvent,
   ApplicationSession,
   ApplicationRecord,
-  DiscoverySearchResponse
+  DiscoverySearchResponse,
+  MemorySummary
 } from "./types/domain";
 import {
   getProfile,
@@ -45,8 +47,10 @@ import {
   regenerateAIAnswer,
   submitApplication,
   cancelApplication,
-  resumeApplicationSession
+  resumeApplicationSession,
+  getMemorySummary
 } from "./lib/api";
+import { ExperienceMemoryView } from "./ExperienceMemoryView";
 
 export function App() {
   const [page, setPage] = useState<Page>("Discover");
@@ -60,11 +64,13 @@ export function App() {
   const [loading, setLoading] = useState(false);
   const [statusMessage, setStatusMessage] = useState("");
   const [customUrl, setCustomUrl] = useState("");
+  const [memorySummary, setMemorySummary] = useState<MemorySummary | null>(null);
 
   useEffect(() => {
     getProfile().then(setProfile);
     getSavedOpportunities().then(setSaved);
     getApplications().then(setApplications);
+    getMemorySummary().then(setMemorySummary);
     searchOpportunities("Cybersecurity and AI internships").then(res => {
       setResults(res.results);
       setDiscoverySummary(res);
@@ -105,11 +111,15 @@ export function App() {
         fields: [],
         mappings: [],
         completion: 0,
-        opportunity
+        opportunity,
+        plan: (init as any).plan,
+        trace: (init as any).trace,
+        isDuplicate: (init as any).isDuplicate,
+        previousApplication: (init as any).previousApplication
       };
       setActiveSession(session);
 
-      setStatusMessage("Analyzing page DOM and checking security checks...");
+      setStatusMessage("Analyzing page DOM and checking procedural experience memory...");
       const analyzed = await analyzeApplicationPage(init.sessionId);
       session.fields = analyzed.fields;
       session.hasCaptcha = analyzed.hasCaptcha;
@@ -117,6 +127,8 @@ export function App() {
       session.warnings = analyzed.warnings;
       session.screenshotPath = analyzed.screenshotPath;
       session.status = analyzed.status;
+      session.memoryMatch = (analyzed as any).memoryMatch;
+      session.trace = (analyzed as any).trace || session.trace;
       setActiveSession({ ...session });
 
       if (analyzed.hasCaptcha || analyzed.isLogin) {
@@ -125,13 +137,15 @@ export function App() {
         return;
       }
 
-      setStatusMessage("Mapping student profile, attaching resume, and synthesizing answers...");
+      setStatusMessage("Applying experience playbook, mapping profile, and attaching resume...");
       const filled = await fillApplicationForm(init.sessionId);
       session.mappings = filled.mappings;
       session.validation = filled.validation;
       session.completion = filled.completion;
       session.status = filled.status;
       session.warnings = filled.warnings;
+      session.reusedCount = (filled as any).reusedCount;
+      session.trace = (filled as any).trace || session.trace;
       setActiveSession({ ...session });
       setStatusMessage("Application prepared. Ready for human review.");
     } catch (err: any) {
@@ -191,17 +205,20 @@ export function App() {
   const handleSubmit = async () => {
     if (!activeSession) return;
     setLoading(true);
-    setStatusMessage("Executing final submit in browser & verifying confirmation...");
+    setStatusMessage("Executing human-approved submit in browser & verifying confirmation...");
     try {
       const res = await submitApplication(activeSession.sessionId);
       setActiveSession({
         ...activeSession,
         status: res.status,
         applicationId: res.applicationId,
-        errorMessage: res.error
+        errorMessage: res.error,
+        trace: (res as any).trace || activeSession.trace
       });
       const updatedApps = await getApplications();
       setApplications(updatedApps);
+      const updatedSummary = await getMemorySummary();
+      setMemorySummary(updatedSummary);
     } catch (err: any) {
       alert("Submission Error: " + err.message);
     } finally {
@@ -246,6 +263,9 @@ export function App() {
           </button>
           <button className={`nav-link ${page === "My Profile" ? "active" : ""}`} onClick={() => setPage("My Profile")}>
             <User size={18} /> My Profile
+          </button>
+          <button className={`nav-link ${page === "Experience Memory" ? "active" : ""}`} onClick={() => setPage("Experience Memory")} style={{ color: "#a7f3d0" }}>
+            <Brain size={18} color="#34d399" /> Experience Memory ({memorySummary?.totalPlaybooks || 2})
           </button>
           <button className={`nav-link ${page === "Demo Mode" ? "active" : ""}`} onClick={() => setPage("Demo Mode")} style={{ background: page === "Demo Mode" ? "#1e3b2a" : "rgba(217, 249, 157, 0.08)", border: "1px dashed #4ade80", color: "#d9f99d", marginTop: 12 }}>
             <Play size={18} color="#4ade80" /> 🎯 Demo Showcase
@@ -416,6 +436,10 @@ export function App() {
               }
             }}
           />
+        )}
+
+        {page === "Experience Memory" && (
+          <ExperienceMemoryView />
         )}
       </main>
     </div>
@@ -1751,6 +1775,61 @@ function CockpitView({
         </div>
       )}
 
+      {/* Duplicate Application Warning */}
+      {session.isDuplicate && (
+        <div style={{ marginTop: 14, padding: "14px 18px", background: "#fef2f2", border: "1px solid #fecaca", borderRadius: 10, display: "flex", alignItems: "center", gap: 12 }}>
+          <AlertTriangle size={22} color="#dc2626" />
+          <div>
+            <strong style={{ color: "#991b1b", fontSize: 14 }}>Duplicate Application Warning</strong>
+            <p style={{ margin: "2px 0 0", fontSize: 13, color: "#7f1d1d" }}>
+              Scoutly detected a previous verified submission for this role on {session.previousApplication?.appliedAt ? new Date(session.previousApplication.appliedAt).toLocaleDateString() : "earlier"} (Confirmation: <code>{session.previousApplication?.confirmationId || "Recorded"}</code>). Scoutly prevents accidental double-submissions.
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* Experience Memory Status Banner */}
+      {session.memoryMatch?.matched ? (
+        <div style={{ marginTop: 14, padding: "14px 18px", background: "#f0fdf4", border: "1px solid #bbf7d0", borderRadius: 10, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 10 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+            <div style={{ background: "#dcfce7", color: "#166534", padding: 8, borderRadius: 8 }}>
+              <Brain size={22} />
+            </div>
+            <div>
+              <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                <strong style={{ color: "#166534", fontSize: 14 }}>Procedural Playbook Memory Active</strong>
+                <span style={{ background: "#22c55e", color: "white", fontSize: 11, fontWeight: 700, padding: "2px 8px", borderRadius: 6 }}>
+                  v{session.memoryMatch.version || 1} · {Math.round(session.memoryMatch.confidence * 100)}% CONFIDENCE
+                </span>
+              </div>
+              <p style={{ margin: "3px 0 0", fontSize: 13, color: "#15803d" }}>
+                Target domain recognized. Reused <strong>{session.reusedCount ?? session.memoryMatch.reusableFieldCount ?? 0} verified field mappings</strong> from playbook. Skipping exploratory trial-and-error.
+              </p>
+            </div>
+          </div>
+          <span style={{ fontSize: 12, color: "#166534", fontWeight: 700, background: "#dcfce7", padding: "4px 10px", borderRadius: 6 }}>
+            Level 2 Playbook Hit
+          </span>
+        </div>
+      ) : (
+        <div style={{ marginTop: 14, padding: "14px 18px", background: "#eff6ff", border: "1px solid #bfdbfe", borderRadius: 10, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 10 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+            <div style={{ background: "#dbeafe", color: "#1d4ed8", padding: 8, borderRadius: 8 }}>
+              <Sparkles size={22} />
+            </div>
+            <div>
+              <strong style={{ color: "#1e40af", fontSize: 14 }}>First Run — Learning Form Structure</strong>
+              <p style={{ margin: "3px 0 0", fontSize: 13, color: "#1d4ed8" }}>
+                New form layout. Scoutly will inspect inputs, synthesize answers, and commit verified mappings to the procedural playbook upon your approval.
+              </p>
+            </div>
+          </div>
+          <span style={{ fontSize: 12, color: "#1e40af", fontWeight: 700, background: "#dbeafe", padding: "4px 10px", borderRadius: 6 }}>
+            Procedural Learner Active
+          </span>
+        </div>
+      )}
+
       {/* Waiting for User: Login Banner */}
       {session.isLogin && (
         <div style={{ marginTop: 18, padding: "20px 24px", background: "#fffbeb", border: "2px solid #fde68a", borderRadius: 12, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 14 }}>
@@ -1877,6 +1956,29 @@ function CockpitView({
             </div>
           </div>
 
+          {/* Agent Action Trace */}
+          {session.trace && session.trace.length > 0 && (
+            <div style={{ marginTop: 16, paddingTop: 14, borderTop: "1px solid #e5e9e3" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
+                <strong style={{ fontSize: 11, color: "#15803d", textTransform: "uppercase", letterSpacing: "0.05em" }}>
+                  Planner Trace ({session.trace.length})
+                </strong>
+                <Brain size={13} color="#15803d" />
+              </div>
+              <div style={{ display: "grid", gap: 5, maxHeight: 180, overflowY: "auto" }}>
+                {session.trace.map((t, idx) => (
+                  <div key={idx} style={{ background: "#f8fafc", padding: "6px 8px", borderRadius: 6, fontSize: 11, border: "1px solid #e2e8f0" }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                      <strong style={{ color: "#0f172a" }}>{t.step}</strong>
+                      <code style={{ fontSize: 9, color: "#64748b" }}>{t.tool}</code>
+                    </div>
+                    <p style={{ margin: "2px 0 0", color: "#475569", fontSize: 10, lineHeight: 1.3 }}>{t.summary}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           <div style={{ marginTop: "auto", borderTop: "1px solid #e5e9e3", paddingTop: 16 }}>
             <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}>
               <span style={{ fontSize: 12, fontWeight: 700, color: "#4f5e53" }}>Readiness Score</span>
@@ -1918,6 +2020,11 @@ function CockpitView({
                     </div>
 
                     <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                      {(mapping as any)?.source === "experience_memory" && (
+                        <span style={{ background: "#ecfdf5", color: "#059669", border: "1px solid #a7f3d0", padding: "2px 8px", borderRadius: 4, fontSize: 11, fontWeight: 700, display: "inline-flex", alignItems: "center", gap: 4 }}>
+                          <Brain size={11} /> Reused from Memory
+                        </span>
+                      )}
                       {status === "safe" && <span className="badge-safe">✓ Safe Match</span>}
                       {status === "review" && <span className="badge-review">⚠ Review Required</span>}
                       {status === "missing" && <span className="badge-missing">❗ Missing Input</span>}

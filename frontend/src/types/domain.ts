@@ -1,7 +1,55 @@
-export type Page = "Discover" | "Matches" | "Saved" | "Events & Workshops" | "Applications" | "My Profile" | "Demo Mode" | "Settings";
-export interface StudentProfile { name: string; college: string; degree: string; branch: string; year: string; location: string; skills: string[]; projects: { name: string; description: string; technologies: string[] }[]; experience: { organization: string; title: string; description: string; period: string }[]; preferredDomains: string[]; preferredLocations: string[]; preferredMode: string[]; minimumStipend: number; resumePath: string; github: string; linkedin: string; portfolio: string; email: string; phone: string; }
-export interface Opportunity { id: string; title: string; organization: string; type: "internship"; description?: string; location?: string; mode?: string; stipend?: number; currency?: string; skills: string[]; eligibility?: string; deadline?: string; applicationUrl: string; source: string; sourceUrl: string; extractedAt: string; tags: string[]; matchScore?: number; rawData?: { matchReasons?: string[]; stipendDisplay?: string; warningReasons?: string[] } | Record<string, any>; }
-export interface SearchResponse { status: string; aiStatus: string; stats: { raw: number; duplicatesRemoved: number; matched: number }; results: Opportunity[]; }
+export type Page = "Discover" | "Matches" | "Saved" | "Events & Workshops" | "Applications" | "My Profile" | "Demo Mode" | "Experience Memory" | "Settings";
+
+export interface StudentProfile {
+  name: string;
+  college: string;
+  degree: string;
+  branch: string;
+  year: string;
+  location: string;
+  skills: string[];
+  projects: { name: string; description: string; technologies: string[] }[];
+  experience: { organization: string; title: string; description: string; period: string }[];
+  preferredDomains: string[];
+  preferredLocations: string[];
+  preferredMode: string[];
+  minimumStipend: number;
+  resumePath: string;
+  github: string;
+  linkedin: string;
+  portfolio: string;
+  email: string;
+  phone: string;
+}
+
+export interface Opportunity {
+  id: string;
+  title: string;
+  organization: string;
+  type: "internship";
+  description?: string;
+  location?: string;
+  mode?: string;
+  stipend?: number;
+  currency?: string;
+  skills: string[];
+  eligibility?: string;
+  deadline?: string;
+  applicationUrl: string;
+  source: string;
+  sourceUrl: string;
+  extractedAt: string;
+  tags: string[];
+  matchScore?: number;
+  rawData?: { matchReasons?: string[]; stipendDisplay?: string; warningReasons?: string[] } | Record<string, any>;
+}
+
+export interface SearchResponse {
+  status: string;
+  aiStatus: string;
+  stats: { raw: number; duplicatesRemoved: number; matched: number };
+  results: Opportunity[];
+}
 
 export interface FormField {
   id: string;
@@ -51,6 +99,34 @@ export type ApplicationSessionState =
   | "failed"
   | "cancelled";
 
+export interface ActionTraceStep {
+  step: string;
+  tool: string;
+  status: "success" | "warning" | "error" | "info";
+  summary: string;
+  details?: Record<string, any>;
+  timestamp: string;
+}
+
+export interface MemorySummary {
+  totalPlaybooks: number;
+  totalVerifiedRuns: number;
+  totalFieldMappings: number;
+  totalQuestionPatterns: number;
+  negativePatternsAvoided: number;
+  averageConfidence: number;
+  playbooks: {
+    id: string;
+    domain: string;
+    version: number;
+    confidence: number;
+    confidenceLevel: string;
+    verifiedRuns: number;
+    fieldCount: number;
+    lastVerifiedAt: string | null;
+  }[];
+}
+
 export interface ApplicationSession {
   sessionId: string;
   opportunityId: string;
@@ -67,6 +143,25 @@ export interface ApplicationSession {
   opportunity?: Opportunity;
   applicationId?: string;
   errorMessage?: string;
+  trace?: ActionTraceStep[];
+  plan?: string[];
+  memoryMatch?: {
+    matched: boolean;
+    matchType?: string;
+    playbookId?: string;
+    domain?: string;
+    version?: number;
+    confidence: number;
+    reusableFieldCount?: number;
+  };
+  reusedCount?: number;
+  isDuplicate?: boolean;
+  previousApplication?: {
+    id: string;
+    appliedAt: string;
+    status: string;
+    confirmationId?: string;
+  };
 }
 
 export interface ApplicationRecord {

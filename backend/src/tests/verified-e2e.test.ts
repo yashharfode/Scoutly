@@ -133,7 +133,40 @@ async function runEndToEndVerification() {
     await applicationsStorage.save(existingApps);
     console.log("✓ Application tracker updated.");
 
-    console.log("\n✅ ALL 8 CHECKPOINTS PASSED SUCCESSFULLY!");
+    // Checkpoint 9: Experience Memory Storage (Run 1 -> Learn)
+    console.log("\n[Checkpoint 9] Recording procedural experience to Application Memory...");
+    const { ExperienceMemoryService } = await import("../agents/memory/experience-memory.service.js");
+    const learned = ExperienceMemoryService.recordSuccess({
+      runId: "e2e-run-01",
+      url: targetUrl,
+      pageTitle: inspection.pageTitle,
+      fields: inspection.fields,
+      mappings,
+      opportunity: mockOpportunity,
+      confirmationId: verification.applicationId!
+    });
+    console.log(`✓ Application Playbook updated: ${learned.playbook.domain} (v${learned.newVersion})`);
+    console.log(`  Verified Runs: ${learned.playbook.stats.verifiedRuns} | Confidence: ${(learned.playbook.confidence * 100).toFixed(0)}%`);
+
+    // Checkpoint 10: Second Run Experience Reuse (Run 2 -> Remember & Adapt)
+    console.log("\n[Checkpoint 10] Testing Second Run Memory Retrieval & Experience Reuse...");
+    const secondRetrieval = ExperienceMemoryService.retrievePlaybook(targetUrl, inspection.pageTitle, inspection.fields);
+    if (!secondRetrieval.playbook || secondRetrieval.matchType !== "exact_form") {
+      throw new Error(`Expected exact_form memory match on second run, got: ${secondRetrieval.matchType}`);
+    }
+    console.log(`✓ Second Run Memory Match: [${secondRetrieval.matchType}] with ${(secondRetrieval.confidence * 100).toFixed(0)}% confidence`);
+
+    const secondExperience = ExperienceMemoryService.applyExperience(inspection.fields, profile, secondRetrieval.playbook);
+    console.log(`✓ Second Run Efficiency: ${secondExperience.reusedCount} fields remembered from verified memory!`);
+    if (secondExperience.reusedCount < 7) {
+      throw new Error(`Expected at least 7 remembered fields, got ${secondExperience.reusedCount}`);
+    }
+
+    console.log("\n==================================================");
+    console.log("🏆 ALL 10 CHECKPOINTS PASSED!");
+    console.log("   RUN 1: LEARNED NEW FORM & VERIFIED SUBMISSION");
+    console.log("   RUN 2: REMEMBERED EXPERIENCE & REUSED VERIFIED MAPPINGS");
+    console.log("==================================================");
   } catch (err: any) {
     console.error("\n❌ E2E TEST FAILED:", err.message);
     process.exitCode = 1;

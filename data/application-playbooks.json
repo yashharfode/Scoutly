@@ -1,0 +1,351 @@
+[
+  {
+    "id": "playbook_sandbox_cyber",
+    "scope": "website",
+    "domain": "localhost",
+    "applicationType": "internship",
+    "version": 3,
+    "fingerprint": {
+      "domain": "localhost",
+      "pathPattern": "/mock-application/*",
+      "titlePattern": "SecureStack Technologies Careers",
+      "fieldSignature": "college|degree|email|fullName|github|interest|linkedin|phone|resume|stipend",
+      "buttonSignature": "#submitBtn"
+    },
+    "workflow": [
+      {
+        "step": "open_application",
+        "action": "navigate",
+        "confidence": 0.99
+      },
+      {
+        "step": "detect_fields",
+        "action": "inspect_dom",
+        "confidence": 0.98
+      },
+      {
+        "step": "map_profile",
+        "action": "apply_experience",
+        "confidence": 0.97
+      },
+      {
+        "step": "upload_resume",
+        "action": "attach_pdf",
+        "confidence": 0.99
+      },
+      {
+        "step": "synthesize_answers",
+        "action": "grounded_ai",
+        "confidence": 0.94
+      },
+      {
+        "step": "human_review",
+        "action": "cockpit_gate",
+        "confidence": 1
+      },
+      {
+        "step": "submit",
+        "action": "click_submit_btn",
+        "confidence": 0.96
+      },
+      {
+        "step": "verify",
+        "action": "extract_confirmation_id",
+        "confidence": 0.98
+      }
+    ],
+    "fieldMappings": [
+      {
+        "semanticType": "fullName",
+        "observedLabel": "Full Name",
+        "observedName": "fullName",
+        "observedPlaceholder": "e.g. Yash Harfode",
+        "inputType": "text",
+        "mapping": "profile.name",
+        "strategy": "direct_fill",
+        "confidence": 0.99,
+        "verified": true,
+        "successCount": 6,
+        "failureCount": 0,
+        "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+      },
+      {
+        "semanticType": "email",
+        "observedLabel": "Email Address",
+        "observedName": "email",
+        "observedPlaceholder": "yashharfode123@gmail.com",
+        "inputType": "email",
+        "mapping": "profile.email",
+        "strategy": "direct_fill",
+        "confidence": 0.99,
+        "verified": true,
+        "successCount": 6,
+        "failureCount": 0,
+        "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+      },
+      {
+        "semanticType": "phone",
+        "observedLabel": "Phone Number",
+        "observedName": "phone",
+        "observedPlaceholder": "+91 9244161034",
+        "inputType": "tel",
+        "mapping": "profile.phone",
+        "strategy": "direct_fill",
+        "confidence": 0.99,
+        "verified": true,
+        "successCount": 6,
+        "failureCount": 0,
+        "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+      },
+      {
+        "semanticType": "college",
+        "observedLabel": "College / University",
+        "observedName": "college",
+        "observedPlaceholder": "e.g. Samrat Ashok Technological Institute",
+        "inputType": "text",
+        "mapping": "profile.college",
+        "strategy": "direct_fill",
+        "confidence": 0.99,
+        "verified": true,
+        "successCount": 6,
+        "failureCount": 0,
+        "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+      },
+      {
+        "semanticType": "degree",
+        "observedLabel": "Degree & Branch",
+        "observedName": "degree",
+        "observedPlaceholder": "e.g. B.Tech Computer Science (Cybersecurity)",
+        "inputType": "text",
+        "mapping": "profile.degree",
+        "strategy": "direct_fill",
+        "confidence": 0.97,
+        "verified": true,
+        "successCount": 4,
+        "failureCount": 0,
+        "lastVerifiedAt": "2026-10-05T12:00:00.000Z"
+      },
+      {
+        "semanticType": "github",
+        "observedLabel": "GitHub Profile",
+        "observedName": "github",
+        "observedPlaceholder": "https://github.com/...",
+        "inputType": "url",
+        "mapping": "profile.github",
+        "strategy": "direct_fill",
+        "confidence": 0.99,
+        "verified": true,
+        "successCount": 6,
+        "failureCount": 0,
+        "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+      },
+      {
+        "semanticType": "linkedin",
+        "observedLabel": "LinkedIn Profile",
+        "observedName": "linkedin",
+        "observedPlaceholder": "https://linkedin.com/in/...",
+        "inputType": "url",
+        "mapping": "profile.linkedin",
+        "strategy": "direct_fill",
+        "confidence": 0.99,
+        "verified": true,
+        "successCount": 6,
+        "failureCount": 0,
+        "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+      },
+      {
+        "semanticType": "resume",
+        "observedLabel": "Resume / CV (PDF)",
+        "observedName": "resume",
+        "observedPlaceholder": "",
+        "inputType": "file",
+        "mapping": "profile.resumePath",
+        "strategy": "file_upload",
+        "confidence": 0.99,
+        "verified": true,
+        "successCount": 6,
+        "failureCount": 0,
+        "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+      },
+      {
+        "semanticType": "stipend",
+        "observedLabel": "Expected Monthly Stipend (INR)",
+        "observedName": "stipend",
+        "observedPlaceholder": "e.g. 15000",
+        "inputType": "number",
+        "mapping": "profile.minimumStipend",
+        "strategy": "user_prompt",
+        "confidence": 0.96,
+        "verified": true,
+        "successCount": 6,
+        "failureCount": 0,
+        "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+      },
+      {
+        "semanticType": "interest",
+        "observedLabel": "Why are you interested in this internship and SecureStack?",
+        "observedName": "interest",
+        "observedPlaceholder": "Explain your relevant skills and motivation...",
+        "inputType": "textarea",
+        "mapping": "profile.interest",
+        "strategy": "direct_fill",
+        "confidence": 0.94,
+        "verified": true,
+        "successCount": 2,
+        "failureCount": 0,
+        "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+      }
+    ],
+    "questionPatterns": [
+      {
+        "pattern": "why are you interested in this role",
+        "category": "motivation",
+        "answeringStrategy": "Synthesize 2-3 sentences linking student's top verified skills with the specific role description. Humility + eagerness to contribute.",
+        "profileFactsUsed": [
+          "skills",
+          "degree",
+          "college"
+        ],
+        "tone": "enthusiastic_professional",
+        "confidence": 0.95,
+        "verified": true,
+        "successCount": 4
+      }
+    ],
+    "negativeMemory": [
+      {
+        "pattern": "button.nav-apply",
+        "domain": "localhost",
+        "context": "Landing navigation header",
+        "failureReason": "Header nav links only scroll the page; they do not submit the form.",
+        "replacementStrategy": "Target form-scoped submit button: #submitBtn or button[type='submit']",
+        "failureCount": 2,
+        "confidence": 0.95
+      }
+    ],
+    "successSignals": [
+      "Application Verified",
+      "SCOUTLY-",
+      "response has been recorded",
+      "Submitted Successfully",
+      "SCOUTLY-D6815E",
+      "SCOUTLY-88EE6B"
+    ],
+    "stats": {
+      "successfulRuns": 6,
+      "failedRuns": 0,
+      "verifiedRuns": 6,
+      "successRate": 1,
+      "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+    },
+    "confidence": 0.99,
+    "confidenceLevel": "VERIFIED",
+    "lastUpdated": "2026-10-05T13:46:40.828Z"
+  },
+  {
+    "id": "playbook_unstop",
+    "scope": "ats",
+    "domain": "unstop.com",
+    "applicationType": "internship",
+    "version": 1,
+    "fingerprint": {
+      "domain": "unstop.com",
+      "pathPattern": "/internships/*",
+      "titlePattern": "Unstop India",
+      "fieldSignature": "college|email|fname|lname|mobile|resume|skills",
+      "buttonSignature": "#un-register-btn"
+    },
+    "workflow": [
+      {
+        "step": "open_application",
+        "action": "navigate",
+        "confidence": 0.99
+      },
+      {
+        "step": "click_register_cta",
+        "action": "click_un_register_btn",
+        "confidence": 0.95
+      },
+      {
+        "step": "auth_gate",
+        "action": "pause_if_login_required",
+        "confidence": 0.98
+      },
+      {
+        "step": "map_fields",
+        "action": "apply_experience",
+        "confidence": 0.92
+      },
+      {
+        "step": "upload_resume",
+        "action": "attach_pdf",
+        "confidence": 0.96
+      },
+      {
+        "step": "human_review",
+        "action": "cockpit_gate",
+        "confidence": 1
+      },
+      {
+        "step": "submit",
+        "action": "click_register_btn",
+        "confidence": 0.9
+      }
+    ],
+    "fieldMappings": [
+      {
+        "semanticType": "name",
+        "observedLabel": "First Name",
+        "observedName": "first_name",
+        "observedPlaceholder": "",
+        "inputType": "text",
+        "mapping": "profile.firstName",
+        "strategy": "direct_fill",
+        "confidence": 0.95,
+        "verified": true,
+        "successCount": 3,
+        "failureCount": 0
+      },
+      {
+        "semanticType": "resume",
+        "observedLabel": "Upload Resume",
+        "observedName": "resume",
+        "observedPlaceholder": "",
+        "inputType": "file",
+        "mapping": "profile.resumePath",
+        "strategy": "file_upload",
+        "confidence": 0.96,
+        "verified": true,
+        "successCount": 3,
+        "failureCount": 0
+      }
+    ],
+    "questionPatterns": [],
+    "negativeMemory": [
+      {
+        "pattern": "#__next",
+        "domain": "unstop.com",
+        "context": "Root container mistaken for CTA button",
+        "failureReason": "Root React container element __next captures click events without triggering application form.",
+        "replacementStrategy": "Specifically target #un-register-btn or .register_btn",
+        "failureCount": 3,
+        "confidence": 0.98
+      }
+    ],
+    "successSignals": [
+      "Application Submitted",
+      "Registered Successfully",
+      "Registration ID"
+    ],
+    "stats": {
+      "successfulRuns": 3,
+      "failedRuns": 0,
+      "verifiedRuns": 3,
+      "successRate": 1,
+      "lastVerifiedAt": "2026-08-22T10:00:00.000Z"
+    },
+    "confidence": 0.94,
+    "confidenceLevel": "HIGH",
+    "lastUpdated": "2026-08-22T10:00:00.000Z"
+  }
+]
