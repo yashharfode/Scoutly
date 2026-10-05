@@ -4,7 +4,7 @@
     "scope": "website",
     "domain": "localhost",
     "applicationType": "internship",
-    "version": 3,
+    "version": 4,
     "fingerprint": {
       "domain": "localhost",
       "pathPattern": "/mock-application/*",
@@ -65,9 +65,9 @@
         "strategy": "direct_fill",
         "confidence": 0.99,
         "verified": true,
-        "successCount": 6,
+        "successCount": 7,
         "failureCount": 0,
-        "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+        "lastVerifiedAt": "2026-10-05T15:14:39.035Z"
       },
       {
         "semanticType": "email",
@@ -79,9 +79,9 @@
         "strategy": "direct_fill",
         "confidence": 0.99,
         "verified": true,
-        "successCount": 6,
+        "successCount": 7,
         "failureCount": 0,
-        "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+        "lastVerifiedAt": "2026-10-05T15:14:39.035Z"
       },
       {
         "semanticType": "phone",
@@ -93,9 +93,9 @@
         "strategy": "direct_fill",
         "confidence": 0.99,
         "verified": true,
-        "successCount": 6,
+        "successCount": 7,
         "failureCount": 0,
-        "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+        "lastVerifiedAt": "2026-10-05T15:14:39.035Z"
       },
       {
         "semanticType": "college",
@@ -107,9 +107,9 @@
         "strategy": "direct_fill",
         "confidence": 0.99,
         "verified": true,
-        "successCount": 6,
+        "successCount": 7,
         "failureCount": 0,
-        "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+        "lastVerifiedAt": "2026-10-05T15:14:39.035Z"
       },
       {
         "semanticType": "degree",
@@ -135,9 +135,9 @@
         "strategy": "direct_fill",
         "confidence": 0.99,
         "verified": true,
-        "successCount": 6,
+        "successCount": 7,
         "failureCount": 0,
-        "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+        "lastVerifiedAt": "2026-10-05T15:14:39.035Z"
       },
       {
         "semanticType": "linkedin",
@@ -149,9 +149,9 @@
         "strategy": "direct_fill",
         "confidence": 0.99,
         "verified": true,
-        "successCount": 6,
+        "successCount": 7,
         "failureCount": 0,
-        "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+        "lastVerifiedAt": "2026-10-05T15:14:39.035Z"
       },
       {
         "semanticType": "resume",
@@ -163,9 +163,9 @@
         "strategy": "file_upload",
         "confidence": 0.99,
         "verified": true,
-        "successCount": 6,
+        "successCount": 7,
         "failureCount": 0,
-        "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+        "lastVerifiedAt": "2026-10-05T15:14:39.035Z"
       },
       {
         "semanticType": "stipend",
@@ -175,11 +175,11 @@
         "inputType": "number",
         "mapping": "profile.minimumStipend",
         "strategy": "user_prompt",
-        "confidence": 0.96,
+        "confidence": 0.98,
         "verified": true,
-        "successCount": 6,
+        "successCount": 7,
         "failureCount": 0,
-        "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+        "lastVerifiedAt": "2026-10-05T15:14:39.035Z"
       },
       {
         "semanticType": "interest",
@@ -189,11 +189,11 @@
         "inputType": "textarea",
         "mapping": "profile.interest",
         "strategy": "direct_fill",
-        "confidence": 0.94,
+        "confidence": 0.96,
         "verified": true,
-        "successCount": 2,
+        "successCount": 3,
         "failureCount": 0,
-        "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+        "lastVerifiedAt": "2026-10-05T15:14:39.035Z"
       }
     ],
     "questionPatterns": [
@@ -229,18 +229,19 @@
       "response has been recorded",
       "Submitted Successfully",
       "SCOUTLY-D6815E",
-      "SCOUTLY-88EE6B"
+      "SCOUTLY-88EE6B",
+      "SCOUTLY-8F16BF"
     ],
     "stats": {
-      "successfulRuns": 6,
+      "successfulRuns": 7,
       "failedRuns": 0,
-      "verifiedRuns": 6,
+      "verifiedRuns": 7,
       "successRate": 1,
-      "lastVerifiedAt": "2026-10-05T13:46:40.828Z"
+      "lastVerifiedAt": "2026-10-05T15:14:39.035Z"
     },
     "confidence": 0.99,
     "confidenceLevel": "VERIFIED",
-    "lastUpdated": "2026-10-05T13:46:40.828Z"
+    "lastUpdated": "2026-10-05T15:14:39.035Z"
   },
   {
     "id": "playbook_unstop",

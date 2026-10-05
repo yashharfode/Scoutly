@@ -1,0 +1,43 @@
+[
+  {
+    "pattern": "why do you want this internship",
+    "category": "motivation",
+    "answeringStrategy": "Link student's primary coding project and education foundation directly to the job description requirements. Focus on eagerness to learn in production.",
+    "profileFactsUsed": [
+      "skills",
+      "projects",
+      "college"
+    ],
+    "tone": "professional_humble",
+    "confidence": 0.95,
+    "verified": true,
+    "successCount": 5
+  },
+  {
+    "pattern": "describe a challenging technical problem you solved",
+    "category": "challenge",
+    "answeringStrategy": "Use the STAR method: Situation (project goal), Task (bug/bottleneck), Action (debugging with logs/tools), Result (working solution).",
+    "profileFactsUsed": [
+      "projects",
+      "skills"
+    ],
+    "tone": "technical_grounded",
+    "confidence": 0.93,
+    "verified": true,
+    "successCount": 3
+  },
+  {
+    "pattern": "why should we hire you",
+    "category": "experience",
+    "answeringStrategy": "Highlight proactive building habits (personal repositories, hackathons) and quick ramp-up speed in modern tech stacks.",
+    "profileFactsUsed": [
+      "skills",
+      "degree",
+      "github"
+    ],
+    "tone": "confident_capable",
+    "confidence": 0.94,
+    "verified": true,
+    "successCount": 4
+  }
+]

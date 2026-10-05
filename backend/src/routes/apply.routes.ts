@@ -69,12 +69,13 @@ applyRouter.post("/apply/prepare", async (req, res, next) => {
     const activeMode = browserMode || env.BROWSER_MODE || "playwright";
     
     let targetUrl = customUrl;
-    if (!targetUrl) {
-      if (opportunityId === "mock-cyber-analyst" || opportunityId.startsWith("mock-")) {
+    if (!targetUrl || targetUrl.includes("mock-application")) {
+      if (opportunityId.includes("cyber-analyst") || opportunityId.startsWith("demo-") || opportunityId.startsWith("mock-")) {
         targetUrl = `http://localhost:${env.PORT}/mock-application/cybersecurity-intern`;
-      } else {
-        targetUrl = "https://wellfound.com/jobs";
       }
+    }
+    if (!targetUrl) {
+      targetUrl = "https://wellfound.com/jobs";
     }
 
     const opportunity: Opportunity = {

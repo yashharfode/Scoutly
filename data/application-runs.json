@@ -1,0 +1,125 @@
+[
+  {
+    "runId": "4bdb15be-f200-4aa7-a348-b31d31a4141e",
+    "timestamp": "2026-10-05T15:14:39.035Z",
+    "goal": "Apply to Cybersecurity Analyst Intern at SecureStack Technologies",
+    "opportunity": {
+      "id": "demo-cyber-analyst",
+      "title": "Cybersecurity Analyst Intern",
+      "organization": "SecureStack Technologies",
+      "url": "http://localhost:3000/mock-application/cybersecurity-intern"
+    },
+    "plan": [
+      "1. Evaluate opportunity & eligibility",
+      "2. Retrieve application experience memory",
+      "3. Inspect target form DOM",
+      "4. Adapt & map form fields to verified profile",
+      "5. Synthesize grounded responses for subjective questions",
+      "6. Fill form & attach resume",
+      "7. Request explicit human review and approval",
+      "8. Submit and verify confirmation",
+      "9. Record newly learned experience to memory"
+    ],
+    "actions": [
+      {
+        "step": "Evaluate Opportunity & Eligibility",
+        "tool": "evaluate_eligibility",
+        "status": "success",
+        "summary": "Goal understood: Apply to Cybersecurity Analyst Intern at SecureStack Technologies. Eligibility criteria verified against student profile.",
+        "timestamp": "2026-10-05T15:14:17.360Z"
+      },
+      {
+        "step": "Launch Browser Context",
+        "tool": "inspect_form",
+        "status": "info",
+        "summary": "Launching real headed Chromium and navigating to http://localhost:3000/mock-application/cybersecurity-intern...",
+        "timestamp": "2026-10-05T15:14:17.360Z"
+      },
+      {
+        "step": "Browser Ready",
+        "tool": "inspect_form",
+        "status": "success",
+        "summary": "Page opened and DOM ready at http://localhost:3000/mock-application/cybersecurity-intern.",
+        "timestamp": "2026-10-05T15:14:20.823Z"
+      },
+      {
+        "step": "Inspect Form DOM",
+        "tool": "inspect_form",
+        "status": "success",
+        "summary": "Detected 9 form input fields on page \"Cybersecurity Analyst Intern — SecureStack Technologies Careers\".",
+        "timestamp": "2026-10-05T15:14:26.480Z"
+      },
+      {
+        "step": "Retrieve Experience Memory",
+        "tool": "retrieve_application_memory",
+        "status": "success",
+        "summary": "Retrieved verified exact form (localhost v3) with 10 verified mappings. Memory Confidence: 99%.",
+        "timestamp": "2026-10-05T15:14:26.481Z"
+      },
+      {
+        "step": "Negative Memory Guardrail",
+        "tool": "retrieve_application_memory",
+        "status": "warning",
+        "summary": "⚠️ Avoided known failure on localhost: Header nav links only scroll the page; they do not submit the form.. Using verified strategy.",
+        "timestamp": "2026-10-05T15:14:26.481Z"
+      },
+      {
+        "step": "Adapt & Map Profile Fields",
+        "tool": "map_fields",
+        "status": "success",
+        "summary": "Mapped 9 fields: 8 remembered from verified experience, 1 matched from student profile.",
+        "timestamp": "2026-10-05T15:14:30.961Z"
+      },
+      {
+        "step": "Fill Form & Attach Resume",
+        "tool": "fill_field",
+        "status": "success",
+        "summary": "Filled 9 fields in Chromium browser and attached PDF resume.",
+        "timestamp": "2026-10-05T15:14:31.192Z"
+      },
+      {
+        "step": "Human Approval Gate",
+        "tool": "request_human_review",
+        "status": "info",
+        "summary": "Application readiness: 100%. Paused in Cockpit for mandatory human verification before submission.",
+        "timestamp": "2026-10-05T15:14:31.192Z"
+      },
+      {
+        "step": "User Approved Submission",
+        "tool": "submit_application",
+        "status": "info",
+        "summary": "Explicit human approval granted. Dispatching verified form submission...",
+        "timestamp": "2026-10-05T15:14:35.945Z"
+      },
+      {
+        "step": "Verify Confirmation",
+        "tool": "verify_submission",
+        "status": "success",
+        "summary": "Submission VERIFIED by browser agent. Confirmation ID: SCOUTLY-8F16BF",
+        "timestamp": "2026-10-05T15:14:39.030Z"
+      },
+      {
+        "step": "Store Application Experience",
+        "tool": "store_application_experience",
+        "status": "success",
+        "summary": "Procedural memory updated: Playbook \"localhost\" promoted to v4 (7 verified runs, Confidence: 99%).",
+        "timestamp": "2026-10-05T15:14:39.035Z"
+      }
+    ],
+    "memoryMatch": {
+      "matched": true,
+      "playbookId": "playbook_sandbox_cyber",
+      "domain": "localhost",
+      "version": 4,
+      "confidence": 0.99,
+      "reusedFieldsCount": 8,
+      "adaptedFieldsCount": 1
+    },
+    "result": "success",
+    "verification": {
+      "verified": true,
+      "confirmationId": "SCOUTLY-8F16BF",
+      "notes": "Application sent successfully on Wellfound. Reference: SCOUTLY-8F16BF"
+    }
+  }
+]

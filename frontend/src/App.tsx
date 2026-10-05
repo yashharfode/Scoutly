@@ -1694,10 +1694,10 @@ function CockpitView({
           <BriefcaseBusiness size={42} />
           <h2>No active browser session</h2>
           <p style={{ marginBottom: 20 }}>
-            Select an internship or launch the guaranteed local Play, SlidersHorizontal, Xwright browser agent demo.
+            Select an internship or launch the guaranteed local Playwright browser agent demo.
           </p>
           <button className="primary-button" onClick={onStartDemo} style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
-            <Sparkles size={16} /> Launch Local Play, SlidersHorizontal, Xwright Demo
+            <Sparkles size={16} /> Launch Local Playwright Demo
           </button>
         </div>
 
@@ -1844,9 +1844,19 @@ function CockpitView({
               </p>
             </div>
           </div>
-          <button className="primary-button" onClick={onResume} style={{ background: "#d97706", display: "flex", alignItems: "center", gap: 8, padding: "12px 20px", fontSize: 14 }}>
-            <Play size={16} /> I've Logged In — Fast Apply 🚀
-          </button>
+          <div style={{ display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
+            <button
+              type="button"
+              className="secondary-button"
+              onClick={onStartDemo}
+              style={{ background: "#ffffff", borderColor: "#d97706", color: "#92400e", fontSize: 13, padding: "10px 16px", cursor: "pointer" }}
+            >
+              🎯 Switch to Guaranteed Sandbox (No Login)
+            </button>
+            <button className="primary-button" onClick={onResume} style={{ background: "#d97706", display: "flex", alignItems: "center", gap: 8, padding: "12px 20px", fontSize: 14 }}>
+              <Play size={16} /> I've Logged In — Fast Apply 🚀
+            </button>
+          </div>
         </div>
       )}
 
@@ -2870,42 +2880,42 @@ function DemoView({ onLaunchDemo }: { onLaunchDemo: (opp: Opportunity) => void }
         </p>
       </div>
 
-      {/* SECTION 1: WELLFOUND */}
+      {/* SECTION 1: GUARANTEED PLAYWRIGHT SANDBOX (FIRST FOR JUDGES) */}
+      <div style={{ marginBottom: 40 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 18, borderBottom: "2px solid #bbf7d0", paddingBottom: 10 }}>
+          <div style={{ background: "#dcfce7", color: "#166534", padding: "6px 12px", borderRadius: 8, fontWeight: 800, fontSize: 14 }}>
+            🛡️ SECTION 1: GUARANTEED OFFLINE PLAYWRIGHT SANDBOX (ZERO LOGIN REQUIRED)
+          </div>
+          <span style={{ fontSize: 13, color: "#15803d", fontWeight: 700 }}>★ Recommended for Instant Judge Evaluation</span>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))", gap: 20 }}>
+          {sandboxOpps.map(renderCard)}
+        </div>
+      </div>
+
+      {/* SECTION 2: WELLFOUND */}
       <div style={{ marginBottom: 40 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 18, borderBottom: "2px solid #e2e8f0", paddingBottom: 10 }}>
           <div style={{ background: "#eff6ff", color: "#1d4ed8", padding: "6px 12px", borderRadius: 8, fontWeight: 800, fontSize: 14 }}>
-            🌐 SECTION 1: WELLFOUND OPPORTUNITIES ({wellfoundOpps.length})
+            🌐 SECTION 2: WELLFOUND OPPORTUNITIES ({wellfoundOpps.length})
           </div>
-          <span style={{ fontSize: 13, color: "#64748b" }}>Live public startup internships</span>
+          <span style={{ fontSize: 13, color: "#64748b" }}>Live public startup listings · Requires account login</span>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))", gap: 20 }}>
           {wellfoundOpps.map(renderCard)}
         </div>
       </div>
 
-      {/* SECTION 2: UNSTOP (BELOW WELLFOUND) */}
-      <div style={{ marginBottom: 40 }}>
+      {/* SECTION 3: UNSTOP */}
+      <div>
         <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 18, borderBottom: "2px solid #e2e8f0", paddingBottom: 10 }}>
           <div style={{ background: "#fef3c7", color: "#92400e", padding: "6px 12px", borderRadius: 8, fontWeight: 800, fontSize: 14 }}>
-            🇮🇳 SECTION 2: UNSTOP INDIA OPPORTUNITIES ({unstopOpps.length})
+            🇮🇳 SECTION 3: UNSTOP INDIA OPPORTUNITIES ({unstopOpps.length})
           </div>
-          <span style={{ fontSize: 13, color: "#64748b" }}>Verified public student internship listings</span>
+          <span style={{ fontSize: 13, color: "#64748b" }}>Verified public student internship listings · Requires account login</span>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))", gap: 20 }}>
           {unstopOpps.map(renderCard)}
-        </div>
-      </div>
-
-      {/* SECTION 3: GUARANTEED PLAYWRIGHT SANDBOX */}
-      <div>
-        <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 18, borderBottom: "2px solid #e2e8f0", paddingBottom: 10 }}>
-          <div style={{ background: "#dcfce7", color: "#166534", padding: "6px 12px", borderRadius: 8, fontWeight: 800, fontSize: 14 }}>
-            🛡️ SECTION 3: GUARANTEED OFFLINE PLAYWRIGHT SANDBOX
-          </div>
-          <span style={{ fontSize: 13, color: "#64748b" }}>100% offline-resilient presentation environment</span>
-        </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))", gap: 20 }}>
-          {sandboxOpps.map(renderCard)}
         </div>
       </div>
     </section>

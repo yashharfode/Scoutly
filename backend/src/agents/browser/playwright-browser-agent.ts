@@ -10,11 +10,12 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
   private isClosed = false;
 
   async open(url: string): Promise<BrowserActionResult> {
-    if (this.isClosed) throw new Error("Browser session is closed.");
+    this.isClosed = false;
 
     try {
       if (!this.context) {
-        const userDataDir = path.resolve(process.cwd(), "..", "data", "browser-user-data");
+        const rootDir = process.cwd().endsWith("backend") ? path.resolve(process.cwd(), "..") : process.cwd();
+        const userDataDir = path.resolve(rootDir, "data", "browser-user-data");
         if (!fs.existsSync(userDataDir)) fs.mkdirSync(userDataDir, { recursive: true });
 
         console.log(`[PlaywrightBrowser] Launching Chromium context (user data: ${userDataDir})...`);
@@ -499,8 +500,15 @@ export class PlaywrightBrowserAgent implements BrowserAgent {
   }
 
   async close(): Promise<void> {
-    // Keep browser open for user inspection unless explicitly killed
-    console.log("[PlaywrightBrowser] Keeping browser window open for user review.");
+    console.log("[PlaywrightBrowser] Closing browser context cleanly...");
+    try {
+      if (this.context) {
+        await this.context.close().catch(() => {});
+        this.context = null;
+        this.page = null;
+      }
+    } catch {}
+    this.isClosed = true;
   }
 
   private getActivePage(): Page {
